@@ -1,3 +1,7 @@
+---
+title: Exam 2 Terms
+---
+
 - # ECN143: Principles of Microeconomics - Key Definitions
 - ### 📈 Foundational Economic Concepts
 - **Law of Demand:** Consumers buy more of a good when its price is lower, holding other factors constant.

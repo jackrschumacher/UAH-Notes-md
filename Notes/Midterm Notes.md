@@ -1,3 +1,7 @@
+---
+title: Midterm Notes
+---
+
 - Common equity stock represents ownership in the company/corporation
 - Treasury stocks are typically the least risky
 - If your rate of return is 7.2% using the rule of 72 the investment will take 10 years to double

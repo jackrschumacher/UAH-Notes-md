@@ -1,3 +1,7 @@
+---
+title: Netflix presentation speaker notes
+---
+
 - ### Why personalization matters
 	- 80% of viewing comes from personalized recommendations
 	- Each member sees a unique homepage

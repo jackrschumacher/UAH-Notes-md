@@ -1,3 +1,7 @@
+---
+title: Exam 2 Summary
+---
+
 - ### 1. Foundational Economic Concepts
 - #### Production Possibilities Frontier (PPF)
 - A **Production Possibilities Frontier (PPF)** is a curve that illustrates the maximum achievable combinations of two goods that can be produced given available resources and technology.

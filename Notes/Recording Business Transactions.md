@@ -1,6 +1,10 @@
+---
+title: Recording Business Transactions
+---
+
 - # What is an account?
 	- $Assets= Liabilities+Equity$
-	  id:: 690d6c5d-d8b1-46dc-b650-52bab53324db
+
 	- Each part of the accounting equation has accounts
 	- ## Assets
 	- ![image.png](../assets/image_1762488415502_0.png){:height 367, :width 509}

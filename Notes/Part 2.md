@@ -1,3 +1,7 @@
+---
+title: Part 2
+---
+
 - # Chapter 11- Music in the Middle Ages
 - Most important musicians were priests and worked for the church
 	- Liturgical singing

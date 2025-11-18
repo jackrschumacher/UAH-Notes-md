@@ -1,6 +1,10 @@
+---
+title: Course Index
+---
+
 # Course Index by Semester
 
-Auto-generated index of courses.
+Auto-generated index.
 
 ## Semester 1
 - [MU 100](Notes/MU%20100.md)

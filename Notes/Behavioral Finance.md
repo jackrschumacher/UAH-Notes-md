@@ -1,3 +1,7 @@
+---
+title: Behavioral Finance
+---
+
 - ### Example behavioral finance graph
 -
   > "I can calculate the motions of the heavenly bodies, but not the madness of men."  

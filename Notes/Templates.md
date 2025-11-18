@@ -1,3 +1,7 @@
+---
+title: Templates
+---
+
   exclude-from-graph-view:: true
   
 - ## Bias name

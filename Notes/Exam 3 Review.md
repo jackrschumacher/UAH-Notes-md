@@ -1,3 +1,7 @@
+---
+title: Exam 3 Review
+---
+
 - # Recording Transactions
 	- ## Inventory
 		- ### Returned inventory

@@ -1,3 +1,7 @@
+---
+title: Example Transactions
+---
+
 - # Resources
 - [Recording Business Transactions](Recording%20Business%20Transactions.md)
 - ![image.png](../assets/image_1762901624985_0.png){:height 455, :width 553}
