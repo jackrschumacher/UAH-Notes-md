@@ -9,10 +9,9 @@ ROOT_DIRECTORY = '.'
 ASSET_FOLDER_NAME = 'assets'
 INDEX_FILENAME = 'index.md'
 
-# Files to ignore during processing
-IGNORE_FILES = ['convert_folder_links.py', INDEX_FILENAME, 'converter.py', '_config.yml']
-# Directories to ignore
-IGNORE_DIRS = ['.git', 'assets']
+# Files/Dirs to ignore
+IGNORE_FILES = ['convert_folder_links.py', INDEX_FILENAME, 'converter.py', '_config.yml', 'CNAME']
+IGNORE_DIRS = ['.git', 'assets', '_site']
 
 ASSET_EXTENSIONS = (
     'png', 'jpg', 'jpeg', 'gif', 'svg', 'webp', 'pdf', 'mp4', 'mp3',
@@ -22,19 +21,17 @@ ASSET_EXTENSIONS = (
 # --- Regex Patterns ---
 ASSET_PATTERN = re.compile(r'(!?)\[\[(.*?\.(?:' + '|'.join(ASSET_EXTENSIONS) + r'))\]\]', re.IGNORECASE)
 NOTE_PATTERN = re.compile(r'\[\[(.*?)\]\]')
-QUOTE_PATTERN = re.compile(r'#\+BEGIN_QUOTE\s*(.*?)\s*#\+END_QUOTE', re.DOTALL | re.IGNORECASE)
+# This new pattern finds standard markdown links ending in .md: [Title](Path/File.md)
+STANDARD_LINK_PATTERN = re.compile(r'(\[[^\]]+\]\([^)]+)\.md(\)|#)') 
 
-# Pattern to find "tags:: value" lines (with optional bullets/indentation)
+QUOTE_PATTERN = re.compile(r'#\+BEGIN_QUOTE\s*(.*?)\s*#\+END_QUOTE', re.DOTALL | re.IGNORECASE)
 TAGS_LINE_PATTERN = re.compile(r'^\s*[-*]?\s*tags::\s*(.*)$', re.MULTILINE | re.IGNORECASE)
-# Pattern to find junk Logseq properties (id::, logseq.x::, etc) to delete them
 JUNK_PROPERTY_PATTERN = re.compile(r'^\s*[-*]?\s*(id|logseq\.[a-z0-9-]+|collapsed|icon)::.*$', re.MULTILINE | re.IGNORECASE)
 
 def force_posix_path(path_obj):
-    """Forces a path to use forward slashes (/) even on Windows."""
     return str(path_obj).replace(os.sep, '/')
 
 def encode_path(path_str):
-    """URL-encodes the path but KEEPS the forward slashes safe."""
     clean_path = path_str.replace('\\', '/')
     return urllib.parse.quote(clean_path, safe='/')
 
@@ -45,14 +42,7 @@ def convert_quotes_to_markdown(content):
     return QUOTE_PATTERN.sub(replacer, content)
 
 def process_frontmatter_and_clean(content, filename_stem):
-    """
-    1. Extracts tags.
-    2. Removes tags:: and id:: lines from the body.
-    3. Generates a clean YAML Front Matter block at the top.
-    """
     tags = []
-    
-    # 1. Extract tags
     matches = TAGS_LINE_PATTERN.findall(content)
     for tag_string in matches:
         raw_tags = [t.strip() for t in tag_string.split(',')]
@@ -60,29 +50,21 @@ def process_frontmatter_and_clean(content, filename_stem):
             clean_t = t.replace('[[', '').replace(']]', '')
             tags.append(clean_t)
             
-    # 2. Remove the property lines from the content
-    # Remove tags:: lines
     content = TAGS_LINE_PATTERN.sub('', content)
-    # Remove id:: and logseq:: lines
     content = JUNK_PROPERTY_PATTERN.sub('', content)
-
-    # 3. Clean up double blank lines created by removal
     content = re.sub(r'\n{3,}', '\n\n', content)
 
-    # 4. Construct YAML Front Matter
-    # We ensure 'title' is set, and 'tags' are listed if found
-    yaml_block = "---\n"
-    yaml_block += f"title: {filename_stem}\n"
-    if tags:
-        # Join tags with proper YAML list syntax if needed, or just comma separated
-        # Simple comma separated string works for Jekyll usually, or list format
-        # Let's use valid YAML list syntax
-        yaml_block += "tags:\n"
-        for t in tags:
-            yaml_block += f"  - {t}\n"
-    yaml_block += "---\n\n"
-
-    return yaml_block + content, tags
+    if not content.lstrip().startswith('---'):
+        yaml_block = "---\n"
+        yaml_block += f"title: {filename_stem}\n"
+        if tags:
+            yaml_block += "tags:\n"
+            for t in tags:
+                yaml_block += f"  - {t}\n"
+        yaml_block += "---\n\n"
+        return yaml_block + content, tags
+    
+    return content, tags
 
 def process_file(filepath: Path):
     try:
@@ -94,11 +76,8 @@ def process_file(filepath: Path):
 
     original_content = content
     
-    # --- 1. Clean Properties & Generate Front Matter ---
-    # We do this FIRST so we process the clean text for links later
     content, extracted_tags = process_frontmatter_and_clean(content, filepath.stem)
 
-    # --- 2. Link Conversion ---
     current_dir = os.path.dirname(filepath)
     relative_path_to_root = os.path.relpath(ROOT_DIRECTORY, current_dir)
     relative_path_to_assets = Path(relative_path_to_root) / ASSET_FOLDER_NAME
@@ -113,26 +92,27 @@ def process_file(filepath: Path):
             
     def note_link_replacer(match):
         note_title = match.group(1)
-        encoded_filename = encode_path(f"{note_title}.md")
+        encoded_filename = encode_path(f"{note_title}.html")
         return f'[{note_title}]({encoded_filename})'
 
+    # 1. Fix [[Logseq]] links to .html
     content = ASSET_PATTERN.sub(asset_link_replacer, content)
     content = NOTE_PATTERN.sub(note_link_replacer, content)
+    
+    # 2. Fix existing [Standard](Links.md) to .html
+    # Replaces .md with .html inside link parentheses
+    content = STANDARD_LINK_PATTERN.sub(r'\1.html\2', content)
+
     content = convert_quotes_to_markdown(content)
 
-    # --- 3. Write Changes ---
-    # We always write if we added frontmatter, even if links didn't change
-    # But we check if content actually changed effectively (ignoring just simple re-runs)
     if content != original_content:
         try:
             with open(filepath, 'w', encoding='utf-8') as f:
                 f.write(content)
-            print(f"CLEANED & UPDATED: {filepath.name}") 
+            print(f"UPDATED: {filepath.name}") 
         except Exception as e:
             print(f"ERROR writing {filepath}: {e}")
 
-    # --- 4. Return Info for Index ---
-    # We return the tags we found during the cleanup phase
     semester_tags = [t for t in extracted_tags if 'semester' in t.lower()]
     
     if semester_tags:
@@ -147,7 +127,6 @@ def process_file(filepath: Path):
 
 def generate_index_file(semester_data):
     grouped_files = defaultdict(list)
-    
     for entry in semester_data:
         for tag in entry['tags']:
             clean_tag = tag.title() 
@@ -165,7 +144,8 @@ def generate_index_file(semester_data):
         lines.append(f"## {tag}")
         files = sorted(grouped_files[tag], key=lambda x: x['title'])
         for file_info in files:
-            encoded_path = encode_path(file_info['path'])
+            web_path = file_info['path'].replace('.md', '.html')
+            encoded_path = encode_path(web_path)
             lines.append(f"- [{file_info['title']}]({encoded_path})")
         lines.append("")
 
@@ -174,7 +154,7 @@ def generate_index_file(semester_data):
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write('\n'.join(lines))
         print("=" * 60)
-        print(f"SUCCESS: Generated {INDEX_FILENAME}")
+        print(f"SUCCESS: Generated {INDEX_FILENAME} with HTML links")
         print("=" * 60)
     except Exception as e:
         print(f"ERROR generating index: {e}")
