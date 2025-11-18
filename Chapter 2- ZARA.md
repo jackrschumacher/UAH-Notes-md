@@ -1,0 +1,133 @@
+- # Introduction
+	- Initially wished to be called Zorba but there was a bar already with that name in his town
+		- Therefore had to rearrange the letters that had already been cast into Zara
+		- Not the name that makes the business but rather the technology
+	- The company is now part of Inditex Corp
+		- The firms crown jewel
+		- Headquartered in Spain
+		- Crushed the performance of rival H&M
+	- Zara has many stores throughout the world
+		- Manhattan and Shanghai, among others
+- ## Why Study Zara
+	- Competitors are faltering
+	- Zara is undergoing one of the fastest global expansions the fashion world has ever seen
+	- "Most innovative and devestating retailer in the world"
+	- **Physical retailers are struggling-but Zara is not**
+		- Super efficent model
+			- Higher margin
+			- Competitive prices
+			- Fewer markdowns and write-offs
+			- Faster inventory turnover
+			- Reduced risk
+			- Less advertising
+	- ![The rapid growth of Inditex](https://resized-images.flatworldknowledge.com/information_systems_9_1-36477/1600/information_systems_9_1-36477-fig097.png)
+- ## Gap: An Icon in Crisis
+	- Most fashion retailers place orders for a seasonal collection months before in stores
+	- **Inventory = Death**
+		- Having too much unwanted product on hand and you will be forced to mark down or write off items
+		- Gap made a bad bet on what would attract customers and strayed from the classic styles that it was known for
+			- Was saddled with inventory
+	- **Contract Manufacturing** in developing countries can keep the cost of goods low
+		- Lower prices and sell more product
+		- Race to the bottom in cost cutting measures
+		- Increasing accusations of using sweatshop labor
+		- Bangladesh has a bad reputation for unsafe worker conditions in factories
+		- Tech can be used to identify companies that have unsafe or sub-standard labor practices (Rebook) or dishonest manufacturers
+- # Don’t Guess, Gather Data—Make Small Batches of What Customers Want and Ship It Fast!
+	- Zara operates off of increasing data collection
+		- Custom apps on mobile devices to collect data from customers
+		- Looks for left behind items by customers and works to analyze trends
+		- Insights go back to headquarters
+	- Salaries are based off of store sales performance
+	- 10% of the firms overall profit increase is shared across firm employees
+	- Point of Sale system used to  tally up sales and deduct the sold items from inventory
+		- Whats selling
+		- What customers at a given location want to see on shelves
+		- Plan new styles and issue rebuy orders
+- ## Design
+	- Zara designs follow trends
+	-
+	  > “Our business model is the opposite of the traditional model. Instead of designing a collection long before the season, and then working out whether clients like it or not, we try to understand what our customers like, and then we design it and produce it.”  
+	- Data on what sells goes up to the headquarters
+	- H&M offered lines by star designers
+	- Zara relies on young people
+	- Design staff regularly reach out to store managers electronically and encourage innovation
+- ## Manufacturing and Logistics
+	- Zara concept → in store turn around time is 15
+		- Smaller tweaks arrive faster
+		- New styles are typically received by competitors once or twice a season
+		- *Zara is 12 times faster than competitors*
+	- **Vertical integration** - when a single firm owns several layers in its value chain
+	- **Value chain** - Set activities through which a product or service is created and delivered to customers
+	- 60% of Zara's merchandise produced in house
+	- Able to shift offers in order to produce the highest amount of profit
+	- **greige** - Goods to be further customized based on designer/manager collaboration
+	- 17 million items per weekend moved in Zara distribution center
+	- Inventory smart- **RFID tags**
+		- An item moves around the Zara distribution center and is tracked through the RFID tags
+		- Vertical integration is an advantage in integration
+		- Take in store inventory 4 times as often as before RFID impelementation
+	- Overnight shipping using air freight
+- ## Stores
+	- Most products manufactured on a limited production run
+		- Unrivaled exclusivity
+		- Unique products for unique customers
+	- Pay and go app self checkout
+		- Pay in app, remove tags and go
+	- Limited run items encourage customers to visit often
+		- Average customer visits the store 17 times per year
+			- Compared to 3 visits/year for customers
+		- Minimize the risk of making a mistake
+	- Headquarters plays a role in directing in store operations
+	- Software used to schedule staff
+- ## Integrating E-commerce: Omnichannel = More Sales + Better Customer Experience
+	- Inditex was a relative latecomer to ecommerce
+		- Online sales have grown substantially by year end 2019
+		- Has boosted its ecommerce efforts recently
+		- Part of the firms **omnichannel** solution (the retail strategy)
+		- Sees the link between online and and offline sales
+			- Does not break out online sales as a separate entity
+	- 2/3 of online shopping returns are done in store- 1/3 of online orders scheduled for in store pickup
+		- Easy to asses the size in store
+		- Can look online if something is not in store
+	- 52 global ecommerce stockrooms globally
+		- "Click and collect" systems that do not use human workers to collect returns, instead using large touchscreens
+		- Encourage eco friendly recycling of packaging
+		- 2,400 orders can be handled at a single location
+	- Customers can also reserve fitting rooms at some stores
+		- Or assign a fitting room based on how many items they have to try on
+	- Self checkout systems
+	- Direct to consumer delivery in markets where there is not yet a store presence
+- ## COVID-19 Response: Tech-Centric Operations + E-commerce + Omnichannel in a Crisis
+	- Coronavirus caused a retail disaster
+	- 88% of stores closed in spring 2020 caused a 44% profit loss
+		- Damage not nearly as bad as rival stores due to the integrated system
+	- Strengthened ecommerce efforts
+		- 14% pre-pandemic increased 95% in that quarter
+		- Inventory shifted from closed stores to be used online
+			- Powered by RFID tech
+- # Moving Forward
+	- Next stage of growth for Inditex will actually involve fewer new store
+		- Planning around 1,200 global store closures of the firms weakest locations. Around 16% of globabl stores
+			- These stores account for 5% of sales
+	- Expects online sales to be the biggest drivers of revenue in the next several years
+		- Expects to spend over $1 billion euros on improving online store
+		- Expects to spend $1.7 billion euros keeping it running
+	- Could still encounter issues with supply chain, as Zara sends deliveries through 2 locations in Spain
+	- Also could encounter issues with the continued fluctuation of the value of the Euro
+		- Might possibly open up regional centers
+			- Such as in China
+				- Experts remain skeptical of Zara's ability to relocate half a world away
+	- Continues to plan expansion in the US
+	- Increasing environmental regulation, especially in the EU
+		- EU plans may be in place by 2028
+		- Has made some commitments to reduce environmental impact
+			- More innovative, less impactful materials
+				- Recycled materials
+			- Reducing energy usage
+	- Threat of direct to consumer reatailers
+		- Shein and Temu
+			- Technology is increasingly used to drive down costs
+		- Technology creates Zara's differentiator from the rest of the industry → threat of others copying or improving upon it
+	-
+-

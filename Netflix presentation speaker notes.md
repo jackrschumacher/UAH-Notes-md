@@ -1,0 +1,14 @@
+- ### Why personalization matters
+	- 80% of viewing comes from personalized recommendations
+	- Each member sees a unique homepage
+	- Reduces choice overload and increases satisfaction
+	- Personalization improves engagement and reduces churn
+	- Core driver of Netflix's competition position
+- ### Data Collection and Insights
+- Behavioral data: watch history, pauses, skips, completion rate
+- Context data: device, time of day, location
+- Search & browsing interactions
+- Metadata: genres, cast, tags, release year
+- Mix of explicit (ratings) and implicit (behavior) signals
+- Enables detailed user-taste profiles
+- Netflix discusses much of their analytics approach on the Netflix Research blog
