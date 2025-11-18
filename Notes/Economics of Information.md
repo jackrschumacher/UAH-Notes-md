@@ -1,3 +1,7 @@
+---
+title: Economics of Information
+---
+
 - # Asymmetric Informaiton
 	- **Asymmetric information**
 		- Information available to buyers and sellers differs

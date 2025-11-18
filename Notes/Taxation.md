@@ -1,14 +1,18 @@
+---
+title: Taxation
+---
+
 - # Taxation and Government spending
 	- Why do governments tax and spend?
 		- Raise revenue
-		  logseq.order-list-type:: number
+
 		- Redistributing funds via transfer payments- can address equity issues
-		  logseq.order-list-type:: number
+
 			- **Transfer payments**
-			  logseq.order-list-type:: number
+
 				- Payments from the governments to certain groups, such as elderly or the unemployed
 			- ## Tax structure
-			  logseq.order-list-type:: number
+
 				- ![](https://www.economicsonline.co.uk/content/images/2023/10/Proportional-tax-5.webp){:height 514, :width 492}
 				- ![image.png](../assets/image_1763173998088_0.png){:height 412, :width 515}
 				- ![image.png](../assets/image_1763174031519_0.png){:height 409, :width 510}
@@ -39,7 +43,7 @@
 							- Producers via lower prices
 							- Both?
 		- Financing operations
-		  logseq.order-list-type:: number
+
 		- Correcting market failure and externalities
-		  logseq.order-list-type:: number
+
 	-

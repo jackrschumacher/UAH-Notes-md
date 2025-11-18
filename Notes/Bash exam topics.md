@@ -1,3 +1,7 @@
+---
+title: Bash exam topics
+---
+
 - Input/Output Redirection
 	- Changing standard input and standard output
 		- Handling standard error

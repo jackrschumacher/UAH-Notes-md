@@ -1,3 +1,7 @@
+---
+title: Chapter 18
+---
+
 - # 18.2 Generative AI: Whoa—This Is Something Different!
 - AI has been around for many years
 	- Goal of AI is to create computer programs able to mimic and improve on human intelligence
@@ -6,7 +10,7 @@
 	- First real accessible **generative AI** (to the general public)
 	- Gen AI **prompted** by user
 	- Can also make up wrong answers and provide them to a the user-**Hallucination**
-	  id:: 690714b0-3dfe-46d2-aa81-7558963505a2
+
 	- Public release of ChatGPT controversial and created a debate on the consequences of AI
 	- OpenAI investment increases dramatically after the release of ChatGPT (Microsoft)
 - # 18.3 So How Does This Stuff Really Work? A Manager’s Guide to Understanding GenAI

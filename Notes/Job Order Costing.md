@@ -1,3 +1,7 @@
+---
+title: Job Order Costing
+---
+
 - # Usage of Manufacturing Companies Use Job Order and Process Costing system?
 	- Cost accounting systems measure, record, and report product costs
 	- Knowing unit costs helps managers

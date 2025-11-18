@@ -1,3 +1,7 @@
+---
+title: Part 1
+---
+
 - # Chapter 1
 - Sound beings with the vibration of an object
 	- Sound transmitted by a medium

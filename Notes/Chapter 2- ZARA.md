@@ -1,3 +1,7 @@
+---
+title: Chapter 2- ZARA
+---
+
 - # Introduction
 	- Initially wished to be called Zorba but there was a bar already with that name in his town
 		- Therefore had to rearrange the letters that had already been cast into Zara

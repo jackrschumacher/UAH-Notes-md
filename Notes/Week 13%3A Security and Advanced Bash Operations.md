@@ -1,3 +1,7 @@
+---
+title: Week 13%3A Security and Advanced Bash Operations
+---
+
 - # Security Auditing and System Hardening
 	- What is system hardening is **the process of securing a system by reducing its attack surface**
 		- Involves disabling unnecessary services, configuring security settings, and applying updates
@@ -150,18 +154,18 @@
 	- ![image.png](../assets/image_1763424583118_0.png)
 	- ### Threat Hunting Steps
 		- Trigger
-		  logseq.order-list-type:: number
+
 			- Collect information about the environment and hypothesis
 			- **Choose a trigger for further investigation**
 			- Can be a system, network area, or hypothesis trigger by a vulnerability or patch or information about an exploit, security set anomalies or requests from other areas in the organization
 		- Investigation
-		  logseq.order-list-type:: number
+
 			- Hunting efforts are focused on proactive searching for anomalies
 				- Can prove or disprove the hypothesis
 				- Assumption → "We are compromised or vulnerable to this new exploit"
 				- Hunters use a wide range of tech to assist them in reviewing logs and investigating anomalies
 		- Resolution
-		  logseq.order-list-type:: number
+
 			- During the resolution phase, information is communicated to other teams and tools that can respond, prioritize, analyze, or store information for future use
 				- **Who?** (if it involves credentials)
 				- **What?** (the events that happened in order)

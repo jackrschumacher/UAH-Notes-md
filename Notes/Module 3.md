@@ -1,3 +1,7 @@
+---
+title: Module 3
+---
+
 - # EH 242 Module 3 Notes
 - ## Introduction
 - Publius Ovidius Virgil

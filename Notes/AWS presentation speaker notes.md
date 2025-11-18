@@ -1,7 +1,11 @@
+---
+title: AWS presentation speaker notes
+---
+
 - ### How AWS started
 	- **Amazon built AWS from solving its _own_ internal scaling problems​**
 		- Wanted to create a shared infrastructure in order solve IT scaling issues-focus on customers, not infastructure
-		  id:: 691ba190-afb3-4db6-8e8c-13906189fe76
+
 		- AWS launched developer platform in 2002 and experienced strong demand → Developers were hungry for more
 	- **Needed faster, cheaper, more flexible IT infrastructure​**
 	- **2004: AWS launched the first public product- Simple Queue service​**

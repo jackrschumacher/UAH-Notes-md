@@ -1,3 +1,7 @@
+---
+title: Activity Based Costing
+---
+
 - # Assigning and Allocating Costs
 - Product costs consist of direct materials, direct labor, and manufacturing overhead
 - Easily traced and assigned to the product
@@ -97,13 +101,13 @@
 - # How activity-based management be used in service companies?
 	- Same steps as used for manufacturing companies
 	- Identify activities and estimate their total indirect costs
-	  logseq.order-list-type:: number
+
 	- Identify the allocation base for each activity and estimate the total quantity of each allocation base
-	  logseq.order-list-type:: number
+
 	- Compute the predetermined overhead allocation rate for each activity
-	  logseq.order-list-type:: number
+
 	- Allocate indirect costs to the cost object
-	  logseq.order-list-type:: number
+
 	- ![image.png](../assets/image_1762804206874_0.png){:height 382, :width 555}
 	- ![image.png](../assets/image_1762804223891_0.png){:height 315, :width 602}
 - ### Just in time costing

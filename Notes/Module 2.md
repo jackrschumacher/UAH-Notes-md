@@ -1,3 +1,7 @@
+---
+title: Module 2
+---
+
 - **
 - Unknown if Homer was one person or multiple
 	- May have inserted himself into his works as a type of self-portrait

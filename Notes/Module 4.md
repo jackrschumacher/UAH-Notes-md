@@ -1,16 +1,20 @@
+---
+title: Module 4
+---
+
 - # Sundjata
 - ## General plot structure
 - The plot is divided into the following sections:
 	- Paternal ancestry of Sunjata
-	  logseq.order-list-type:: number
+
 	- Buffalo-woman tale
-	  logseq.order-list-type:: number
+
 	- Birth and childhood of Sunjata
-	  logseq.order-list-type:: number
+
 	- Exile of Sunjata
-	  logseq.order-list-type:: number
+
 	- Return and war with Sumanguru
-	  logseq.order-list-type:: number
+
 - Nare Maghann Konate receives a hunter on his court
 	- Hunter predicts that if Konate married an ugly woman, she would someday produce him a son that would someday become a great king
 	- The king is already married to a woman
