@@ -1,6 +1,0 @@
-- [[Week 9- Linux intro and IO]]
-- [[Week 11-Working with the Linux Filesystem]]
-- [[Week 12-Pattern Matching & Vulnerability Scanning]]
-- [[Week 13: Security and Advanced Bash Operations]]
-- [[Bash exam topics]]
--
