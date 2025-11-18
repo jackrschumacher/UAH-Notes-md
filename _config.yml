@@ -1,12 +1,22 @@
 title: UAH Notes
 description: My course notes and study guides
 
-# This is the critical part!
+
+# This plugin converts [Link](file.md) to <a href="file.html"> automatically
+plugins:
+  - jekyll-relative-links
+
+# Configure the plugin
+relative_links:
+  enabled: true
+  collections: true
+
+# Apply the theme to all files
 defaults:
   - scope:
-      path: "" # Applies to all files in the project
+      path: ""
     values:
-      layout: "default" # Forces the theme layout on everything
+      layout: "default"
 
 safe: true
 lsi: false
