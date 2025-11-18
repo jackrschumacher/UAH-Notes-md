@@ -21,11 +21,15 @@ ASSET_EXTENSIONS = (
 # --- Regex Patterns ---
 ASSET_PATTERN = re.compile(r'(!?)\[\[(.*?\.(?:' + '|'.join(ASSET_EXTENSIONS) + r'))\]\]', re.IGNORECASE)
 NOTE_PATTERN = re.compile(r'\[\[(.*?)\]\]')
-# This new pattern finds standard markdown links ending in .md: [Title](Path/File.md)
 STANDARD_LINK_PATTERN = re.compile(r'(\[[^\]]+\]\([^)]+)\.md(\)|#)') 
 
 QUOTE_PATTERN = re.compile(r'#\+BEGIN_QUOTE\s*(.*?)\s*#\+END_QUOTE', re.DOTALL | re.IGNORECASE)
+
+# 1. Logseq Properties: tags:: value
 TAGS_LINE_PATTERN = re.compile(r'^\s*[-*]?\s*tags::\s*(.*)$', re.MULTILINE | re.IGNORECASE)
+# 2. YAML Front Matter Tags: - value (inside the --- block)
+YAML_TAG_PATTERN = re.compile(r'^\s*-\s*(.*)$', re.MULTILINE)
+# Junk to remove
 JUNK_PROPERTY_PATTERN = re.compile(r'^\s*[-*]?\s*(id|logseq\.[a-z0-9-]+|collapsed|icon)::.*$', re.MULTILINE | re.IGNORECASE)
 
 def force_posix_path(path_obj):
@@ -41,30 +45,64 @@ def convert_quotes_to_markdown(content):
         return '\n'.join(f'> {line}' for line in block_content.splitlines())
     return QUOTE_PATTERN.sub(replacer, content)
 
+def extract_yaml_tags(content):
+    """Reads tags from existing YAML front matter."""
+    tags = []
+    # Find the YAML block between the first two ---
+    match = re.search(r'^---\n(.*?)\n---', content, re.DOTALL)
+    if match:
+        yaml_content = match.group(1)
+        # Check if 'tags:' section exists
+        if 'tags:' in yaml_content:
+            # Extract the lines after 'tags:'
+            tags_section = yaml_content.split('tags:')[1]
+            # Read line by line until we hit a key that isn't indented or a tag
+            for line in tags_section.split('\n'):
+                # Match lines like "  - Semester 1"
+                tag_match = re.match(r'\s*-\s*(.*)', line)
+                if tag_match:
+                    tags.append(tag_match.group(1).strip())
+                elif line.strip() and not line.startswith(' '):
+                    # If we hit a non-indented line (like 'date:'), stop
+                    break
+    return tags
+
 def process_frontmatter_and_clean(content, filename_stem):
     tags = []
+    
+    # 1. Try to find existing YAML tags first (Fix for empty index)
+    existing_yaml_tags = extract_yaml_tags(content)
+    tags.extend(existing_yaml_tags)
+
+    # 2. Find and remove Logseq tags::
     matches = TAGS_LINE_PATTERN.findall(content)
     for tag_string in matches:
         raw_tags = [t.strip() for t in tag_string.split(',')]
         for t in raw_tags:
             clean_t = t.replace('[[', '').replace(']]', '')
-            tags.append(clean_t)
+            if clean_t not in tags: # Avoid duplicates
+                tags.append(clean_t)
             
     content = TAGS_LINE_PATTERN.sub('', content)
     content = JUNK_PROPERTY_PATTERN.sub('', content)
     content = re.sub(r'\n{3,}', '\n\n', content)
 
-    if not content.lstrip().startswith('---'):
-        yaml_block = "---\n"
-        yaml_block += f"title: {filename_stem}\n"
-        if tags:
-            yaml_block += "tags:\n"
-            for t in tags:
-                yaml_block += f"  - {t}\n"
-        yaml_block += "---\n\n"
-        return yaml_block + content, tags
+    # 3. Re-generate or Update Front Matter
+    # If YAML exists, we might leave it, but it's safer to reconstruct it 
+    # to ensure our title and tags are perfect.
     
-    return content, tags
+    # Strip existing front matter to rebuild it cleanly
+    content = re.sub(r'^---\n.*?\n---\n\n', '', content, flags=re.DOTALL)
+    
+    yaml_block = "---\n"
+    yaml_block += f"title: {filename_stem}\n"
+    if tags:
+        yaml_block += "tags:\n"
+        for t in tags:
+            yaml_block += f"  - {t}\n"
+    yaml_block += "---\n\n"
+        
+    return yaml_block + content, tags
 
 def process_file(filepath: Path):
     try:
@@ -95,16 +133,12 @@ def process_file(filepath: Path):
         encoded_filename = encode_path(f"{note_title}.html")
         return f'[{note_title}]({encoded_filename})'
 
-    # 1. Fix [[Logseq]] links to .html
     content = ASSET_PATTERN.sub(asset_link_replacer, content)
     content = NOTE_PATTERN.sub(note_link_replacer, content)
-    
-    # 2. Fix existing [Standard](Links.md) to .html
-    # Replaces .md with .html inside link parentheses
     content = STANDARD_LINK_PATTERN.sub(r'\1.html\2', content)
-
     content = convert_quotes_to_markdown(content)
 
+    # Always write to ensure front matter is uniform
     if content != original_content:
         try:
             with open(filepath, 'w', encoding='utf-8') as f:
@@ -154,7 +188,7 @@ def generate_index_file(semester_data):
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write('\n'.join(lines))
         print("=" * 60)
-        print(f"SUCCESS: Generated {INDEX_FILENAME} with HTML links")
+        print(f"SUCCESS: Generated {INDEX_FILENAME} with {len(semester_data)} files.")
         print("=" * 60)
     except Exception as e:
         print(f"ERROR generating index: {e}")
