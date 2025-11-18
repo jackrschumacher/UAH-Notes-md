@@ -1,9 +1,18 @@
-lsi: false
+title: UAH Notes
+description: My course notes and study guides
+theme: jekyll-theme-slate
+
+# This is the critical part!
+defaults:
+  - scope:
+      path: "" # Applies to all files in the project
+    values:
+      layout: "default" # Forces the theme layout on everything
+
 safe: true
+lsi: false
 incremental: false
 highlighter: rouge
-gist:
-  noscript: false
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
