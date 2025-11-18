@@ -3,7 +3,7 @@ title: Example Transactions
 ---
 
 - # Resources
-- [Recording Business Transactions](Recording%20Business%20Transactions.md)
+- [Recording Business Transactions](Recording%20Business%20Transactions.html)
 - ![image.png](../assets/image_1762901624985_0.png){:height 455, :width 553}
 -
 - ![C_FC05_PPT__-__Protected_View_-_PowerPoint_11_06_25_10-15-56 PM.png](../assets/C_FC05_PPT_-_Protected_View_-_PowerPoint_11_06_25_10-15-56_PM_1762902366655_0.png){:height 326, :width 524}
