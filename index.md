@@ -17,3 +17,20 @@ Auto-generated index.
 - [FIN 230](Notes/FIN%20230.html)
 - [IS 301](Notes/IS%20301.html)
 - [IS 310](Notes/IS%20310.html)
+
+
+<style>
+  h1 { font-size: 1.5em; }
+  h2 { font-size: 1.3em; }
+  h3 { font-size: 1.1em; }
+  
+  /* SMART FIX: Makes list items (bullets) respect your Logseq line breaks */
+  li { white-space: pre-wrap; }
+  
+  /* Keep headings inside lists normal size */
+  li h1, li h2, li h3, li h4 { 
+      font-size: 1em !important; 
+      margin: 0 !important; 
+      display: inline;
+  }
+</style>

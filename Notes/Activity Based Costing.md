@@ -122,3 +122,19 @@ title: Activity Based Costing
 - ![image.png](../assets/image_1762804556414_0.png){:height 216, :width 619}
 - ![image.png](../assets/image_1762804567465_0.png){:height 464, :width 634}
 -
+
+<style>
+  h1 { font-size: 1.5em; }
+  h2 { font-size: 1.3em; }
+  h3 { font-size: 1.1em; }
+  
+  /* SMART FIX: Makes list items (bullets) respect your Logseq line breaks */
+  li { white-space: pre-wrap; }
+  
+  /* Keep headings inside lists normal size */
+  li h1, li h2, li h3, li h4 { 
+      font-size: 1em !important; 
+      margin: 0 !important; 
+      display: inline;
+  }
+</style>

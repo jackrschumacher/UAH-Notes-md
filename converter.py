@@ -19,6 +19,27 @@ ALL_ASSET_EXTENSIONS = (
     'zip', 'txt', 'csv', 'xls', 'xlsx', 'doc', 'docx', 'ppt', 'pptx'
 )
 
+# --- CSS TO INJECT ---
+# 1. Header Sizing: Fixes giant # links
+# 2. Pre-Wrap: Fixes "Big Block" text by respecting line breaks in lists
+STYLE_FIX = """
+<style>
+  h1 { font-size: 1.5em; }
+  h2 { font-size: 1.3em; }
+  h3 { font-size: 1.1em; }
+  
+  /* SMART FIX: Makes list items (bullets) respect your Logseq line breaks */
+  li { white-space: pre-wrap; }
+  
+  /* Keep headings inside lists normal size */
+  li h1, li h2, li h3, li h4 { 
+      font-size: 1em !important; 
+      margin: 0 !important; 
+      display: inline;
+  }
+</style>
+"""
+
 # --- Regex Patterns ---
 ASSET_PATTERN = re.compile(r'(!?)\[\[(.*?\.(?:' + '|'.join(ALL_ASSET_EXTENSIONS) + r'))\]\]', re.IGNORECASE)
 NOTE_PATTERN = re.compile(r'\[\[(.*?)\]\]')
@@ -52,21 +73,15 @@ def fix_pdf_embeds(content):
     Finds standard markdown image links ![]() that point to non-image files (like PDFs)
     and removes the '!' so they become standard clickable links.
     """
-    # Regex matches: ![Alt](Path.pdf) or ![Alt](Path.docx) etc
-    # We exclude the extensions in IMAGE_EXTENSIONS from this "fix"
-    
     def replacer(match):
         alt_text = match.group(1)
         path = match.group(2)
         ext = os.path.splitext(path)[1].lower().replace('.', '')
         
-        # If it's NOT an image (e.g. pdf, zip), remove the !
         if ext not in IMAGE_EXTENSIONS:
             return f'[{alt_text}]({path})'
-        # If it is an image, keep it as is
         return match.group(0)
 
-    # Regex: ! [ (group1) ] ( (group2) )
     return re.sub(r'!\[(.*?)\]\((.*?)\)', replacer, content)
 
 # --- ASSET HUNTER ---
@@ -168,7 +183,6 @@ def process_file(filepath: Path, asset_map):
         full_asset_path_str = force_posix_path(full_asset_path_obj)
         encoded_path = encode_path(full_asset_path_str)
         
-        # FORCE FIX: If it is NOT an image, ignore the '!' and make it a standard link
         if ext not in IMAGE_EXTENSIONS:
             return f'[{asset_filename}]({encoded_path})'
         
@@ -183,10 +197,12 @@ def process_file(filepath: Path, asset_map):
     content = NOTE_PATTERN.sub(note_link_replacer, content)
     content = STANDARD_LINK_PATTERN.sub(r'\1.html\2', content)
     
-    # Apply the specific fix for EXISTING standard markdown links (like the ones currently broken)
     content = fix_pdf_embeds(content)
-    
     content = convert_quotes_to_markdown(content)
+    
+    # --- INJECT STYLE FIX (Always at the end) ---
+    if STYLE_FIX.strip() not in content:
+        content += STYLE_FIX
     
     if content != original_content:
         try:
@@ -231,6 +247,9 @@ def generate_index_file(semester_data):
             encoded_path = encode_path(web_path)
             lines.append(f"- [{file_info['title']}]({encoded_path})")
         lines.append("")
+    
+    # Add Style Fix to Index too
+    lines.append(STYLE_FIX)
 
     output_path = Path(ROOT_DIRECTORY) / INDEX_FILENAME
     try:
