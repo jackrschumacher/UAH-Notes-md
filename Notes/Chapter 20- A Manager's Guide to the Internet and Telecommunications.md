@@ -215,3 +215,10 @@ title: Chapter 20- A Manager's Guide to the Internet and Telecommunications
 				- **Geofencing** - A geofence is a virtual perimeter around a physical location. Geofencing is often used to send alerts when a device is detected within or outside an area of intended operation.
 		- Concern about "overcrowding" in space
 			- Especially from China and countries where free speech is suppressed and the deployment of Starlink in their countries might allow for unrestricted speech
+
+<style>
+  h1 { font-size: 1.5em; }
+  h2 { font-size: 1.3em; }
+  h3 { font-size: 1.1em; }
+  li h1, li h2, li h3, li h4 { font-size: 1em !important; margin: 0 !important; }
+</style>

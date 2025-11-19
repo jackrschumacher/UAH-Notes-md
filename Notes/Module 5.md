@@ -5,3 +5,10 @@ title: Module 5
 - [Sir Gawain and the Green Knight](Sir%20Gawain%20and%20the%20Green%20Knight.html)
 - [The Mabinogion](The%20Mabinogion.html)
 -
+
+<style>
+  h1 { font-size: 1.5em; }
+  h2 { font-size: 1.3em; }
+  h3 { font-size: 1.1em; }
+  li h1, li h2, li h3, li h4 { font-size: 1em !important; margin: 0 !important; }
+</style>
