@@ -17,17 +17,6 @@ ASSET_EXTENSIONS = (
     'zip', 'txt', 'csv', 'xls', 'xlsx', 'doc', 'docx'
 )
 
-# --- CSS TO INJECT ---
-# We keep the CSS to handle any other sizing quirks gracefully
-STYLE_FIX = """
-<style>
-  h1 { font-size: 1.5em; }
-  h2 { font-size: 1.3em; }
-  h3 { font-size: 1.1em; }
-  li h1, li h2, li h3, li h4 { font-size: 1em !important; margin: 0 !important; }
-</style>
-"""
-
 # --- Regex Patterns ---
 ASSET_PATTERN = re.compile(r'(!?)\[\[(.*?\.(?:' + '|'.join(ASSET_EXTENSIONS) + r'))\]\]', re.IGNORECASE)
 NOTE_PATTERN = re.compile(r'\[\[(.*?)\]\]')
@@ -36,6 +25,8 @@ QUOTE_PATTERN = re.compile(r'#\+BEGIN_QUOTE\s*(.*?)\s*#\+END_QUOTE', re.DOTALL |
 
 TAGS_LINE_PATTERN = re.compile(r'^\s*[-*]?\s*tags::\s*(.*)$', re.MULTILINE | re.IGNORECASE)
 JUNK_PROPERTY_PATTERN = re.compile(r'^\s*[-*]?\s*(id|logseq\.[a-z0-9-]+|collapsed|icon)::.*$', re.MULTILINE | re.IGNORECASE)
+# Regex to remove the CSS block if it exists from previous runs
+STYLE_BLOCK_PATTERN = re.compile(r'<style>.*?</style>', re.DOTALL)
 
 def force_posix_path(path_obj):
     return str(path_obj).replace(os.sep, '/')
@@ -52,12 +43,13 @@ def convert_quotes_to_markdown(content):
 
 def remove_headings_from_links(content):
     """
-    Finds lines that are headings BUT contain a [[Link]].
-    Removes the '#' so they become normal list items.
-    Example: '- # [[Taxation]]' -> '- [[Taxation]]'
+    TARGETED FIX:
+    Finds lines that start with a # BUT also contain a [[Link]].
+    It removes the # so it becomes a normal list item.
+    It IGNORES normal headings like '# Bash Fundamentals' (because they have no brackets).
     """
-    # Regex: Start of line -> Bullet -> Hash(es) -> Space -> [[
-    # We replace it with just: Start of line -> Bullet -> [[
+    # Pattern: (Start/Bullet) -> (#+) -> (Space) -> ([[)
+    # Replacement: (Start/Bullet) -> ([[)
     return re.sub(r'(^\s*[-*]?\s*)#+\s+(\[\[)', r'\1\2', content, flags=re.MULTILINE)
 
 def extract_yaml_tags(content):
@@ -90,6 +82,10 @@ def process_frontmatter_and_clean(content, filename_stem):
             
     content = TAGS_LINE_PATTERN.sub('', content)
     content = JUNK_PROPERTY_PATTERN.sub('', content)
+    
+    # Clean up previous style injections if they exist
+    content = STYLE_BLOCK_PATTERN.sub('', content)
+    
     content = re.sub(r'\n{3,}', '\n\n', content)
 
     content = re.sub(r'^---\n.*?\n---\n\n', '', content, flags=re.DOTALL)
@@ -121,12 +117,11 @@ def process_file(filepath: Path):
     relative_path_to_root = os.path.relpath(ROOT_DIRECTORY, current_dir)
     relative_path_to_assets = Path(relative_path_to_root) / ASSET_FOLDER_NAME
 
-    # --- APPLY THE FIXES ---
-    
-    # 1. Remove headings from links (The User's Fix)
+    # --- APPLY THE TARGETED FIX ---
+    # Only remove # if it is followed by [[
     content = remove_headings_from_links(content)
 
-    # 2. Convert Asset Links
+    # Convert Links
     def asset_link_replacer(match):
         is_embedded = match.group(1)
         asset_filename = match.group(2)
@@ -145,9 +140,7 @@ def process_file(filepath: Path):
     content = STANDARD_LINK_PATTERN.sub(r'\1.html\2', content)
     content = convert_quotes_to_markdown(content)
     
-    # 3. Inject Style Fix (Backup safety)
-    if "<style>" not in content:
-        content += STYLE_FIX
+    # NOTE: We do NOT add STYLE_FIX anymore.
 
     if content != original_content:
         try:
@@ -193,7 +186,7 @@ def generate_index_file(semester_data):
             lines.append(f"- [{file_info['title']}]({encoded_path})")
         lines.append("")
     
-    lines.append(STYLE_FIX)
+    # We also do NOT add STYLE_FIX here.
 
     output_path = Path(ROOT_DIRECTORY) / INDEX_FILENAME
     try:
