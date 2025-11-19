@@ -28,4 +28,3 @@ title: Netflix presentation speaker notes
 	- More effective marketing campaigns result from individual user data.
 	- Increased user viewing due to personalized recommendations.
 	- Netflix introduced the recommended section in 2007, becoming the first of its kind, giving a distinct advantage in data collection.
-

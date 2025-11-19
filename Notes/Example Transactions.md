@@ -24,4 +24,3 @@ title: Example Transactions
 	- Debit salaries account
 	- Credit cash
 -
-

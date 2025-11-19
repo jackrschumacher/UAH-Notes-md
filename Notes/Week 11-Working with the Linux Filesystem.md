@@ -173,4 +173,3 @@ title: Week 11-Working with the Linux Filesystem
 		- Ex:
 			- If you don't have write permission for a directory, the you can't delete a file in the directory
 			- If you have write access to the file you can update the data in the file
-

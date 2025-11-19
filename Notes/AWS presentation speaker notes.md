@@ -47,4 +47,3 @@ title: AWS presentation speaker notes
 	- **Drives Amazon’s profit and innovation​**
 	- **Creates long-term strategic advantage in cloud, AI, and global commerce​**
 	- **AWS = a major example of how Information Systems create platform power​**
-

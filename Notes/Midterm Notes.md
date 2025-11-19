@@ -49,4 +49,3 @@ title: Midterm Notes
 - Enterprise value
 - EV = Market Cap + Total Cap + Preferred Equity + Minority Interest - Cash/ Cash Equivalent
 - Using the market value of debt
-

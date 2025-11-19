@@ -144,4 +144,3 @@ title: Exam 2 Summary
 		* **Nash Equilibrium:** A situation where each player chooses their best possible strategy, **given the strategies chosen by the other players**. At a Nash equilibrium, no player has an incentive to unilaterally change their strategy. A game can have one, multiple, or no Nash equilibria.
 
 -
-

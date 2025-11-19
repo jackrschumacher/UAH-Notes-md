@@ -47,4 +47,3 @@ title: Taxation
 		- Correcting market failure and externalities
 
 	-
-

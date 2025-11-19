@@ -84,4 +84,3 @@ title: Economics of Information
 	- **Efficiency wages**
 		- Wages above the lowest pay that the workers would accept
 		- Used by employers to boost productivity
-

@@ -294,4 +294,3 @@ $$
 		- Romantic (1820-1900)
 		- Twentieth century to 1945
 		- 1945 to the present
-

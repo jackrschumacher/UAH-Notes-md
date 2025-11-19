@@ -212,4 +212,3 @@ title: Recording Business Transactions
 	- The balance sheet for a merchandiser is a very similar except for two new asset accounts
 		- Merchandise Inventory
 		- Estimated Returns Inventory
-

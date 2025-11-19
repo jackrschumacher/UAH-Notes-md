@@ -647,4 +647,3 @@ title: Module 4
 	- Crusade turned out to be more about riches and grabbing land than about faith, feeling that he's wasted his life
 	-
 	-
-
