@@ -173,3 +173,10 @@ title: Week 11-Working with the Linux Filesystem
 		- Ex:
 			- If you don't have write permission for a directory, the you can't delete a file in the directory
 			- If you have write access to the file you can update the data in the file
+
+<style>
+  h1 { font-size: 1.5em; }
+  h2 { font-size: 1.3em; }
+  h3 { font-size: 1.1em; }
+  li h1, li h2, li h3, li h4 { font-size: 1em !important; margin: 0 !important; }
+</style>
