@@ -81,7 +81,7 @@ title: Job Order Costing
 	- ![image.png](../assets/image_1762796450482_0.png){:height 283, :width 570}
 	- ![image.png](../assets/image_1762796464655_0.png){:height 506, :width 557}
 - # Journal entries
-	- ![1 (2).png](../assets/1_(2)_1762797461875_0.png){:height 1597, :width 580}
+	- [1 (2).png](../assets/1_(2)_1762797461875_0.png){:height 1597, :width 580}
 	- ![image.png](../assets/image_1762797502172_0.png){:height 251, :width 642}
 - ## Schedule of Cost of Goods Manufactured
 	- ![image.png](../assets/image_1762797930021_0.png){:height 399, :width 559}

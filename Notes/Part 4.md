@@ -130,7 +130,7 @@ title: Part 4
 - Melody is balanced and symmetrical
 -
   ```
-  ![msedge_TJoiOBqOh1.png](<https://prod-files-secure.s3.us-west-2.amazonaws.com/8147ef02-8109-4add-a936-9c2f026e2ec7/edafeb9c-80df-45b1-9a9c-c95aa23ae7b3/msedge_TJoiOBqOh1.png>)
+  [msedge_TJoiOBqOh1.png](<https://prod-files-secure.s3.us-west-2.amazonaws.com/8147ef02-8109-4add-a936-9c2f026e2ec7/edafeb9c-80df-45b1-9a9c-c95aa23ae7b3/msedge_TJoiOBqOh1.png>)
   ```
 - # Theme and Variation
 - *Theme and Variations* was widely used in the classical period
