@@ -14,4 +14,9 @@ title: Templates
   template:: Typical Transaction
 	- **Debit:**
 	- **Credit:**
-
+-
+  template:: Journal entry table
+  | Date | Accounts | Debit | Credit |
+  |---|---|---|---|
+-
+-

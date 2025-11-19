@@ -209,4 +209,3 @@ title: PSC 101 Active Recall
 				- Social contract
 			- Keep the contract
 			- Leviathan → Powerful but will enforce the contract
-

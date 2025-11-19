@@ -144,4 +144,3 @@ title: Part 2
 - Renaissance musicians distinguished between loud and soft instruments
 - ### Michael Praetorius
 - Passamezzo and Galliard pair contrasting court dances and triple meter
-

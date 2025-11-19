@@ -1,8 +1,10 @@
 ---
-title: Exam 3 Review
+title: Mini Test 3 review (Chapter 2)
 ---
 
-- # Chapter 2
+- Notes from chapter 2
+- [Chapter 2 Sample Questions](Chapter%202%20Sample%20Questions.html)
+-
 - # Recording Transactions
 
 	- **Materials**

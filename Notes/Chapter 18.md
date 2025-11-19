@@ -83,4 +83,3 @@ title: Chapter 18
 - Test and audit
 - Continually evaluate best practices and incorporate proven techniques
 - Roll out new technology gradually
-

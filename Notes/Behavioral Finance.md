@@ -97,4 +97,3 @@ title: Behavioral Finance
 		- Fear of being wrong
 	- #### Key example
 		- Not investing in a stock that later surges or not selling a stock that crashes
-

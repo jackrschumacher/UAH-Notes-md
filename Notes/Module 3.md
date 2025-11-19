@@ -752,4 +752,3 @@ title: Module 3
 - Consider the role of family in these stories.
 - How do the passions witnessed in these tales affect the bonds of kinship?
 - Where is justice in these stories? Is there ever justice or merely a cycle of violence?
-

@@ -106,4 +106,3 @@ title: Module 1 (Gilgamesh)
 - Tells Gilgamesh about a plant that makes one younger
 - Gilgamesh meets with the gods and Ea allows Enkidu and Gilgamesh visit
 	- The dead who are worst off in the underworld are those who have not left behind people to mourn them
-

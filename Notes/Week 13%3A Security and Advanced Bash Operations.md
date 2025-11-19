@@ -178,4 +178,3 @@ title: Week 13%3A Security and Advanced Bash Operations
 		- ![image.png](../assets/image_1763424735993_0.png)
 		- ![image.png](../assets/image_1763424746832_0.png)
 		-
-

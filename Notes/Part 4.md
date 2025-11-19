@@ -277,4 +277,3 @@ $$
 	- Discussed the mental issues that he encountered
 - Often dressed sloppily and fell in and out of love with women
 - By the time he was 44 he was unable to effectively conduct an orchestra due to his lack of hearing
-

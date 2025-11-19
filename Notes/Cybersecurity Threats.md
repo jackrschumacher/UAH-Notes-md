@@ -19,4 +19,3 @@ title: Cybersecurity Threats
 	- Warranty-voided devices
 - Increasing availability of passkeys
 	- Major companies are increasingly adopting passkeys
-

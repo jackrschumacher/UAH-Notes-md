@@ -7,5 +7,5 @@ title: Bash
 - [Week 12-Pattern Matching & Vulnerability Scanning](Week%2012-Pattern%20Matching%20%26%20Vulnerability%20Scanning.html)
 - [Week 13: Security and Advanced Bash Operations](Week%2013%3A%20Security%20and%20Advanced%20Bash%20Operations.html)
 - [Bash exam topics](Bash%20exam%20topics.html)
+- [Bash final project](Bash%20final%20project.html)
 -
-

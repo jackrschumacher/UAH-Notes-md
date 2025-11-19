@@ -135,4 +135,3 @@ title: Chapter 2- ZARA
 		- Technology creates Zara's differentiator from the rest of the industry → threat of others copying or improving upon it
 	-
 -
-
