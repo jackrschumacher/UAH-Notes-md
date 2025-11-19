@@ -1,5 +1,5 @@
 ---
-title: Mini Test 2 review
+title: Mini Test 3 review
 ---
 
 - Notes from chapter 2
@@ -31,4 +31,4 @@ title: Mini Test 2 review
 		- **Debit/Credit:** Manufacturing Overhead (to close the account balance to zero)
 		- **Debit/Credit:** Cost of Goods Sold (amount needed to balance the entry)
 		    
-		  Would you like me to generate a practice quiz based on these specific debit and credit rules?
+
