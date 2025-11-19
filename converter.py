@@ -12,21 +12,24 @@ INDEX_FILENAME = 'index.md'
 IGNORE_FILES = ['convert_folder_links.py', INDEX_FILENAME, 'converter.py', '_config.yml', 'CNAME']
 IGNORE_DIRS = ['.git', 'assets', '_site']
 
-ASSET_EXTENSIONS = (
+# Split extensions to handle embeds correctly
+IMAGE_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif', 'svg', 'webp'}
+ALL_ASSET_EXTENSIONS = (
     'png', 'jpg', 'jpeg', 'gif', 'svg', 'webp', 'pdf', 'mp4', 'mp3',
-    'zip', 'txt', 'csv', 'xls', 'xlsx', 'doc', 'docx'
+    'zip', 'txt', 'csv', 'xls', 'xlsx', 'doc', 'docx', 'ppt', 'pptx'
 )
 
 # --- Regex Patterns ---
-ASSET_PATTERN = re.compile(r'(!?)\[\[(.*?\.(?:' + '|'.join(ASSET_EXTENSIONS) + r'))\]\]', re.IGNORECASE)
+ASSET_PATTERN = re.compile(r'(!?)\[\[(.*?\.(?:' + '|'.join(ALL_ASSET_EXTENSIONS) + r'))\]\]', re.IGNORECASE)
 NOTE_PATTERN = re.compile(r'\[\[(.*?)\]\]')
 STANDARD_LINK_PATTERN = re.compile(r'(\[[^\]]+\]\([^)]+)\.md(\)|#)') 
 QUOTE_PATTERN = re.compile(r'#\+BEGIN_QUOTE\s*(.*?)\s*#\+END_QUOTE', re.DOTALL | re.IGNORECASE)
 
 TAGS_LINE_PATTERN = re.compile(r'^\s*[-*]?\s*tags::\s*(.*)$', re.MULTILINE | re.IGNORECASE)
 JUNK_PROPERTY_PATTERN = re.compile(r'^\s*[-*]?\s*(id|logseq\.[a-z0-9-]+|collapsed|icon)::.*$', re.MULTILINE | re.IGNORECASE)
-# Regex to remove the CSS block if it exists from previous runs
 STYLE_BLOCK_PATTERN = re.compile(r'<style>.*?</style>', re.DOTALL)
+
+# --- Helper Functions ---
 
 def force_posix_path(path_obj):
     return str(path_obj).replace(os.sep, '/')
@@ -42,15 +45,48 @@ def convert_quotes_to_markdown(content):
     return QUOTE_PATTERN.sub(replacer, content)
 
 def remove_headings_from_links(content):
-    """
-    TARGETED FIX:
-    Finds lines that start with a # BUT also contain a [[Link]].
-    It removes the # so it becomes a normal list item.
-    It IGNORES normal headings like '# Bash Fundamentals' (because they have no brackets).
-    """
-    # Pattern: (Start/Bullet) -> (#+) -> (Space) -> ([[)
-    # Replacement: (Start/Bullet) -> ([[)
     return re.sub(r'(^\s*[-*]?\s*)#+\s+(\[\[)', r'\1\2', content, flags=re.MULTILINE)
+
+def fix_pdf_embeds(content):
+    """
+    Finds standard markdown image links ![]() that point to non-image files (like PDFs)
+    and removes the '!' so they become standard clickable links.
+    """
+    # Regex matches: ![Alt](Path.pdf) or ![Alt](Path.docx) etc
+    # We exclude the extensions in IMAGE_EXTENSIONS from this "fix"
+    
+    def replacer(match):
+        alt_text = match.group(1)
+        path = match.group(2)
+        ext = os.path.splitext(path)[1].lower().replace('.', '')
+        
+        # If it's NOT an image (e.g. pdf, zip), remove the !
+        if ext not in IMAGE_EXTENSIONS:
+            return f'[{alt_text}]({path})'
+        # If it is an image, keep it as is
+        return match.group(0)
+
+    # Regex: ! [ (group1) ] ( (group2) )
+    return re.sub(r'!\[(.*?)\]\((.*?)\)', replacer, content)
+
+# --- ASSET HUNTER ---
+def build_asset_map(root_dir, asset_folder_name):
+    asset_map = {}
+    asset_root = Path(root_dir) / asset_folder_name
+    
+    if not asset_root.exists():
+        return asset_map
+
+    print(f"Indexing assets in {asset_root}...")
+    for dirpath, _, filenames in os.walk(asset_root):
+        for filename in filenames:
+            key = filename.lower()
+            full_path = Path(dirpath) / filename
+            rel_path = full_path.relative_to(asset_root)
+            asset_map[key] = rel_path
+            
+    print(f"Found {len(asset_map)} assets.")
+    return asset_map
 
 def extract_yaml_tags(content):
     tags = []
@@ -82,12 +118,8 @@ def process_frontmatter_and_clean(content, filename_stem):
             
     content = TAGS_LINE_PATTERN.sub('', content)
     content = JUNK_PROPERTY_PATTERN.sub('', content)
-    
-    # Clean up previous style injections if they exist
     content = STYLE_BLOCK_PATTERN.sub('', content)
-    
     content = re.sub(r'\n{3,}', '\n\n', content)
-
     content = re.sub(r'^---\n.*?\n---\n\n', '', content, flags=re.DOTALL)
     
     yaml_block = "---\n"
@@ -100,7 +132,7 @@ def process_frontmatter_and_clean(content, filename_stem):
         
     return yaml_block + content, tags
 
-def process_file(filepath: Path):
+def process_file(filepath: Path, asset_map):
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
             content = f.read()
@@ -110,24 +142,36 @@ def process_file(filepath: Path):
 
     original_content = content
     
-    # Clean Frontmatter
     content, extracted_tags = process_frontmatter_and_clean(content, filepath.stem)
 
     current_dir = os.path.dirname(filepath)
     relative_path_to_root = os.path.relpath(ROOT_DIRECTORY, current_dir)
-    relative_path_to_assets = Path(relative_path_to_root) / ASSET_FOLDER_NAME
-
-    # --- APPLY THE TARGETED FIX ---
-    # Only remove # if it is followed by [[
+    
     content = remove_headings_from_links(content)
 
-    # Convert Links
+    # --- ASSET LINK REPLACER ---
     def asset_link_replacer(match):
-        is_embedded = match.group(1)
-        asset_filename = match.group(2)
-        full_asset_path_obj = Path(relative_path_to_assets) / asset_filename
+        is_embedded = match.group(1) # "!" or empty
+        link_text = match.group(2)   # "filename.pdf"
+        
+        asset_filename = os.path.basename(link_text)
+        ext = os.path.splitext(asset_filename)[1].lower().replace('.', '')
+        
+        # ASSET HUNTER logic
+        if asset_filename.lower() in asset_map:
+            real_rel_path = asset_map[asset_filename.lower()]
+            full_asset_path_obj = Path(relative_path_to_root) / ASSET_FOLDER_NAME / real_rel_path
+        else:
+            full_asset_path_obj = Path(relative_path_to_root) / ASSET_FOLDER_NAME / asset_filename
+            print(f"WARNING: Asset not found: {asset_filename}")
+
         full_asset_path_str = force_posix_path(full_asset_path_obj)
         encoded_path = encode_path(full_asset_path_str)
+        
+        # FORCE FIX: If it is NOT an image, ignore the '!' and make it a standard link
+        if ext not in IMAGE_EXTENSIONS:
+            return f'[{asset_filename}]({encoded_path})'
+        
         return f'![{asset_filename}]({encoded_path})' if is_embedded == '!' else f'[{asset_filename}]({encoded_path})'
             
     def note_link_replacer(match):
@@ -138,10 +182,12 @@ def process_file(filepath: Path):
     content = ASSET_PATTERN.sub(asset_link_replacer, content)
     content = NOTE_PATTERN.sub(note_link_replacer, content)
     content = STANDARD_LINK_PATTERN.sub(r'\1.html\2', content)
+    
+    # Apply the specific fix for EXISTING standard markdown links (like the ones currently broken)
+    content = fix_pdf_embeds(content)
+    
     content = convert_quotes_to_markdown(content)
     
-    # NOTE: We do NOT add STYLE_FIX anymore.
-
     if content != original_content:
         try:
             with open(filepath, 'w', encoding='utf-8') as f:
@@ -185,8 +231,6 @@ def generate_index_file(semester_data):
             encoded_path = encode_path(web_path)
             lines.append(f"- [{file_info['title']}]({encoded_path})")
         lines.append("")
-    
-    # We also do NOT add STYLE_FIX here.
 
     output_path = Path(ROOT_DIRECTORY) / INDEX_FILENAME
     try:
@@ -200,6 +244,7 @@ def generate_index_file(semester_data):
 
 def main():
     print(f"Scanning folder: {os.path.abspath(ROOT_DIRECTORY)}")
+    asset_map = build_asset_map(ROOT_DIRECTORY, ASSET_FOLDER_NAME)
     semester_files_found = []
 
     for dirpath, dirnames, filenames in os.walk(ROOT_DIRECTORY):
@@ -212,7 +257,7 @@ def main():
             
             if filename.endswith('.md'):
                 filepath = Path(dirpath) / filename
-                file_info = process_file(filepath)
+                file_info = process_file(filepath, asset_map)
                 if file_info:
                     semester_files_found.append(file_info)
     
