@@ -1,5 +1,5 @@
 ---
-title: Week 13%3A Security and Advanced Bash Operations
+title: Week 13: Security and Advanced Bash Operations
 ---
 
 - # Security Auditing and System Hardening
@@ -179,12 +179,14 @@ title: Week 13%3A Security and Advanced Bash Operations
 		- ![image.png](../assets/image_1763424746832_0.png)
 		-
 
+
 <style>
+  /* Fix Giant Headers */
   h1 { font-size: 1.5em; }
   h2 { font-size: 1.3em; }
   h3 { font-size: 1.1em; }
   
-  /* SMART FIX: Makes list items (bullets) respect your Logseq line breaks */
+  /* FIX BIG BLOCKS: Forces list items to respect Logseq line breaks */
   li { white-space: pre-wrap; }
   
   /* Keep headings inside lists normal size */

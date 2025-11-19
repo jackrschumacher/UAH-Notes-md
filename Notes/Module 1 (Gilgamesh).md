@@ -107,12 +107,14 @@ title: Module 1 (Gilgamesh)
 - Gilgamesh meets with the gods and Ea allows Enkidu and Gilgamesh visit
 	- The dead who are worst off in the underworld are those who have not left behind people to mourn them
 
+
 <style>
+  /* Fix Giant Headers */
   h1 { font-size: 1.5em; }
   h2 { font-size: 1.3em; }
   h3 { font-size: 1.1em; }
   
-  /* SMART FIX: Makes list items (bullets) respect your Logseq line breaks */
+  /* FIX BIG BLOCKS: Forces list items to respect Logseq line breaks */
   li { white-space: pre-wrap; }
   
   /* Keep headings inside lists normal size */

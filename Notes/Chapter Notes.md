@@ -6,12 +6,14 @@ title: Chapter Notes
 - [Chapter 2- ZARA](Chapter%202-%20ZARA.html)
 - [Chapter 20- A Manager's Guide to the Internet and Telecommunications](Chapter%2020-%20A%20Manager%27s%20Guide%20to%20the%20Internet%20and%20Telecommunications.html)
 
+
 <style>
+  /* Fix Giant Headers */
   h1 { font-size: 1.5em; }
   h2 { font-size: 1.3em; }
   h3 { font-size: 1.1em; }
   
-  /* SMART FIX: Makes list items (bullets) respect your Logseq line breaks */
+  /* FIX BIG BLOCKS: Forces list items to respect Logseq line breaks */
   li { white-space: pre-wrap; }
   
   /* Keep headings inside lists normal size */

@@ -278,12 +278,14 @@ $$
 - Often dressed sloppily and fell in and out of love with women
 - By the time he was 44 he was unable to effectively conduct an orchestra due to his lack of hearing
 
+
 <style>
+  /* Fix Giant Headers */
   h1 { font-size: 1.5em; }
   h2 { font-size: 1.3em; }
   h3 { font-size: 1.1em; }
   
-  /* SMART FIX: Makes list items (bullets) respect your Logseq line breaks */
+  /* FIX BIG BLOCKS: Forces list items to respect Logseq line breaks */
   li { white-space: pre-wrap; }
   
   /* Keep headings inside lists normal size */
