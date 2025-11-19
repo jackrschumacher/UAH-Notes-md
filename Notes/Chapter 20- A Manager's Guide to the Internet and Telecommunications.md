@@ -216,12 +216,14 @@ title: Chapter 20- A Manager's Guide to the Internet and Telecommunications
 		- Concern about "overcrowding" in space
 			- Especially from China and countries where free speech is suppressed and the deployment of Starlink in their countries might allow for unrestricted speech
 
+
 <style>
+  /* Fix Giant Headers */
   h1 { font-size: 1.5em; }
   h2 { font-size: 1.3em; }
   h3 { font-size: 1.1em; }
   
-  /* SMART FIX: Makes list items (bullets) respect your Logseq line breaks */
+  /* FIX BIG BLOCKS: Forces list items to respect Logseq line breaks */
   li { white-space: pre-wrap; }
   
   /* Keep headings inside lists normal size */

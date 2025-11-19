@@ -34,12 +34,14 @@ title: Mini Test 3 review (Chapter 2)
 			- **Debit/Credit:** Manufacturing Overhead (to close the account balance to zero)
 			- **Debit/Credit:** Cost of Goods Sold (amount needed to balance the entry)
 
+
 <style>
+  /* Fix Giant Headers */
   h1 { font-size: 1.5em; }
   h2 { font-size: 1.3em; }
   h3 { font-size: 1.1em; }
   
-  /* SMART FIX: Makes list items (bullets) respect your Logseq line breaks */
+  /* FIX BIG BLOCKS: Forces list items to respect Logseq line breaks */
   li { white-space: pre-wrap; }
   
   /* Keep headings inside lists normal size */

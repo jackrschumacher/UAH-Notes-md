@@ -12,7 +12,7 @@ INDEX_FILENAME = 'index.md'
 IGNORE_FILES = ['convert_folder_links.py', INDEX_FILENAME, 'converter.py', '_config.yml', 'CNAME']
 IGNORE_DIRS = ['.git', 'assets', '_site']
 
-# Split extensions to handle embeds correctly
+# Extensions
 IMAGE_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif', 'svg', 'webp'}
 ALL_ASSET_EXTENSIONS = (
     'png', 'jpg', 'jpeg', 'gif', 'svg', 'webp', 'pdf', 'mp4', 'mp3',
@@ -20,15 +20,14 @@ ALL_ASSET_EXTENSIONS = (
 )
 
 # --- CSS TO INJECT ---
-# 1. Header Sizing: Fixes giant # links
-# 2. Pre-Wrap: Fixes "Big Block" text by respecting line breaks in lists
 STYLE_FIX = """
 <style>
+  /* Fix Giant Headers */
   h1 { font-size: 1.5em; }
   h2 { font-size: 1.3em; }
   h3 { font-size: 1.1em; }
   
-  /* SMART FIX: Makes list items (bullets) respect your Logseq line breaks */
+  /* FIX BIG BLOCKS: Forces list items to respect Logseq line breaks */
   li { white-space: pre-wrap; }
   
   /* Keep headings inside lists normal size */
@@ -43,9 +42,10 @@ STYLE_FIX = """
 # --- Regex Patterns ---
 ASSET_PATTERN = re.compile(r'(!?)\[\[(.*?\.(?:' + '|'.join(ALL_ASSET_EXTENSIONS) + r'))\]\]', re.IGNORECASE)
 NOTE_PATTERN = re.compile(r'\[\[(.*?)\]\]')
-STANDARD_LINK_PATTERN = re.compile(r'(\[[^\]]+\]\([^)]+)\.md(\)|#)') 
-QUOTE_PATTERN = re.compile(r'#\+BEGIN_QUOTE\s*(.*?)\s*#\+END_QUOTE', re.DOTALL | re.IGNORECASE)
+STANDARD_LINK_PATTERN = re.compile(r'(\[[^\]]+\])\(([^)]+?)\.md\)')
+EXISTING_HTML_LINK_PATTERN = re.compile(r'(\[[^\]]+\])\(([^)]+?)\.html\)')
 
+QUOTE_PATTERN = re.compile(r'#\+BEGIN_QUOTE\s*(.*?)\s*#\+END_QUOTE', re.DOTALL | re.IGNORECASE)
 TAGS_LINE_PATTERN = re.compile(r'^\s*[-*]?\s*tags::\s*(.*)$', re.MULTILINE | re.IGNORECASE)
 JUNK_PROPERTY_PATTERN = re.compile(r'^\s*[-*]?\s*(id|logseq\.[a-z0-9-]+|collapsed|icon)::.*$', re.MULTILINE | re.IGNORECASE)
 STYLE_BLOCK_PATTERN = re.compile(r'<style>.*?</style>', re.DOTALL)
@@ -59,6 +59,29 @@ def encode_path(path_str):
     clean_path = path_str.replace('\\', '/')
     return urllib.parse.quote(clean_path, safe='/')
 
+def sanitize_filename(name):
+    return name.replace(':', '%3A')
+
+def find_note_file(directory, title):
+    base_path = Path(directory)
+    
+    # Try exact
+    target = base_path / f"{title}.md"
+    if target.exists(): return target, True
+
+    # Try sanitized
+    sanitized_title = sanitize_filename(title)
+    target = base_path / f"{sanitized_title}.md"
+    if target.exists(): return target, True
+    
+    # Try underscore
+    underscore_title = title.replace(':', '_')
+    target = base_path / f"{underscore_title}.md"
+    if target.exists(): return target, True
+
+    # Default to sanitized (even if not found)
+    return base_path / f"{sanitized_title}.md", False
+
 def convert_quotes_to_markdown(content):
     def replacer(match):
         block_content = match.group(1)
@@ -69,29 +92,24 @@ def remove_headings_from_links(content):
     return re.sub(r'(^\s*[-*]?\s*)#+\s+(\[\[)', r'\1\2', content, flags=re.MULTILINE)
 
 def fix_pdf_embeds(content):
-    """
-    Finds standard markdown image links ![]() that point to non-image files (like PDFs)
-    and removes the '!' so they become standard clickable links.
-    """
     def replacer(match):
         alt_text = match.group(1)
         path = match.group(2)
         ext = os.path.splitext(path)[1].lower().replace('.', '')
-        
         if ext not in IMAGE_EXTENSIONS:
             return f'[{alt_text}]({path})'
         return match.group(0)
-
     return re.sub(r'!\[(.*?)\]\((.*?)\)', replacer, content)
+
+def is_external_link(path):
+    return path.startswith('http:') or path.startswith('https:') or path.startswith('www.')
 
 # --- ASSET HUNTER ---
 def build_asset_map(root_dir, asset_folder_name):
     asset_map = {}
     asset_root = Path(root_dir) / asset_folder_name
-    
     if not asset_root.exists():
         return asset_map
-
     print(f"Indexing assets in {asset_root}...")
     for dirpath, _, filenames in os.walk(asset_root):
         for filename in filenames:
@@ -99,7 +117,6 @@ def build_asset_map(root_dir, asset_folder_name):
             full_path = Path(dirpath) / filename
             rel_path = full_path.relative_to(asset_root)
             asset_map[key] = rel_path
-            
     print(f"Found {len(asset_map)} assets.")
     return asset_map
 
@@ -136,9 +153,15 @@ def process_frontmatter_and_clean(content, filename_stem):
     content = STYLE_BLOCK_PATTERN.sub('', content)
     content = re.sub(r'\n{3,}', '\n\n', content)
     content = re.sub(r'^---\n.*?\n---\n\n', '', content, flags=re.DOTALL)
+
+    # Add simple placeholder if empty (standard practice), but NO new file creation
+    if not content.strip():
+        content = "\n\n_This page is currently empty._\n"
+    
+    display_title = filename_stem.replace('%3A', ':')
     
     yaml_block = "---\n"
-    yaml_block += f"title: {filename_stem}\n"
+    yaml_block += f"title: {display_title}\n"
     if tags:
         yaml_block += "tags:\n"
         for t in tags:
@@ -156,54 +179,75 @@ def process_file(filepath: Path, asset_map):
         return None
 
     original_content = content
-    
     content, extracted_tags = process_frontmatter_and_clean(content, filepath.stem)
-
     current_dir = os.path.dirname(filepath)
     relative_path_to_root = os.path.relpath(ROOT_DIRECTORY, current_dir)
-    
     content = remove_headings_from_links(content)
 
-    # --- ASSET LINK REPLACER ---
+    # 1. ASSET LINK REPLACER
     def asset_link_replacer(match):
-        is_embedded = match.group(1) # "!" or empty
-        link_text = match.group(2)   # "filename.pdf"
+        is_embedded = match.group(1)
+        link_text = match.group(2)
+        if is_external_link(link_text): return match.group(0)
         
         asset_filename = os.path.basename(link_text)
-        ext = os.path.splitext(asset_filename)[1].lower().replace('.', '')
-        
-        # ASSET HUNTER logic
         if asset_filename.lower() in asset_map:
             real_rel_path = asset_map[asset_filename.lower()]
             full_asset_path_obj = Path(relative_path_to_root) / ASSET_FOLDER_NAME / real_rel_path
         else:
             full_asset_path_obj = Path(relative_path_to_root) / ASSET_FOLDER_NAME / asset_filename
-            print(f"WARNING: Asset not found: {asset_filename}")
 
         full_asset_path_str = force_posix_path(full_asset_path_obj)
         encoded_path = encode_path(full_asset_path_str)
-        
-        if ext not in IMAGE_EXTENSIONS:
+        asset_ext = os.path.splitext(asset_filename)[1].lower().replace('.', '')
+        if asset_ext not in IMAGE_EXTENSIONS:
             return f'[{asset_filename}]({encoded_path})'
-        
         return f'![{asset_filename}]({encoded_path})' if is_embedded == '!' else f'[{asset_filename}]({encoded_path})'
-            
+
+    # 2. NOTE LINK REPLACER
     def note_link_replacer(match):
         note_title = match.group(1)
-        encoded_filename = encode_path(f"{note_title}.html")
+        target_path, exists = find_note_file(current_dir, note_title)
+        # REMOVED: create_missing_page check
+        
+        clean_stem = target_path.stem
+        encoded_filename = encode_path(f"{clean_stem}.html")
         return f'[{note_title}]({encoded_filename})'
+
+    # 3. STANDARD LINK REPLACER
+    def standard_link_replacer(match):
+        link_title = match.group(1)
+        link_path = match.group(2)
+        if is_external_link(link_path): return match.group(0)
+
+        link_dir = os.path.dirname(link_path)
+        link_basename = os.path.basename(link_path)
+        search_dir = Path(current_dir) / link_dir
+        
+        target_path, exists = find_note_file(search_dir, link_basename)
+        # REMOVED: create_missing_page check
+            
+        clean_stem = target_path.stem
+        final_html_path = Path(link_dir) / f"{clean_stem}.html"
+        encoded_path = encode_path(force_posix_path(final_html_path))
+        return f'{link_title}({encoded_path})'
+        
+    # 4. EXISTING HTML LINK CHECKER
+    def existing_html_link_checker(match):
+        # We still return the match, but we removed the side-effect of creating files
+        return match.group(0)
 
     content = ASSET_PATTERN.sub(asset_link_replacer, content)
     content = NOTE_PATTERN.sub(note_link_replacer, content)
-    content = STANDARD_LINK_PATTERN.sub(r'\1.html\2', content)
-    
+    content = STANDARD_LINK_PATTERN.sub(standard_link_replacer, content)
+    content = EXISTING_HTML_LINK_PATTERN.sub(existing_html_link_checker, content)
     content = fix_pdf_embeds(content)
     content = convert_quotes_to_markdown(content)
     
-    # --- INJECT STYLE FIX (Always at the end) ---
+    # --- RE-ADD THE STYLE FIX ---
     if STYLE_FIX.strip() not in content:
         content += STYLE_FIX
-    
+
     if content != original_content:
         try:
             with open(filepath, 'w', encoding='utf-8') as f:
@@ -213,15 +257,10 @@ def process_file(filepath: Path, asset_map):
             print(f"ERROR writing {filepath}: {e}")
 
     semester_tags = [t for t in extracted_tags if 'semester' in t.lower()]
-    
     if semester_tags:
         rel_path = os.path.relpath(filepath, ROOT_DIRECTORY)
         rel_path_str = force_posix_path(rel_path)
-        return {
-            'title': filepath.stem,
-            'path': rel_path_str,
-            'tags': semester_tags
-        }
+        return {'title': filepath.stem, 'path': rel_path_str, 'tags': semester_tags}
     return None
 
 def generate_index_file(semester_data):
@@ -230,15 +269,11 @@ def generate_index_file(semester_data):
         for tag in entry['tags']:
             clean_tag = tag.title() 
             grouped_files[clean_tag].append(entry)
-
     def natural_sort_key(key):
-        return [int(text) if text.isdigit() else text.lower()
-                for text in re.split('([0-9]+)', key)]
-
+        return [int(text) if text.isdigit() else text.lower() for text in re.split('([0-9]+)', key)]
     sorted_tags = sorted(grouped_files.keys(), key=natural_sort_key)
-
+    
     lines = ["---", "title: Course Index", "---", "", "# Course Index by Semester", "", "Auto-generated index.", ""]
-
     for tag in sorted_tags:
         lines.append(f"## {tag}")
         files = sorted(grouped_files[tag], key=lambda x: x['title'])
@@ -248,7 +283,7 @@ def generate_index_file(semester_data):
             lines.append(f"- [{file_info['title']}]({encoded_path})")
         lines.append("")
     
-    # Add Style Fix to Index too
+    # Append Style fix to index too
     lines.append(STYLE_FIX)
 
     output_path = Path(ROOT_DIRECTORY) / INDEX_FILENAME
@@ -265,21 +300,17 @@ def main():
     print(f"Scanning folder: {os.path.abspath(ROOT_DIRECTORY)}")
     asset_map = build_asset_map(ROOT_DIRECTORY, ASSET_FOLDER_NAME)
     semester_files_found = []
-
     for dirpath, dirnames, filenames in os.walk(ROOT_DIRECTORY):
         for ignore in IGNORE_DIRS:
             if ignore in dirnames: dirnames.remove(ignore)
-            
         for filename in filenames:
             if filename in IGNORE_FILES: 
                 continue
-            
             if filename.endswith('.md'):
                 filepath = Path(dirpath) / filename
                 file_info = process_file(filepath, asset_map)
                 if file_info:
                     semester_files_found.append(file_info)
-    
     generate_index_file(semester_files_found)
 
 if __name__ == "__main__":
