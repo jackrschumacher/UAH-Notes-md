@@ -1,0 +1,211 @@
+---
+title: PSC 101 Active Recall
+---
+
+### Chapter 1
+- What is American Exceptionalism?
+- National Pride
+- Best country on Earth
+- Oft referenced in presidential candidacy- especially recently
+- How was the structure of American Gov built?
+- Ideas from Europe brought to America that help to form the American Structure of government
+- What were the ideas of government proposed by ancient philosophers?
+- Greeks- Plato and Aristotle
+  - Philosopher king → knows justice and can rule effectively
+  - Aristotle’s 3 forms of government (Monarchy, aristocracy, Polity)
+  - Good gov tends to decay into bad
+- Romans
+  - Republicanism and mixed government - Rome is republic
+- What is Polity?
+- Government by the people → A group of people organized for governance
+- What is natural law?
+- Held that religious concerns had a greater importance than one’s own secular concerns (the concerns of one’s everyday life). Believed in fostering a religious community and belief in religion
+- What did Machiavelli advocate for?
+- Wanted a shift from the idea of religious salvation to the idea of social, political and economic experiences of individuals. Suppressed for over a century
+- What did the protestant reformation do for the individual?
+- Acknowledged the importance of the individual
+- Informed congregation as an active participant in church
+- Through religious wars and reformation, the political structure is beginning to be called into question
+- Who were prominent individuals during “The Age of Reason”
+- Francis Bacon
+- Thomas Hobbes
+- John Locke
+- Charles Secondat
+- Baron De Montesquieu
+- Adam Smith
+- Who challenged the monarchy and governmental structure in England?
+- Civil war in England between the middle class and the upper classes
+- What was the Glorious revolution?
+- When the middle class in England prevails in the the Civil War against the upper classes
+- Locke believes that the revolution has lead to security and progress
+- What is the Social contract theory?
+- Only the consent of the governed can produce political legitimacy, security and prosperity
+- Some freedoms are surrendered in order for the state to be able to produce a stable and functional government
+- What is classical liberalism?
+- The idea that free and equal citizens are the legitimate sources of political authority
+- What is classical Republicanism?
+- Citizens should focus on the greater good of the community, sacrificing private interests in order to help the community as a whole
+- What were some of the groups that came to America to avoid religious prosecution in their home country?
+- Pilgrims
+- Puritans (21,000 flee England due to Charles 1)
+- Quakers
+- Huguenots (France)
+- What were some unique characteristics of the colonies
+- Social and Economic Opportunity (Hard to get ahead in England, buy land, etc.)
+- More political participation from the average citizen (most colonial political structures were not initially democratic, but allowed somewhat more of a true dialog with members of the community than in England)
+- Space for dissent in the colonies (Open space for dissent erodes social Hierarchy)
+- Social diversity (Immigrants for different nations settle in the colonies, as well as immigrants with different religious backgrounds)
+### *Leviathan*  by Thomas Hobbes
+- What is the idea of the Right of Nature (*just naturale)*?
+- Each man has the ability to use his won power for the preservation of his life (free will to do what he pleases)
+- What is the idea of the Law of Nature (*lex naturalis)*?
+- Man is forbidden to do anything that is considered to be destructive of life.
+-
+### The Second Treatise of Government by John Locke
+- What state are men naturally in, according to Locke?
+- Men are free to do what they wish, without asking anyone for permission, bound only by the laws of nature
+- No one has more authority than anyone else
+- What does Locke believe is the purpose of law?
+- To protect and get compensation for the innocent through fair treatment of individuals. War is the last ditch solution, when all other options have been exhausted
+- What does Locke believe that the state of nature is governed by?
+- Locke believes that since we are all equal and independent, no one should be able to harm others
+- Locke believes that the state of nature is governed by a law that creates obligations for all
+- Emphasizing the “we” and the sharing of the human experience
+### The Declaration of Independence
+- Why did the colonists decide to separate themselves from the British Crown?
+- King’s Tyranny over the states
+- Blocking state’s governors ability to pass laws
+- Dissolution of representative Houses
+- Refused to allow new legislative bodies to be elected
+- Prevent new immigrants from settling in the states
+- Harassment of the colonists
+- Cut off trade from the colonies to other parts of the world
+- Harboring troops in the colonies and foreign mercenaries
+- Hurting the colonies trade/blocking the colonies trade
+### Chapter 2
+- What does stable government depend on?
+- Stable government depends on the consent of the people who are being governed
+- What philosophers where the colonial leaders inspired by?
+- John Locke and Montesquieu
+- What did the colonial Political structure look like?
+- Legislature had both an upper and lower house
+- Upper house listens to the governors interests
+- The house of Burgesses uses its power to check the power of the governor
+- What were some of the reason why the colonists started to dislike the British?
+- British raise takes on the colonists due to the cost of the French and Indian war
+- Colonists do not like taxes in order to raise revenue, especially if they are not given a say
+  - Stamp and Sugar act → results in the stamp act congress
+  - Boston Massacre and Boston Tea party
+- Intolerable acts
+  - Retaliation from Britain for colonial protests
+      - General Thomas Gage is appointed Gov of Massachusetts
+      - Port of Boston closed
+      - Colonial governmental powers removed and transferred to the king
+      - Soldier's housed in colonists home’s
+- What where some of the first steps toward American independence?
+- Lexington, Concord, and Bunker hill
+- First and second Continental congress
+- Revolutionary action
+- Tom Paine's writings
+  - *Common Sense*
+- Key points of the Declaration of Independence
+- Free society must treat people as fundamentally equal
+- Defined goals of American Public life
+- Describe Federal Governance during the revolutionary period
+- State gov retain the 2 house structure
+- Governor and upper houses reduced in power
+- Popular involvement in voting
+- Make liberties clear and expand them
+- Articles of Confederation
+- “League of States”
+- Confederation congress → each state has a single vote
+  - Presidency of the congress rotates
+- No executive and judicial branches, as well as no checks and balances
+- Amendments must be approved by all the states
+- What are some of the issues of the Articles of Confederation
+- No executive and Judicial Branches
+- Amendments need to have the unanimous approval of all the states in the confederation
+- No ability to regulate trade between states
+- Struggle to move funds-  Troops at Valley forge unable to get clothing, supplies
+- What were some of the issues that the new nation faced?
+- Weak congress creates instability
+- War time inflation
+- Shay’s Rebellion
+- What was the proposed system of government under the Virginia Plan?
+- Legislature is the dominant branch
+  - Has legislative authority over the states legislatures if state is judged to be incompetent
+  - Constitution ratified by state legislatures
+- What was the proposed system of government under the NJ plan?
+- More limited the national government
+- Ability to tax  and trade
+- Executive able to be removed by heads of state
+- What were some of the compromises in the new Constitution?
+- 3-5 compromise
+- House rep based off of population
+- Senate rep - 2 per state
+- Commerce and the slave trade compromise
+  - 1808- northern states can block the slave trade
+- Electoral college
+- What were the names of the groups supporting and opposing the constitution?
+- Federalists
+  - Support the constitution
+  - Limited power results in the prosperity of government
+- Anti- Federalists
+  - Lack of Bill of Rights
+- Opposition removed by the addition of the BOR after the constitution had been approved
+- What were the main points of the Articles of Confederation?
+- States retain their own sovereignty
+- League of Friendship with each other
+- Criminals return to the state of origin
+- States in charge of local armies
+- Congress deals with disputes between the states
+- Congress can regulate treasury
+- Canada can join the US
+### Class Notes
+- Who determined the ideal society in the Ancient World?
+- The Aristoli, or the best individuals in the society who tell the general Populus how society should be set up
+- What were the postclassical cultures?
+- Greeks
+- Romans
+- Jews
+- Christians
+- Muslims
+- What is telos?
+- Telos is the idea of purpose, the means toward an end
+- What was the main idea of the post classical culture?
+- Natural inequality
+  - That those with a higher level in the social hierarchy should tell us what the right things to do are, but most of us can not reason.
+- What was the idea of an ideal society in ancient times?
+- That individuals should pursue the truth, led by individuals from the upper echelons of society
+- Every individual in classical society pursues their own truth
+- What was the idea of an ideal society in the modern era?
+- What were some of the causes from the shift from the classical modern era?
+- Scientific Revolution
+- Renaissances
+- Protestant reformation
+- What did the Modern era focus on?
+- Focus on the individual
+  - Reason
+  - Interests
+  - It is impossible to truly be the ideal society
+  - Individual behavior not being taken seriously
+  - Self-interest guides you
+- What were some of Hobbes ideas?
+- We are scared of our own mortality
+- Religious civil war
+- It is impossible to be the ideal society
+- Good and evil  makes up ethics
+- There is no objective measure of good and evil
+-
+- What is the idea of the state of nature?
+- State of Nature is the state of war
+  - Limited resources mean fighting
+- How do you get out of the state of war?
+- Passion causes war
+- Reason
+  - Laws
+      - Seek peace over war
+      - Lay down all of your rights
+        - Social contract
+      - Keep the contract
+      - Leviathan → Powerful but will enforce the contract

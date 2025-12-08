@@ -2,7 +2,7 @@
 title: PSC 101 Active Recall
 ---
 
-- ### Chapter 1
+### Chapter 1
 - What is American Exceptionalism?
 	- National Pride
 	- Best country on Earth
@@ -11,11 +11,11 @@ title: PSC 101 Active Recall
 	- Ideas from Europe brought to America that help to form the American Structure of government
 - What were the ideas of government proposed by ancient philosophers?
 	- Greeks- Plato and Aristotle
-		- Philosopher king → knows justice and can rule effectively
-		- Aristotle’s 3 forms of government (Monarchy, aristocracy, Polity)
-		- Good gov tends to decay into bad
+- Philosopher king → knows justice and can rule effectively
+- Aristotle’s 3 forms of government (Monarchy, aristocracy, Polity)
+- Good gov tends to decay into bad
 	- Romans
-		- Republicanism and mixed government - Rome is republic
+- Republicanism and mixed government - Rome is republic
 - What is Polity?
 	- Government by the people → A group of people organized for governance
 - What is natural law?
@@ -55,13 +55,13 @@ title: PSC 101 Active Recall
 	- More political participation from the average citizen (most colonial political structures were not initially democratic, but allowed somewhat more of a true dialog with members of the community than in England)
 	- Space for dissent in the colonies (Open space for dissent erodes social Hierarchy)
 	- Social diversity (Immigrants for different nations settle in the colonies, as well as immigrants with different religious backgrounds)
-- ### *Leviathan*  by Thomas Hobbes
+### *Leviathan*  by Thomas Hobbes
 - What is the idea of the Right of Nature (*just naturale)*?
 	- Each man has the ability to use his won power for the preservation of his life (free will to do what he pleases)
 - What is the idea of the Law of Nature (*lex naturalis)*?
 	- Man is forbidden to do anything that is considered to be destructive of life.
 -
-- ### The Second Treatise of Government by John Locke
+### The Second Treatise of Government by John Locke
 - What state are men naturally in, according to Locke?
 	- Men are free to do what they wish, without asking anyone for permission, bound only by the laws of nature
 	- No one has more authority than anyone else
@@ -71,7 +71,7 @@ title: PSC 101 Active Recall
 	- Locke believes that since we are all equal and independent, no one should be able to harm others
 	- Locke believes that the state of nature is governed by a law that creates obligations for all
 	- Emphasizing the “we” and the sharing of the human experience
-- ### The Declaration of Independence
+### The Declaration of Independence
 - Why did the colonists decide to separate themselves from the British Crown?
 	- King’s Tyranny over the states
 	- Blocking state’s governors ability to pass laws
@@ -82,7 +82,7 @@ title: PSC 101 Active Recall
 	- Cut off trade from the colonies to other parts of the world
 	- Harboring troops in the colonies and foreign mercenaries
 	- Hurting the colonies trade/blocking the colonies trade
-- ### Chapter 2
+### Chapter 2
 - What does stable government depend on?
 	- Stable government depends on the consent of the people who are being governed
 - What philosophers where the colonial leaders inspired by?
@@ -94,20 +94,20 @@ title: PSC 101 Active Recall
 - What were some of the reason why the colonists started to dislike the British?
 	- British raise takes on the colonists due to the cost of the French and Indian war
 	- Colonists do not like taxes in order to raise revenue, especially if they are not given a say
-		- Stamp and Sugar act → results in the stamp act congress
-		- Boston Massacre and Boston Tea party
+- Stamp and Sugar act → results in the stamp act congress
+- Boston Massacre and Boston Tea party
 	- Intolerable acts
-		- Retaliation from Britain for colonial protests
-			- General Thomas Gage is appointed Gov of Massachusetts
-			- Port of Boston closed
-			- Colonial governmental powers removed and transferred to the king
-			- Soldier's housed in colonists home’s
+- Retaliation from Britain for colonial protests
+	- General Thomas Gage is appointed Gov of Massachusetts
+	- Port of Boston closed
+	- Colonial governmental powers removed and transferred to the king
+	- Soldier's housed in colonists home’s
 - What where some of the first steps toward American independence?
 	- Lexington, Concord, and Bunker hill
 	- First and second Continental congress
 	- Revolutionary action
 	- Tom Paine's writings
-		- *Common Sense*
+- *Common Sense*
 - Key points of the Declaration of Independence
 	- Free society must treat people as fundamentally equal
 	- Defined goals of American Public life
@@ -119,7 +119,7 @@ title: PSC 101 Active Recall
 - Articles of Confederation
 	- “League of States”
 	- Confederation congress → each state has a single vote
-		- Presidency of the congress rotates
+- Presidency of the congress rotates
 	- No executive and judicial branches, as well as no checks and balances
 	- Amendments must be approved by all the states
 - What are some of the issues of the Articles of Confederation
@@ -133,8 +133,8 @@ title: PSC 101 Active Recall
 	- Shay’s Rebellion
 - What was the proposed system of government under the Virginia Plan?
 	- Legislature is the dominant branch
-		- Has legislative authority over the states legislatures if state is judged to be incompetent
-		- Constitution ratified by state legislatures
+- Has legislative authority over the states legislatures if state is judged to be incompetent
+- Constitution ratified by state legislatures
 - What was the proposed system of government under the NJ plan?
 	- More limited the national government
 	- Ability to tax  and trade
@@ -144,14 +144,14 @@ title: PSC 101 Active Recall
 	- House rep based off of population
 	- Senate rep - 2 per state
 	- Commerce and the slave trade compromise
-		- 1808- northern states can block the slave trade
+- 1808- northern states can block the slave trade
 	- Electoral college
 - What were the names of the groups supporting and opposing the constitution?
 	- Federalists
-		- Support the constitution
-		- Limited power results in the prosperity of government
+- Support the constitution
+- Limited power results in the prosperity of government
 	- Anti- Federalists
-		- Lack of Bill of Rights
+- Lack of Bill of Rights
 	- Opposition removed by the addition of the BOR after the constitution had been approved
 - What were the main points of the Articles of Confederation?
 	- States retain their own sovereignty
@@ -161,7 +161,7 @@ title: PSC 101 Active Recall
 	- Congress deals with disputes between the states
 	- Congress can regulate treasury
 	- Canada can join the US
-- ### Class Notes
+### Class Notes
 - Who determined the ideal society in the Ancient World?
 	- The Aristoli, or the best individuals in the society who tell the general Populus how society should be set up
 - What were the postclassical cultures?
@@ -174,7 +174,7 @@ title: PSC 101 Active Recall
 	- Telos is the idea of purpose, the means toward an end
 - What was the main idea of the post classical culture?
 	- Natural inequality
-		- That those with a higher level in the social hierarchy should tell us what the right things to do are, but most of us can not reason.
+- That those with a higher level in the social hierarchy should tell us what the right things to do are, but most of us can not reason.
 - What was the idea of an ideal society in ancient times?
 	- That individuals should pursue the truth, led by individuals from the upper echelons of society
 	- Every individual in classical society pursues their own truth
@@ -185,11 +185,11 @@ title: PSC 101 Active Recall
 	- Protestant reformation
 - What did the Modern era focus on?
 	- Focus on the individual
-		- Reason
-		- Interests
-		- It is impossible to truly be the ideal society
-		- Individual behavior not being taken seriously
-		- Self-interest guides you
+- Reason
+- Interests
+- It is impossible to truly be the ideal society
+- Individual behavior not being taken seriously
+- Self-interest guides you
 - What were some of Hobbes ideas?
 	- We are scared of our own mortality
 	- Religious civil war
@@ -199,14 +199,13 @@ title: PSC 101 Active Recall
 	-
 - What is the idea of the state of nature?
 	- State of Nature is the state of war
-		- Limited resources mean fighting
+- Limited resources mean fighting
 - How do you get out of the state of war?
 	- Passion causes war
 	- Reason
-		- Laws
-			- Seek peace over war
-			- Lay down all of your rights
-				- Social contract
-			- Keep the contract
-			- Leviathan → Powerful but will enforce the contract
-
+- Laws
+	- Seek peace over war
+	- Lay down all of your rights
+		- Social contract
+	- Keep the contract
+	- Leviathan → Powerful but will enforce the contract

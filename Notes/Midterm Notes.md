@@ -10,13 +10,13 @@ title: Midterm Notes
 - Use in a present value model
 	- Likely using a enterprise value
 	- Future Value
-		- Amount of money you expect to receive in the future
-		- A single future sum or a series of future cash flows
+- Amount of money you expect to receive in the future
+- A single future sum or a series of future cash flows
 	- Discount rate
-		- Required rate of return or opportunity cost of the investment
-		- Accounts for riskiness of the investment
+- Required rate of return or opportunity cost of the investment
+- Accounts for riskiness of the investment
 	- Number of Periods
-		- Number of time periods between now and when the future value will be received
+- Number of time periods between now and when the future value will be received
 - Free Cash Flow to equity using the intrinsic value of a share of stock is calculated with the present value of future expected FCFE
 	- FCFE = Net income + Depreciation & Amortization - Change in Non-cash working capital + Net borrowing
 - Present value models can be used for all types of stocks
@@ -43,10 +43,9 @@ title: Midterm Notes
 	- P/E ratio around 1.0 indicates a fair evaluation
 - P/B ratio
 	- Low PB ratio (less than 1)
-		- Suggests the stock may be undervalued
+- Suggests the stock may be undervalued
 	- High PB ratio
-		- Investors are willing to pay a premium for the stock
+- Investors are willing to pay a premium for the stock
 - Enterprise value
 - EV = Market Cap + Total Cap + Preferred Equity + Minority Interest - Cash/ Cash Equivalent
 - Using the market value of debt
-
