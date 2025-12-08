@@ -2,22 +2,18 @@
 title: Templates
 ---
 
-  exclude-from-graph-view:: true
-  
-- ## Bias name
-  template:: bias
-	- #### Description
-		-
-	- #### Key example
-		-
-- ### Transaction type
-  template:: Typical Transaction
+
+## Bias name
+#### Description
+-
+#### Key example
+-
+### Transaction type
 	- **Debit:**
 	- **Credit:**
+  |Date|Accounts|Debit|Credit|
+  |--|--|--|--|
+  |||||
+  |||||
 -
-  template:: Journal entry table
-  | Date | Accounts | Debit | Credit |
-  |---|---|---|---|
 -
--
-
