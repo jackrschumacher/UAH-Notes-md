@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="I. Decision Structures# Introduction to Decisions# [cite_start]Control Structures: While programs normally follow a sequential flow, control structures allow the program to alter this flow to suit specific situations [cite: 830-832]. [cite_start]Decision Structure: Also known as a “selection structure,” this allows a program to execute different sequences of instructions for different cases[cite: 839, 884]. The if Statement# Syntax: if condition: statement statement Logic: [cite_start]The condition is evaluated first[cite: 865]. [cite_start]If True: The indented statements are executed[cite: 867]. [cite_start]If False: The statements are skipped[cite: 868]. [Image of if statement flowchart]
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-2-advanced-programming/">
+  <meta property="og:site_name" content="UAH Notes">
+  <meta property="og:title" content="UAH Notes">
+  <meta property="og:description" content="I. Decision Structures# Introduction to Decisions# [cite_start]Control Structures: While programs normally follow a sequential flow, control structures allow the program to alter this flow to suit specific situations [cite: 830-832]. [cite_start]Decision Structure: Also known as a “selection structure,” this allows a program to execute different sequences of instructions for different cases[cite: 839, 884]. The if Statement# Syntax: if condition: statement statement Logic: [cite_start]The condition is evaluated first[cite: 865]. [cite_start]If True: The indented statements are executed[cite: 867]. [cite_start]If False: The statements are skipped[cite: 868]. [Image of if statement flowchart]">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+
+
+  <meta itemprop="name" content="UAH Notes">
+  <meta itemprop="description" content="I. Decision Structures# Introduction to Decisions# [cite_start]Control Structures: While programs normally follow a sequential flow, control structures allow the program to alter this flow to suit specific situations [cite: 830-832]. [cite_start]Decision Structure: Also known as a “selection structure,” this allows a program to execute different sequences of instructions for different cases[cite: 839, 884]. The if Statement# Syntax: if condition: statement statement Logic: [cite_start]The condition is evaluated first[cite: 865]. [cite_start]If True: The indented statements are executed[cite: 867]. [cite_start]If False: The statements are skipped[cite: 868]. [Image of if statement flowchart]">
+  <meta itemprop="wordCount" content="795">
+
+<title>Week 2 Advanced Programming | UAH Notes</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-2-advanced-programming/">
+<link rel="stylesheet" href="/book.min.6970156cec683193d93c9c4edaf0d56574e4361df2e0c1be4f697ae81c3ba55f.css" integrity="sha256-aXAVbOxoMZPZPJxO2vDVZXTkNh3y4MG&#43;T2l66Bw7pV8=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.1ccfec30deacfc82708fa640df682425475b335904f4122351e718fe23da532a.js" integrity="sha256-HM/sMN6s/IJwj6ZA32gkJUdbM1kE9BIjUecY/iPaUyo=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-notes">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>UAH Notes</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-10f9186ea778f94125530bda2b491eec" class="toggle"  />
+    <label for="section-10f9186ea778f94125530bda2b491eec" class="flex">
+      <a role="button" class="">
+        Semester 1</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b52ef1c950bc29bb8fa9a1641f2a1845" class="toggle"  />
+    <label for="section-b52ef1c950bc29bb8fa9a1641f2a1845" class="flex">
+      <a role="button" class="">
+        MU 100</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-1/" class="">
+      Part 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-2/" class="">
+      Part 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-4/" class="">
+      Part 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-5/" class="">
+      Part 5</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-58e03cbf23ca286c894b669a53323b3d" class="toggle" checked />
+    <label for="section-58e03cbf23ca286c894b669a53323b3d" class="flex">
+      <a role="button" class="">
+        Semester 3</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f7872d2b813cce0d12e481fe12abeef5" class="toggle"  />
+    <label for="section-f7872d2b813cce0d12e481fe12abeef5" class="flex">
+      <a role="button" class="">
+        ACC 212</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/activity-based-costing/" class="">
+      Activity Based Costing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/behavioral-finance/" class="">
+      Behavioral Finance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/example-transactions/" class="">
+      Example Transactions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/job-order-costing/" class="">
+      Job Order Costing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/recording-business-transactions/" class="">
+      Recording Business Transactions</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c5d8c9e96e5388eb7097d28ba6f1da0e" class="toggle"  />
+    <label for="section-c5d8c9e96e5388eb7097d28ba6f1da0e" class="flex">
+      <a role="button" class="">
+        ECN 142</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/ecn-143/economics-of-information/" class="">
+      Economics of Information</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/ecn-143/public-economics/" class="">
+      Public Economics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/ecn-143/taxation/" class="">
+      Taxation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d525b16173573fea2aea813a9b6d8d4c" class="toggle"  />
+    <label for="section-d525b16173573fea2aea813a9b6d8d4c" class="flex">
+      <a role="button" class="">
+        EH 242</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/england-and-the-middle-ages/" class="">
+      England and the Middle Ages</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/sir-gawain-and-the-green-knight/" class="">
+      Sir Gawain and the Green Knight</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/the-mabinogion/" class="">
+      The Mabinogion</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-1/" class="">
+      Module 1 (Gilgamesh)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-2/" class="">
+      Module 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-3/" class="">
+      Module 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-4/" class="">
+      Module 4</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-14a5c4e3c8a2fb4ddfe18d6ee8afb053" class="toggle"  />
+    <label for="section-14a5c4e3c8a2fb4ddfe18d6ee8afb053" class="flex">
+      <a role="button" class="">
+        FIN 230</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/fin-230/final-exam-information/" class="">
+      Final Exam Information</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-60b08407cfa9dd0baf4b9d93cb9e641d" class="toggle"  />
+    <label for="section-60b08407cfa9dd0baf4b9d93cb9e641d" class="flex">
+      <a role="button" class="">
+        IS 301</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-00b4fe89185b0df446cc84ca546943d2" class="toggle"  />
+    <label for="section-00b4fe89185b0df446cc84ca546943d2" class="flex">
+      <a role="button" class="">
+        Class Notes</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-1-technology-and-the-modern-enterprise/" class="">
+      Chapter 1 Technology and the Modern Enterprise</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-10--platforms-network-effects-and-competition/" class="">
+      Chapter 10 Platforms, Network Effects, and Competition</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-17--data-and-competitive-advantage/" class="">
+      Chapter 17 Data and Competitive Advantage</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-18--artificial-intelligence/" class="">
+      Chapter 18 Artificial Intelligence</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-2--zara/" class="">
+      Chapter 2 Zara</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-2-sample-questions/" class="">
+      Chapter 2 Sample Questions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-20--a-managers-guide-to-the-internet-and-telecommunications/" class="">
+      Chapter 20 a Manager&#39;s Guide to the Internet and Telecommunications</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-3-strategy-and-technology/" class="">
+      Chapter 3 Strategy and Technology</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-5--netflix/" class="">
+      Chapter 5 Netflix</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-6-moores-law-and-more/" class="">
+      Chapter 6 Moore&#39;s Law and More</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-7--disruptive-technologies/" class="">
+      Chapter 7 Disruptive Technologies</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-9--amazon/" class="">
+      Chapter 9 Amazon</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/cybersecurity-threats/" class="">
+      Cybersecurity Threats</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/netflix-presentation-speaker-notes/" class="">
+      Netflix Presentation Speaker Notes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-751dfeaa86902fb15b95d0e8e28f5169" class="toggle" checked />
+    <label for="section-751dfeaa86902fb15b95d0e8e28f5169" class="flex">
+      <a role="button" class="">
+        IS 310</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c7538cb34419b13d5e14d5bba48486a5" class="toggle" checked />
+    <label for="section-c7538cb34419b13d5e14d5bba48486a5" class="flex">
+      <a role="button" class="">
+        Weekly notes</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-1-python-basics/" class="">
+      Week 1 Python Basics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-11-working-with-the-linux-filesystem/" class="">
+      Week 11 Working With the Linux Filesystem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-12-pattern-matching--vulnerability-scanning/" class="">
+      Week 12 Pattern Matching &amp; Vulnerability Scanning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-13-security-and-advanced-bash-operations/" class="">
+      Week 13 Security and Advanced Bash Operations</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-2-advanced-programming/" class="active">
+      Week 2 Advanced Programming</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-3-functions-files-and-exceptions/" class="">
+      Week 3 Functions, Files and Exceptions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-4-data-structures/" class="">
+      Week 4 Data Structures</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-5--inheritance/" class="">
+      Week 5 Inheritance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-6-python-libraries/" class="">
+      Week 6 Python Libraries</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-9--linux-intro-and-io/" class="">
+      Week 9 Linux Intro and Io</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/bash-exam-topics/" class="">
+      Bash Exam Topics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/bash-final-project/" class="">
+      Bash Final Project</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7c584d34a0afaffcb8ebe59023ab5e3e" class="toggle"  />
+    <label for="section-7c584d34a0afaffcb8ebe59023ab5e3e" class="flex">
+      <a role="button" class="">
+        Semester 4</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-45cd194e742ed81db2f0ddeee2728dab" class="toggle"  />
+    <label for="section-45cd194e742ed81db2f0ddeee2728dab" class="flex">
+      <a role="button" class="">
+        BYS 119</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cbd9e89258049b63e28a2b9b0b04da7a" class="toggle"  />
+    <label for="section-cbd9e89258049b63e28a2b9b0b04da7a" class="flex">
+      <a role="button" class="">
+        BYS 121</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1fb1c9133f5878b4100a74622b9eb8ca" class="toggle"  />
+    <label for="section-1fb1c9133f5878b4100a74622b9eb8ca" class="flex">
+      <a role="button" class="">
+        IS 340</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e92b6f7c6dfb68c09a395c20f93768e3" class="toggle"  />
+    <label for="section-e92b6f7c6dfb68c09a395c20f93768e3" class="flex">
+      <a role="button" class="">
+        IS 401</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f606400069f4982285623246c8e026d6" class="toggle"  />
+    <label for="section-f606400069f4982285623246c8e026d6" class="flex">
+      <a role="button" class="">
+        MGT 301</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ee7e2704aeba138592b97c863eb5aab7" class="toggle"  />
+    <label for="section-ee7e2704aeba138592b97c863eb5aab7" class="flex">
+      <a role="button" class="">
+        PHL 101</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-4/phl-101/phl-101___1-6-25/" class="">
+      Phl 101 1 6 25</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Week 2 Advanced Programming</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#i-decision-structures">I. Decision Structures</a>
+      <ul>
+        <li><a href="#introduction-to-decisions">Introduction to Decisions</a></li>
+        <li><a href="#the-if-statement">The <code>if</code> Statement</a></li>
+        <li><a href="#relational-operators">Relational Operators</a></li>
+        <li><a href="#boolean-expressions--variables">Boolean Expressions &amp; Variables</a></li>
+        <li><a href="#comparing-strings">Comparing Strings</a></li>
+      </ul>
+    </li>
+    <li><a href="#ii-advanced-decision-logic">II. Advanced Decision Logic</a>
+      <ul>
+        <li><a href="#the-if-else-statement-two-way">The <code>if-else</code> Statement (Two-Way)</a></li>
+        <li><a href="#the-if-elif-else-statement-multi-way">The <code>if-elif-else</code> Statement (Multi-Way)</a></li>
+        <li><a href="#nested-decision-structures">Nested Decision Structures</a></li>
+        <li><a href="#logical-operators">Logical Operators</a></li>
+      </ul>
+    </li>
+    <li><a href="#iii-repetition-structures">III. Repetition Structures</a>
+      <ul>
+        <li><a href="#the-while-loop-condition-controlled">The <code>while</code> Loop (Condition-Controlled)</a></li>
+        <li><a href="#the-for-loop-count-controlled">The <code>for</code> Loop (Count-Controlled)</a></li>
+      </ul>
+    </li>
+    <li><a href="#iv-common-loop-patterns">IV. Common Loop Patterns</a>
+      <ul>
+        <li><a href="#calculating-a-running-total">Calculating a Running Total</a></li>
+        <li><a href="#augmented-assignment-operators">Augmented Assignment Operators</a></li>
+        <li><a href="#sentinels">Sentinels</a></li>
+        <li><a href="#input-validation-loops">Input Validation Loops</a></li>
+        <li><a href="#nested-loops">Nested Loops</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="i-decision-structures">I. Decision Structures<a class="anchor" href="#i-decision-structures">#</a></h2>
+<h3 id="introduction-to-decisions">Introduction to Decisions<a class="anchor" href="#introduction-to-decisions">#</a></h3>
+<ul>
+<li>[cite_start]<strong>Control Structures:</strong> While programs normally follow a sequential flow, control structures allow the program to alter this flow to suit specific situations [cite: 830-832].</li>
+<li>[cite_start]<strong>Decision Structure:</strong> Also known as a &ldquo;selection structure,&rdquo; this allows a program to execute different sequences of instructions for different cases[cite: 839, 884].</li>
+</ul>
+<h3 id="the-if-statement">The <code>if</code> Statement<a class="anchor" href="#the-if-statement">#</a></h3>
+<ul>
+<li><strong>Syntax:</strong>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> condition:
+</span></span><span style="display:flex;"><span>    statement
+</span></span><span style="display:flex;"><span>    statement</span></span></code></pre></div></li>
+<li><strong>Logic:</strong>
+<ul>
+<li>[cite_start]The condition is evaluated first[cite: 865].</li>
+<li>[cite_start]If <strong>True</strong>: The indented statements are executed[cite: 867].</li>
+<li>[cite_start]If <strong>False</strong>: The statements are skipped[cite: 868].</li>
+</ul>
+</li>
+</ul>
+<p>[Image of if statement flowchart]</p>
+<h3 id="relational-operators">Relational Operators<a class="anchor" href="#relational-operators">#</a></h3>
+<p>Relational operators determine the relationship between two values.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Operator</th>
+          <th style="text-align: left">Mathematics</th>
+          <th style="text-align: left">Meaning</th>
+          <th style="text-align: left">Citation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>&lt;</code></td>
+          <td style="text-align: left">$&lt;$</td>
+          <td style="text-align: left">[cite_start]Less than</td>
+          <td style="text-align: left">[cite: 964]</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>&lt;=</code></td>
+          <td style="text-align: left">$\le$</td>
+          <td style="text-align: left">[cite_start]Less than or equal to</td>
+          <td style="text-align: left">[cite: 964]</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>==</code></td>
+          <td style="text-align: left">$=$</td>
+          <td style="text-align: left">[cite_start]Equal to</td>
+          <td style="text-align: left">[cite: 964]</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>&gt;=</code></td>
+          <td style="text-align: left">$\ge$</td>
+          <td style="text-align: left">[cite_start]Greater than or equal to</td>
+          <td style="text-align: left">[cite: 964]</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>&gt;</code></td>
+          <td style="text-align: left">$&gt;$</td>
+          <td style="text-align: left">[cite_start]Greater than</td>
+          <td style="text-align: left">[cite: 964]</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>!=</code></td>
+          <td style="text-align: left">$\ne$</td>
+          <td style="text-align: left">[cite_start]Not equal to</td>
+          <td style="text-align: left">[cite: 964]</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>[cite_start]<strong>Warning:</strong> Do not confuse the equality operator <code>==</code> with the assignment operator <code>=</code>[cite: 1009].</li>
+</ul>
+<h3 id="boolean-expressions--variables">Boolean Expressions &amp; Variables<a class="anchor" href="#boolean-expressions--variables">#</a></h3>
+<ul>
+<li>[cite_start]<strong>Boolean Expressions:</strong> Expressions tested by <code>if</code> statements that evaluate to either <code>True</code> or <code>False</code>[cite: 934, 1031].</li>
+<li>[cite_start]<strong>Flags:</strong> A boolean variable used to signal when a specific condition exists in a program[cite: 947].</li>
+</ul>
+<h3 id="comparing-strings">Comparing Strings<a class="anchor" href="#comparing-strings">#</a></h3>
+<ul>
+<li>[cite_start]<strong>Method:</strong> Strings are compared character by character based on their ASCII/Unicode values (lexicographic ordering)[cite: 1016, 1143].</li>
+<li>[cite_start]<strong>Case Sensitivity:</strong> Uppercase letters come before lowercase letters (e.g., &ldquo;Bbbb&rdquo; comes before &ldquo;aaaa&rdquo;)[cite: 1017].</li>
+</ul>
+<hr>
+<h2 id="ii-advanced-decision-logic">II. Advanced Decision Logic<a class="anchor" href="#ii-advanced-decision-logic">#</a></h2>
+<h3 id="the-if-else-statement-two-way">The <code>if-else</code> Statement (Two-Way)<a class="anchor" href="#the-if-else-statement-two-way">#</a></h3>
+<ul>
+<li>[cite_start]<strong>Purpose:</strong> A dual alternative decision structure that provides two possible paths of execution[cite: 1095].</li>
+<li><strong>Syntax:</strong>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> condition:
+</span></span><span style="display:flex;"><span>    statements
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    other statements</span></span></code></pre></div>[cite_start][cite: 1097-1100]</li>
+</ul>
+<p>[Image of if-else statement flowchart]</p>
+<h3 id="the-if-elif-else-statement-multi-way">The <code>if-elif-else</code> Statement (Multi-Way)<a class="anchor" href="#the-if-elif-else-statement-multi-way">#</a></h3>
+<ul>
+<li><strong>Purpose:</strong> Allows for testing multiple conditions in order. [cite_start]It executes the block for the <em>first</em> true condition found and ignores the rest [cite: 1231-1232].</li>
+<li>[cite_start]<strong>Mutually Exclusive:</strong> This structure sets up mutually exclusive code blocks[cite: 1230].</li>
+<li>[cite_start]<strong>Optional Else:</strong> The <code>else</code> block is optional; without it, it is possible no indented block will execute[cite: 1240].</li>
+</ul>
+<h3 id="nested-decision-structures">Nested Decision Structures<a class="anchor" href="#nested-decision-structures">#</a></h3>
+<ul>
+<li>[cite_start]<strong>Definition:</strong> A decision structure placed inside another decision structure[cite: 1248].</li>
+<li>[cite_start]<strong>Usage:</strong> Commonly used when multiple criteria must be met (e.g., salary &gt; 30k <em>and</em> years on job &gt;= 2)[cite: 1251].</li>
+<li>[cite_start]<strong>Formatting:</strong> Proper indentation is crucial for the interpreter and readability[cite: 1274].</li>
+</ul>
+<h3 id="logical-operators">Logical Operators<a class="anchor" href="#logical-operators">#</a></h3>
+<p>[cite_start]Operators used to combine boolean expressions[cite: 1332].</p>
+<ol>
+<li>[cite_start]<strong><code>and</code></strong>: True only if <strong>both</strong> operands are true[cite: 1341].</li>
+<li>[cite_start]<strong><code>or</code></strong>: True if <strong>either</strong> operand is true[cite: 1348].</li>
+<li>[cite_start]<strong><code>not</code></strong>: Reverses the logical value (True becomes False, False becomes True)[cite: 1362].</li>
+</ol>
+<ul>
+<li><strong>Short-Circuit Evaluation:</strong>
+<ul>
+<li>For <code>or</code>: If the left operand is true, the rest is ignored (result is true).</li>
+<li>[cite_start]For <code>and</code>: If the left operand is false, the rest is ignored (result is false) [cite: 1354-1356].</li>
+</ul>
+</li>
+<li><strong>Checking Ranges:</strong>
+<ul>
+<li>[cite_start]Inside range: <code>x &gt;= 10 and x &lt;= 20</code>[cite: 1370].</li>
+<li>[cite_start]Outside range: <code>x &lt; 10 or x &gt; 20</code>[cite: 1372].</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="iii-repetition-structures">III. Repetition Structures<a class="anchor" href="#iii-repetition-structures">#</a></h2>
+<h3 id="the-while-loop-condition-controlled">The <code>while</code> Loop (Condition-Controlled)<a class="anchor" href="#the-while-loop-condition-controlled">#</a></h3>
+<ul>
+<li>[cite_start]<strong>Behavior:</strong> Repeats a set of statements as long as a condition is true[cite: 1402].</li>
+<li><strong>Pretest Loop:</strong> The condition is tested <em>before</em> the iteration. [cite_start]If false initially, the loop never runs [cite: 1425-1426].</li>
+<li><strong>Infinite Loops:</strong> Occur if the loop does not contain code to make the condition false. [cite_start]The loop repeats until interrupted [cite: 1453-1454].</li>
+</ul>
+<p>[Image of while loop flowchart]</p>
+<h3 id="the-for-loop-count-controlled">The <code>for</code> Loop (Count-Controlled)<a class="anchor" href="#the-for-loop-count-controlled">#</a></h3>
+<ul>
+<li>[cite_start]<strong>Behavior:</strong> Iterates a specific number of times, typically over a sequence of data items [cite: 1462-1464].</li>
+<li>[cite_start]<strong>Syntax:</strong> <code>for variable in [val1, val2]:</code>[cite: 1467].</li>
+<li>[cite_start]<strong>Target Variable:</strong> References the current item in the sequence during each iteration[cite: 1501].</li>
+<li>[cite_start]<strong>The <code>range()</code> Function:</strong> Simplifies creating iterable sequences[cite: 1490].
+<ul>
+<li>One argument: <code>range(stop)</code></li>
+<li>Two arguments: <code>range(start, stop)</code></li>
+<li>[cite_start]Three arguments: <code>range(start, stop, step)</code> [cite: 1493-1496].</li>
+<li>[cite_start]Descending: Use a negative step value, e.g., <code>range(10, 0, -1)</code>[cite: 1519].</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="iv-common-loop-patterns">IV. Common Loop Patterns<a class="anchor" href="#iv-common-loop-patterns">#</a></h2>
+<h3 id="calculating-a-running-total">Calculating a Running Total<a class="anchor" href="#calculating-a-running-total">#</a></h3>
+<ul>
+<li>[cite_start]<strong>Accumulator:</strong> A variable initialized to 0 outside the loop to store the total[cite: 1527].</li>
+<li>[cite_start]<strong>Process:</strong> The loop reads each number and adds it to the accumulator[cite: 1526, 1539].</li>
+</ul>
+<h3 id="augmented-assignment-operators">Augmented Assignment Operators<a class="anchor" href="#augmented-assignment-operators">#</a></h3>
+<p>[cite_start]Shorthand operators for updating variables[cite: 1547].</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Operator</th>
+          <th style="text-align: left">Usage</th>
+          <th style="text-align: left">Equivalent To</th>
+          <th style="text-align: left">Citation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>+=</code></td>
+          <td style="text-align: left"><code>c += 3</code></td>
+          <td style="text-align: left">[cite_start]<code>c = c + 3</code></td>
+          <td style="text-align: left">[cite: 1572]</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>-=</code></td>
+          <td style="text-align: left"><code>y -= 2</code></td>
+          <td style="text-align: left">[cite_start]<code>y = y - 2</code></td>
+          <td style="text-align: left">[cite: 1565]</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>*=</code></td>
+          <td style="text-align: left"><code>z *= 10</code></td>
+          <td style="text-align: left">[cite_start]<code>z = z * 10</code></td>
+          <td style="text-align: left">[cite: 1566]</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>/=</code></td>
+          <td style="text-align: left"><code>a /= b</code></td>
+          <td style="text-align: left">[cite_start]<code>a = a / b</code></td>
+          <td style="text-align: left">[cite: 1567]</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="sentinels">Sentinels<a class="anchor" href="#sentinels">#</a></h3>
+<ul>
+<li>[cite_start]<strong>Definition:</strong> A special value marking the end of a sequence (e.g., an empty string or -1)[cite: 1583].</li>
+<li>[cite_start]<strong>Requirement:</strong> Must be distinctive enough not to be mistaken for actual data[cite: 1585].</li>
+</ul>
+<h3 id="input-validation-loops">Input Validation Loops<a class="anchor" href="#input-validation-loops">#</a></h3>
+<ul>
+<li><strong>Concept:</strong> &ldquo;Garbage in, garbage out&rdquo; (GIGO). [cite_start]Programs should reject bad input [cite: 1593-1594].</li>
+<li>[cite_start]<strong>Logic:</strong> Use a <code>while</code> loop that repeats <em>as long as</em> the input is invalid, prompting the user again[cite: 1601].</li>
+</ul>
+<h3 id="nested-loops">Nested Loops<a class="anchor" href="#nested-loops">#</a></h3>
+<ul>
+<li>[cite_start]<strong>Definition:</strong> A loop contained inside another loop[cite: 1620].</li>
+<li>[cite_start]<strong>Execution:</strong> The inner loop completes <em>all</em> its iterations for <em>each</em> single iteration of the outer loop[cite: 1653].</li>
+<li>[cite_start]<strong>Total Iterations:</strong> Iterations of inner loop × Iterations of outer loop[cite: 1656].</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/notes/semester-3/is-310/weekly-notes/week-13-security-and-advanced-bash-operations/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>Week 13 Security and Advanced Bash Operations</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/notes/semester-3/is-310/weekly-notes/week-3-functions-files-and-exceptions/" class="flex align-center">
+        <span>Week 3 Functions, Files and Exceptions</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#i-decision-structures">I. Decision Structures</a>
+      <ul>
+        <li><a href="#introduction-to-decisions">Introduction to Decisions</a></li>
+        <li><a href="#the-if-statement">The <code>if</code> Statement</a></li>
+        <li><a href="#relational-operators">Relational Operators</a></li>
+        <li><a href="#boolean-expressions--variables">Boolean Expressions &amp; Variables</a></li>
+        <li><a href="#comparing-strings">Comparing Strings</a></li>
+      </ul>
+    </li>
+    <li><a href="#ii-advanced-decision-logic">II. Advanced Decision Logic</a>
+      <ul>
+        <li><a href="#the-if-else-statement-two-way">The <code>if-else</code> Statement (Two-Way)</a></li>
+        <li><a href="#the-if-elif-else-statement-multi-way">The <code>if-elif-else</code> Statement (Multi-Way)</a></li>
+        <li><a href="#nested-decision-structures">Nested Decision Structures</a></li>
+        <li><a href="#logical-operators">Logical Operators</a></li>
+      </ul>
+    </li>
+    <li><a href="#iii-repetition-structures">III. Repetition Structures</a>
+      <ul>
+        <li><a href="#the-while-loop-condition-controlled">The <code>while</code> Loop (Condition-Controlled)</a></li>
+        <li><a href="#the-for-loop-count-controlled">The <code>for</code> Loop (Count-Controlled)</a></li>
+      </ul>
+    </li>
+    <li><a href="#iv-common-loop-patterns">IV. Common Loop Patterns</a>
+      <ul>
+        <li><a href="#calculating-a-running-total">Calculating a Running Total</a></li>
+        <li><a href="#augmented-assignment-operators">Augmented Assignment Operators</a></li>
+        <li><a href="#sentinels">Sentinels</a></li>
+        <li><a href="#input-validation-loops">Input Validation Loops</a></li>
+        <li><a href="#nested-loops">Nested Loops</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

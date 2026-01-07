@@ -1,0 +1,22 @@
+# Resources
+- [Recording Business Transactions](Recording%20Business%20Transactions.md)
+- ![image.png](../assets/image_1762901624985_0.png)
+-
+- ![C_FC05_PPT__-__Protected_View_-_PowerPoint_11_06_25_10-15-56 PM.png](../assets/C_FC05_PPT_-_Protected_View_-_PowerPoint_11_06_25_10-15-56_PM_1762902366655_0.png)
+- ![Normal-Account-Balance-1.jpg](../assets/Normal-Account-Balance-1_1762902416280_0.jpg)
+# Examples for different accounts
+## Products and Sales
+### Sale Price transaction
+- For increasing sale price
+  - Debit accounts receiveable
+  - Credit sales revenue
+### Product Cost transaction
+- Debit inventory
+- Credit cash
+### Purchasing supplies
+- Credit supplies
+- Debit cash
+## Paying salaries
+- Debit salaries account
+- Credit cash
+-

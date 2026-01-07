@@ -1,0 +1,24 @@
+* **Sustainable competitive advantage:** Financial performance that consistently outperforms industry averages.
+  * **Operational effectiveness:** Performing the same tasks better than rivals perform them.
+  * **Commodity:** A basic good that can be interchanged with nearly identical offerings by others—think milk, coal, orange juice, or, to a lesser extent, Windows PCs and Android phones. The more commoditized an offering, the greater the likelihood that competition will be based on price.
+  * **Fast follower problem:** Exists when savvy rivals watch a pioneer’s efforts, learn from their successes and missteps, then enter the market quickly with a comparable or superior product at a lower cost before the first mover can dominate.
+  * **Augmented-reality:** A technology that superimposes content, such as images and animation, on top of real-world images.
+  * **Strategic positioning:** Performing different tasks than rivals, or the same tasks in a different way.
+  * **Resource-based view of competitive advantage:** The strategic thinking approach suggesting that if a firm is to maintain sustainable competitive advantage, it must control an exploitable resource, or set of resources, that have four critical characteristics. These resources must be (1) valuable, (2) rare, (3) imperfectly imitable, and (4) nonsubstitutable.
+  * **Dense wave division multiplexing (DWDM):** A technology that increases the transmission capacity (and hence speed) of fiber-optic cable. Transmissions using fiber are accomplished by transmitting light inside “glass” cables. In DWDM, the light inside fiber is split into different wavelengths in a way similar to how a prism splits light into different colors.
+  * **Imitation-resistant value chain:** A way of doing business that competitors struggle to replicate and that frequently involves technology in a key enabling role.
+  * **Value chain:** The set of activities through which a product or service is created and delivered to customers.
+  * **Straddled:** In strategic management, this refers to a firm's attempt to occupy more than one position, while failing to match the benefits of a more efficient, singularly focused rival.
+  * **Brand:** The symbolic embodiment of all the information connected with a product or service.
+  * **Viral marketing:** Leveraging consumers to promote a product or service.
+  * **Scale advantages:** Advantages related to size.
+  * **Economies of scale:** When costs can be spread across increasing units of production or in serving multiple customers. Businesses that have favorable economies of scale (like many Internet firms) are sometimes referred to as being highly scalable.
+  * **Network effects:** Also known as Metcalfe’s Law, or network externalities. When the value of a product or service increases as its number of users expands.
+  * **Bundling:** Selling products available separately as a single package. Bundling can be especially effective when a software product or service is included with a hardware product. Bundling can also be tricky as it can raise a risk of unfair competitive practices, especially if a firm has a monopoly or otherwise large amount of market control.
+  * **APIs:** Programming hooks, or guidelines, published by firms that tell other programs how to get a service to perform a task such as send or receive data. For example, Amazon provides APIs to let developers write their own applications and websites that can send the firm orders.
+  * **Affiliates:** Third parties that promote a product or service, typically in exchange for a cut of any sales.
+  * **Non-practicing entities:** Commonly known as patent trolls, these firms make money by acquiring and asserting patents, rather than bringing products and services to market.
+  * **Private:** As in “to go private” or “take a firm private.” Buying up a publicly traded firm’s shares. Usually done when a firm has suffered financially and when a turnaround strategy will first yield losses that would further erode share price. Firms (often called private equity, buyout, LBO, or leveraged buyout firms) that take another company private hope to improve results so that the company can be sold to another firm or they can reissue shares on public markets.
+  * **Porter’s five forces:** Also known as Industry and Competitive Analysis. A framework considering the interplay between (1) the intensity of rivalry among existing competitors, (2) the threat of new entrants, (3) the threat of substitute goods or services, (4) the bargaining power of buyers, and (5) the bargaining power of suppliers.
+  * **Price transparency:** The degree to which complete information is available.
+  * **Information asymmetry:** A decision situation where one party has more or better information than its counterparty.
