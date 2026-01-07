@@ -1,4 +1,4 @@
-baseURL = 'https://jackrschumacher.github.io/UAH-Notes/' # Change this if you have a custom domain
+baseURL = 'https://uahnotes-md.jackrschumacher.com' # Change this if you have a custom domain
 languageCode = 'en-us'
 title = 'UAH Notes'
 
