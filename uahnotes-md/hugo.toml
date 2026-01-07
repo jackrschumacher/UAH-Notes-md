@@ -1,0 +1,9 @@
+baseURL = 'https://uahnotes-md.jackrschumacher.com'
+languageCode = 'en-us'
+title = 'UAH notes markdown'
+[module]
+[[module.imports]]
+path = 'github.com/alex-shpak/hugo-book'
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
