@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content=" Big Data: A general term used to describe the massive amount of data available to today’s managers. Big Data are often unstructured and are too big and costly to easily work through via use of conventional databases, but new tools are making these massive datasets available for analysis and insight. Business Intelligence (BI): A term combining aspects of reporting, data exploration and ad hoc queries, and sophisticated data modeling and analysis. Analytics: A term describing the extensive use of data, statistical and quantitative analysis, explanatory and predictive models, and fact-based management to drive decisions and actions. Machine learning (ML): A type of artificial intelligence that leverages massive amounts of data so that computers can improve the accuracy of actions and predictions on their own without additional programming. Data: Raw facts and figures. Information: Data presented in a context so that it can answer a question or support decision-making. Knowledge: Insight derived from experience and expertise. Database: A single table or a collection of related tables. Database management systems (DBMS): Sometimes referred to as database software; software for creating, maintaining, and manipulating data. Structured query language (SQL): A language used to create and manipulate databases. Database administrator (DBA): Job title focused on directing, performing, or overseeing activities associated with a database or set of databases. These may include (but not necessarily be limited to) database design, creation, implementation, maintenance, backup and recovery, policy setting and enforcement, and security. Table or file: A list of data, arranged in columns (fields) and rows (records). Column or field: A column in a database table. Columns represent each category of data contained in a record (e.g., first name, last name, ID number, date of birth). Row or record: A row in a database table. Records represent a single instance of whatever the table keeps track of (e.g., student, faculty, course title). Relational databases: The most common standard for expressing databases, whereby tables (files) are related based on common keys. Serverless computing: A type of cloud computing where a third-party vendor manages servers, replication, fault-tolerance, computing scalability, and certain aspects of security, freeing software developers to focus on building “business solutions” and eliminating the need to spend time and resources managing the technology complexity of much of the underlying “IT solution.” Transaction processing systems (TPS): Systems that record a transaction (some form of business-related exchange), such as a cash register sale, ATM withdrawal, or product return. Transaction: Some kind of business exchange. Loyalty program: A system that provides rewards and usage incentives, typically in exchange for a method that provides a more detailed tracking and recording of customer activity. In addition to enhancing data collection, loyalty cards can represent a significant switching cost. Artificial intelligence: Computer software that seeks to reproduce or mimic (perhaps with improvements) human thought, decision-making, or brain functions. Data aggregators: Firms that collect and resell data. Legacy systems: Older information systems that are often incompatible with other systems, technologies, and ways of conducting business. Incompatible legacy systems can be a major roadblock to turning data into information, and they can inhibit firm agility, holding back operational and strategic initiatives. Data warehouse: A set of databases designed to support decision-making in an organization. Data mart: A database or databases focused on addressing the concerns of a specific problem (e.g., increasing customer retention, improving product quality) or business unit (e.g., marketing, engineering). Online analytical processing (OLAP): A method of querying and reporting that takes data from standard relational databases, calculates and summarizes the data, and then stores the data in a special database called a data cube. Data cube: A special database used to store data in OLAP reporting. Data lake: A catch-all term for storage and access technologies used in Big Data. Data lakes are systems that allow for the storage of data in both structured as well as “raw,” “unfiltered” formats. Data lakes also provide the tools to “pipe out” data, filter it, and refine it so that it can be turned into information. Hadoop: A set of mostly open source tools to manage massive amounts of unstructured data for storage, extraction, and computation. Data cloud: Sometimes referred to as cloud data warehousing, this term refers to a cloud service that provides tools to extract and transform data from disparate sources so that it can be interrogated as needed. Unlike data warehouses, data lakes, or similar tools that an organization might run on-site, a data cloud can be spun up to temporarily hold a very large amount of data for short-term use, then be disbanded when it is no longer needed. Snowflake is the best known of the many firms providing services in this space. ETL: Extract, Transform, Load—copying data from multiple, disparately organized data sources, transforming (or cleaning) the data into a common format, and loading it into a combined usable format. ETL is a key step in getting data into a data warehouse or data mart. Query tools: Tools to interrogate a data source or multiple sources and return a subset of data, possibly summarized, based on a set of criteria. Python: A general purpose programming language that is also popular for data analytics. R: A programming language specifically created for analytics, statistical, and graphical computing. Graphical query tools: Tools that allow a user to create a query through a point-and-click or drag-and-drop interface, rather than requiring programming knowledge. Canned reports: Reports that provide regular summaries of information in a performative format. Ad Hoc reporting tools: Tools that put users in control so that they can create custom reports on an as-needed basis by selecting fields, ranges, summary conditions, and other parameters. Dashboards: A heads-up display of critical indicators that allow managers to get a graphical glance at key performance metrics. Data visualization: The graphical representation of data and information. Generative AI: A type of artificial intelligence whose output is some type of media: e.g., text, images, audio, video. Results are usually generated based on a prompt, such as typed or spoken text. This technology “learns” the patterns and structure of data used during training, and can then generate new output based on the characteristics of this input. Results can often be refined by further prompt entry. Omnichannel: Providing customers with a unified experience across customer channels, which may include online, mobile, catalog, phone, and retail. Pricing, recommendations, and incentives should reflect a data-driven, accurate, single view of the customer. Data mining: The process of using computers to identify hidden patterns in, and to build models from, large datasets. Over-engineer: Build a model with so many variables that the solution arrived at might only work on the subset of data you’ve used to create it. ">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/notes/semester-3/is-301/class-notes/chapter-17--data-and-competitive-advantage/">
+  <meta property="og:site_name" content="UAH Notes">
+  <meta property="og:title" content="UAH Notes">
+  <meta property="og:description" content="Big Data: A general term used to describe the massive amount of data available to today’s managers. Big Data are often unstructured and are too big and costly to easily work through via use of conventional databases, but new tools are making these massive datasets available for analysis and insight. Business Intelligence (BI): A term combining aspects of reporting, data exploration and ad hoc queries, and sophisticated data modeling and analysis. Analytics: A term describing the extensive use of data, statistical and quantitative analysis, explanatory and predictive models, and fact-based management to drive decisions and actions. Machine learning (ML): A type of artificial intelligence that leverages massive amounts of data so that computers can improve the accuracy of actions and predictions on their own without additional programming. Data: Raw facts and figures. Information: Data presented in a context so that it can answer a question or support decision-making. Knowledge: Insight derived from experience and expertise. Database: A single table or a collection of related tables. Database management systems (DBMS): Sometimes referred to as database software; software for creating, maintaining, and manipulating data. Structured query language (SQL): A language used to create and manipulate databases. Database administrator (DBA): Job title focused on directing, performing, or overseeing activities associated with a database or set of databases. These may include (but not necessarily be limited to) database design, creation, implementation, maintenance, backup and recovery, policy setting and enforcement, and security. Table or file: A list of data, arranged in columns (fields) and rows (records). Column or field: A column in a database table. Columns represent each category of data contained in a record (e.g., first name, last name, ID number, date of birth). Row or record: A row in a database table. Records represent a single instance of whatever the table keeps track of (e.g., student, faculty, course title). Relational databases: The most common standard for expressing databases, whereby tables (files) are related based on common keys. Serverless computing: A type of cloud computing where a third-party vendor manages servers, replication, fault-tolerance, computing scalability, and certain aspects of security, freeing software developers to focus on building “business solutions” and eliminating the need to spend time and resources managing the technology complexity of much of the underlying “IT solution.” Transaction processing systems (TPS): Systems that record a transaction (some form of business-related exchange), such as a cash register sale, ATM withdrawal, or product return. Transaction: Some kind of business exchange. Loyalty program: A system that provides rewards and usage incentives, typically in exchange for a method that provides a more detailed tracking and recording of customer activity. In addition to enhancing data collection, loyalty cards can represent a significant switching cost. Artificial intelligence: Computer software that seeks to reproduce or mimic (perhaps with improvements) human thought, decision-making, or brain functions. Data aggregators: Firms that collect and resell data. Legacy systems: Older information systems that are often incompatible with other systems, technologies, and ways of conducting business. Incompatible legacy systems can be a major roadblock to turning data into information, and they can inhibit firm agility, holding back operational and strategic initiatives. Data warehouse: A set of databases designed to support decision-making in an organization. Data mart: A database or databases focused on addressing the concerns of a specific problem (e.g., increasing customer retention, improving product quality) or business unit (e.g., marketing, engineering). Online analytical processing (OLAP): A method of querying and reporting that takes data from standard relational databases, calculates and summarizes the data, and then stores the data in a special database called a data cube. Data cube: A special database used to store data in OLAP reporting. Data lake: A catch-all term for storage and access technologies used in Big Data. Data lakes are systems that allow for the storage of data in both structured as well as “raw,” “unfiltered” formats. Data lakes also provide the tools to “pipe out” data, filter it, and refine it so that it can be turned into information. Hadoop: A set of mostly open source tools to manage massive amounts of unstructured data for storage, extraction, and computation. Data cloud: Sometimes referred to as cloud data warehousing, this term refers to a cloud service that provides tools to extract and transform data from disparate sources so that it can be interrogated as needed. Unlike data warehouses, data lakes, or similar tools that an organization might run on-site, a data cloud can be spun up to temporarily hold a very large amount of data for short-term use, then be disbanded when it is no longer needed. Snowflake is the best known of the many firms providing services in this space. ETL: Extract, Transform, Load—copying data from multiple, disparately organized data sources, transforming (or cleaning) the data into a common format, and loading it into a combined usable format. ETL is a key step in getting data into a data warehouse or data mart. Query tools: Tools to interrogate a data source or multiple sources and return a subset of data, possibly summarized, based on a set of criteria. Python: A general purpose programming language that is also popular for data analytics. R: A programming language specifically created for analytics, statistical, and graphical computing. Graphical query tools: Tools that allow a user to create a query through a point-and-click or drag-and-drop interface, rather than requiring programming knowledge. Canned reports: Reports that provide regular summaries of information in a performative format. Ad Hoc reporting tools: Tools that put users in control so that they can create custom reports on an as-needed basis by selecting fields, ranges, summary conditions, and other parameters. Dashboards: A heads-up display of critical indicators that allow managers to get a graphical glance at key performance metrics. Data visualization: The graphical representation of data and information. Generative AI: A type of artificial intelligence whose output is some type of media: e.g., text, images, audio, video. Results are usually generated based on a prompt, such as typed or spoken text. This technology “learns” the patterns and structure of data used during training, and can then generate new output based on the characteristics of this input. Results can often be refined by further prompt entry. Omnichannel: Providing customers with a unified experience across customer channels, which may include online, mobile, catalog, phone, and retail. Pricing, recommendations, and incentives should reflect a data-driven, accurate, single view of the customer. Data mining: The process of using computers to identify hidden patterns in, and to build models from, large datasets. Over-engineer: Build a model with so many variables that the solution arrived at might only work on the subset of data you’ve used to create it.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+
+
+  <meta itemprop="name" content="UAH Notes">
+  <meta itemprop="description" content="Big Data: A general term used to describe the massive amount of data available to today’s managers. Big Data are often unstructured and are too big and costly to easily work through via use of conventional databases, but new tools are making these massive datasets available for analysis and insight. Business Intelligence (BI): A term combining aspects of reporting, data exploration and ad hoc queries, and sophisticated data modeling and analysis. Analytics: A term describing the extensive use of data, statistical and quantitative analysis, explanatory and predictive models, and fact-based management to drive decisions and actions. Machine learning (ML): A type of artificial intelligence that leverages massive amounts of data so that computers can improve the accuracy of actions and predictions on their own without additional programming. Data: Raw facts and figures. Information: Data presented in a context so that it can answer a question or support decision-making. Knowledge: Insight derived from experience and expertise. Database: A single table or a collection of related tables. Database management systems (DBMS): Sometimes referred to as database software; software for creating, maintaining, and manipulating data. Structured query language (SQL): A language used to create and manipulate databases. Database administrator (DBA): Job title focused on directing, performing, or overseeing activities associated with a database or set of databases. These may include (but not necessarily be limited to) database design, creation, implementation, maintenance, backup and recovery, policy setting and enforcement, and security. Table or file: A list of data, arranged in columns (fields) and rows (records). Column or field: A column in a database table. Columns represent each category of data contained in a record (e.g., first name, last name, ID number, date of birth). Row or record: A row in a database table. Records represent a single instance of whatever the table keeps track of (e.g., student, faculty, course title). Relational databases: The most common standard for expressing databases, whereby tables (files) are related based on common keys. Serverless computing: A type of cloud computing where a third-party vendor manages servers, replication, fault-tolerance, computing scalability, and certain aspects of security, freeing software developers to focus on building “business solutions” and eliminating the need to spend time and resources managing the technology complexity of much of the underlying “IT solution.” Transaction processing systems (TPS): Systems that record a transaction (some form of business-related exchange), such as a cash register sale, ATM withdrawal, or product return. Transaction: Some kind of business exchange. Loyalty program: A system that provides rewards and usage incentives, typically in exchange for a method that provides a more detailed tracking and recording of customer activity. In addition to enhancing data collection, loyalty cards can represent a significant switching cost. Artificial intelligence: Computer software that seeks to reproduce or mimic (perhaps with improvements) human thought, decision-making, or brain functions. Data aggregators: Firms that collect and resell data. Legacy systems: Older information systems that are often incompatible with other systems, technologies, and ways of conducting business. Incompatible legacy systems can be a major roadblock to turning data into information, and they can inhibit firm agility, holding back operational and strategic initiatives. Data warehouse: A set of databases designed to support decision-making in an organization. Data mart: A database or databases focused on addressing the concerns of a specific problem (e.g., increasing customer retention, improving product quality) or business unit (e.g., marketing, engineering). Online analytical processing (OLAP): A method of querying and reporting that takes data from standard relational databases, calculates and summarizes the data, and then stores the data in a special database called a data cube. Data cube: A special database used to store data in OLAP reporting. Data lake: A catch-all term for storage and access technologies used in Big Data. Data lakes are systems that allow for the storage of data in both structured as well as “raw,” “unfiltered” formats. Data lakes also provide the tools to “pipe out” data, filter it, and refine it so that it can be turned into information. Hadoop: A set of mostly open source tools to manage massive amounts of unstructured data for storage, extraction, and computation. Data cloud: Sometimes referred to as cloud data warehousing, this term refers to a cloud service that provides tools to extract and transform data from disparate sources so that it can be interrogated as needed. Unlike data warehouses, data lakes, or similar tools that an organization might run on-site, a data cloud can be spun up to temporarily hold a very large amount of data for short-term use, then be disbanded when it is no longer needed. Snowflake is the best known of the many firms providing services in this space. ETL: Extract, Transform, Load—copying data from multiple, disparately organized data sources, transforming (or cleaning) the data into a common format, and loading it into a combined usable format. ETL is a key step in getting data into a data warehouse or data mart. Query tools: Tools to interrogate a data source or multiple sources and return a subset of data, possibly summarized, based on a set of criteria. Python: A general purpose programming language that is also popular for data analytics. R: A programming language specifically created for analytics, statistical, and graphical computing. Graphical query tools: Tools that allow a user to create a query through a point-and-click or drag-and-drop interface, rather than requiring programming knowledge. Canned reports: Reports that provide regular summaries of information in a performative format. Ad Hoc reporting tools: Tools that put users in control so that they can create custom reports on an as-needed basis by selecting fields, ranges, summary conditions, and other parameters. Dashboards: A heads-up display of critical indicators that allow managers to get a graphical glance at key performance metrics. Data visualization: The graphical representation of data and information. Generative AI: A type of artificial intelligence whose output is some type of media: e.g., text, images, audio, video. Results are usually generated based on a prompt, such as typed or spoken text. This technology “learns” the patterns and structure of data used during training, and can then generate new output based on the characteristics of this input. Results can often be refined by further prompt entry. Omnichannel: Providing customers with a unified experience across customer channels, which may include online, mobile, catalog, phone, and retail. Pricing, recommendations, and incentives should reflect a data-driven, accurate, single view of the customer. Data mining: The process of using computers to identify hidden patterns in, and to build models from, large datasets. Over-engineer: Build a model with so many variables that the solution arrived at might only work on the subset of data you’ve used to create it.">
+  <meta itemprop="wordCount" content="1105">
+
+<title>Chapter 17 Data and Competitive Advantage | UAH Notes</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/notes/semester-3/is-301/class-notes/chapter-17--data-and-competitive-advantage/">
+<link rel="stylesheet" href="/book.min.6970156cec683193d93c9c4edaf0d56574e4361df2e0c1be4f697ae81c3ba55f.css" integrity="sha256-aXAVbOxoMZPZPJxO2vDVZXTkNh3y4MG&#43;T2l66Bw7pV8=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.1ccfec30deacfc82708fa640df682425475b335904f4122351e718fe23da532a.js" integrity="sha256-HM/sMN6s/IJwj6ZA32gkJUdbM1kE9BIjUecY/iPaUyo=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-notes">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>UAH Notes</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-10f9186ea778f94125530bda2b491eec" class="toggle"  />
+    <label for="section-10f9186ea778f94125530bda2b491eec" class="flex">
+      <a role="button" class="">
+        Semester 1</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b52ef1c950bc29bb8fa9a1641f2a1845" class="toggle"  />
+    <label for="section-b52ef1c950bc29bb8fa9a1641f2a1845" class="flex">
+      <a role="button" class="">
+        MU 100</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-1/" class="">
+      Part 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-2/" class="">
+      Part 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-4/" class="">
+      Part 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-5/" class="">
+      Part 5</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-58e03cbf23ca286c894b669a53323b3d" class="toggle" checked />
+    <label for="section-58e03cbf23ca286c894b669a53323b3d" class="flex">
+      <a role="button" class="">
+        Semester 3</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f7872d2b813cce0d12e481fe12abeef5" class="toggle"  />
+    <label for="section-f7872d2b813cce0d12e481fe12abeef5" class="flex">
+      <a role="button" class="">
+        ACC 212</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/activity-based-costing/" class="">
+      Activity Based Costing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/behavioral-finance/" class="">
+      Behavioral Finance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/example-transactions/" class="">
+      Example Transactions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/job-order-costing/" class="">
+      Job Order Costing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/recording-business-transactions/" class="">
+      Recording Business Transactions</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c5d8c9e96e5388eb7097d28ba6f1da0e" class="toggle"  />
+    <label for="section-c5d8c9e96e5388eb7097d28ba6f1da0e" class="flex">
+      <a role="button" class="">
+        ECN 142</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/ecn-143/economics-of-information/" class="">
+      Economics of Information</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/ecn-143/public-economics/" class="">
+      Public Economics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/ecn-143/taxation/" class="">
+      Taxation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d525b16173573fea2aea813a9b6d8d4c" class="toggle"  />
+    <label for="section-d525b16173573fea2aea813a9b6d8d4c" class="flex">
+      <a role="button" class="">
+        EH 242</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/england-and-the-middle-ages/" class="">
+      England and the Middle Ages</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/sir-gawain-and-the-green-knight/" class="">
+      Sir Gawain and the Green Knight</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/the-mabinogion/" class="">
+      The Mabinogion</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-1/" class="">
+      Module 1 (Gilgamesh)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-2/" class="">
+      Module 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-3/" class="">
+      Module 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-4/" class="">
+      Module 4</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-14a5c4e3c8a2fb4ddfe18d6ee8afb053" class="toggle"  />
+    <label for="section-14a5c4e3c8a2fb4ddfe18d6ee8afb053" class="flex">
+      <a role="button" class="">
+        FIN 230</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/fin-230/final-exam-information/" class="">
+      Final Exam Information</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-60b08407cfa9dd0baf4b9d93cb9e641d" class="toggle" checked />
+    <label for="section-60b08407cfa9dd0baf4b9d93cb9e641d" class="flex">
+      <a role="button" class="">
+        IS 301</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-00b4fe89185b0df446cc84ca546943d2" class="toggle" checked />
+    <label for="section-00b4fe89185b0df446cc84ca546943d2" class="flex">
+      <a role="button" class="">
+        Class Notes</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-1-technology-and-the-modern-enterprise/" class="">
+      Chapter 1 Technology and the Modern Enterprise</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-10--platforms-network-effects-and-competition/" class="">
+      Chapter 10 Platforms, Network Effects, and Competition</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-17--data-and-competitive-advantage/" class="active">
+      Chapter 17 Data and Competitive Advantage</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-18--artificial-intelligence/" class="">
+      Chapter 18 Artificial Intelligence</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-2--zara/" class="">
+      Chapter 2 Zara</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-2-sample-questions/" class="">
+      Chapter 2 Sample Questions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-20--a-managers-guide-to-the-internet-and-telecommunications/" class="">
+      Chapter 20 a Manager&#39;s Guide to the Internet and Telecommunications</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-3-strategy-and-technology/" class="">
+      Chapter 3 Strategy and Technology</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-5--netflix/" class="">
+      Chapter 5 Netflix</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-6-moores-law-and-more/" class="">
+      Chapter 6 Moore&#39;s Law and More</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-7--disruptive-technologies/" class="">
+      Chapter 7 Disruptive Technologies</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-9--amazon/" class="">
+      Chapter 9 Amazon</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/cybersecurity-threats/" class="">
+      Cybersecurity Threats</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/netflix-presentation-speaker-notes/" class="">
+      Netflix Presentation Speaker Notes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-751dfeaa86902fb15b95d0e8e28f5169" class="toggle"  />
+    <label for="section-751dfeaa86902fb15b95d0e8e28f5169" class="flex">
+      <a role="button" class="">
+        IS 310</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c7538cb34419b13d5e14d5bba48486a5" class="toggle"  />
+    <label for="section-c7538cb34419b13d5e14d5bba48486a5" class="flex">
+      <a role="button" class="">
+        Weekly notes</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-1-python-basics/" class="">
+      Week 1 Python Basics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-11-working-with-the-linux-filesystem/" class="">
+      Week 11 Working With the Linux Filesystem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-12-pattern-matching--vulnerability-scanning/" class="">
+      Week 12 Pattern Matching &amp; Vulnerability Scanning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-13-security-and-advanced-bash-operations/" class="">
+      Week 13 Security and Advanced Bash Operations</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-2-advanced-programming/" class="">
+      Week 2 Advanced Programming</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-3-functions-files-and-exceptions/" class="">
+      Week 3 Functions, Files and Exceptions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-4-data-structures/" class="">
+      Week 4 Data Structures</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-5--inheritance/" class="">
+      Week 5 Inheritance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-6-python-libraries/" class="">
+      Week 6 Python Libraries</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-9--linux-intro-and-io/" class="">
+      Week 9 Linux Intro and Io</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/bash-exam-topics/" class="">
+      Bash Exam Topics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/bash-final-project/" class="">
+      Bash Final Project</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7c584d34a0afaffcb8ebe59023ab5e3e" class="toggle"  />
+    <label for="section-7c584d34a0afaffcb8ebe59023ab5e3e" class="flex">
+      <a role="button" class="">
+        Semester 4</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-45cd194e742ed81db2f0ddeee2728dab" class="toggle"  />
+    <label for="section-45cd194e742ed81db2f0ddeee2728dab" class="flex">
+      <a role="button" class="">
+        BYS 119</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cbd9e89258049b63e28a2b9b0b04da7a" class="toggle"  />
+    <label for="section-cbd9e89258049b63e28a2b9b0b04da7a" class="flex">
+      <a role="button" class="">
+        BYS 121</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1fb1c9133f5878b4100a74622b9eb8ca" class="toggle"  />
+    <label for="section-1fb1c9133f5878b4100a74622b9eb8ca" class="flex">
+      <a role="button" class="">
+        IS 340</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e92b6f7c6dfb68c09a395c20f93768e3" class="toggle"  />
+    <label for="section-e92b6f7c6dfb68c09a395c20f93768e3" class="flex">
+      <a role="button" class="">
+        IS 401</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f606400069f4982285623246c8e026d6" class="toggle"  />
+    <label for="section-f606400069f4982285623246c8e026d6" class="flex">
+      <a role="button" class="">
+        MGT 301</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ee7e2704aeba138592b97c863eb5aab7" class="toggle"  />
+    <label for="section-ee7e2704aeba138592b97c863eb5aab7" class="flex">
+      <a role="button" class="">
+        PHL 101</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-4/phl-101/phl-101___1-6-25/" class="">
+      Phl 101 1 6 25</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Chapter 17 Data and Competitive Advantage</h3>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><ul>
+<li><strong>Big Data:</strong> A general term used to describe the massive amount of data available to today&rsquo;s managers. Big Data are often unstructured and are too big and costly to easily work through via use of conventional databases, but new tools are making these massive datasets available for analysis and insight.
+<ul>
+<li><strong>Business Intelligence (BI):</strong> A term combining aspects of reporting, data exploration and ad hoc queries, and sophisticated data modeling and analysis.</li>
+<li><strong>Analytics:</strong> A term describing the extensive use of data, statistical and quantitative analysis, explanatory and predictive models, and fact-based management to drive decisions and actions.</li>
+<li><strong>Machine learning (ML):</strong> A type of artificial intelligence that leverages massive amounts of data so that computers can improve the accuracy of actions and predictions on their own without additional programming.</li>
+<li><strong>Data:</strong> Raw facts and figures.</li>
+<li><strong>Information:</strong> Data presented in a context so that it can answer a question or support decision-making.</li>
+<li><strong>Knowledge:</strong> Insight derived from experience and expertise.</li>
+<li><strong>Database:</strong> A single table or a collection of related tables.</li>
+<li><strong>Database management systems (DBMS):</strong> Sometimes referred to as database software; software for creating, maintaining, and manipulating data.</li>
+<li><strong>Structured query language (SQL):</strong> A language used to create and manipulate databases.</li>
+<li><strong>Database administrator (DBA):</strong> Job title focused on directing, performing, or overseeing activities associated with a database or set of databases. These may include (but not necessarily be limited to) database design, creation, implementation, maintenance, backup and recovery, policy setting and enforcement, and security.</li>
+<li><strong>Table or file:</strong> A list of data, arranged in columns (fields) and rows (records).</li>
+<li><strong>Column or field:</strong> A column in a database table. Columns represent each category of data contained in a record (e.g., first name, last name, ID number, date of birth).</li>
+<li><strong>Row or record:</strong> A row in a database table. Records represent a single instance of whatever the table keeps track of (e.g., student, faculty, course title).</li>
+<li><strong>Relational databases:</strong> The most common standard for expressing databases, whereby tables (files) are related based on common keys.</li>
+<li><strong>Serverless computing:</strong> A type of cloud computing where a third-party vendor manages servers, replication, fault-tolerance, computing scalability, and certain aspects of security, freeing software developers to focus on building “business solutions” and eliminating the need to spend time and resources managing the technology complexity of much of the underlying “IT solution.”</li>
+<li><strong>Transaction processing systems (TPS):</strong> Systems that record a transaction (some form of business-related exchange), such as a cash register sale, ATM withdrawal, or product return.</li>
+<li><strong>Transaction:</strong> Some kind of business exchange.</li>
+<li><strong>Loyalty program:</strong> A system that provides rewards and usage incentives, typically in exchange for a method that provides a more detailed tracking and recording of customer activity. In addition to enhancing data collection, loyalty cards can represent a significant switching cost.</li>
+<li><strong>Artificial intelligence:</strong> Computer software that seeks to reproduce or mimic (perhaps with improvements) human thought, decision-making, or brain functions.</li>
+<li><strong>Data aggregators:</strong> Firms that collect and resell data.</li>
+<li><strong>Legacy systems:</strong> Older information systems that are often incompatible with other systems, technologies, and ways of conducting business. Incompatible legacy systems can be a major roadblock to turning data into information, and they can inhibit firm agility, holding back operational and strategic initiatives.</li>
+<li><strong>Data warehouse:</strong> A set of databases designed to support decision-making in an organization.</li>
+<li><strong>Data mart:</strong> A database or databases focused on addressing the concerns of a specific problem (e.g., increasing customer retention, improving product quality) or business unit (e.g., marketing, engineering).</li>
+<li><strong>Online analytical processing (OLAP):</strong> A method of querying and reporting that takes data from standard relational databases, calculates and summarizes the data, and then stores the data in a special database called a data cube.</li>
+<li><strong>Data cube:</strong> A special database used to store data in OLAP reporting.</li>
+<li><strong>Data lake:</strong> A catch-all term for storage and access technologies used in Big Data. Data lakes are systems that allow for the storage of data in both structured as well as “raw,” “unfiltered” formats. Data lakes also provide the tools to “pipe out” data, filter it, and refine it so that it can be turned into information.</li>
+<li><strong>Hadoop:</strong> A set of mostly open source tools to manage massive amounts of unstructured data for storage, extraction, and computation.</li>
+<li><strong>Data cloud:</strong> Sometimes referred to as cloud data warehousing, this term refers to a cloud service that provides tools to extract and transform data from disparate sources so that it can be interrogated as needed. Unlike data warehouses, data lakes, or similar tools that an organization might run on-site, a data cloud can be spun up to temporarily hold a very large amount of data for short-term use, then be disbanded when it is no longer needed. Snowflake is the best known of the many firms providing services in this space.</li>
+<li><strong>ETL:</strong> Extract, Transform, Load—copying data from multiple, disparately organized data sources, transforming (or cleaning) the data into a common format, and loading it into a combined usable format. ETL is a key step in getting data into a data warehouse or data mart.</li>
+<li><strong>Query tools:</strong> Tools to interrogate a data source or multiple sources and return a subset of data, possibly summarized, based on a set of criteria.</li>
+<li><strong>Python:</strong> A general purpose programming language that is also popular for data analytics.</li>
+<li><strong>R:</strong> A programming language specifically created for analytics, statistical, and graphical computing.</li>
+<li><strong>Graphical query tools:</strong> Tools that allow a user to create a query through a point-and-click or drag-and-drop interface, rather than requiring programming knowledge.</li>
+<li><strong>Canned reports:</strong> Reports that provide regular summaries of information in a performative format.</li>
+<li><strong>Ad Hoc reporting tools:</strong> Tools that put users in control so that they can create custom reports on an as-needed basis by selecting fields, ranges, summary conditions, and other parameters.</li>
+<li><strong>Dashboards:</strong> A heads-up display of critical indicators that allow managers to get a graphical glance at key performance metrics.</li>
+<li><strong>Data visualization:</strong> The graphical representation of data and information.</li>
+<li><strong>Generative AI:</strong> A type of artificial intelligence whose output is some type of media: e.g., text, images, audio, video. Results are usually generated based on a prompt, such as typed or spoken text. This technology “learns” the patterns and structure of data used during training, and can then generate new output based on the characteristics of this input. Results can often be refined by further prompt entry.</li>
+<li><strong>Omnichannel:</strong> Providing customers with a unified experience across customer channels, which may include online, mobile, catalog, phone, and retail. Pricing, recommendations, and incentives should reflect a data-driven, accurate, single view of the customer.</li>
+<li><strong>Data mining:</strong> The process of using computers to identify hidden patterns in, and to build models from, large datasets.</li>
+<li><strong>Over-engineer:</strong> Build a model with so many variables that the solution arrived at might only work on the subset of data you’ve used to create it.</li>
+</ul>
+</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/notes/semester-3/is-301/class-notes/chapter-10--platforms-network-effects-and-competition/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>Chapter 10 Platforms, Network Effects, and Competition</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/notes/semester-3/is-301/class-notes/chapter-18--artificial-intelligence/" class="flex align-center">
+        <span>Chapter 18 Artificial Intelligence</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

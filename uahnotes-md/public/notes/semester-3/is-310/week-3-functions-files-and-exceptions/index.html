@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="I. Functions# Introduction to Functions# Definition: A group of statements within a program that performs a specific task. [cite_start]Divide and Conquer: A strategy of breaking a large, complex program into smaller, modularized tasks (functions) [cite: 1012-1016]. Benefits: Simpler code. Code Reuse: Write once, call multiple times. Better testing and debugging (test individually). [cite_start]Faster development and facilitation of teamwork [cite: 1073-1079]. Types of Functions# [cite_start]Void Functions: Execute statements and terminate (do not return a value) [cite: 1087-1089]. [cite_start]Value-Returning Functions: Execute statements and return a value to the calling statement (e.g., int(), input()) [cite: 1090-1092]. Defining and Calling# [cite_start]Naming Rules: Cannot use keywords, cannot contain spaces, must start with a letter or underscore, and are case-sensitive [cite: 1100-1103]. Syntax: def function_name(): statement statement [cite_start]Indentation: The block of statements belonging to the function must be indented consistently [cite: 1143-1144]. [cite_start]Main Function: Defines the mainline logic of the program and calls other functions as needed [cite: 1135-1137]. Designing with Functions# [cite_start]Flowcharts: Function calls are depicted as rectangles with vertical bars at each side[cite: 1153]. [cite_start]Hierarchy Charts: (Structure Charts) Depict relationships between functions using boxes and connecting lines to show what calls what [cite: 1173-1174]. [cite_start]The pass Keyword: Can be used to create empty functions as placeholders during design[cite: 1195]. Variables and Scope# Local Variables: Created inside a function and belong only to that function. [cite_start]They cannot be accessed by code outside the function [cite: 1205-1207]. Scope: The part of the program where a variable may be accessed. Global Variables: Created outside all functions. Accessible anywhere but make debugging difficult and programs hard to understand. [cite_start]Avoid usage [cite: 1340, 1348-1353]. Global Constants: Global names referencing unchangeable values. [cite_start]These are permissible[cite: 1358]. Arguments and Parameters# Argument: Data sent into a function call. [cite_start]Parameter: The variable inside the function that receives the argument[cite: 1243]. [cite_start]Pass by Value: Changes made to a parameter inside the function do not affect the argument outside the function [cite: 1287-1288]. [cite_start]Keyword Arguments: Specifies which parameter a value belongs to (e.g., func(parameter=value)), allowing arguments to be passed out of order [cite: 1331-1332]. Return Values# Syntax: return expression. Multiple Values: Python can return multiple values separated by commas. [cite_start]Example: return expression1, expression2 [cite: 1527-1528]. [cite_start]None: A special value meaning “no value,” often used to indicate errors [cite: 1533-1534]. II. Modules and Standard Library# Standard Library# Definition: Pre-written functions that come with Python (e.g., print, range). Modules: Files that store library functions. [cite_start]To use them, you must use the import statement [cite: 1386-1389]. The random Module# Requires import random. Useful functions include:
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/notes/semester-3/is-310/week-3-functions-files-and-exceptions/">
+  <meta property="og:site_name" content="UAH Notes">
+  <meta property="og:title" content="UAH Notes">
+  <meta property="og:description" content="I. Functions# Introduction to Functions# Definition: A group of statements within a program that performs a specific task. [cite_start]Divide and Conquer: A strategy of breaking a large, complex program into smaller, modularized tasks (functions) [cite: 1012-1016]. Benefits: Simpler code. Code Reuse: Write once, call multiple times. Better testing and debugging (test individually). [cite_start]Faster development and facilitation of teamwork [cite: 1073-1079]. Types of Functions# [cite_start]Void Functions: Execute statements and terminate (do not return a value) [cite: 1087-1089]. [cite_start]Value-Returning Functions: Execute statements and return a value to the calling statement (e.g., int(), input()) [cite: 1090-1092]. Defining and Calling# [cite_start]Naming Rules: Cannot use keywords, cannot contain spaces, must start with a letter or underscore, and are case-sensitive [cite: 1100-1103]. Syntax: def function_name(): statement statement [cite_start]Indentation: The block of statements belonging to the function must be indented consistently [cite: 1143-1144]. [cite_start]Main Function: Defines the mainline logic of the program and calls other functions as needed [cite: 1135-1137]. Designing with Functions# [cite_start]Flowcharts: Function calls are depicted as rectangles with vertical bars at each side[cite: 1153]. [cite_start]Hierarchy Charts: (Structure Charts) Depict relationships between functions using boxes and connecting lines to show what calls what [cite: 1173-1174]. [cite_start]The pass Keyword: Can be used to create empty functions as placeholders during design[cite: 1195]. Variables and Scope# Local Variables: Created inside a function and belong only to that function. [cite_start]They cannot be accessed by code outside the function [cite: 1205-1207]. Scope: The part of the program where a variable may be accessed. Global Variables: Created outside all functions. Accessible anywhere but make debugging difficult and programs hard to understand. [cite_start]Avoid usage [cite: 1340, 1348-1353]. Global Constants: Global names referencing unchangeable values. [cite_start]These are permissible[cite: 1358]. Arguments and Parameters# Argument: Data sent into a function call. [cite_start]Parameter: The variable inside the function that receives the argument[cite: 1243]. [cite_start]Pass by Value: Changes made to a parameter inside the function do not affect the argument outside the function [cite: 1287-1288]. [cite_start]Keyword Arguments: Specifies which parameter a value belongs to (e.g., func(parameter=value)), allowing arguments to be passed out of order [cite: 1331-1332]. Return Values# Syntax: return expression. Multiple Values: Python can return multiple values separated by commas. [cite_start]Example: return expression1, expression2 [cite: 1527-1528]. [cite_start]None: A special value meaning “no value,” often used to indicate errors [cite: 1533-1534]. II. Modules and Standard Library# Standard Library# Definition: Pre-written functions that come with Python (e.g., print, range). Modules: Files that store library functions. [cite_start]To use them, you must use the import statement [cite: 1386-1389]. The random Module# Requires import random. Useful functions include:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+
+
+  <meta itemprop="name" content="UAH Notes">
+  <meta itemprop="description" content="I. Functions# Introduction to Functions# Definition: A group of statements within a program that performs a specific task. [cite_start]Divide and Conquer: A strategy of breaking a large, complex program into smaller, modularized tasks (functions) [cite: 1012-1016]. Benefits: Simpler code. Code Reuse: Write once, call multiple times. Better testing and debugging (test individually). [cite_start]Faster development and facilitation of teamwork [cite: 1073-1079]. Types of Functions# [cite_start]Void Functions: Execute statements and terminate (do not return a value) [cite: 1087-1089]. [cite_start]Value-Returning Functions: Execute statements and return a value to the calling statement (e.g., int(), input()) [cite: 1090-1092]. Defining and Calling# [cite_start]Naming Rules: Cannot use keywords, cannot contain spaces, must start with a letter or underscore, and are case-sensitive [cite: 1100-1103]. Syntax: def function_name(): statement statement [cite_start]Indentation: The block of statements belonging to the function must be indented consistently [cite: 1143-1144]. [cite_start]Main Function: Defines the mainline logic of the program and calls other functions as needed [cite: 1135-1137]. Designing with Functions# [cite_start]Flowcharts: Function calls are depicted as rectangles with vertical bars at each side[cite: 1153]. [cite_start]Hierarchy Charts: (Structure Charts) Depict relationships between functions using boxes and connecting lines to show what calls what [cite: 1173-1174]. [cite_start]The pass Keyword: Can be used to create empty functions as placeholders during design[cite: 1195]. Variables and Scope# Local Variables: Created inside a function and belong only to that function. [cite_start]They cannot be accessed by code outside the function [cite: 1205-1207]. Scope: The part of the program where a variable may be accessed. Global Variables: Created outside all functions. Accessible anywhere but make debugging difficult and programs hard to understand. [cite_start]Avoid usage [cite: 1340, 1348-1353]. Global Constants: Global names referencing unchangeable values. [cite_start]These are permissible[cite: 1358]. Arguments and Parameters# Argument: Data sent into a function call. [cite_start]Parameter: The variable inside the function that receives the argument[cite: 1243]. [cite_start]Pass by Value: Changes made to a parameter inside the function do not affect the argument outside the function [cite: 1287-1288]. [cite_start]Keyword Arguments: Specifies which parameter a value belongs to (e.g., func(parameter=value)), allowing arguments to be passed out of order [cite: 1331-1332]. Return Values# Syntax: return expression. Multiple Values: Python can return multiple values separated by commas. [cite_start]Example: return expression1, expression2 [cite: 1527-1528]. [cite_start]None: A special value meaning “no value,” often used to indicate errors [cite: 1533-1534]. II. Modules and Standard Library# Standard Library# Definition: Pre-written functions that come with Python (e.g., print, range). Modules: Files that store library functions. [cite_start]To use them, you must use the import statement [cite: 1386-1389]. The random Module# Requires import random. Useful functions include:">
+  <meta itemprop="wordCount" content="894">
+
+<title>Week 3 Functions, Files and Exceptions | UAH Notes</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/notes/semester-3/is-310/week-3-functions-files-and-exceptions/">
+<link rel="stylesheet" href="/book.min.6970156cec683193d93c9c4edaf0d56574e4361df2e0c1be4f697ae81c3ba55f.css" integrity="sha256-aXAVbOxoMZPZPJxO2vDVZXTkNh3y4MG&#43;T2l66Bw7pV8=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.56df3d823a1f4e7171d8566bf2b0ac2a427eca116016fd1bfa35a47aeb94caee.js" integrity="sha256-Vt89gjofTnFx2FZr8rCsKkJ&#43;yhFgFv0b&#43;jWkeuuUyu4=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-notes">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>UAH Notes</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-10f9186ea778f94125530bda2b491eec" class="toggle"  />
+    <label for="section-10f9186ea778f94125530bda2b491eec" class="flex">
+      <a role="button" class="">
+        Semester 1</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b52ef1c950bc29bb8fa9a1641f2a1845" class="toggle"  />
+    <label for="section-b52ef1c950bc29bb8fa9a1641f2a1845" class="flex">
+      <a role="button" class="">
+        MU 100</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-1/" class="">
+      Part 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-2/" class="">
+      Part 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-4/" class="">
+      Part 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-5/" class="">
+      Part 5</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-58e03cbf23ca286c894b669a53323b3d" class="toggle" checked />
+    <label for="section-58e03cbf23ca286c894b669a53323b3d" class="flex">
+      <a role="button" class="">
+        Semester 3</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f7872d2b813cce0d12e481fe12abeef5" class="toggle"  />
+    <label for="section-f7872d2b813cce0d12e481fe12abeef5" class="flex">
+      <a role="button" class="">
+        ACC 212</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/activity-based-costing/" class="">
+      Activity Based Costing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/behavioral-finance/" class="">
+      Behavioral Finance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/job-order-costing/" class="">
+      Job Order Costing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/recording-business-transactions/" class="">
+      Recording Business Transactions</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c5d8c9e96e5388eb7097d28ba6f1da0e" class="toggle"  />
+    <label for="section-c5d8c9e96e5388eb7097d28ba6f1da0e" class="flex">
+      <a role="button" class="">
+        ECN 142</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/ecn-143/public-economics/" class="">
+      Public Economics</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d525b16173573fea2aea813a9b6d8d4c" class="toggle"  />
+    <label for="section-d525b16173573fea2aea813a9b6d8d4c" class="flex">
+      <a role="button" class="">
+        EH 242</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/england-and-the-middle-ages/" class="">
+      England and the Middle Ages</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/sir-gawain-and-the-green-knight/" class="">
+      Sir Gawain and the Green Knight</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/the-mabinogion/" class="">
+      The Mabinogion</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-1/" class="">
+      Module 1 (Gilgamesh)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-2/" class="">
+      Module 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-3/" class="">
+      Module 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-4/" class="">
+      Module 4</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-14a5c4e3c8a2fb4ddfe18d6ee8afb053" class="toggle"  />
+    <label for="section-14a5c4e3c8a2fb4ddfe18d6ee8afb053" class="flex">
+      <a role="button" class="">
+        FIN 230</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/fin-230/final-exam-information/" class="">
+      Final Exam Information</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-60b08407cfa9dd0baf4b9d93cb9e641d" class="toggle"  />
+    <label for="section-60b08407cfa9dd0baf4b9d93cb9e641d" class="flex">
+      <a role="button" class="">
+        IS 301</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-00b4fe89185b0df446cc84ca546943d2" class="toggle"  />
+    <label for="section-00b4fe89185b0df446cc84ca546943d2" class="flex">
+      <a role="button" class="">
+        Class Notes</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-1-technology-and-the-modern-enterprise/" class="">
+      Chapter 1 Technology and the Modern Enterprise</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-10--platforms-network-effects-and-competition/" class="">
+      Chapter 10 Platforms, Network Effects, and Competition</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-17--data-and-competitive-advantage/" class="">
+      Chapter 17 Data and Competitive Advantage</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-18--artificial-intelligence/" class="">
+      Chapter 18 Artificial Intelligence</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-2--zara/" class="">
+      Chapter 2 Zara</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-2-sample-questions/" class="">
+      Chapter 2 Sample Questions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-20--a-managers-guide-to-the-internet-and-telecommunications/" class="">
+      Chapter 20 a Manager&#39;s Guide to the Internet and Telecommunications</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-3-strategy-and-technology/" class="">
+      Chapter 3 Strategy and Technology</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-5--netflix/" class="">
+      Chapter 5 Netflix</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-6-moores-law-and-more/" class="">
+      Chapter 6 Moore&#39;s Law and More</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-7--disruptive-technologies/" class="">
+      Chapter 7 Disruptive Technologies</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-9--amazon/" class="">
+      Chapter 9 Amazon</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/netflix-presentation-speaker-notes/" class="">
+      Netflix Presentation Speaker Notes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-751dfeaa86902fb15b95d0e8e28f5169" class="toggle" checked />
+    <label for="section-751dfeaa86902fb15b95d0e8e28f5169" class="flex">
+      <a role="button" class="">
+        IS 310</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/week-1-python-basics/" class="">
+      Week 1 Python Basics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/week-11-working-with-the-linux-filesystem/" class="">
+      Week 11 Working With the Linux Filesystem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/week-12-pattern-matching--vulnerability-scanning/" class="">
+      Week 12 Pattern Matching &amp; Vulnerability Scanning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/week-13-security-and-advanced-bash-operations/" class="">
+      Week 13 Security and Advanced Bash Operations</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/week-2-advanced-programming/" class="">
+      Week 2 Advanced Programming</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/week-3-functions-files-and-exceptions/" class="active">
+      Week 3 Functions, Files and Exceptions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/week-4-data-structures/" class="">
+      Week 4 Data Structures</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/week-5--inheritance/" class="">
+      Week 5 Inheritance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/week-6-python-libraries/" class="">
+      Week 6 Python Libraries</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/week-9--linux-intro-and-io/" class="">
+      Week 9 Linux Intro and Io</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7c584d34a0afaffcb8ebe59023ab5e3e" class="toggle"  />
+    <label for="section-7c584d34a0afaffcb8ebe59023ab5e3e" class="flex">
+      <a role="button" class="">
+        Semester 4</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-45cd194e742ed81db2f0ddeee2728dab" class="toggle"  />
+    <label for="section-45cd194e742ed81db2f0ddeee2728dab" class="flex">
+      <a role="button" class="">
+        BYS 119</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cbd9e89258049b63e28a2b9b0b04da7a" class="toggle"  />
+    <label for="section-cbd9e89258049b63e28a2b9b0b04da7a" class="flex">
+      <a role="button" class="">
+        BYS 121</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1fb1c9133f5878b4100a74622b9eb8ca" class="toggle"  />
+    <label for="section-1fb1c9133f5878b4100a74622b9eb8ca" class="flex">
+      <a role="button" class="">
+        IS 340</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e92b6f7c6dfb68c09a395c20f93768e3" class="toggle"  />
+    <label for="section-e92b6f7c6dfb68c09a395c20f93768e3" class="flex">
+      <a role="button" class="">
+        IS 401</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f606400069f4982285623246c8e026d6" class="toggle"  />
+    <label for="section-f606400069f4982285623246c8e026d6" class="flex">
+      <a role="button" class="">
+        MGT 301</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ee7e2704aeba138592b97c863eb5aab7" class="toggle"  />
+    <label for="section-ee7e2704aeba138592b97c863eb5aab7" class="flex">
+      <a role="button" class="">
+        PHL 101</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Week 3 Functions, Files and Exceptions</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#i-functions">I. Functions</a>
+      <ul>
+        <li><a href="#introduction-to-functions">Introduction to Functions</a></li>
+        <li><a href="#types-of-functions">Types of Functions</a></li>
+        <li><a href="#defining-and-calling">Defining and Calling</a></li>
+        <li><a href="#designing-with-functions">Designing with Functions</a></li>
+        <li><a href="#variables-and-scope">Variables and Scope</a></li>
+        <li><a href="#arguments-and-parameters">Arguments and Parameters</a></li>
+        <li><a href="#return-values">Return Values</a></li>
+      </ul>
+    </li>
+    <li><a href="#ii-modules-and-standard-library">II. Modules and Standard Library</a>
+      <ul>
+        <li><a href="#standard-library">Standard Library</a></li>
+        <li><a href="#the-random-module">The <code>random</code> Module</a></li>
+        <li><a href="#the-math-module">The <code>math</code> Module</a></li>
+        <li><a href="#creating-modules">Creating Modules</a></li>
+      </ul>
+    </li>
+    <li><a href="#iii-files-and-file-inputoutput">III. Files and File Input/Output</a>
+      <ul>
+        <li><a href="#basics-of-file-io">Basics of File I/O</a></li>
+        <li><a href="#file-operations">File Operations</a></li>
+        <li><a href="#file-modes">File Modes</a></li>
+        <li><a href="#reading-and-writing">Reading and Writing</a></li>
+        <li><a href="#processing-files-with-loops">Processing Files with Loops</a></li>
+      </ul>
+    </li>
+    <li><a href="#iv-exceptions">IV. Exceptions</a>
+      <ul>
+        <li><a href="#concepts">Concepts</a></li>
+        <li><a href="#exception-handling-try--except">Exception Handling (<code>try</code> / <code>except</code>)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="i-functions">I. Functions<a class="anchor" href="#i-functions">#</a></h2>
+<h3 id="introduction-to-functions">Introduction to Functions<a class="anchor" href="#introduction-to-functions">#</a></h3>
+<ul>
+<li><strong>Definition:</strong> A group of statements within a program that performs a specific task.</li>
+<li>[cite_start]<strong>Divide and Conquer:</strong> A strategy of breaking a large, complex program into smaller, modularized tasks (functions) [cite: 1012-1016].</li>
+<li><strong>Benefits:</strong>
+<ul>
+<li>Simpler code.</li>
+<li><strong>Code Reuse:</strong> Write once, call multiple times.</li>
+<li>Better testing and debugging (test individually).</li>
+<li>[cite_start]Faster development and facilitation of teamwork [cite: 1073-1079].</li>
+</ul>
+</li>
+</ul>
+<h3 id="types-of-functions">Types of Functions<a class="anchor" href="#types-of-functions">#</a></h3>
+<ol>
+<li>[cite_start]<strong>Void Functions:</strong> Execute statements and terminate (do not return a value) [cite: 1087-1089].</li>
+<li>[cite_start]<strong>Value-Returning Functions:</strong> Execute statements and return a value to the calling statement (e.g., <code>int()</code>, <code>input()</code>) [cite: 1090-1092].</li>
+</ol>
+<h3 id="defining-and-calling">Defining and Calling<a class="anchor" href="#defining-and-calling">#</a></h3>
+<ul>
+<li>[cite_start]<strong>Naming Rules:</strong> Cannot use keywords, cannot contain spaces, must start with a letter or underscore, and are case-sensitive [cite: 1100-1103].</li>
+<li><strong>Syntax:</strong>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">function_name</span>():
+</span></span><span style="display:flex;"><span>    statement
+</span></span><span style="display:flex;"><span>    statement</span></span></code></pre></div></li>
+<li>[cite_start]<strong>Indentation:</strong> The block of statements belonging to the function must be indented consistently [cite: 1143-1144].</li>
+<li>[cite_start]<strong>Main Function:</strong> Defines the mainline logic of the program and calls other functions as needed [cite: 1135-1137].</li>
+</ul>
+<h3 id="designing-with-functions">Designing with Functions<a class="anchor" href="#designing-with-functions">#</a></h3>
+<ul>
+<li>[cite_start]<strong>Flowcharts:</strong> Function calls are depicted as rectangles with vertical bars at each side[cite: 1153].</li>
+<li>[cite_start]<strong>Hierarchy Charts:</strong> (Structure Charts) Depict relationships between functions using boxes and connecting lines to show what calls what [cite: 1173-1174].</li>
+<li>[cite_start]<strong>The <code>pass</code> Keyword:</strong> Can be used to create empty functions as placeholders during design[cite: 1195].</li>
+</ul>
+<h3 id="variables-and-scope">Variables and Scope<a class="anchor" href="#variables-and-scope">#</a></h3>
+<ul>
+<li><strong>Local Variables:</strong> Created inside a function and belong only to that function. [cite_start]They cannot be accessed by code outside the function [cite: 1205-1207].</li>
+<li><strong>Scope:</strong> The part of the program where a variable may be accessed.</li>
+<li><strong>Global Variables:</strong> Created outside all functions. Accessible anywhere but make debugging difficult and programs hard to understand. [cite_start]<strong>Avoid usage</strong> [cite: 1340, 1348-1353].</li>
+<li><strong>Global Constants:</strong> Global names referencing unchangeable values. [cite_start]These are permissible[cite: 1358].</li>
+</ul>
+<h3 id="arguments-and-parameters">Arguments and Parameters<a class="anchor" href="#arguments-and-parameters">#</a></h3>
+<ul>
+<li><strong>Argument:</strong> Data sent <em>into</em> a function call.</li>
+<li>[cite_start]<strong>Parameter:</strong> The variable inside the function that receives the argument[cite: 1243].</li>
+<li>[cite_start]<strong>Pass by Value:</strong> Changes made to a parameter inside the function do <em>not</em> affect the argument outside the function [cite: 1287-1288].</li>
+<li>[cite_start]<strong>Keyword Arguments:</strong> Specifies which parameter a value belongs to (e.g., <code>func(parameter=value)</code>), allowing arguments to be passed out of order [cite: 1331-1332].</li>
+</ul>
+<h3 id="return-values">Return Values<a class="anchor" href="#return-values">#</a></h3>
+<ul>
+<li><strong>Syntax:</strong> <code>return expression</code>.</li>
+<li><strong>Multiple Values:</strong> Python can return multiple values separated by commas.
+<ul>
+<li>[cite_start]Example: <code>return expression1, expression2</code> [cite: 1527-1528].</li>
+</ul>
+</li>
+<li>[cite_start]<strong>None:</strong> A special value meaning &ldquo;no value,&rdquo; often used to indicate errors [cite: 1533-1534].</li>
+</ul>
+<hr>
+<h2 id="ii-modules-and-standard-library">II. Modules and Standard Library<a class="anchor" href="#ii-modules-and-standard-library">#</a></h2>
+<h3 id="standard-library">Standard Library<a class="anchor" href="#standard-library">#</a></h3>
+<ul>
+<li><strong>Definition:</strong> Pre-written functions that come with Python (e.g., <code>print</code>, <code>range</code>).</li>
+<li><strong>Modules:</strong> Files that store library functions. [cite_start]To use them, you must use the <code>import</code> statement [cite: 1386-1389].</li>
+</ul>
+<h3 id="the-random-module">The <code>random</code> Module<a class="anchor" href="#the-random-module">#</a></h3>
+<p>Requires <code>import random</code>. Useful functions include:</p>
+<ul>
+<li>[cite_start]<code>randint(min, max)</code>: Returns a random integer in the range[cite: 1414].</li>
+<li><code>randrange(start, stop, step)</code>: Returns a randomly selected integer from the sequence.</li>
+<li><code>random()</code>: Returns a float between 0.0 and 1.0.</li>
+<li>[cite_start]<code>uniform(min, max)</code>: Returns a float within a specified range [cite: 1442-1447].</li>
+<li><strong>Seeds:</strong> <code>random.seed()</code> initializes the random number generator. [cite_start]By default, it uses system time [cite: 1454-1456].</li>
+</ul>
+<h3 id="the-math-module">The <code>math</code> Module<a class="anchor" href="#the-math-module">#</a></h3>
+<p>Requires <code>import math</code>.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Function</th>
+          <th style="text-align: left">Description</th>
+          <th style="text-align: left">Citation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>ceil(x)</code></td>
+          <td style="text-align: left">[cite_start]Smallest integer &gt;= x</td>
+          <td style="text-align: left">[cite: 1554]</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>floor(x)</code></td>
+          <td style="text-align: left">[cite_start]Largest integer &lt;= x</td>
+          <td style="text-align: left">[cite: 1554]</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>sqrt(x)</code></td>
+          <td style="text-align: left">[cite_start]Square root of x</td>
+          <td style="text-align: left">[cite: 1554]</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>pow(x, y)</code></td>
+          <td style="text-align: left">x raised to power of y</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>pi</code></td>
+          <td style="text-align: left">[cite_start]Constant value of $\pi$</td>
+          <td style="text-align: left">[cite: 1559]</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="creating-modules">Creating Modules<a class="anchor" href="#creating-modules">#</a></h3>
+<ul>
+<li>Any file ending in <code>.py</code> can be imported as a module.</li>
+<li><strong>Conditional Execution:</strong> To prevent code from running when imported, use:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+</span></span><span style="display:flex;"><span>    main()</span></span></code></pre></div>[cite_start]This ensures <code>main()</code> only runs if the file is executed as a standalone program [cite: 1610-1611].</li>
+</ul>
+<hr>
+<h2 id="iii-files-and-file-inputoutput">III. Files and File Input/Output<a class="anchor" href="#iii-files-and-file-inputoutput">#</a></h2>
+<h3 id="basics-of-file-io">Basics of File I/O<a class="anchor" href="#basics-of-file-io">#</a></h3>
+<ul>
+<li><strong>Purpose:</strong> To retain data between program runs (save to disk).</li>
+<li><strong>Types of Files:</strong>
+<ul>
+<li><strong>Text:</strong> Encoded as text.</li>
+<li>[cite_start]<strong>Binary:</strong> Raw data not converted to text [cite: 1724-1725].</li>
+</ul>
+</li>
+<li><strong>Access Methods:</strong>
+<ul>
+<li><strong>Sequential:</strong> Read from beginning to end (e.g., tape).</li>
+<li>[cite_start]<strong>Direct:</strong> Jump to any piece of data [cite: 1727-1728].</li>
+</ul>
+</li>
+</ul>
+<h3 id="file-operations">File Operations<a class="anchor" href="#file-operations">#</a></h3>
+<ol>
+<li><strong>Open:</strong> Creates a file object. <code>file_variable = open(filename, mode)</code>.</li>
+<li><strong>Process:</strong> Read or write data.</li>
+<li><strong>Close:</strong> Disconnects the program from the file. [cite_start]<code>file_variable.close()</code> [cite: 1700-1703].</li>
+</ol>
+<h3 id="file-modes">File Modes<a class="anchor" href="#file-modes">#</a></h3>
+<ul>
+<li><code>'r'</code>: <strong>Read</strong> only.</li>
+<li><code>'w'</code>: <strong>Write</strong>. Overwrites existing file or creates a new one.</li>
+<li><code>'a'</code>: <strong>Append</strong>. [cite_start]Adds to the end of the file or creates a new one[cite: 1757, 1799].</li>
+</ul>
+<h3 id="reading-and-writing">Reading and Writing<a class="anchor" href="#reading-and-writing">#</a></h3>
+<ul>
+<li><strong>Writing:</strong> <code>file.write(string)</code>.
+<ul>
+<li>[cite_start]<em>Note:</em> You usually need to concatenate a newline <code>\n</code> to the string[cite: 1773, 1790].</li>
+<li>[cite_start]<strong>Numeric Data:</strong> Must be converted to string (<code>str()</code>) before writing[cite: 1809].</li>
+</ul>
+</li>
+<li><strong>Reading:</strong>
+<ul>
+<li><code>read()</code>: Reads entire file into memory.</li>
+<li><code>readline()</code>: Reads a single line (including <code>\n</code>).</li>
+<li>[cite_start]<code>rstrip()</code>: Removes specific characters (like <code>\n</code>) from the end of a string [cite: 1780-1783, 1792].</li>
+<li>[cite_start]<strong>Numeric Data:</strong> Must be converted to <code>int</code> or <code>float</code> after reading[cite: 1812].</li>
+</ul>
+</li>
+</ul>
+<h3 id="processing-files-with-loops">Processing Files with Loops<a class="anchor" href="#processing-files-with-loops">#</a></h3>
+<ul>
+<li><strong>While Loop:</strong> Use <code>readline</code> and check for an empty string (end of file sentinel).
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> line <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#39;&#39;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># process</span></span></span></code></pre></div>[cite_start][cite: 1821-1822]</li>
+<li><strong>For Loop:</strong> Python automatically iterates over lines in a file.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> file_object:
+</span></span><span style="display:flex;"><span>    statements</span></span></code></pre></div>[cite_start][cite: 1844].</li>
+</ul>
+<hr>
+<h2 id="iv-exceptions">IV. Exceptions<a class="anchor" href="#iv-exceptions">#</a></h2>
+<h3 id="concepts">Concepts<a class="anchor" href="#concepts">#</a></h3>
+<ul>
+<li>[cite_start]<strong>Exception:</strong> An error that occurs during runtime (e.g., division by zero, file not found) that typically crashes the program[cite: 1871].</li>
+<li>[cite_start]<strong>Traceback:</strong> The error message indicating where the error occurred[cite: 1872].</li>
+</ul>
+<h3 id="exception-handling-try--except">Exception Handling (<code>try</code> / <code>except</code>)<a class="anchor" href="#exception-handling-try--except">#</a></h3>
+<p>Used to prevent crashes by handling errors gracefully.</p>
+<ul>
+<li><strong>Try Suite:</strong> Statements that might cause an exception.</li>
+<li><strong>Except Clause:</strong> Code that executes if a specific exception occurs.</li>
+<li>[cite_start]<strong>Else Clause (Optional):</strong> Executes <em>only</em> if no exception was raised[cite: 1934].</li>
+<li>[cite_start]<strong>Finally Clause (Optional):</strong> Executes <em>always</em>, regardless of exceptions (used for cleanup) [cite: 1946-1947].</li>
+</ul>
+<p><strong>Syntax:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>  statements
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">ValueError</span>:
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Invalid number&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">IOError</span> <span style="color:#66d9ef">as</span> err:
+</span></span><span style="display:flex;"><span>  [cite_start]print(err) <span style="color:#75715e"># Prints default error message [cite: 1925]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Success&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">finally</span>:
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Cleanup&#34;</span>)</span></span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/notes/semester-3/is-310/week-2-advanced-programming/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>Week 2 Advanced Programming</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/notes/semester-3/is-310/week-4-data-structures/" class="flex align-center">
+        <span>Week 4 Data Structures</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#i-functions">I. Functions</a>
+      <ul>
+        <li><a href="#introduction-to-functions">Introduction to Functions</a></li>
+        <li><a href="#types-of-functions">Types of Functions</a></li>
+        <li><a href="#defining-and-calling">Defining and Calling</a></li>
+        <li><a href="#designing-with-functions">Designing with Functions</a></li>
+        <li><a href="#variables-and-scope">Variables and Scope</a></li>
+        <li><a href="#arguments-and-parameters">Arguments and Parameters</a></li>
+        <li><a href="#return-values">Return Values</a></li>
+      </ul>
+    </li>
+    <li><a href="#ii-modules-and-standard-library">II. Modules and Standard Library</a>
+      <ul>
+        <li><a href="#standard-library">Standard Library</a></li>
+        <li><a href="#the-random-module">The <code>random</code> Module</a></li>
+        <li><a href="#the-math-module">The <code>math</code> Module</a></li>
+        <li><a href="#creating-modules">Creating Modules</a></li>
+      </ul>
+    </li>
+    <li><a href="#iii-files-and-file-inputoutput">III. Files and File Input/Output</a>
+      <ul>
+        <li><a href="#basics-of-file-io">Basics of File I/O</a></li>
+        <li><a href="#file-operations">File Operations</a></li>
+        <li><a href="#file-modes">File Modes</a></li>
+        <li><a href="#reading-and-writing">Reading and Writing</a></li>
+        <li><a href="#processing-files-with-loops">Processing Files with Loops</a></li>
+      </ul>
+    </li>
+    <li><a href="#iv-exceptions">IV. Exceptions</a>
+      <ul>
+        <li><a href="#concepts">Concepts</a></li>
+        <li><a href="#exception-handling-try--except">Exception Handling (<code>try</code> / <code>except</code>)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Security Auditing and System Hardening# What is system hardening is the process of securing a system by reducing its attack surface Involves disabling unnecessary services, configuring security settings, and applying updates Why is it important? Protects systems from unauthorized access or exploitation Ensures compliance with security standards like CIS benchmarks Key Components of System Hardening# SSH Security Disable root login and use key-based authentication Firewall configuration Use tools like ufw or iptables to control incoming and outgoing traffic Service Management Disable unnecessary services to reduce vulnerabilities Regular Updates Keeps the system updated with security patches Bash for System Hardening# Automates tasks like Disabling services that might not be necessary Updating packages Ensures repeatability and consistency Scripts can be scheduled via cron or other services Using systemctl# - For example, using systemctl: - ```bash #!/bin/bash for service in bluetooth cups avahi-daemon; do systemctl stop $service systemctl disable $service done ``` - Used to manage system services and the system state - Basic syntax: - ```bash systemctl [command] [unit] command [action] [#Start](Start.md), stop,etc. unit [systemd unit] [#Like](Like.md) a service, ex: nginx.service ``` - ![Common systemctl commands](../assets/image_1763430376613_0.png) Configuring Firewalls with Bash# Best practices: ufw default deny incoming uf default allow outgoing Allow only the necessary ports Turn ufw logging on The ufw command Simplified interface for managing iptables firewall rules Basic syntax ufw [command] [options] User Account Security# Best practices: Enforce strong passwords using tools like passwd Enforce strong passwords (passwd) Lock unused accounts (usermod -L) Use chage to enforce password aging The passwd command Manage user passwords on Linux systems Basic syntax # With no username, will change your own password # With a username (as the root user): changes another user&#39;s password passwd [options] [username] Filesystem Protections# Key steps Remove world-writeable permissions from sensitive files Configure /tmp with noexec to prevent the execution of files noexec does not allow execution of any binaries on filesystem Prevents accidental or malicious code execution from external drives Prevents script execution from uploads Best Practices Writing a script that allows automatic updates Ensures the latest security patches are applied automatically Security Auditing and Advanced Scripting# Introduction to security auditing?# Process of evaluating a system’s security posture by identifying vulnerabilities Examples: user permissions file permissions network configurations Why is it important Helps to identify misconfigurations Areas for Security Auditing# User accounts Check for empty passwords or unused accounts File permissions Identify world-writeable or SUID files Network configuration Verify open ports and firewall rules Auditing User Accounts with Bash# - **Check for:** - Misconfigurations - Risks - Bad practices - Use cases - Scripts to check for empty passwords - Parse /etc/shadow to find accounts without passwords Auditing File Permissions# - **Check for** - Weak - Risky - Misconfigured permissions - Use cases - **Find** world-writable files - **Find** command to locate files with insecure permissions Auditing Network Configurations# - **Check for** - Open ports - Misconfigurations - Insecure services - Use case - Scripts to list open ports- use **netstat** - ```bash sudo netstat -tulnp [#Lists](Lists.md) all ports and thier associated proccesses ``` Creating Audit Reports in Bash# - Bash scripts used for automating system auditing tasks - Gather various pieces of information- such as: - System Information (OS, uptime, kernel version) - User Information (user accounts, active sessions) - File system usage (disk space, file permissions) - Service status (running services, open ports) - Security logs (failed logins, sudo usage) - ```bash #!/bin/bash echo &#34;Security Audit Report&#34; &gt; audit_report.txt date &gt;&gt; audit_report.txt echo “Audit Data:&#34; &gt;&gt; audit_report.txt .... echo &#34;Audit report saved to audit_report.txt&#34; ``` Linux Threat Hunting# Proactive approach to identifying cyber threats Be aware of the threat lanndscape Detect and Respond to Cyber Threats Why use Linux for Threat Hunting?# Open-source Transparent Granular control Process of Threat Hunting# Threat Hunting Steps# Trigger Collect information about the environment and hypothesis Choose a trigger for further investigation Can be a system, network area, or hypothesis trigger by a vulnerability or patch or information about an exploit, security set anomalies or requests from other areas in the organization Investigation Hunting efforts are focused on proactive searching for anomalies Can prove or disprove the hypothesis Assumption \rarr “We are compromised or vulnerable to this new exploit” Hunters use a wide range of tech to assist them in reviewing logs and investigating anomalies Resolution During the resolution phase, information is communicated to other teams and tools that can respond, prioritize, analyze, or store information for future use Who? (if it involves credentials) What? (the events that happened in order) When? (exact timestamps for anomalies and incursions) Where? (The scope of the affected systems, with lists of all devices and entities that will require remediation) and if possible from the evidence presented Why? (Lack of adherence to security plan/guidelines, disgruntlement, careless, outside attack, etc.) MITRE ATT&amp;CK framework Globally accessible knowledge base of adversary tactics and techniques based on real world operations ">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-13-security-and-advanced-bash-operations/">
+  <meta property="og:site_name" content="UAH Notes">
+  <meta property="og:title" content="UAH Notes">
+  <meta property="og:description" content="Security Auditing and System Hardening# What is system hardening is the process of securing a system by reducing its attack surface Involves disabling unnecessary services, configuring security settings, and applying updates Why is it important? Protects systems from unauthorized access or exploitation Ensures compliance with security standards like CIS benchmarks Key Components of System Hardening# SSH Security Disable root login and use key-based authentication Firewall configuration Use tools like ufw or iptables to control incoming and outgoing traffic Service Management Disable unnecessary services to reduce vulnerabilities Regular Updates Keeps the system updated with security patches Bash for System Hardening# Automates tasks like Disabling services that might not be necessary Updating packages Ensures repeatability and consistency Scripts can be scheduled via cron or other services Using systemctl# - For example, using systemctl: - ```bash #!/bin/bash for service in bluetooth cups avahi-daemon; do systemctl stop $service systemctl disable $service done ``` - Used to manage system services and the system state - Basic syntax: - ```bash systemctl [command] [unit] command [action] [#Start](Start.md), stop,etc. unit [systemd unit] [#Like](Like.md) a service, ex: nginx.service ``` - ![Common systemctl commands](../assets/image_1763430376613_0.png) Configuring Firewalls with Bash# Best practices: ufw default deny incoming uf default allow outgoing Allow only the necessary ports Turn ufw logging on The ufw command Simplified interface for managing iptables firewall rules Basic syntax ufw [command] [options] User Account Security# Best practices: Enforce strong passwords using tools like passwd Enforce strong passwords (passwd) Lock unused accounts (usermod -L) Use chage to enforce password aging The passwd command Manage user passwords on Linux systems Basic syntax # With no username, will change your own password # With a username (as the root user): changes another user&#39;s password passwd [options] [username] Filesystem Protections# Key steps Remove world-writeable permissions from sensitive files Configure /tmp with noexec to prevent the execution of files noexec does not allow execution of any binaries on filesystem Prevents accidental or malicious code execution from external drives Prevents script execution from uploads Best Practices Writing a script that allows automatic updates Ensures the latest security patches are applied automatically Security Auditing and Advanced Scripting# Introduction to security auditing?# Process of evaluating a system’s security posture by identifying vulnerabilities Examples: user permissions file permissions network configurations Why is it important Helps to identify misconfigurations Areas for Security Auditing# User accounts Check for empty passwords or unused accounts File permissions Identify world-writeable or SUID files Network configuration Verify open ports and firewall rules Auditing User Accounts with Bash# - **Check for:** - Misconfigurations - Risks - Bad practices - Use cases - Scripts to check for empty passwords - Parse /etc/shadow to find accounts without passwords Auditing File Permissions# - **Check for** - Weak - Risky - Misconfigured permissions - Use cases - **Find** world-writable files - **Find** command to locate files with insecure permissions Auditing Network Configurations# - **Check for** - Open ports - Misconfigurations - Insecure services - Use case - Scripts to list open ports- use **netstat** - ```bash sudo netstat -tulnp [#Lists](Lists.md) all ports and thier associated proccesses ``` Creating Audit Reports in Bash# - Bash scripts used for automating system auditing tasks - Gather various pieces of information- such as: - System Information (OS, uptime, kernel version) - User Information (user accounts, active sessions) - File system usage (disk space, file permissions) - Service status (running services, open ports) - Security logs (failed logins, sudo usage) - ```bash #!/bin/bash echo &#34;Security Audit Report&#34; &gt; audit_report.txt date &gt;&gt; audit_report.txt echo “Audit Data:&#34; &gt;&gt; audit_report.txt .... echo &#34;Audit report saved to audit_report.txt&#34; ``` Linux Threat Hunting# Proactive approach to identifying cyber threats Be aware of the threat lanndscape Detect and Respond to Cyber Threats Why use Linux for Threat Hunting?# Open-source Transparent Granular control Process of Threat Hunting# Threat Hunting Steps# Trigger Collect information about the environment and hypothesis Choose a trigger for further investigation Can be a system, network area, or hypothesis trigger by a vulnerability or patch or information about an exploit, security set anomalies or requests from other areas in the organization Investigation Hunting efforts are focused on proactive searching for anomalies Can prove or disprove the hypothesis Assumption \rarr “We are compromised or vulnerable to this new exploit” Hunters use a wide range of tech to assist them in reviewing logs and investigating anomalies Resolution During the resolution phase, information is communicated to other teams and tools that can respond, prioritize, analyze, or store information for future use Who? (if it involves credentials) What? (the events that happened in order) When? (exact timestamps for anomalies and incursions) Where? (The scope of the affected systems, with lists of all devices and entities that will require remediation) and if possible from the evidence presented Why? (Lack of adherence to security plan/guidelines, disgruntlement, careless, outside attack, etc.) MITRE ATT&amp;CK framework Globally accessible knowledge base of adversary tactics and techniques based on real world operations">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+
+
+  <meta itemprop="name" content="UAH Notes">
+  <meta itemprop="description" content="Security Auditing and System Hardening# What is system hardening is the process of securing a system by reducing its attack surface Involves disabling unnecessary services, configuring security settings, and applying updates Why is it important? Protects systems from unauthorized access or exploitation Ensures compliance with security standards like CIS benchmarks Key Components of System Hardening# SSH Security Disable root login and use key-based authentication Firewall configuration Use tools like ufw or iptables to control incoming and outgoing traffic Service Management Disable unnecessary services to reduce vulnerabilities Regular Updates Keeps the system updated with security patches Bash for System Hardening# Automates tasks like Disabling services that might not be necessary Updating packages Ensures repeatability and consistency Scripts can be scheduled via cron or other services Using systemctl# - For example, using systemctl: - ```bash #!/bin/bash for service in bluetooth cups avahi-daemon; do systemctl stop $service systemctl disable $service done ``` - Used to manage system services and the system state - Basic syntax: - ```bash systemctl [command] [unit] command [action] [#Start](Start.md), stop,etc. unit [systemd unit] [#Like](Like.md) a service, ex: nginx.service ``` - ![Common systemctl commands](../assets/image_1763430376613_0.png) Configuring Firewalls with Bash# Best practices: ufw default deny incoming uf default allow outgoing Allow only the necessary ports Turn ufw logging on The ufw command Simplified interface for managing iptables firewall rules Basic syntax ufw [command] [options] User Account Security# Best practices: Enforce strong passwords using tools like passwd Enforce strong passwords (passwd) Lock unused accounts (usermod -L) Use chage to enforce password aging The passwd command Manage user passwords on Linux systems Basic syntax # With no username, will change your own password # With a username (as the root user): changes another user&#39;s password passwd [options] [username] Filesystem Protections# Key steps Remove world-writeable permissions from sensitive files Configure /tmp with noexec to prevent the execution of files noexec does not allow execution of any binaries on filesystem Prevents accidental or malicious code execution from external drives Prevents script execution from uploads Best Practices Writing a script that allows automatic updates Ensures the latest security patches are applied automatically Security Auditing and Advanced Scripting# Introduction to security auditing?# Process of evaluating a system’s security posture by identifying vulnerabilities Examples: user permissions file permissions network configurations Why is it important Helps to identify misconfigurations Areas for Security Auditing# User accounts Check for empty passwords or unused accounts File permissions Identify world-writeable or SUID files Network configuration Verify open ports and firewall rules Auditing User Accounts with Bash# - **Check for:** - Misconfigurations - Risks - Bad practices - Use cases - Scripts to check for empty passwords - Parse /etc/shadow to find accounts without passwords Auditing File Permissions# - **Check for** - Weak - Risky - Misconfigured permissions - Use cases - **Find** world-writable files - **Find** command to locate files with insecure permissions Auditing Network Configurations# - **Check for** - Open ports - Misconfigurations - Insecure services - Use case - Scripts to list open ports- use **netstat** - ```bash sudo netstat -tulnp [#Lists](Lists.md) all ports and thier associated proccesses ``` Creating Audit Reports in Bash# - Bash scripts used for automating system auditing tasks - Gather various pieces of information- such as: - System Information (OS, uptime, kernel version) - User Information (user accounts, active sessions) - File system usage (disk space, file permissions) - Service status (running services, open ports) - Security logs (failed logins, sudo usage) - ```bash #!/bin/bash echo &#34;Security Audit Report&#34; &gt; audit_report.txt date &gt;&gt; audit_report.txt echo “Audit Data:&#34; &gt;&gt; audit_report.txt .... echo &#34;Audit report saved to audit_report.txt&#34; ``` Linux Threat Hunting# Proactive approach to identifying cyber threats Be aware of the threat lanndscape Detect and Respond to Cyber Threats Why use Linux for Threat Hunting?# Open-source Transparent Granular control Process of Threat Hunting# Threat Hunting Steps# Trigger Collect information about the environment and hypothesis Choose a trigger for further investigation Can be a system, network area, or hypothesis trigger by a vulnerability or patch or information about an exploit, security set anomalies or requests from other areas in the organization Investigation Hunting efforts are focused on proactive searching for anomalies Can prove or disprove the hypothesis Assumption \rarr “We are compromised or vulnerable to this new exploit” Hunters use a wide range of tech to assist them in reviewing logs and investigating anomalies Resolution During the resolution phase, information is communicated to other teams and tools that can respond, prioritize, analyze, or store information for future use Who? (if it involves credentials) What? (the events that happened in order) When? (exact timestamps for anomalies and incursions) Where? (The scope of the affected systems, with lists of all devices and entities that will require remediation) and if possible from the evidence presented Why? (Lack of adherence to security plan/guidelines, disgruntlement, careless, outside attack, etc.) MITRE ATT&amp;CK framework Globally accessible knowledge base of adversary tactics and techniques based on real world operations">
+  <meta itemprop="wordCount" content="812">
+
+<title>Week 13 Security and Advanced Bash Operations | UAH Notes</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-13-security-and-advanced-bash-operations/">
+<link rel="stylesheet" href="/book.min.6970156cec683193d93c9c4edaf0d56574e4361df2e0c1be4f697ae81c3ba55f.css" integrity="sha256-aXAVbOxoMZPZPJxO2vDVZXTkNh3y4MG&#43;T2l66Bw7pV8=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.1ccfec30deacfc82708fa640df682425475b335904f4122351e718fe23da532a.js" integrity="sha256-HM/sMN6s/IJwj6ZA32gkJUdbM1kE9BIjUecY/iPaUyo=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-notes">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>UAH Notes</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-10f9186ea778f94125530bda2b491eec" class="toggle"  />
+    <label for="section-10f9186ea778f94125530bda2b491eec" class="flex">
+      <a role="button" class="">
+        Semester 1</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b52ef1c950bc29bb8fa9a1641f2a1845" class="toggle"  />
+    <label for="section-b52ef1c950bc29bb8fa9a1641f2a1845" class="flex">
+      <a role="button" class="">
+        MU 100</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-1/" class="">
+      Part 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-2/" class="">
+      Part 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-4/" class="">
+      Part 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-5/" class="">
+      Part 5</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-58e03cbf23ca286c894b669a53323b3d" class="toggle" checked />
+    <label for="section-58e03cbf23ca286c894b669a53323b3d" class="flex">
+      <a role="button" class="">
+        Semester 3</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f7872d2b813cce0d12e481fe12abeef5" class="toggle"  />
+    <label for="section-f7872d2b813cce0d12e481fe12abeef5" class="flex">
+      <a role="button" class="">
+        ACC 212</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/activity-based-costing/" class="">
+      Activity Based Costing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/behavioral-finance/" class="">
+      Behavioral Finance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/example-transactions/" class="">
+      Example Transactions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/job-order-costing/" class="">
+      Job Order Costing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/recording-business-transactions/" class="">
+      Recording Business Transactions</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c5d8c9e96e5388eb7097d28ba6f1da0e" class="toggle"  />
+    <label for="section-c5d8c9e96e5388eb7097d28ba6f1da0e" class="flex">
+      <a role="button" class="">
+        ECN 142</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/ecn-143/economics-of-information/" class="">
+      Economics of Information</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/ecn-143/public-economics/" class="">
+      Public Economics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/ecn-143/taxation/" class="">
+      Taxation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d525b16173573fea2aea813a9b6d8d4c" class="toggle"  />
+    <label for="section-d525b16173573fea2aea813a9b6d8d4c" class="flex">
+      <a role="button" class="">
+        EH 242</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/england-and-the-middle-ages/" class="">
+      England and the Middle Ages</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/sir-gawain-and-the-green-knight/" class="">
+      Sir Gawain and the Green Knight</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/the-mabinogion/" class="">
+      The Mabinogion</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-1/" class="">
+      Module 1 (Gilgamesh)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-2/" class="">
+      Module 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-3/" class="">
+      Module 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-4/" class="">
+      Module 4</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-14a5c4e3c8a2fb4ddfe18d6ee8afb053" class="toggle"  />
+    <label for="section-14a5c4e3c8a2fb4ddfe18d6ee8afb053" class="flex">
+      <a role="button" class="">
+        FIN 230</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/fin-230/final-exam-information/" class="">
+      Final Exam Information</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-60b08407cfa9dd0baf4b9d93cb9e641d" class="toggle"  />
+    <label for="section-60b08407cfa9dd0baf4b9d93cb9e641d" class="flex">
+      <a role="button" class="">
+        IS 301</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-00b4fe89185b0df446cc84ca546943d2" class="toggle"  />
+    <label for="section-00b4fe89185b0df446cc84ca546943d2" class="flex">
+      <a role="button" class="">
+        Class Notes</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-1-technology-and-the-modern-enterprise/" class="">
+      Chapter 1 Technology and the Modern Enterprise</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-10--platforms-network-effects-and-competition/" class="">
+      Chapter 10 Platforms, Network Effects, and Competition</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-17--data-and-competitive-advantage/" class="">
+      Chapter 17 Data and Competitive Advantage</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-18--artificial-intelligence/" class="">
+      Chapter 18 Artificial Intelligence</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-2--zara/" class="">
+      Chapter 2 Zara</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-2-sample-questions/" class="">
+      Chapter 2 Sample Questions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-20--a-managers-guide-to-the-internet-and-telecommunications/" class="">
+      Chapter 20 a Manager&#39;s Guide to the Internet and Telecommunications</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-3-strategy-and-technology/" class="">
+      Chapter 3 Strategy and Technology</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-5--netflix/" class="">
+      Chapter 5 Netflix</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-6-moores-law-and-more/" class="">
+      Chapter 6 Moore&#39;s Law and More</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-7--disruptive-technologies/" class="">
+      Chapter 7 Disruptive Technologies</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-9--amazon/" class="">
+      Chapter 9 Amazon</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/cybersecurity-threats/" class="">
+      Cybersecurity Threats</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/netflix-presentation-speaker-notes/" class="">
+      Netflix Presentation Speaker Notes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-751dfeaa86902fb15b95d0e8e28f5169" class="toggle" checked />
+    <label for="section-751dfeaa86902fb15b95d0e8e28f5169" class="flex">
+      <a role="button" class="">
+        IS 310</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c7538cb34419b13d5e14d5bba48486a5" class="toggle" checked />
+    <label for="section-c7538cb34419b13d5e14d5bba48486a5" class="flex">
+      <a role="button" class="">
+        Weekly notes</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-1-python-basics/" class="">
+      Week 1 Python Basics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-11-working-with-the-linux-filesystem/" class="">
+      Week 11 Working With the Linux Filesystem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-12-pattern-matching--vulnerability-scanning/" class="">
+      Week 12 Pattern Matching &amp; Vulnerability Scanning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-13-security-and-advanced-bash-operations/" class="active">
+      Week 13 Security and Advanced Bash Operations</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-2-advanced-programming/" class="">
+      Week 2 Advanced Programming</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-3-functions-files-and-exceptions/" class="">
+      Week 3 Functions, Files and Exceptions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-4-data-structures/" class="">
+      Week 4 Data Structures</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-5--inheritance/" class="">
+      Week 5 Inheritance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-6-python-libraries/" class="">
+      Week 6 Python Libraries</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-9--linux-intro-and-io/" class="">
+      Week 9 Linux Intro and Io</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/bash-exam-topics/" class="">
+      Bash Exam Topics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/bash-final-project/" class="">
+      Bash Final Project</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7c584d34a0afaffcb8ebe59023ab5e3e" class="toggle"  />
+    <label for="section-7c584d34a0afaffcb8ebe59023ab5e3e" class="flex">
+      <a role="button" class="">
+        Semester 4</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-45cd194e742ed81db2f0ddeee2728dab" class="toggle"  />
+    <label for="section-45cd194e742ed81db2f0ddeee2728dab" class="flex">
+      <a role="button" class="">
+        BYS 119</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cbd9e89258049b63e28a2b9b0b04da7a" class="toggle"  />
+    <label for="section-cbd9e89258049b63e28a2b9b0b04da7a" class="flex">
+      <a role="button" class="">
+        BYS 121</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1fb1c9133f5878b4100a74622b9eb8ca" class="toggle"  />
+    <label for="section-1fb1c9133f5878b4100a74622b9eb8ca" class="flex">
+      <a role="button" class="">
+        IS 340</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e92b6f7c6dfb68c09a395c20f93768e3" class="toggle"  />
+    <label for="section-e92b6f7c6dfb68c09a395c20f93768e3" class="flex">
+      <a role="button" class="">
+        IS 401</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f606400069f4982285623246c8e026d6" class="toggle"  />
+    <label for="section-f606400069f4982285623246c8e026d6" class="flex">
+      <a role="button" class="">
+        MGT 301</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ee7e2704aeba138592b97c863eb5aab7" class="toggle"  />
+    <label for="section-ee7e2704aeba138592b97c863eb5aab7" class="flex">
+      <a role="button" class="">
+        PHL 101</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-4/phl-101/phl-101___1-6-25/" class="">
+      Phl 101 1 6 25</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Week 13 Security and Advanced Bash Operations</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#key-components-of-system-hardening">Key Components of System Hardening</a></li>
+    <li><a href="#bash-for-system-hardening">Bash for System Hardening</a>
+      <ul>
+        <li><a href="#using-systemctl">Using systemctl</a></li>
+      </ul>
+    </li>
+    <li><a href="#configuring-firewalls-with-bash">Configuring Firewalls with Bash</a></li>
+    <li><a href="#user-account-security">User Account Security</a></li>
+    <li><a href="#filesystem-protections">Filesystem Protections</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#introduction-to-security-auditing">Introduction to security auditing?</a></li>
+    <li><a href="#areas-for-security-auditing">Areas for Security Auditing</a>
+      <ul>
+        <li><a href="#auditing-user-accounts-with-bash">Auditing User Accounts with Bash</a></li>
+        <li><a href="#auditing-file-permissions">Auditing File Permissions</a></li>
+        <li><a href="#auditing-network-configurations">Auditing Network Configurations</a></li>
+        <li><a href="#creating-audit-reports-in-bash">Creating Audit Reports in Bash</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#why-use-linux-for-threat-hunting">Why use Linux for Threat Hunting?</a></li>
+    <li><a href="#process-of-threat-hunting">Process of Threat Hunting</a>
+      <ul>
+        <li><a href="#threat-hunting-steps">Threat Hunting Steps</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="security-auditing-and-system-hardening">Security Auditing and System Hardening<a class="anchor" href="#security-auditing-and-system-hardening">#</a></h1>
+<ul>
+<li>What is system hardening is <strong>the process of securing a system by reducing its attack surface</strong>
+<ul>
+<li>Involves disabling unnecessary services, configuring security settings, and applying updates</li>
+</ul>
+</li>
+<li>Why is it important?
+<ul>
+<li>Protects systems from unauthorized access or exploitation</li>
+<li>Ensures compliance with security standards like CIS benchmarks</li>
+</ul>
+</li>
+</ul>
+<h2 id="key-components-of-system-hardening">Key Components of System Hardening<a class="anchor" href="#key-components-of-system-hardening">#</a></h2>
+<ul>
+<li>SSH Security
+<ul>
+<li>Disable root login and use key-based authentication</li>
+</ul>
+</li>
+<li>Firewall configuration
+<ul>
+<li>Use tools like ufw or iptables to control incoming and outgoing traffic</li>
+</ul>
+</li>
+<li>Service Management
+<ul>
+<li>Disable unnecessary services to reduce vulnerabilities</li>
+</ul>
+</li>
+<li>Regular Updates
+<ul>
+<li>Keeps the system updated with security patches</li>
+</ul>
+</li>
+</ul>
+<h2 id="bash-for-system-hardening">Bash for System Hardening<a class="anchor" href="#bash-for-system-hardening">#</a></h2>
+<ul>
+<li>Automates tasks like
+<ul>
+<li>Disabling services that might not be necessary</li>
+<li>Updating packages</li>
+</ul>
+</li>
+<li>Ensures repeatability and consistency</li>
+<li>Scripts can be scheduled via cron or other services</li>
+</ul>
+<h3 id="using-systemctl">Using systemctl<a class="anchor" href="#using-systemctl">#</a></h3>
+<pre><code>  - For example, using systemctl:
+    - ```bash
+      #!/bin/bash
+      for service in bluetooth cups avahi-daemon; do
+      systemctl stop $service
+      systemctl disable $service
+      done
+      ```
+    - Used to manage system services and the system state
+    - Basic syntax:
+      - ```bash
+        systemctl [command] [unit]
+        command [action] [#Start](Start.md), stop,etc.
+        unit [systemd unit] [#Like](Like.md) a service, ex: nginx.service
+        ```
+      - ![Common systemctl commands](../assets/image_1763430376613_0.png)
+</code></pre>
+<h2 id="configuring-firewalls-with-bash">Configuring Firewalls with Bash<a class="anchor" href="#configuring-firewalls-with-bash">#</a></h2>
+<ul>
+<li><strong>Best practices:</strong>
+<ul>
+<li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ufw default deny incoming
+</span></span><span style="display:flex;"><span>uf default allow outgoing</span></span></code></pre></div></li>
+<li>Allow only the necessary ports</li>
+<li>Turn ufw logging on</li>
+<li>The ufw command
+<ul>
+<li>Simplified interface for managing iptables firewall rules</li>
+<li>Basic syntax</li>
+<li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ufw <span style="color:#f92672">[</span>command<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>options<span style="color:#f92672">]</span></span></span></code></pre></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><img src="../assets/image_1763430920278_0.png" alt="Common ufw rules" /></li>
+</ul>
+<h2 id="user-account-security">User Account Security<a class="anchor" href="#user-account-security">#</a></h2>
+<ul>
+<li><strong>Best practices:</strong>
+<ul>
+<li>Enforce strong passwords using tools like passwd
+<ul>
+<li>Enforce strong passwords (passwd)</li>
+<li>Lock unused accounts (usermod -L)</li>
+<li>Use chage to enforce password aging</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The passwd command
+<ul>
+<li>Manage user passwords on Linux systems</li>
+<li>Basic syntax</li>
+<li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># With no username, will change your own password</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># With a username (as the root user): changes another user&#39;s password</span>
+</span></span><span style="display:flex;"><span>passwd <span style="color:#f92672">[</span>options<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>username<span style="color:#f92672">]</span></span></span></code></pre></div></li>
+</ul>
+</li>
+<li><img src="../assets/image_1763431207756_0.png" alt="Common passwd commands" /></li>
+</ul>
+<h2 id="filesystem-protections">Filesystem Protections<a class="anchor" href="#filesystem-protections">#</a></h2>
+<ul>
+<li><strong>Key steps</strong>
+<ul>
+<li>Remove world-writeable permissions from sensitive files</li>
+<li>Configure /tmp with noexec to prevent the execution of files
+<ul>
+<li>noexec does not allow execution of any binaries on filesystem</li>
+<li>Prevents accidental or malicious code execution from external drives</li>
+<li>Prevents script execution from uploads</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Best Practices</strong>
+<ul>
+<li>Writing a script that allows automatic updates</li>
+<li>Ensures the latest security patches are applied automatically</li>
+<li><img src="../assets/image_1763431427338_0.png" alt="Automatic updates commands" /></li>
+</ul>
+</li>
+</ul>
+<h1 id="security-auditing-and-advanced-scripting">Security Auditing and Advanced Scripting<a class="anchor" href="#security-auditing-and-advanced-scripting">#</a></h1>
+<h2 id="introduction-to-security-auditing">Introduction to security auditing?<a class="anchor" href="#introduction-to-security-auditing">#</a></h2>
+<ul>
+<li>Process of evaluating a <strong>system&rsquo;s security posture by identifying vulnerabilities</strong>
+<ul>
+<li>Examples:
+<ul>
+<li>user permissions</li>
+<li>file permissions</li>
+<li>network configurations</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Why is it important
+<ul>
+<li>Helps to <strong>identify misconfigurations</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="areas-for-security-auditing">Areas for Security Auditing<a class="anchor" href="#areas-for-security-auditing">#</a></h2>
+<ul>
+<li><strong>User accounts</strong>
+<ul>
+<li>Check for empty passwords or unused accounts</li>
+</ul>
+</li>
+<li><strong>File permissions</strong>
+<ul>
+<li>Identify world-writeable or SUID files</li>
+</ul>
+</li>
+<li><strong>Network configuration</strong>
+<ul>
+<li>Verify open ports and firewall rules</li>
+</ul>
+</li>
+</ul>
+<h3 id="auditing-user-accounts-with-bash">Auditing User Accounts with Bash<a class="anchor" href="#auditing-user-accounts-with-bash">#</a></h3>
+<pre><code>  - **Check for:**
+    - Misconfigurations
+    - Risks
+    - Bad practices
+  - Use cases
+  - Scripts to check for empty passwords
+    - Parse /etc/shadow to find accounts without passwords
+</code></pre>
+<h3 id="auditing-file-permissions">Auditing File Permissions<a class="anchor" href="#auditing-file-permissions">#</a></h3>
+<pre><code>  - **Check for**
+    - Weak
+    - Risky
+    - Misconfigured permissions
+  - Use cases
+  - **Find** world-writable files
+    - **Find** command to locate files with insecure permissions
+</code></pre>
+<h3 id="auditing-network-configurations">Auditing Network Configurations<a class="anchor" href="#auditing-network-configurations">#</a></h3>
+<pre><code>  - **Check for**
+    - Open ports
+    - Misconfigurations
+    - Insecure services
+  - Use case
+  - Scripts to list open ports- use **netstat**
+    - ```bash
+      sudo netstat -tulnp [#Lists](Lists.md) all ports and thier associated proccesses
+      ```
+</code></pre>
+<h3 id="creating-audit-reports-in-bash">Creating Audit Reports in Bash<a class="anchor" href="#creating-audit-reports-in-bash">#</a></h3>
+<pre><code>  - Bash scripts used for automating system auditing tasks
+  - Gather various pieces of information- such as:
+    - System Information (OS, uptime, kernel version)
+    - User Information (user accounts, active sessions)
+    - File system usage (disk space, file permissions)
+    - Service status (running services, open ports)
+    - Security logs (failed logins, sudo usage)
+  - ```bash
+    #!/bin/bash
+    echo &quot;Security Audit Report&quot; &gt; audit_report.txt
+    date &gt;&gt; audit_report.txt
+    echo “Audit Data:&quot; &gt;&gt; audit_report.txt
+    ....
+    echo &quot;Audit report saved to audit_report.txt&quot;
+    ```
+</code></pre>
+<h1 id="linux-threat-hunting">Linux Threat Hunting<a class="anchor" href="#linux-threat-hunting">#</a></h1>
+<ul>
+<li>Proactive approach to identifying cyber threats</li>
+<li>Be aware of the threat lanndscape</li>
+<li>Detect and Respond to Cyber Threats</li>
+</ul>
+<h2 id="why-use-linux-for-threat-hunting">Why use Linux for Threat Hunting?<a class="anchor" href="#why-use-linux-for-threat-hunting">#</a></h2>
+<ul>
+<li>Open-source</li>
+<li>Transparent</li>
+<li>Granular control</li>
+</ul>
+<h2 id="process-of-threat-hunting">Process of Threat Hunting<a class="anchor" href="#process-of-threat-hunting">#</a></h2>
+<ul>
+<li><img src="../assets/image_1763424583118_0.png" alt="image.png" /></li>
+</ul>
+<h3 id="threat-hunting-steps">Threat Hunting Steps<a class="anchor" href="#threat-hunting-steps">#</a></h3>
+<ul>
+<li>Trigger
+<ul>
+<li>Collect information about the environment and hypothesis</li>
+<li><strong>Choose a trigger for further investigation</strong></li>
+<li>Can be a system, network area, or hypothesis trigger by a vulnerability or patch or information about an exploit, security set anomalies or requests from other areas in the organization</li>
+</ul>
+</li>
+<li>Investigation
+<ul>
+<li>Hunting efforts are focused on proactive searching for anomalies
+<ul>
+<li>Can prove or disprove the hypothesis</li>
+<li>Assumption \rarr &ldquo;We are compromised or vulnerable to this new exploit&rdquo;</li>
+<li>Hunters use a wide range of tech to assist them in reviewing logs and investigating anomalies</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Resolution
+<ul>
+<li>During the resolution phase, information is communicated to other teams and tools that can respond, prioritize, analyze, or store information for future use
+<ul>
+<li><strong>Who?</strong> (if it involves credentials)</li>
+<li><strong>What?</strong> (the events that happened in order)</li>
+<li><strong>When?</strong> (exact timestamps for anomalies and incursions)</li>
+<li><strong>Where?</strong> (The scope of the affected systems, with lists of all devices and entities that will require remediation) and if possible from the evidence presented</li>
+<li><strong>Why?</strong> (Lack of adherence to security plan/guidelines, disgruntlement, careless, outside attack, etc.)</li>
+</ul>
+</li>
+<li><a href="https://attack.mitre.org">MITRE ATT&amp;CK framework</a>
+<ul>
+<li>Globally accessible knowledge base of adversary tactics and techniques based on real world operations</li>
+<li><img src="../assets/attack_matrix_poster_2024_april-1_1763429016114_0.png" alt="MITRE Enterprise framework (2024)" /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><img src="../assets/image_1763424735993_0.png" alt="image.png" /></li>
+<li><img src="../assets/image_1763424746832_0.png" alt="image.png" /></li>
+<li></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/notes/semester-3/is-310/weekly-notes/week-12-pattern-matching--vulnerability-scanning/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>Week 12 Pattern Matching &amp; Vulnerability Scanning</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/notes/semester-3/is-310/weekly-notes/week-2-advanced-programming/" class="flex align-center">
+        <span>Week 2 Advanced Programming</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#key-components-of-system-hardening">Key Components of System Hardening</a></li>
+    <li><a href="#bash-for-system-hardening">Bash for System Hardening</a>
+      <ul>
+        <li><a href="#using-systemctl">Using systemctl</a></li>
+      </ul>
+    </li>
+    <li><a href="#configuring-firewalls-with-bash">Configuring Firewalls with Bash</a></li>
+    <li><a href="#user-account-security">User Account Security</a></li>
+    <li><a href="#filesystem-protections">Filesystem Protections</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#introduction-to-security-auditing">Introduction to security auditing?</a></li>
+    <li><a href="#areas-for-security-auditing">Areas for Security Auditing</a>
+      <ul>
+        <li><a href="#auditing-user-accounts-with-bash">Auditing User Accounts with Bash</a></li>
+        <li><a href="#auditing-file-permissions">Auditing File Permissions</a></li>
+        <li><a href="#auditing-network-configurations">Auditing Network Configurations</a></li>
+        <li><a href="#creating-audit-reports-in-bash">Creating Audit Reports in Bash</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#why-use-linux-for-threat-hunting">Why use Linux for Threat Hunting?</a></li>
+    <li><a href="#process-of-threat-hunting">Process of Threat Hunting</a>
+      <ul>
+        <li><a href="#threat-hunting-steps">Threat Hunting Steps</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

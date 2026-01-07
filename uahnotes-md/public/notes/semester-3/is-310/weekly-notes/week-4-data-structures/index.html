@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="I. Sequences and Lists# Sequences# Definition: An object that contains multiple items of data stored one after another. [cite_start]Types: Python provides different types of sequences, mainly lists (mutable) and tuples (immutable) [cite: 715-717]. Lists# Definition: A mutable object that contains multiple data items (elements). Format: list = [item1, item2, etc.]. Characteristics: [cite_start]Can hold items of different data types (e.g., integers, strings, floats) [cite: 722-725]. print() can display the entire list. list() function converts other objects to lists. List Operations# Repetition Operator (*): Creates multiple copies of a list joined together. [cite_start]Format: list * n [cite: 749-752]. Iteration: You can iterate over a list using a for loop: for item in list: # process item Indexing: Position of an element (starting at 0). [cite_start]Negative indexes count from the end (-1 is the last element) [cite: 760-763]. len(list) returns the number of elements. [cite_start]Mutability: Elements can be changed using their index: list[1] = new_value [cite: 779-781]. [cite_start]Concatenation (&#43;): Joins two lists together [cite: 787-788]. [cite_start]Slicing: Extracts a span of items: list[start : end] [cite: 795-797]. List Methods &amp; Built-in Functions# Method/Function Description Citation append(item) Adds item to the end of the list. [cite_start] [cite: 816, 838, 845] index(item) Returns the index of the first occurrence of item. [cite_start] [cite: 817-818, 839, 846] insert(index, item) Inserts item at a specific position. [cite_start] [cite: 825, 840, 848] sort() Sorts list in ascending order. [cite_start] [cite: 827, 841, 853] remove(item) Removes the first occurrence of item. [cite_start] [cite: 828, 842, 854] reverse() Reverses the order of elements. [cite_start] [cite: 829, 843, 855] del list[i] Removes element at specific index. [cite_start] [cite: 860-861] min() / max() Returns lowest/highest value in the sequence. [cite_start] [cite: 862] Copying Lists# Reference vs. Value: list1 = list2 only makes list1 reference the same object as list2 (modifying one affects the other). True Copy: Create a new list and copy elements: Create empty list and append loop. [cite_start]Concatenate existing list to a new empty list (new_list = [] &#43; old_list) [cite: 870-873]. II. Advanced List Features# List Comprehensions# Definition: A concise expression to create a new list by iterating over an existing one. [cite_start]Basic Syntax: [item for item in old_list][cite: 909, 928]. [cite_start]Calculations: [item**2 for item in list] creates a list of squares[cite: 943]. [cite_start]Filtering (if clause): [item for item in list if item &lt; 10] includes only items meeting criteria[cite: 964, 971]. Two-Dimensional Lists# Definition: A list containing other lists as elements (nested list), often representing rows and columns. [cite_start]Processing: Typically requires nested loops to process data (two indexes needed) [cite: 977, 981-982]. III. Tuples# Definition: An immutable sequence (cannot be changed once created). Format: tuple_name = (item1, item2). Operations: Supports indexing, slicing, len(), min(), max(), and in operator. Limitations: Does not support append, remove, insert, reverse, or sort. [cite_start]Advantages: Faster processing than lists and safer (data cannot be accidentally modified) [cite: 1010-1015, 1025-1030, 1037-1038]. IV. Plotting with matplotlib# [cite_start]Installation: Not standard; install via pip install matplotlib[cite: 1056]. [cite_start]Import: import matplotlib.pyplot as plt[cite: 1075]. Line Graph: plt.plot(x_coords, y_coords) connects points. Bar Chart: plt.bar(left_edges, heights, bar_width, color). Pie Chart: plt.pie(values, labels=slice_labels). [cite_start]Display: plt.show() renders the graph [cite: 1081, 1257, 1361-1362]. V. Dictionaries# Introduction# Definition: An object that stores a collection of data as key-value pairs (mappings). Format: dictionary = {key1: val1, key2: val2}. Keys: Must be immutable objects (e.g., strings, numbers, tuples). Retrieval: dictionary[key]. [cite_start]Raises KeyError if key is not found [cite: 1409-1416, 1425-1426]. Operations# Adding/Modifying: dictionary[key] = value. [cite_start]If key exists, value is updated; otherwise, new pair is added [cite: 1436-1437]. Deleting: del dictionary[key]. [cite_start]Length: len(dictionary) returns number of pairs[cite: 1443, 1450]. Methods: clear(): Empties the dictionary. get(key, default): Safely retrieves value without KeyError. items(): Returns all keys and values as tuples. keys(): Returns all keys. values(): Returns all values. [cite_start]pop(key): Returns value and removes pair [cite: 1468-1471, 1479, 1490-1491]. Dictionary Comprehensions# Syntax: {item: item**2 for item in list}. [cite_start]Creates a dictionary from a sequence [cite: 1516-1517, 1539]. VI. Sets# Introduction# Definition: An unordered collection of unique elements (no duplicates allowed). Creation: set_variable = set(argument). Argument must be iterable. Mutability: Sets are mutable; elements can be added/removed. Set Operations# Adding: add(item) or update(sequence). Removing: remove(item) (raises error if missing) or discard(item) (no error). Set Math: Union (|): Contains all elements from both sets. Intersection (&amp;): Contains only elements found in both sets. Difference (-): Elements in the first set but not the second. [cite_start]Symmetric Difference (^): Elements in either set, but not both [cite: 1613-1614, 1620-1623, 1641-1646, 1653-1658, 1675-1681]. [cite_start]Subsets/Supersets: issubset (&lt;=) and issuperset (&gt;=) [cite: 1687-1691]. VII. Serializing Objects# Definition: Converting an object to a stream of bytes to store in a file (Pickling). Process: import pickle Open file for binary writing (&#39;wb&#39;). Pickle: pickle.dump(object, file). [cite_start]Unpickle: pickle.load(file) (requires opening file for binary reading &#39;rb&#39;) [cite: 1749-1750, 1759-1763, 1768-1773]. ">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-4-data-structures/">
+  <meta property="og:site_name" content="UAH Notes">
+  <meta property="og:title" content="UAH Notes">
+  <meta property="og:description" content="I. Sequences and Lists# Sequences# Definition: An object that contains multiple items of data stored one after another. [cite_start]Types: Python provides different types of sequences, mainly lists (mutable) and tuples (immutable) [cite: 715-717]. Lists# Definition: A mutable object that contains multiple data items (elements). Format: list = [item1, item2, etc.]. Characteristics: [cite_start]Can hold items of different data types (e.g., integers, strings, floats) [cite: 722-725]. print() can display the entire list. list() function converts other objects to lists. List Operations# Repetition Operator (*): Creates multiple copies of a list joined together. [cite_start]Format: list * n [cite: 749-752]. Iteration: You can iterate over a list using a for loop: for item in list: # process item Indexing: Position of an element (starting at 0). [cite_start]Negative indexes count from the end (-1 is the last element) [cite: 760-763]. len(list) returns the number of elements. [cite_start]Mutability: Elements can be changed using their index: list[1] = new_value [cite: 779-781]. [cite_start]Concatenation (&#43;): Joins two lists together [cite: 787-788]. [cite_start]Slicing: Extracts a span of items: list[start : end] [cite: 795-797]. List Methods &amp; Built-in Functions# Method/Function Description Citation append(item) Adds item to the end of the list. [cite_start] [cite: 816, 838, 845] index(item) Returns the index of the first occurrence of item. [cite_start] [cite: 817-818, 839, 846] insert(index, item) Inserts item at a specific position. [cite_start] [cite: 825, 840, 848] sort() Sorts list in ascending order. [cite_start] [cite: 827, 841, 853] remove(item) Removes the first occurrence of item. [cite_start] [cite: 828, 842, 854] reverse() Reverses the order of elements. [cite_start] [cite: 829, 843, 855] del list[i] Removes element at specific index. [cite_start] [cite: 860-861] min() / max() Returns lowest/highest value in the sequence. [cite_start] [cite: 862] Copying Lists# Reference vs. Value: list1 = list2 only makes list1 reference the same object as list2 (modifying one affects the other). True Copy: Create a new list and copy elements: Create empty list and append loop. [cite_start]Concatenate existing list to a new empty list (new_list = [] &#43; old_list) [cite: 870-873]. II. Advanced List Features# List Comprehensions# Definition: A concise expression to create a new list by iterating over an existing one. [cite_start]Basic Syntax: [item for item in old_list][cite: 909, 928]. [cite_start]Calculations: [item**2 for item in list] creates a list of squares[cite: 943]. [cite_start]Filtering (if clause): [item for item in list if item &lt; 10] includes only items meeting criteria[cite: 964, 971]. Two-Dimensional Lists# Definition: A list containing other lists as elements (nested list), often representing rows and columns. [cite_start]Processing: Typically requires nested loops to process data (two indexes needed) [cite: 977, 981-982]. III. Tuples# Definition: An immutable sequence (cannot be changed once created). Format: tuple_name = (item1, item2). Operations: Supports indexing, slicing, len(), min(), max(), and in operator. Limitations: Does not support append, remove, insert, reverse, or sort. [cite_start]Advantages: Faster processing than lists and safer (data cannot be accidentally modified) [cite: 1010-1015, 1025-1030, 1037-1038]. IV. Plotting with matplotlib# [cite_start]Installation: Not standard; install via pip install matplotlib[cite: 1056]. [cite_start]Import: import matplotlib.pyplot as plt[cite: 1075]. Line Graph: plt.plot(x_coords, y_coords) connects points. Bar Chart: plt.bar(left_edges, heights, bar_width, color). Pie Chart: plt.pie(values, labels=slice_labels). [cite_start]Display: plt.show() renders the graph [cite: 1081, 1257, 1361-1362]. V. Dictionaries# Introduction# Definition: An object that stores a collection of data as key-value pairs (mappings). Format: dictionary = {key1: val1, key2: val2}. Keys: Must be immutable objects (e.g., strings, numbers, tuples). Retrieval: dictionary[key]. [cite_start]Raises KeyError if key is not found [cite: 1409-1416, 1425-1426]. Operations# Adding/Modifying: dictionary[key] = value. [cite_start]If key exists, value is updated; otherwise, new pair is added [cite: 1436-1437]. Deleting: del dictionary[key]. [cite_start]Length: len(dictionary) returns number of pairs[cite: 1443, 1450]. Methods: clear(): Empties the dictionary. get(key, default): Safely retrieves value without KeyError. items(): Returns all keys and values as tuples. keys(): Returns all keys. values(): Returns all values. [cite_start]pop(key): Returns value and removes pair [cite: 1468-1471, 1479, 1490-1491]. Dictionary Comprehensions# Syntax: {item: item**2 for item in list}. [cite_start]Creates a dictionary from a sequence [cite: 1516-1517, 1539]. VI. Sets# Introduction# Definition: An unordered collection of unique elements (no duplicates allowed). Creation: set_variable = set(argument). Argument must be iterable. Mutability: Sets are mutable; elements can be added/removed. Set Operations# Adding: add(item) or update(sequence). Removing: remove(item) (raises error if missing) or discard(item) (no error). Set Math: Union (|): Contains all elements from both sets. Intersection (&amp;): Contains only elements found in both sets. Difference (-): Elements in the first set but not the second. [cite_start]Symmetric Difference (^): Elements in either set, but not both [cite: 1613-1614, 1620-1623, 1641-1646, 1653-1658, 1675-1681]. [cite_start]Subsets/Supersets: issubset (&lt;=) and issuperset (&gt;=) [cite: 1687-1691]. VII. Serializing Objects# Definition: Converting an object to a stream of bytes to store in a file (Pickling). Process: import pickle Open file for binary writing (&#39;wb&#39;). Pickle: pickle.dump(object, file). [cite_start]Unpickle: pickle.load(file) (requires opening file for binary reading &#39;rb&#39;) [cite: 1749-1750, 1759-1763, 1768-1773].">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+
+
+  <meta itemprop="name" content="UAH Notes">
+  <meta itemprop="description" content="I. Sequences and Lists# Sequences# Definition: An object that contains multiple items of data stored one after another. [cite_start]Types: Python provides different types of sequences, mainly lists (mutable) and tuples (immutable) [cite: 715-717]. Lists# Definition: A mutable object that contains multiple data items (elements). Format: list = [item1, item2, etc.]. Characteristics: [cite_start]Can hold items of different data types (e.g., integers, strings, floats) [cite: 722-725]. print() can display the entire list. list() function converts other objects to lists. List Operations# Repetition Operator (*): Creates multiple copies of a list joined together. [cite_start]Format: list * n [cite: 749-752]. Iteration: You can iterate over a list using a for loop: for item in list: # process item Indexing: Position of an element (starting at 0). [cite_start]Negative indexes count from the end (-1 is the last element) [cite: 760-763]. len(list) returns the number of elements. [cite_start]Mutability: Elements can be changed using their index: list[1] = new_value [cite: 779-781]. [cite_start]Concatenation (&#43;): Joins two lists together [cite: 787-788]. [cite_start]Slicing: Extracts a span of items: list[start : end] [cite: 795-797]. List Methods &amp; Built-in Functions# Method/Function Description Citation append(item) Adds item to the end of the list. [cite_start] [cite: 816, 838, 845] index(item) Returns the index of the first occurrence of item. [cite_start] [cite: 817-818, 839, 846] insert(index, item) Inserts item at a specific position. [cite_start] [cite: 825, 840, 848] sort() Sorts list in ascending order. [cite_start] [cite: 827, 841, 853] remove(item) Removes the first occurrence of item. [cite_start] [cite: 828, 842, 854] reverse() Reverses the order of elements. [cite_start] [cite: 829, 843, 855] del list[i] Removes element at specific index. [cite_start] [cite: 860-861] min() / max() Returns lowest/highest value in the sequence. [cite_start] [cite: 862] Copying Lists# Reference vs. Value: list1 = list2 only makes list1 reference the same object as list2 (modifying one affects the other). True Copy: Create a new list and copy elements: Create empty list and append loop. [cite_start]Concatenate existing list to a new empty list (new_list = [] &#43; old_list) [cite: 870-873]. II. Advanced List Features# List Comprehensions# Definition: A concise expression to create a new list by iterating over an existing one. [cite_start]Basic Syntax: [item for item in old_list][cite: 909, 928]. [cite_start]Calculations: [item**2 for item in list] creates a list of squares[cite: 943]. [cite_start]Filtering (if clause): [item for item in list if item &lt; 10] includes only items meeting criteria[cite: 964, 971]. Two-Dimensional Lists# Definition: A list containing other lists as elements (nested list), often representing rows and columns. [cite_start]Processing: Typically requires nested loops to process data (two indexes needed) [cite: 977, 981-982]. III. Tuples# Definition: An immutable sequence (cannot be changed once created). Format: tuple_name = (item1, item2). Operations: Supports indexing, slicing, len(), min(), max(), and in operator. Limitations: Does not support append, remove, insert, reverse, or sort. [cite_start]Advantages: Faster processing than lists and safer (data cannot be accidentally modified) [cite: 1010-1015, 1025-1030, 1037-1038]. IV. Plotting with matplotlib# [cite_start]Installation: Not standard; install via pip install matplotlib[cite: 1056]. [cite_start]Import: import matplotlib.pyplot as plt[cite: 1075]. Line Graph: plt.plot(x_coords, y_coords) connects points. Bar Chart: plt.bar(left_edges, heights, bar_width, color). Pie Chart: plt.pie(values, labels=slice_labels). [cite_start]Display: plt.show() renders the graph [cite: 1081, 1257, 1361-1362]. V. Dictionaries# Introduction# Definition: An object that stores a collection of data as key-value pairs (mappings). Format: dictionary = {key1: val1, key2: val2}. Keys: Must be immutable objects (e.g., strings, numbers, tuples). Retrieval: dictionary[key]. [cite_start]Raises KeyError if key is not found [cite: 1409-1416, 1425-1426]. Operations# Adding/Modifying: dictionary[key] = value. [cite_start]If key exists, value is updated; otherwise, new pair is added [cite: 1436-1437]. Deleting: del dictionary[key]. [cite_start]Length: len(dictionary) returns number of pairs[cite: 1443, 1450]. Methods: clear(): Empties the dictionary. get(key, default): Safely retrieves value without KeyError. items(): Returns all keys and values as tuples. keys(): Returns all keys. values(): Returns all values. [cite_start]pop(key): Returns value and removes pair [cite: 1468-1471, 1479, 1490-1491]. Dictionary Comprehensions# Syntax: {item: item**2 for item in list}. [cite_start]Creates a dictionary from a sequence [cite: 1516-1517, 1539]. VI. Sets# Introduction# Definition: An unordered collection of unique elements (no duplicates allowed). Creation: set_variable = set(argument). Argument must be iterable. Mutability: Sets are mutable; elements can be added/removed. Set Operations# Adding: add(item) or update(sequence). Removing: remove(item) (raises error if missing) or discard(item) (no error). Set Math: Union (|): Contains all elements from both sets. Intersection (&amp;): Contains only elements found in both sets. Difference (-): Elements in the first set but not the second. [cite_start]Symmetric Difference (^): Elements in either set, but not both [cite: 1613-1614, 1620-1623, 1641-1646, 1653-1658, 1675-1681]. [cite_start]Subsets/Supersets: issubset (&lt;=) and issuperset (&gt;=) [cite: 1687-1691]. VII. Serializing Objects# Definition: Converting an object to a stream of bytes to store in a file (Pickling). Process: import pickle Open file for binary writing (&#39;wb&#39;). Pickle: pickle.dump(object, file). [cite_start]Unpickle: pickle.load(file) (requires opening file for binary reading &#39;rb&#39;) [cite: 1749-1750, 1759-1763, 1768-1773].">
+  <meta itemprop="wordCount" content="790">
+
+<title>Week 4 Data Structures | UAH Notes</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-4-data-structures/">
+<link rel="stylesheet" href="/book.min.6970156cec683193d93c9c4edaf0d56574e4361df2e0c1be4f697ae81c3ba55f.css" integrity="sha256-aXAVbOxoMZPZPJxO2vDVZXTkNh3y4MG&#43;T2l66Bw7pV8=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.1ccfec30deacfc82708fa640df682425475b335904f4122351e718fe23da532a.js" integrity="sha256-HM/sMN6s/IJwj6ZA32gkJUdbM1kE9BIjUecY/iPaUyo=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-notes">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>UAH Notes</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-10f9186ea778f94125530bda2b491eec" class="toggle"  />
+    <label for="section-10f9186ea778f94125530bda2b491eec" class="flex">
+      <a role="button" class="">
+        Semester 1</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b52ef1c950bc29bb8fa9a1641f2a1845" class="toggle"  />
+    <label for="section-b52ef1c950bc29bb8fa9a1641f2a1845" class="flex">
+      <a role="button" class="">
+        MU 100</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-1/" class="">
+      Part 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-2/" class="">
+      Part 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-4/" class="">
+      Part 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-5/" class="">
+      Part 5</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-58e03cbf23ca286c894b669a53323b3d" class="toggle" checked />
+    <label for="section-58e03cbf23ca286c894b669a53323b3d" class="flex">
+      <a role="button" class="">
+        Semester 3</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f7872d2b813cce0d12e481fe12abeef5" class="toggle"  />
+    <label for="section-f7872d2b813cce0d12e481fe12abeef5" class="flex">
+      <a role="button" class="">
+        ACC 212</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/activity-based-costing/" class="">
+      Activity Based Costing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/behavioral-finance/" class="">
+      Behavioral Finance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/example-transactions/" class="">
+      Example Transactions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/job-order-costing/" class="">
+      Job Order Costing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/recording-business-transactions/" class="">
+      Recording Business Transactions</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c5d8c9e96e5388eb7097d28ba6f1da0e" class="toggle"  />
+    <label for="section-c5d8c9e96e5388eb7097d28ba6f1da0e" class="flex">
+      <a role="button" class="">
+        ECN 142</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/ecn-143/economics-of-information/" class="">
+      Economics of Information</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/ecn-143/public-economics/" class="">
+      Public Economics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/ecn-143/taxation/" class="">
+      Taxation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d525b16173573fea2aea813a9b6d8d4c" class="toggle"  />
+    <label for="section-d525b16173573fea2aea813a9b6d8d4c" class="flex">
+      <a role="button" class="">
+        EH 242</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/england-and-the-middle-ages/" class="">
+      England and the Middle Ages</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/sir-gawain-and-the-green-knight/" class="">
+      Sir Gawain and the Green Knight</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/the-mabinogion/" class="">
+      The Mabinogion</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-1/" class="">
+      Module 1 (Gilgamesh)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-2/" class="">
+      Module 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-3/" class="">
+      Module 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-4/" class="">
+      Module 4</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-14a5c4e3c8a2fb4ddfe18d6ee8afb053" class="toggle"  />
+    <label for="section-14a5c4e3c8a2fb4ddfe18d6ee8afb053" class="flex">
+      <a role="button" class="">
+        FIN 230</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/fin-230/final-exam-information/" class="">
+      Final Exam Information</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-60b08407cfa9dd0baf4b9d93cb9e641d" class="toggle"  />
+    <label for="section-60b08407cfa9dd0baf4b9d93cb9e641d" class="flex">
+      <a role="button" class="">
+        IS 301</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-00b4fe89185b0df446cc84ca546943d2" class="toggle"  />
+    <label for="section-00b4fe89185b0df446cc84ca546943d2" class="flex">
+      <a role="button" class="">
+        Class Notes</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-1-technology-and-the-modern-enterprise/" class="">
+      Chapter 1 Technology and the Modern Enterprise</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-10--platforms-network-effects-and-competition/" class="">
+      Chapter 10 Platforms, Network Effects, and Competition</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-17--data-and-competitive-advantage/" class="">
+      Chapter 17 Data and Competitive Advantage</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-18--artificial-intelligence/" class="">
+      Chapter 18 Artificial Intelligence</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-2--zara/" class="">
+      Chapter 2 Zara</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-2-sample-questions/" class="">
+      Chapter 2 Sample Questions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-20--a-managers-guide-to-the-internet-and-telecommunications/" class="">
+      Chapter 20 a Manager&#39;s Guide to the Internet and Telecommunications</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-3-strategy-and-technology/" class="">
+      Chapter 3 Strategy and Technology</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-5--netflix/" class="">
+      Chapter 5 Netflix</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-6-moores-law-and-more/" class="">
+      Chapter 6 Moore&#39;s Law and More</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-7--disruptive-technologies/" class="">
+      Chapter 7 Disruptive Technologies</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-9--amazon/" class="">
+      Chapter 9 Amazon</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/cybersecurity-threats/" class="">
+      Cybersecurity Threats</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/netflix-presentation-speaker-notes/" class="">
+      Netflix Presentation Speaker Notes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-751dfeaa86902fb15b95d0e8e28f5169" class="toggle" checked />
+    <label for="section-751dfeaa86902fb15b95d0e8e28f5169" class="flex">
+      <a role="button" class="">
+        IS 310</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c7538cb34419b13d5e14d5bba48486a5" class="toggle" checked />
+    <label for="section-c7538cb34419b13d5e14d5bba48486a5" class="flex">
+      <a role="button" class="">
+        Weekly notes</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-1-python-basics/" class="">
+      Week 1 Python Basics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-11-working-with-the-linux-filesystem/" class="">
+      Week 11 Working With the Linux Filesystem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-12-pattern-matching--vulnerability-scanning/" class="">
+      Week 12 Pattern Matching &amp; Vulnerability Scanning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-13-security-and-advanced-bash-operations/" class="">
+      Week 13 Security and Advanced Bash Operations</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-2-advanced-programming/" class="">
+      Week 2 Advanced Programming</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-3-functions-files-and-exceptions/" class="">
+      Week 3 Functions, Files and Exceptions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-4-data-structures/" class="active">
+      Week 4 Data Structures</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-5--inheritance/" class="">
+      Week 5 Inheritance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-6-python-libraries/" class="">
+      Week 6 Python Libraries</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-9--linux-intro-and-io/" class="">
+      Week 9 Linux Intro and Io</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/bash-exam-topics/" class="">
+      Bash Exam Topics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/bash-final-project/" class="">
+      Bash Final Project</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7c584d34a0afaffcb8ebe59023ab5e3e" class="toggle"  />
+    <label for="section-7c584d34a0afaffcb8ebe59023ab5e3e" class="flex">
+      <a role="button" class="">
+        Semester 4</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-45cd194e742ed81db2f0ddeee2728dab" class="toggle"  />
+    <label for="section-45cd194e742ed81db2f0ddeee2728dab" class="flex">
+      <a role="button" class="">
+        BYS 119</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cbd9e89258049b63e28a2b9b0b04da7a" class="toggle"  />
+    <label for="section-cbd9e89258049b63e28a2b9b0b04da7a" class="flex">
+      <a role="button" class="">
+        BYS 121</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1fb1c9133f5878b4100a74622b9eb8ca" class="toggle"  />
+    <label for="section-1fb1c9133f5878b4100a74622b9eb8ca" class="flex">
+      <a role="button" class="">
+        IS 340</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e92b6f7c6dfb68c09a395c20f93768e3" class="toggle"  />
+    <label for="section-e92b6f7c6dfb68c09a395c20f93768e3" class="flex">
+      <a role="button" class="">
+        IS 401</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f606400069f4982285623246c8e026d6" class="toggle"  />
+    <label for="section-f606400069f4982285623246c8e026d6" class="flex">
+      <a role="button" class="">
+        MGT 301</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ee7e2704aeba138592b97c863eb5aab7" class="toggle"  />
+    <label for="section-ee7e2704aeba138592b97c863eb5aab7" class="flex">
+      <a role="button" class="">
+        PHL 101</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-4/phl-101/phl-101___1-6-25/" class="">
+      Phl 101 1 6 25</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Week 4 Data Structures</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#i-sequences-and-lists">I. Sequences and Lists</a>
+      <ul>
+        <li><a href="#sequences">Sequences</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#list-operations">List Operations</a></li>
+        <li><a href="#list-methods--built-in-functions">List Methods &amp; Built-in Functions</a></li>
+        <li><a href="#copying-lists">Copying Lists</a></li>
+      </ul>
+    </li>
+    <li><a href="#ii-advanced-list-features">II. Advanced List Features</a>
+      <ul>
+        <li><a href="#list-comprehensions">List Comprehensions</a></li>
+        <li><a href="#two-dimensional-lists">Two-Dimensional Lists</a></li>
+      </ul>
+    </li>
+    <li><a href="#iii-tuples">III. Tuples</a></li>
+    <li><a href="#iv-plotting-with-matplotlib">IV. Plotting with <code>matplotlib</code></a></li>
+    <li><a href="#v-dictionaries">V. Dictionaries</a>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#operations">Operations</a></li>
+        <li><a href="#dictionary-comprehensions">Dictionary Comprehensions</a></li>
+      </ul>
+    </li>
+    <li><a href="#vi-sets">VI. Sets</a>
+      <ul>
+        <li><a href="#introduction-1">Introduction</a></li>
+        <li><a href="#set-operations">Set Operations</a></li>
+      </ul>
+    </li>
+    <li><a href="#vii-serializing-objects">VII. Serializing Objects</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="i-sequences-and-lists">I. Sequences and Lists<a class="anchor" href="#i-sequences-and-lists">#</a></h2>
+<h3 id="sequences">Sequences<a class="anchor" href="#sequences">#</a></h3>
+<ul>
+<li><strong>Definition:</strong> An object that contains multiple items of data stored one after another.</li>
+<li>[cite_start]<strong>Types:</strong> Python provides different types of sequences, mainly <strong>lists</strong> (mutable) and <strong>tuples</strong> (immutable) [cite: 715-717].</li>
+</ul>
+<h3 id="lists">Lists<a class="anchor" href="#lists">#</a></h3>
+<ul>
+<li><strong>Definition:</strong> A mutable object that contains multiple data items (elements).</li>
+<li><strong>Format:</strong> <code>list = [item1, item2, etc.]</code>.</li>
+<li><strong>Characteristics:</strong>
+<ul>
+<li>[cite_start]Can hold items of different data types (e.g., integers, strings, floats) [cite: 722-725].</li>
+<li><code>print()</code> can display the entire list.</li>
+<li><code>list()</code> function converts other objects to lists.</li>
+</ul>
+</li>
+</ul>
+<h3 id="list-operations">List Operations<a class="anchor" href="#list-operations">#</a></h3>
+<ul>
+<li><strong>Repetition Operator (<code>*</code>):</strong> Creates multiple copies of a list joined together. [cite_start]Format: <code>list * n</code> [cite: 749-752].</li>
+<li><strong>Iteration:</strong> You can iterate over a list using a <code>for</code> loop:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> list:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># process item</span></span></span></code></pre></div></li>
+<li><strong>Indexing:</strong>
+<ul>
+<li>Position of an element (starting at 0).</li>
+<li>[cite_start]Negative indexes count from the end (<code>-1</code> is the last element) [cite: 760-763].</li>
+<li><code>len(list)</code> returns the number of elements.</li>
+</ul>
+</li>
+<li>[cite_start]<strong>Mutability:</strong> Elements can be changed using their index: <code>list[1] = new_value</code> [cite: 779-781].</li>
+<li>[cite_start]<strong>Concatenation (<code>+</code>):</strong> Joins two lists together [cite: 787-788].</li>
+<li>[cite_start]<strong>Slicing:</strong> Extracts a span of items: <code>list[start : end]</code> [cite: 795-797].</li>
+</ul>
+<h3 id="list-methods--built-in-functions">List Methods &amp; Built-in Functions<a class="anchor" href="#list-methods--built-in-functions">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Method/Function</th>
+          <th style="text-align: left">Description</th>
+          <th style="text-align: left">Citation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>append(item)</code></td>
+          <td style="text-align: left">Adds item to the end of the list. [cite_start]</td>
+          <td style="text-align: left">[cite: 816, 838, 845]</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>index(item)</code></td>
+          <td style="text-align: left">Returns the index of the first occurrence of item. [cite_start]</td>
+          <td style="text-align: left">[cite: 817-818, 839, 846]</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>insert(index, item)</code></td>
+          <td style="text-align: left">Inserts item at a specific position. [cite_start]</td>
+          <td style="text-align: left">[cite: 825, 840, 848]</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>sort()</code></td>
+          <td style="text-align: left">Sorts list in ascending order. [cite_start]</td>
+          <td style="text-align: left">[cite: 827, 841, 853]</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>remove(item)</code></td>
+          <td style="text-align: left">Removes the first occurrence of item. [cite_start]</td>
+          <td style="text-align: left">[cite: 828, 842, 854]</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>reverse()</code></td>
+          <td style="text-align: left">Reverses the order of elements. [cite_start]</td>
+          <td style="text-align: left">[cite: 829, 843, 855]</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>del list[i]</code></td>
+          <td style="text-align: left">Removes element at specific index. [cite_start]</td>
+          <td style="text-align: left">[cite: 860-861]</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>min()</code> / <code>max()</code></td>
+          <td style="text-align: left">Returns lowest/highest value in the sequence. [cite_start]</td>
+          <td style="text-align: left">[cite: 862]</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="copying-lists">Copying Lists<a class="anchor" href="#copying-lists">#</a></h3>
+<ul>
+<li><strong>Reference vs. Value:</strong> <code>list1 = list2</code> only makes <code>list1</code> reference the same object as <code>list2</code> (modifying one affects the other).</li>
+<li><strong>True Copy:</strong> Create a new list and copy elements:
+<ol>
+<li>Create empty list and append loop.</li>
+<li>[cite_start]Concatenate existing list to a new empty list (<code>new_list = [] + old_list</code>) [cite: 870-873].</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 id="ii-advanced-list-features">II. Advanced List Features<a class="anchor" href="#ii-advanced-list-features">#</a></h2>
+<h3 id="list-comprehensions">List Comprehensions<a class="anchor" href="#list-comprehensions">#</a></h3>
+<ul>
+<li><strong>Definition:</strong> A concise expression to create a new list by iterating over an existing one.</li>
+<li>[cite_start]<strong>Basic Syntax:</strong> <code>[item for item in old_list]</code>[cite: 909, 928].</li>
+<li>[cite_start]<strong>Calculations:</strong> <code>[item**2 for item in list]</code> creates a list of squares[cite: 943].</li>
+<li>[cite_start]<strong>Filtering (if clause):</strong> <code>[item for item in list if item &lt; 10]</code> includes only items meeting criteria[cite: 964, 971].</li>
+</ul>
+<h3 id="two-dimensional-lists">Two-Dimensional Lists<a class="anchor" href="#two-dimensional-lists">#</a></h3>
+<ul>
+<li><strong>Definition:</strong> A list containing other lists as elements (nested list), often representing rows and columns.</li>
+<li>[cite_start]<strong>Processing:</strong> Typically requires nested loops to process data (two indexes needed) [cite: 977, 981-982].</li>
+</ul>
+<hr>
+<h2 id="iii-tuples">III. Tuples<a class="anchor" href="#iii-tuples">#</a></h2>
+<ul>
+<li><strong>Definition:</strong> An immutable sequence (cannot be changed once created).</li>
+<li><strong>Format:</strong> <code>tuple_name = (item1, item2)</code>.</li>
+<li><strong>Operations:</strong> Supports indexing, slicing, <code>len()</code>, <code>min()</code>, <code>max()</code>, and <code>in</code> operator.</li>
+<li><strong>Limitations:</strong> Does <strong>not</strong> support <code>append</code>, <code>remove</code>, <code>insert</code>, <code>reverse</code>, or <code>sort</code>.</li>
+<li>[cite_start]<strong>Advantages:</strong> Faster processing than lists and safer (data cannot be accidentally modified) [cite: 1010-1015, 1025-1030, 1037-1038].</li>
+</ul>
+<hr>
+<h2 id="iv-plotting-with-matplotlib">IV. Plotting with <code>matplotlib</code><a class="anchor" href="#iv-plotting-with-matplotlib">#</a></h2>
+<ul>
+<li>[cite_start]<strong>Installation:</strong> Not standard; install via <code>pip install matplotlib</code>[cite: 1056].</li>
+<li>[cite_start]<strong>Import:</strong> <code>import matplotlib.pyplot as plt</code>[cite: 1075].</li>
+<li><strong>Line Graph:</strong> <code>plt.plot(x_coords, y_coords)</code> connects points.</li>
+<li><strong>Bar Chart:</strong> <code>plt.bar(left_edges, heights, bar_width, color)</code>.</li>
+<li><strong>Pie Chart:</strong> <code>plt.pie(values, labels=slice_labels)</code>.</li>
+<li>[cite_start]<strong>Display:</strong> <code>plt.show()</code> renders the graph [cite: 1081, 1257, 1361-1362].</li>
+</ul>
+<hr>
+<h2 id="v-dictionaries">V. Dictionaries<a class="anchor" href="#v-dictionaries">#</a></h2>
+<h3 id="introduction">Introduction<a class="anchor" href="#introduction">#</a></h3>
+<ul>
+<li><strong>Definition:</strong> An object that stores a collection of data as key-value pairs (mappings).</li>
+<li><strong>Format:</strong> <code>dictionary = {key1: val1, key2: val2}</code>.</li>
+<li><strong>Keys:</strong> Must be immutable objects (e.g., strings, numbers, tuples).</li>
+<li><strong>Retrieval:</strong> <code>dictionary[key]</code>. [cite_start]Raises <code>KeyError</code> if key is not found [cite: 1409-1416, 1425-1426].</li>
+</ul>
+<h3 id="operations">Operations<a class="anchor" href="#operations">#</a></h3>
+<ul>
+<li><strong>Adding/Modifying:</strong> <code>dictionary[key] = value</code>. [cite_start]If key exists, value is updated; otherwise, new pair is added [cite: 1436-1437].</li>
+<li><strong>Deleting:</strong> <code>del dictionary[key]</code>.</li>
+<li>[cite_start]<strong>Length:</strong> <code>len(dictionary)</code> returns number of pairs[cite: 1443, 1450].</li>
+<li><strong>Methods:</strong>
+<ul>
+<li><code>clear()</code>: Empties the dictionary.</li>
+<li><code>get(key, default)</code>: Safely retrieves value without <code>KeyError</code>.</li>
+<li><code>items()</code>: Returns all keys and values as tuples.</li>
+<li><code>keys()</code>: Returns all keys.</li>
+<li><code>values()</code>: Returns all values.</li>
+<li>[cite_start]<code>pop(key)</code>: Returns value and removes pair [cite: 1468-1471, 1479, 1490-1491].</li>
+</ul>
+</li>
+</ul>
+<h3 id="dictionary-comprehensions">Dictionary Comprehensions<a class="anchor" href="#dictionary-comprehensions">#</a></h3>
+<ul>
+<li><strong>Syntax:</strong> <code>{item: item**2 for item in list}</code>. [cite_start]Creates a dictionary from a sequence [cite: 1516-1517, 1539].</li>
+</ul>
+<hr>
+<h2 id="vi-sets">VI. Sets<a class="anchor" href="#vi-sets">#</a></h2>
+<h3 id="introduction-1">Introduction<a class="anchor" href="#introduction-1">#</a></h3>
+<ul>
+<li><strong>Definition:</strong> An unordered collection of unique elements (no duplicates allowed).</li>
+<li><strong>Creation:</strong> <code>set_variable = set(argument)</code>. Argument must be iterable.</li>
+<li><strong>Mutability:</strong> Sets are mutable; elements can be added/removed.</li>
+</ul>
+<h3 id="set-operations">Set Operations<a class="anchor" href="#set-operations">#</a></h3>
+<ul>
+<li><strong>Adding:</strong> <code>add(item)</code> or <code>update(sequence)</code>.</li>
+<li><strong>Removing:</strong> <code>remove(item)</code> (raises error if missing) or <code>discard(item)</code> (no error).</li>
+<li><strong>Set Math:</strong>
+<ul>
+<li><strong>Union (<code>|</code>):</strong> Contains all elements from both sets.</li>
+<li><strong>Intersection (<code>&amp;</code>):</strong> Contains only elements found in <em>both</em> sets.</li>
+<li><strong>Difference (<code>-</code>):</strong> Elements in the first set but not the second.</li>
+<li>[cite_start]<strong>Symmetric Difference (<code>^</code>):</strong> Elements in either set, but <em>not</em> both [cite: 1613-1614, 1620-1623, 1641-1646, 1653-1658, 1675-1681].</li>
+</ul>
+</li>
+<li>[cite_start]<strong>Subsets/Supersets:</strong> <code>issubset</code> (<code>&lt;=</code>) and <code>issuperset</code> (<code>&gt;=</code>) [cite: 1687-1691].</li>
+</ul>
+<hr>
+<h2 id="vii-serializing-objects">VII. Serializing Objects<a class="anchor" href="#vii-serializing-objects">#</a></h2>
+<ul>
+<li><strong>Definition:</strong> Converting an object to a stream of bytes to store in a file (Pickling).</li>
+<li><strong>Process:</strong>
+<ol>
+<li><code>import pickle</code></li>
+<li>Open file for binary writing (<code>'wb'</code>).</li>
+<li><strong>Pickle:</strong> <code>pickle.dump(object, file)</code>.</li>
+<li>[cite_start]<strong>Unpickle:</strong> <code>pickle.load(file)</code> (requires opening file for binary reading <code>'rb'</code>) [cite: 1749-1750, 1759-1763, 1768-1773].</li>
+</ol>
+</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/notes/semester-3/is-310/weekly-notes/week-3-functions-files-and-exceptions/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>Week 3 Functions, Files and Exceptions</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/notes/semester-3/is-310/weekly-notes/week-5--inheritance/" class="flex align-center">
+        <span>Week 5 Inheritance</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#i-sequences-and-lists">I. Sequences and Lists</a>
+      <ul>
+        <li><a href="#sequences">Sequences</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#list-operations">List Operations</a></li>
+        <li><a href="#list-methods--built-in-functions">List Methods &amp; Built-in Functions</a></li>
+        <li><a href="#copying-lists">Copying Lists</a></li>
+      </ul>
+    </li>
+    <li><a href="#ii-advanced-list-features">II. Advanced List Features</a>
+      <ul>
+        <li><a href="#list-comprehensions">List Comprehensions</a></li>
+        <li><a href="#two-dimensional-lists">Two-Dimensional Lists</a></li>
+      </ul>
+    </li>
+    <li><a href="#iii-tuples">III. Tuples</a></li>
+    <li><a href="#iv-plotting-with-matplotlib">IV. Plotting with <code>matplotlib</code></a></li>
+    <li><a href="#v-dictionaries">V. Dictionaries</a>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#operations">Operations</a></li>
+        <li><a href="#dictionary-comprehensions">Dictionary Comprehensions</a></li>
+      </ul>
+    </li>
+    <li><a href="#vi-sets">VI. Sets</a>
+      <ul>
+        <li><a href="#introduction-1">Introduction</a></li>
+        <li><a href="#set-operations">Set Operations</a></li>
+      </ul>
+    </li>
+    <li><a href="#vii-serializing-objects">VII. Serializing Objects</a></li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

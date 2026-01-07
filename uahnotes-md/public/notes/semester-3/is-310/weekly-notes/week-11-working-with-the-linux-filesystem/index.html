@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Bash Functions and Files# Functions in Bash# Similar to shell script Stores command for execution later in memory Function executed in same shell as it was called in Functions must be defined before they can be referenced Typically placed at beginning of script function_name(){ statements } # Simple bash function #!/bin/bash # Function to print a message say_hello(){ echo &#34;Hello, world!&#34; } # Calling the function say_hello # Example with an argument #!/bin/bash # Defined function greet_user(){ echo &#34;Hello, $1! Welcome to the world of bash scripting!&#34; } # Call the function with an argument greet_user &#34;Jane&#34; Variables in Functions# Variables defined within functions are global Values are known throughout the entire shell program Keyword ’local’ inside a function definition makes the referenced variable local to that function Global and Local Variable examples# global_var=&#34;Global&#34; show_variable(){ local local_var=&#34;Local&#34; echo &#34;Inside the function&#34; echo &#34;Global variable: $global_var&#34; echo &#34;Local variable: $local_var&#34; } show_variables echo &#34;Outside the function:&#34; echo &#34;Global variable: $global_var&#34; # The local variable is not acessible outside the function echo &#34;Local variable: $local_var (not accessible)&#34; Working with File system in Bash# Creating a new directory mkdir DIRNAME Creating a new file Use text editor to create a new text file Using the touch command Naming for files and Directory# Use Alphabetic letters Numbers Dot, underscore, hyphen Avoid starting names with hyphens Options usually start with hyphens Avoid using spaces in file names Avoid special letters, symbols ,etc. Copying, moving or deleting# # copying cp [Source] [Destination] # move mv [Source] [Destination] # Delete rm FILENAME rm -r [Directory] Scanning files# cat - concatenate, i.e. show file contents more - show file contents one page at a time less - better version of more with additional options head - show first few lines of file tail - show last few lines of a file wc - show word, line and character count sort - sorts file contents uniq - removes duplicates sort and uniq can be combined to extract unique values or do grouping cut - picks out columns from tabular data grep - search file contents (next module) sed and awk are more advanced The Linux filesystem# Everything is a file, if not a file it is a process There is basically no difference between a file and a directory Types of files# Most files are just regular files There are the following exceptions: Directories Special files Links Domain sockets Provide inter process networking protected by file system access control Named pipes File System# Hierarchical - tree structure Consistent Simple - Flexible file operations Directories are a special type of file that are lists of other programs Ordered tree-like structure on the hard disk Two types of paths - full/absolute paths and relative paths Absolute path - complete path to a certain file or directory All absolute file names start with a slash because the slash indicates the root directory Slash also used for separating the directories on the path Relative path- starts from the working directory Need . and .. to indicate the working directory and the parent directory Your shell uses your current directory as the point of reference Basic Linux Directories# File Permissions# Users can belong to several groups A file can only belong to one user and one group at a time The root user has extra permissions Only the root user can change the ownership of a file Users and Groups# User info in /etc/passwd Password info in /etc/shadow Group info in /etc/group /etc/passwd and /etc/group divide data fields using “.” Programs# Programs can be run by a user, when the system starts, or by another process Before starting the program, the kernel checks: Is the file accessible to the user or group of the process that wants to run it? Does the file containing the program permit execution by that user or group (or anybody)? In most cases, a program inherits the privileges of the user/process who started it Permissions# Files owned by users and groups Files have permissions for user, group and other (world) Read, Write and Execute (R,W,X) User who owns a file is always allowed to change its permissions File Permissions# Two ways to set permissions using the chmod command: Symbolic mode: Absolute mode: Use octal (base 8 values) R (read) = 4 W (write) = 2 X (execute) = 1 (none) = 0 Inherited permissions# Two critical points Permissions of a directory affect whether someone can see its contents or add or remove files in it Permissions on a file determine what a user can do to the data in the file Ex: If you don’t have write permission for a directory, the you can’t delete a file in the directory If you have write access to the file you can update the data in the file ">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-11-working-with-the-linux-filesystem/">
+  <meta property="og:site_name" content="UAH Notes">
+  <meta property="og:title" content="UAH Notes">
+  <meta property="og:description" content="Bash Functions and Files# Functions in Bash# Similar to shell script Stores command for execution later in memory Function executed in same shell as it was called in Functions must be defined before they can be referenced Typically placed at beginning of script function_name(){ statements } # Simple bash function #!/bin/bash # Function to print a message say_hello(){ echo &#34;Hello, world!&#34; } # Calling the function say_hello # Example with an argument #!/bin/bash # Defined function greet_user(){ echo &#34;Hello, $1! Welcome to the world of bash scripting!&#34; } # Call the function with an argument greet_user &#34;Jane&#34; Variables in Functions# Variables defined within functions are global Values are known throughout the entire shell program Keyword ’local’ inside a function definition makes the referenced variable local to that function Global and Local Variable examples# global_var=&#34;Global&#34; show_variable(){ local local_var=&#34;Local&#34; echo &#34;Inside the function&#34; echo &#34;Global variable: $global_var&#34; echo &#34;Local variable: $local_var&#34; } show_variables echo &#34;Outside the function:&#34; echo &#34;Global variable: $global_var&#34; # The local variable is not acessible outside the function echo &#34;Local variable: $local_var (not accessible)&#34; Working with File system in Bash# Creating a new directory mkdir DIRNAME Creating a new file Use text editor to create a new text file Using the touch command Naming for files and Directory# Use Alphabetic letters Numbers Dot, underscore, hyphen Avoid starting names with hyphens Options usually start with hyphens Avoid using spaces in file names Avoid special letters, symbols ,etc. Copying, moving or deleting# # copying cp [Source] [Destination] # move mv [Source] [Destination] # Delete rm FILENAME rm -r [Directory] Scanning files# cat - concatenate, i.e. show file contents more - show file contents one page at a time less - better version of more with additional options head - show first few lines of file tail - show last few lines of a file wc - show word, line and character count sort - sorts file contents uniq - removes duplicates sort and uniq can be combined to extract unique values or do grouping cut - picks out columns from tabular data grep - search file contents (next module) sed and awk are more advanced The Linux filesystem# Everything is a file, if not a file it is a process There is basically no difference between a file and a directory Types of files# Most files are just regular files There are the following exceptions: Directories Special files Links Domain sockets Provide inter process networking protected by file system access control Named pipes File System# Hierarchical - tree structure Consistent Simple - Flexible file operations Directories are a special type of file that are lists of other programs Ordered tree-like structure on the hard disk Two types of paths - full/absolute paths and relative paths Absolute path - complete path to a certain file or directory All absolute file names start with a slash because the slash indicates the root directory Slash also used for separating the directories on the path Relative path- starts from the working directory Need . and .. to indicate the working directory and the parent directory Your shell uses your current directory as the point of reference Basic Linux Directories# File Permissions# Users can belong to several groups A file can only belong to one user and one group at a time The root user has extra permissions Only the root user can change the ownership of a file Users and Groups# User info in /etc/passwd Password info in /etc/shadow Group info in /etc/group /etc/passwd and /etc/group divide data fields using “.” Programs# Programs can be run by a user, when the system starts, or by another process Before starting the program, the kernel checks: Is the file accessible to the user or group of the process that wants to run it? Does the file containing the program permit execution by that user or group (or anybody)? In most cases, a program inherits the privileges of the user/process who started it Permissions# Files owned by users and groups Files have permissions for user, group and other (world) Read, Write and Execute (R,W,X) User who owns a file is always allowed to change its permissions File Permissions# Two ways to set permissions using the chmod command: Symbolic mode: Absolute mode: Use octal (base 8 values) R (read) = 4 W (write) = 2 X (execute) = 1 (none) = 0 Inherited permissions# Two critical points Permissions of a directory affect whether someone can see its contents or add or remove files in it Permissions on a file determine what a user can do to the data in the file Ex: If you don’t have write permission for a directory, the you can’t delete a file in the directory If you have write access to the file you can update the data in the file">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+
+
+  <meta itemprop="name" content="UAH Notes">
+  <meta itemprop="description" content="Bash Functions and Files# Functions in Bash# Similar to shell script Stores command for execution later in memory Function executed in same shell as it was called in Functions must be defined before they can be referenced Typically placed at beginning of script function_name(){ statements } # Simple bash function #!/bin/bash # Function to print a message say_hello(){ echo &#34;Hello, world!&#34; } # Calling the function say_hello # Example with an argument #!/bin/bash # Defined function greet_user(){ echo &#34;Hello, $1! Welcome to the world of bash scripting!&#34; } # Call the function with an argument greet_user &#34;Jane&#34; Variables in Functions# Variables defined within functions are global Values are known throughout the entire shell program Keyword ’local’ inside a function definition makes the referenced variable local to that function Global and Local Variable examples# global_var=&#34;Global&#34; show_variable(){ local local_var=&#34;Local&#34; echo &#34;Inside the function&#34; echo &#34;Global variable: $global_var&#34; echo &#34;Local variable: $local_var&#34; } show_variables echo &#34;Outside the function:&#34; echo &#34;Global variable: $global_var&#34; # The local variable is not acessible outside the function echo &#34;Local variable: $local_var (not accessible)&#34; Working with File system in Bash# Creating a new directory mkdir DIRNAME Creating a new file Use text editor to create a new text file Using the touch command Naming for files and Directory# Use Alphabetic letters Numbers Dot, underscore, hyphen Avoid starting names with hyphens Options usually start with hyphens Avoid using spaces in file names Avoid special letters, symbols ,etc. Copying, moving or deleting# # copying cp [Source] [Destination] # move mv [Source] [Destination] # Delete rm FILENAME rm -r [Directory] Scanning files# cat - concatenate, i.e. show file contents more - show file contents one page at a time less - better version of more with additional options head - show first few lines of file tail - show last few lines of a file wc - show word, line and character count sort - sorts file contents uniq - removes duplicates sort and uniq can be combined to extract unique values or do grouping cut - picks out columns from tabular data grep - search file contents (next module) sed and awk are more advanced The Linux filesystem# Everything is a file, if not a file it is a process There is basically no difference between a file and a directory Types of files# Most files are just regular files There are the following exceptions: Directories Special files Links Domain sockets Provide inter process networking protected by file system access control Named pipes File System# Hierarchical - tree structure Consistent Simple - Flexible file operations Directories are a special type of file that are lists of other programs Ordered tree-like structure on the hard disk Two types of paths - full/absolute paths and relative paths Absolute path - complete path to a certain file or directory All absolute file names start with a slash because the slash indicates the root directory Slash also used for separating the directories on the path Relative path- starts from the working directory Need . and .. to indicate the working directory and the parent directory Your shell uses your current directory as the point of reference Basic Linux Directories# File Permissions# Users can belong to several groups A file can only belong to one user and one group at a time The root user has extra permissions Only the root user can change the ownership of a file Users and Groups# User info in /etc/passwd Password info in /etc/shadow Group info in /etc/group /etc/passwd and /etc/group divide data fields using “.” Programs# Programs can be run by a user, when the system starts, or by another process Before starting the program, the kernel checks: Is the file accessible to the user or group of the process that wants to run it? Does the file containing the program permit execution by that user or group (or anybody)? In most cases, a program inherits the privileges of the user/process who started it Permissions# Files owned by users and groups Files have permissions for user, group and other (world) Read, Write and Execute (R,W,X) User who owns a file is always allowed to change its permissions File Permissions# Two ways to set permissions using the chmod command: Symbolic mode: Absolute mode: Use octal (base 8 values) R (read) = 4 W (write) = 2 X (execute) = 1 (none) = 0 Inherited permissions# Two critical points Permissions of a directory affect whether someone can see its contents or add or remove files in it Permissions on a file determine what a user can do to the data in the file Ex: If you don’t have write permission for a directory, the you can’t delete a file in the directory If you have write access to the file you can update the data in the file">
+  <meta itemprop="wordCount" content="797">
+
+<title>Week 11 Working With the Linux Filesystem | UAH Notes</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-11-working-with-the-linux-filesystem/">
+<link rel="stylesheet" href="/book.min.6970156cec683193d93c9c4edaf0d56574e4361df2e0c1be4f697ae81c3ba55f.css" integrity="sha256-aXAVbOxoMZPZPJxO2vDVZXTkNh3y4MG&#43;T2l66Bw7pV8=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.1ccfec30deacfc82708fa640df682425475b335904f4122351e718fe23da532a.js" integrity="sha256-HM/sMN6s/IJwj6ZA32gkJUdbM1kE9BIjUecY/iPaUyo=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-notes">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>UAH Notes</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-10f9186ea778f94125530bda2b491eec" class="toggle"  />
+    <label for="section-10f9186ea778f94125530bda2b491eec" class="flex">
+      <a role="button" class="">
+        Semester 1</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b52ef1c950bc29bb8fa9a1641f2a1845" class="toggle"  />
+    <label for="section-b52ef1c950bc29bb8fa9a1641f2a1845" class="flex">
+      <a role="button" class="">
+        MU 100</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-1/" class="">
+      Part 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-2/" class="">
+      Part 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-4/" class="">
+      Part 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-1/mu-100/part-5/" class="">
+      Part 5</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-58e03cbf23ca286c894b669a53323b3d" class="toggle" checked />
+    <label for="section-58e03cbf23ca286c894b669a53323b3d" class="flex">
+      <a role="button" class="">
+        Semester 3</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f7872d2b813cce0d12e481fe12abeef5" class="toggle"  />
+    <label for="section-f7872d2b813cce0d12e481fe12abeef5" class="flex">
+      <a role="button" class="">
+        ACC 212</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/activity-based-costing/" class="">
+      Activity Based Costing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/behavioral-finance/" class="">
+      Behavioral Finance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/example-transactions/" class="">
+      Example Transactions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/job-order-costing/" class="">
+      Job Order Costing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/acc-212/recording-business-transactions/" class="">
+      Recording Business Transactions</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c5d8c9e96e5388eb7097d28ba6f1da0e" class="toggle"  />
+    <label for="section-c5d8c9e96e5388eb7097d28ba6f1da0e" class="flex">
+      <a role="button" class="">
+        ECN 142</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/ecn-143/economics-of-information/" class="">
+      Economics of Information</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/ecn-143/public-economics/" class="">
+      Public Economics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/ecn-143/taxation/" class="">
+      Taxation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d525b16173573fea2aea813a9b6d8d4c" class="toggle"  />
+    <label for="section-d525b16173573fea2aea813a9b6d8d4c" class="flex">
+      <a role="button" class="">
+        EH 242</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/england-and-the-middle-ages/" class="">
+      England and the Middle Ages</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/sir-gawain-and-the-green-knight/" class="">
+      Sir Gawain and the Green Knight</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/the-mabinogion/" class="">
+      The Mabinogion</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-1/" class="">
+      Module 1 (Gilgamesh)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-2/" class="">
+      Module 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-3/" class="">
+      Module 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/eh-242/module-4/" class="">
+      Module 4</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-14a5c4e3c8a2fb4ddfe18d6ee8afb053" class="toggle"  />
+    <label for="section-14a5c4e3c8a2fb4ddfe18d6ee8afb053" class="flex">
+      <a role="button" class="">
+        FIN 230</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/fin-230/final-exam-information/" class="">
+      Final Exam Information</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-60b08407cfa9dd0baf4b9d93cb9e641d" class="toggle"  />
+    <label for="section-60b08407cfa9dd0baf4b9d93cb9e641d" class="flex">
+      <a role="button" class="">
+        IS 301</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-00b4fe89185b0df446cc84ca546943d2" class="toggle"  />
+    <label for="section-00b4fe89185b0df446cc84ca546943d2" class="flex">
+      <a role="button" class="">
+        Class Notes</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-1-technology-and-the-modern-enterprise/" class="">
+      Chapter 1 Technology and the Modern Enterprise</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-10--platforms-network-effects-and-competition/" class="">
+      Chapter 10 Platforms, Network Effects, and Competition</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-17--data-and-competitive-advantage/" class="">
+      Chapter 17 Data and Competitive Advantage</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-18--artificial-intelligence/" class="">
+      Chapter 18 Artificial Intelligence</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-2--zara/" class="">
+      Chapter 2 Zara</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-2-sample-questions/" class="">
+      Chapter 2 Sample Questions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-20--a-managers-guide-to-the-internet-and-telecommunications/" class="">
+      Chapter 20 a Manager&#39;s Guide to the Internet and Telecommunications</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-3-strategy-and-technology/" class="">
+      Chapter 3 Strategy and Technology</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-5--netflix/" class="">
+      Chapter 5 Netflix</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-6-moores-law-and-more/" class="">
+      Chapter 6 Moore&#39;s Law and More</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-7--disruptive-technologies/" class="">
+      Chapter 7 Disruptive Technologies</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/class-notes/chapter-9--amazon/" class="">
+      Chapter 9 Amazon</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/cybersecurity-threats/" class="">
+      Cybersecurity Threats</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-301/netflix-presentation-speaker-notes/" class="">
+      Netflix Presentation Speaker Notes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-751dfeaa86902fb15b95d0e8e28f5169" class="toggle" checked />
+    <label for="section-751dfeaa86902fb15b95d0e8e28f5169" class="flex">
+      <a role="button" class="">
+        IS 310</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c7538cb34419b13d5e14d5bba48486a5" class="toggle" checked />
+    <label for="section-c7538cb34419b13d5e14d5bba48486a5" class="flex">
+      <a role="button" class="">
+        Weekly notes</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-1-python-basics/" class="">
+      Week 1 Python Basics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-11-working-with-the-linux-filesystem/" class="active">
+      Week 11 Working With the Linux Filesystem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-12-pattern-matching--vulnerability-scanning/" class="">
+      Week 12 Pattern Matching &amp; Vulnerability Scanning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-13-security-and-advanced-bash-operations/" class="">
+      Week 13 Security and Advanced Bash Operations</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-2-advanced-programming/" class="">
+      Week 2 Advanced Programming</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-3-functions-files-and-exceptions/" class="">
+      Week 3 Functions, Files and Exceptions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-4-data-structures/" class="">
+      Week 4 Data Structures</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-5--inheritance/" class="">
+      Week 5 Inheritance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-6-python-libraries/" class="">
+      Week 6 Python Libraries</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/weekly-notes/week-9--linux-intro-and-io/" class="">
+      Week 9 Linux Intro and Io</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/bash-exam-topics/" class="">
+      Bash Exam Topics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-3/is-310/bash-final-project/" class="">
+      Bash Final Project</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7c584d34a0afaffcb8ebe59023ab5e3e" class="toggle"  />
+    <label for="section-7c584d34a0afaffcb8ebe59023ab5e3e" class="flex">
+      <a role="button" class="">
+        Semester 4</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-45cd194e742ed81db2f0ddeee2728dab" class="toggle"  />
+    <label for="section-45cd194e742ed81db2f0ddeee2728dab" class="flex">
+      <a role="button" class="">
+        BYS 119</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cbd9e89258049b63e28a2b9b0b04da7a" class="toggle"  />
+    <label for="section-cbd9e89258049b63e28a2b9b0b04da7a" class="flex">
+      <a role="button" class="">
+        BYS 121</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1fb1c9133f5878b4100a74622b9eb8ca" class="toggle"  />
+    <label for="section-1fb1c9133f5878b4100a74622b9eb8ca" class="flex">
+      <a role="button" class="">
+        IS 340</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e92b6f7c6dfb68c09a395c20f93768e3" class="toggle"  />
+    <label for="section-e92b6f7c6dfb68c09a395c20f93768e3" class="flex">
+      <a role="button" class="">
+        IS 401</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f606400069f4982285623246c8e026d6" class="toggle"  />
+    <label for="section-f606400069f4982285623246c8e026d6" class="flex">
+      <a role="button" class="">
+        MGT 301</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ee7e2704aeba138592b97c863eb5aab7" class="toggle"  />
+    <label for="section-ee7e2704aeba138592b97c863eb5aab7" class="flex">
+      <a role="button" class="">
+        PHL 101</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/notes/semester-4/phl-101/phl-101___1-6-25/" class="">
+      Phl 101 1 6 25</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Week 11 Working With the Linux Filesystem</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#functions-in-bash">Functions in Bash</a></li>
+    <li><a href="#variables-in-functions">Variables in Functions</a>
+      <ul>
+        <li><a href="#global-and-local-variable-examples">Global and Local Variable examples</a></li>
+      </ul>
+    </li>
+    <li><a href="#working-with-file-system-in-bash">Working with File system in Bash</a>
+      <ul>
+        <li><a href="#naming-for-files-and-directory">Naming for files and Directory</a></li>
+        <li><a href="#copying-moving-or-deleting">Copying, moving or deleting</a></li>
+        <li><a href="#scanning-files">Scanning files</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#types-of-files">Types of files</a>
+      <ul>
+        <li><a href="#file-system">File System</a></li>
+        <li><a href="#basic-linux-directories">Basic Linux Directories</a></li>
+      </ul>
+    </li>
+    <li><a href="#file-permissions">File Permissions</a>
+      <ul>
+        <li><a href="#users-and-groups">Users and Groups</a></li>
+      </ul>
+    </li>
+    <li><a href="#programs">Programs</a></li>
+    <li><a href="#permissions">Permissions</a>
+      <ul>
+        <li><a href="#file-permissions-1">File Permissions</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="bash-functions-and-files">Bash Functions and Files<a class="anchor" href="#bash-functions-and-files">#</a></h1>
+<h2 id="functions-in-bash">Functions in Bash<a class="anchor" href="#functions-in-bash">#</a></h2>
+<ul>
+<li>Similar to shell script
+<ul>
+<li>Stores command for execution later in memory</li>
+<li>Function executed in same shell as it was called in</li>
+</ul>
+</li>
+<li>Functions must be defined before they can be referenced</li>
+<li>Typically placed at beginning of script</li>
+<li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>function_name<span style="color:#f92672">(){</span>
+</span></span><span style="display:flex;"><span>  statements
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div></li>
+<li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Simple bash function</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Function to print a message</span>
+</span></span><span style="display:flex;"><span>say_hello<span style="color:#f92672">(){</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;Hello, world!&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calling the function</span>
+</span></span><span style="display:flex;"><span>say_hello</span></span></code></pre></div></li>
+<li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Example with an argument</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Defined function</span>
+</span></span><span style="display:flex;"><span>greet_user<span style="color:#f92672">(){</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;Hello, </span>$1<span style="color:#e6db74">! Welcome to the world of bash scripting!&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Call the function with an argument</span>
+</span></span><span style="display:flex;"><span>greet_user <span style="color:#e6db74">&#34;Jane&#34;</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="variables-in-functions">Variables in Functions<a class="anchor" href="#variables-in-functions">#</a></h2>
+<ul>
+<li>Variables defined within functions are global</li>
+<li>Values are known throughout the entire shell program</li>
+<li>Keyword &rsquo;local&rsquo; inside a function definition makes the referenced variable local to that function</li>
+</ul>
+<h3 id="global-and-local-variable-examples">Global and Local Variable examples<a class="anchor" href="#global-and-local-variable-examples">#</a></h3>
+<ul>
+<li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>global_var<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Global&#34;</span>
+</span></span><span style="display:flex;"><span>show_variable<span style="color:#f92672">(){</span>
+</span></span><span style="display:flex;"><span>  local local_var<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Local&#34;</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Inside the function&#34;</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Global variable: </span>$global_var<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Local variable: </span>$local_var<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>show_variables
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Outside the function:&#34;</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Global variable: </span>$global_var<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># The local variable is not acessible outside the function</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Local variable: </span>$local_var<span style="color:#e6db74"> (not accessible)&#34;</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="working-with-file-system-in-bash">Working with File system in Bash<a class="anchor" href="#working-with-file-system-in-bash">#</a></h2>
+<ul>
+<li>Creating a new directory
+<ul>
+<li>mkdir DIRNAME</li>
+</ul>
+</li>
+<li>Creating a new file
+<ul>
+<li>Use text editor to create a new text file</li>
+<li>Using the touch command</li>
+</ul>
+</li>
+</ul>
+<h3 id="naming-for-files-and-directory">Naming for files and Directory<a class="anchor" href="#naming-for-files-and-directory">#</a></h3>
+<ul>
+<li>Use Alphabetic letters</li>
+<li>Numbers</li>
+<li>Dot, underscore, hyphen</li>
+<li>Avoid starting names with hyphens
+<ul>
+<li>Options usually start with hyphens</li>
+</ul>
+</li>
+<li>Avoid using spaces in file names</li>
+<li>Avoid special letters, symbols ,etc.</li>
+</ul>
+<h3 id="copying-moving-or-deleting">Copying, moving or deleting<a class="anchor" href="#copying-moving-or-deleting">#</a></h3>
+<ul>
+<li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># copying</span>
+</span></span><span style="display:flex;"><span>cp <span style="color:#f92672">[</span>Source<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>Destination<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># move</span>
+</span></span><span style="display:flex;"><span>mv <span style="color:#f92672">[</span>Source<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>Destination<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Delete</span>
+</span></span><span style="display:flex;"><span>rm FILENAME
+</span></span><span style="display:flex;"><span>rm -r <span style="color:#f92672">[</span>Directory<span style="color:#f92672">]</span></span></span></code></pre></div></li>
+</ul>
+<h3 id="scanning-files">Scanning files<a class="anchor" href="#scanning-files">#</a></h3>
+<ul>
+<li><strong>cat</strong> - concatenate, i.e. show file contents</li>
+<li><strong>more</strong> - show file contents one page at a time</li>
+<li><strong>less</strong> -  better version of more with additional options</li>
+<li><strong>head</strong> - show first few lines of file</li>
+<li><strong>tail</strong>  - show last few lines of a file</li>
+<li><strong>wc</strong> - show word, line and character count</li>
+<li><strong>sort</strong> - sorts file contents</li>
+<li><strong>uniq</strong> - removes duplicates
+<ul>
+<li>sort and uniq can be combined to extract unique values or do grouping</li>
+</ul>
+</li>
+<li><strong>cut</strong> - picks out columns from tabular data</li>
+<li><strong>grep</strong> - search file contents (next module)
+<ul>
+<li>sed and awk are more advanced</li>
+</ul>
+</li>
+<li></li>
+</ul>
+<h1 id="the-linux-filesystem">The Linux filesystem<a class="anchor" href="#the-linux-filesystem">#</a></h1>
+<ul>
+<li>Everything is a file, if not a file it is a process</li>
+<li>There is basically no difference between a file and a directory</li>
+</ul>
+<h2 id="types-of-files">Types of files<a class="anchor" href="#types-of-files">#</a></h2>
+<ul>
+<li>Most files are just regular files</li>
+<li>There are the following exceptions:
+<ul>
+<li><strong>Directories</strong></li>
+<li><strong>Special files</strong></li>
+<li><strong>Links</strong></li>
+<li><strong>Domain sockets</strong>
+<ul>
+<li>Provide inter process networking protected by file system access control</li>
+</ul>
+</li>
+<li><strong>Named pipes</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="file-system">File System<a class="anchor" href="#file-system">#</a></h3>
+<ul>
+<li>Hierarchical - tree structure</li>
+<li>Consistent</li>
+<li>Simple - Flexible file operations</li>
+<li>Directories are a special type of file that are lists of other programs</li>
+<li>Ordered tree-like structure on the hard disk
+<ul>
+<li><img src="../assets/image_1762739990846_0.png" alt="image.png" /></li>
+<li><img src="../assets/image_1762740013329_0.png" alt="image.png" /></li>
+</ul>
+</li>
+<li>Two types of paths - full/absolute paths and relative paths
+<ul>
+<li>Absolute path - complete path to a certain file or directory
+<ul>
+<li>All absolute file names start with a slash because the slash indicates the root directory</li>
+<li>Slash also used for separating the directories on the path</li>
+</ul>
+</li>
+<li>Relative path- starts from the working directory
+<ul>
+<li>Need . and .. to indicate the working directory and the parent directory</li>
+<li><img src="../assets/image_1762741256179_0.png" alt="image.png" /></li>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Your shell uses your current directory as the point of reference</li>
+</ul>
+<h3 id="basic-linux-directories">Basic Linux Directories<a class="anchor" href="#basic-linux-directories">#</a></h3>
+<ul>
+<li><img src="../assets/image_1762741288673_0.png" alt="image.png" /></li>
+<li><img src="../assets/image_1762741307726_0.png" alt="image.png" /></li>
+</ul>
+<h2 id="file-permissions">File Permissions<a class="anchor" href="#file-permissions">#</a></h2>
+<ul>
+<li>Users can belong to several groups</li>
+<li>A file can only belong to one user and one group at a time</li>
+<li>The root user has extra permissions
+<ul>
+<li>Only the root user can change the ownership of a file</li>
+</ul>
+</li>
+</ul>
+<h3 id="users-and-groups">Users and Groups<a class="anchor" href="#users-and-groups">#</a></h3>
+<ul>
+<li>User info in /etc/passwd</li>
+<li>Password info in /etc/shadow</li>
+<li>Group info in /etc/group</li>
+<li>/etc/passwd and /etc/group divide data fields using &ldquo;.&rdquo;</li>
+</ul>
+<h2 id="programs">Programs<a class="anchor" href="#programs">#</a></h2>
+<ul>
+<li>Programs can be run by a user, when the system starts, or by another process</li>
+<li>Before starting the program, the kernel checks:
+<ul>
+<li>Is the file accessible to the user or group of the process that wants to run it?</li>
+<li>Does the file containing the program permit execution by that user or group (or anybody)?</li>
+<li>In most cases, a program inherits the privileges of the user/process who started it</li>
+</ul>
+</li>
+<li><img src="../assets/image_1762741891487_0.png" alt="image.png" /></li>
+</ul>
+<h2 id="permissions">Permissions<a class="anchor" href="#permissions">#</a></h2>
+<ul>
+<li>Files owned by users and groups</li>
+<li>Files have permissions for user, group and other (world)</li>
+<li>Read, Write and Execute (R,W,X)</li>
+<li>User who owns a file is always allowed to change its permissions</li>
+</ul>
+<h3 id="file-permissions-1">File Permissions<a class="anchor" href="#file-permissions-1">#</a></h3>
+<ul>
+<li>Two ways to set permissions using the chmod command:
+<ul>
+<li>Symbolic mode:
+<ul>
+<li><img src="../assets/image_1762742161665_0.png" alt="image.png" /></li>
+</ul>
+</li>
+<li>Absolute mode:
+<ul>
+<li>Use octal (base 8 values)</li>
+<li>R (read) = 4</li>
+<li>W (write) = 2</li>
+<li>X (execute) = 1</li>
+<li>
+<ul>
+<li>(none) = 0</li>
+</ul>
+</li>
+<li><img src="../assets/image_1762742264108_0.png" alt="image.png" /></li>
+<li><img src="../assets/image_1762742298481_0.png" alt="image.png" /></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="inherited-permissions">Inherited permissions<a class="anchor" href="#inherited-permissions">#</a></h4>
+<ul>
+<li>Two critical points
+<ul>
+<li>Permissions of a directory affect whether someone can see its contents or add or remove files in it</li>
+<li>Permissions on a file determine what a user can do to the data in the file</li>
+<li>Ex:
+<ul>
+<li>If you don&rsquo;t have write permission for a directory, the you can&rsquo;t delete a file in the directory</li>
+<li>If you have write access to the file you can update the data in the file</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/notes/semester-3/is-310/weekly-notes/week-1-python-basics/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>Week 1 Python Basics</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/notes/semester-3/is-310/weekly-notes/week-12-pattern-matching--vulnerability-scanning/" class="flex align-center">
+        <span>Week 12 Pattern Matching &amp; Vulnerability Scanning</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#functions-in-bash">Functions in Bash</a></li>
+    <li><a href="#variables-in-functions">Variables in Functions</a>
+      <ul>
+        <li><a href="#global-and-local-variable-examples">Global and Local Variable examples</a></li>
+      </ul>
+    </li>
+    <li><a href="#working-with-file-system-in-bash">Working with File system in Bash</a>
+      <ul>
+        <li><a href="#naming-for-files-and-directory">Naming for files and Directory</a></li>
+        <li><a href="#copying-moving-or-deleting">Copying, moving or deleting</a></li>
+        <li><a href="#scanning-files">Scanning files</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#types-of-files">Types of files</a>
+      <ul>
+        <li><a href="#file-system">File System</a></li>
+        <li><a href="#basic-linux-directories">Basic Linux Directories</a></li>
+      </ul>
+    </li>
+    <li><a href="#file-permissions">File Permissions</a>
+      <ul>
+        <li><a href="#users-and-groups">Users and Groups</a></li>
+      </ul>
+    </li>
+    <li><a href="#programs">Programs</a></li>
+    <li><a href="#permissions">Permissions</a>
+      <ul>
+        <li><a href="#file-permissions-1">File Permissions</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
