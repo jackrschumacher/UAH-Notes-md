@@ -9,7 +9,7 @@ path = 'github.com/alex-shpak/hugo-book'
 
 # Theme Settings (converted from your yaml)
 [params]
-  BookSection = 'docs'   # This makes the menu look in content/docs/
+  BookSection = 'notes'   # This makes the menu look in content/docs/
   BookTheme = 'auto'     # Enables dark/light mode
   BookSearch = true      # Enables the search bar
 
