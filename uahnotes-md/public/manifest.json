@@ -1,6 +1,6 @@
 {
-  "name": "UAH notes markdown",
-  "short_name": "UAH notes markdown",
+  "name": "UAH Notes",
+  "short_name": "UAH Notes",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
