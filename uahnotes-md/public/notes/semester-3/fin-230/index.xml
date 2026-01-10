@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FIN 230 on UAH Notes</title>
-    <link>http://localhost:1313/notes/semester-3/fin-230/</link>
+    <link>http://localhost:4373/notes/semester-3/fin-230/</link>
     <description>Recent content in FIN 230 on UAH Notes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/notes/semester-3/fin-230/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4373/notes/semester-3/fin-230/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/semester-3/fin-230/final-exam-information/</link>
+      <link>http://localhost:4373/notes/semester-3/fin-230/final-exam-information/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/semester-3/fin-230/final-exam-information/</guid>
+      <guid>http://localhost:4373/notes/semester-3/fin-230/final-exam-information/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;We&amp;rsquo;ve finished our review of accounting for merchandising companies and our introduction to accounting for manufacturing companies! We&amp;rsquo;ve also introduced you to additional ways to manage manufacturing overhead and other business process improvement methodologies.&lt;/p&gt;&#xA;&lt;p&gt;The following bullet point list highlights the most important topics for the final.  The best way to review for the exam includes going back through the Lecture Notes for terminology, multiple choice, and journal entry information. Also, carefully review the Chapter Assignment and MyLab Homework information for journal entries in merchandising and manufacturing companies. More emphasis will be given to the merchandising and manufacturing accounting than to Chapter 4, but you want to know the basic calculations for overhead and the terminology for Just-in-Time and Quality Costs! &lt;/p&gt;</description>
     </item>
   </channel>
