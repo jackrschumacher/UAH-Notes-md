@@ -2,142 +2,213 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/notes/semester-3/acc-212/</loc>
+    <loc>http://localhost:4373/notes/semester-4/phl-101/1-6-25/</loc>
+    <lastmod>2026-01-07T23:10:27-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-4/bys-119/</loc>
+    <loc>http://localhost:4373/notes/semester-3/acc-212/</loc>
+    <lastmod>2026-01-07T02:01:57-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-4/bys-121/</loc>
+    <loc>http://localhost:4373/notes/semester-4/bys-119/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-301/class-notes/</loc>
+    <loc>http://localhost:4373/notes/semester-4/bys-121/</loc>
+    <lastmod>2026-01-07T02:01:57-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/ecn-143/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-301/class-notes/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/eh-242/</loc>
+    <loc>http://localhost:4373/notes/semester-3/ecn-143/</loc>
+    <lastmod>2026-01-07T02:01:57-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/fin-230/</loc>
+    <loc>http://localhost:4373/notes/semester-3/eh-242/</loc>
+    <lastmod>2026-01-07T02:01:57-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-301/</loc>
+    <loc>http://localhost:4373/notes/semester-4/bys-119/exam-1-content/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-310/</loc>
+    <loc>http://localhost:4373/notes/semester-3/fin-230/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-4/is-340/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-301/</loc>
+    <lastmod>2026-01-07T02:01:57-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-4/is-401/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-310/</loc>
+    <lastmod>2026-01-07T02:01:57-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-4/mgt-301/</loc>
+    <loc>http://localhost:4373/notes/semester-4/is-340/</loc>
+    <lastmod>2026-01-07T02:01:57-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-1/mu-100/</loc>
+    <loc>http://localhost:4373/notes/semester-4/is-401/</loc>
+    <lastmod>2026-01-07T02:01:57-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-4/phl-101/</loc>
+    <loc>http://localhost:4373/notes/semester-4/mgt-301/</loc>
+    <lastmod>2026-01-07T02:01:57-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-1/</loc>
+    <loc>http://localhost:4373/notes/semester-1/mu-100/</loc>
+    <lastmod>2026-01-07T01:19:06-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/</loc>
+    <loc>http://localhost:4373/notes/semester-4/phl-101/</loc>
+    <lastmod>2026-01-07T02:01:57-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-4/</loc>
+    <loc>http://localhost:4373/notes/semester-1/</loc>
+    <lastmod>2026-01-07T01:19:06-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-310/weekly-notes/</loc>
+    <loc>http://localhost:4373/notes/semester-3/</loc>
+    <lastmod>2026-01-07T02:01:57-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/acc-212/activity-based-costing/</loc>
+    <loc>http://localhost:4373/notes/semester-4/</loc>
+    <lastmod>2026-01-07T02:01:57-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/acc-212/behavioral-finance/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-310/weekly-notes/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/acc-212/example-transactions/</loc>
+    <loc>http://localhost:4373/notes/semester-3/acc-212/activity-based-costing/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/acc-212/job-order-costing/</loc>
+    <loc>http://localhost:4373/notes/semester-3/acc-212/behavioral-finance/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/acc-212/recording-business-transactions/</loc>
+    <loc>http://localhost:4373/notes/semester-3/acc-212/example-transactions/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/ecn-143/economics-of-information/</loc>
+    <loc>http://localhost:4373/notes/semester-3/acc-212/job-order-costing/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/ecn-143/public-economics/</loc>
+    <loc>http://localhost:4373/notes/semester-3/acc-212/recording-business-transactions/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/ecn-143/taxation/</loc>
+    <loc>http://localhost:4373/notes/semester-3/ecn-143/economics-of-information/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/eh-242/england-and-the-middle-ages/</loc>
+    <loc>http://localhost:4373/notes/semester-3/ecn-143/public-economics/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/eh-242/sir-gawain-and-the-green-knight/</loc>
+    <loc>http://localhost:4373/notes/semester-3/ecn-143/taxation/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/eh-242/the-mabinogion/</loc>
+    <loc>http://localhost:4373/notes/semester-3/eh-242/england-and-the-middle-ages/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/fin-230/final-exam-information/</loc>
+    <loc>http://localhost:4373/notes/semester-3/eh-242/sir-gawain-and-the-green-knight/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-301/class-notes/chapter-1-technology-and-the-modern-enterprise/</loc>
+    <loc>http://localhost:4373/notes/semester-3/eh-242/the-mabinogion/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-301/class-notes/chapter-10--platforms-network-effects-and-competition/</loc>
+    <loc>http://localhost:4373/notes/semester-3/fin-230/final-exam-information/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-301/class-notes/chapter-17--data-and-competitive-advantage/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-301/class-notes/chapter-1-technology-and-the-modern-enterprise/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-301/class-notes/chapter-18--artificial-intelligence/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-301/class-notes/chapter-10--platforms-network-effects-and-competition/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-301/class-notes/chapter-2--zara/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-301/class-notes/chapter-17--data-and-competitive-advantage/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-301/class-notes/chapter-2-sample-questions/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-301/class-notes/chapter-18--artificial-intelligence/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-301/class-notes/chapter-20--a-managers-guide-to-the-internet-and-telecommunications/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-301/class-notes/chapter-2--zara/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-301/class-notes/chapter-3-strategy-and-technology/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-301/class-notes/chapter-2-sample-questions/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-301/class-notes/chapter-5--netflix/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-301/class-notes/chapter-20--a-managers-guide-to-the-internet-and-telecommunications/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-301/class-notes/chapter-6-moores-law-and-more/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-301/class-notes/chapter-3-strategy-and-technology/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-301/class-notes/chapter-7--disruptive-technologies/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-301/class-notes/chapter-5--netflix/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-301/class-notes/chapter-9--amazon/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-301/class-notes/chapter-6-moores-law-and-more/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-301/cybersecurity-threats/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-301/class-notes/chapter-7--disruptive-technologies/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-301/netflix-presentation-speaker-notes/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-301/class-notes/chapter-9--amazon/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-310/bash-exam-topics/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-301/cybersecurity-threats/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-310/bash-final-project/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-301/netflix-presentation-speaker-notes/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-1-python-basics/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-310/bash-exam-topics/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-11-working-with-the-linux-filesystem/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-310/bash-final-project/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-12-pattern-matching--vulnerability-scanning/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-310/weekly-notes/week-1-python-basics/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-13-security-and-advanced-bash-operations/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-310/weekly-notes/week-11-working-with-the-linux-filesystem/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-2-advanced-programming/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-310/weekly-notes/week-12-pattern-matching--vulnerability-scanning/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-3-functions-files-and-exceptions/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-310/weekly-notes/week-13-security-and-advanced-bash-operations/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-4-data-structures/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-310/weekly-notes/week-2-advanced-programming/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-5--inheritance/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-310/weekly-notes/week-3-functions-files-and-exceptions/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-6-python-libraries/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-310/weekly-notes/week-4-data-structures/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-9--linux-intro-and-io/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-310/weekly-notes/week-5--inheritance/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-4/phl-101/phl-101___1-6-25/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-310/weekly-notes/week-6-python-libraries/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:4373/notes/semester-3/is-310/weekly-notes/week-9--linux-intro-and-io/</loc>
+    <lastmod>2026-01-07T12:51:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/eh-242/module-1/</loc>
+    <loc>http://localhost:4373/notes/semester-4/bys-119/exam-1-content/emergence/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/eh-242/module-2/</loc>
+    <loc>http://localhost:4373/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/eh-242/module-3/</loc>
+    <loc>http://localhost:4373/notes/semester-3/eh-242/module-1/</loc>
+    <lastmod>2026-01-07T02:01:57-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-3/eh-242/module-4/</loc>
+    <loc>http://localhost:4373/notes/semester-3/eh-242/module-2/</loc>
+    <lastmod>2026-01-07T02:01:57-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/</loc>
+    <loc>http://localhost:4373/notes/semester-3/eh-242/module-3/</loc>
+    <lastmod>2026-01-07T02:01:57-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-1/mu-100/part-1/</loc>
+    <loc>http://localhost:4373/notes/semester-3/eh-242/module-4/</loc>
+    <lastmod>2026-01-07T02:01:57-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-1/mu-100/part-2/</loc>
+    <loc>http://localhost:4373/notes/</loc>
+    <lastmod>2026-01-07T23:10:27-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-1/mu-100/part-4/</loc>
+    <loc>http://localhost:4373/notes/semester-1/mu-100/part-1/</loc>
+    <lastmod>2026-01-07T01:19:06-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/semester-1/mu-100/part-5/</loc>
+    <loc>http://localhost:4373/notes/semester-1/mu-100/part-2/</loc>
+    <lastmod>2026-01-07T01:19:06-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:4373/notes/semester-1/mu-100/part-4/</loc>
+    <lastmod>2026-01-07T01:19:06-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:4373/notes/semester-1/mu-100/part-5/</loc>
+    <lastmod>2026-01-07T01:19:06-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4373/tags/</loc>
+  </url><url>
+    <loc>http://localhost:4373/</loc>
+    <lastmod>2026-01-07T23:10:27-06:00</lastmod>
   </url>
 </urlset>
