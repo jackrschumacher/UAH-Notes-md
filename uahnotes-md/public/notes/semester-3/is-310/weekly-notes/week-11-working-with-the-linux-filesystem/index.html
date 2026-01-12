@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4373&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -11,7 +11,7 @@ https://github.com/alex-shpak/hugo-book
 <meta name="description" content="Bash Functions and Files# Functions in Bash# Similar to shell script Stores command for execution later in memory Function executed in same shell as it was called in Functions must be defined before they can be referenced Typically placed at beginning of script function_name(){ statements } # Simple bash function #!/bin/bash # Function to print a message say_hello(){ echo &#34;Hello, world!&#34; } # Calling the function say_hello # Example with an argument #!/bin/bash # Defined function greet_user(){ echo &#34;Hello, $1! Welcome to the world of bash scripting!&#34; } # Call the function with an argument greet_user &#34;Jane&#34; Variables in Functions# Variables defined within functions are global Values are known throughout the entire shell program Keyword ’local’ inside a function definition makes the referenced variable local to that function Global and Local Variable examples# global_var=&#34;Global&#34; show_variable(){ local local_var=&#34;Local&#34; echo &#34;Inside the function&#34; echo &#34;Global variable: $global_var&#34; echo &#34;Local variable: $local_var&#34; } show_variables echo &#34;Outside the function:&#34; echo &#34;Global variable: $global_var&#34; # The local variable is not acessible outside the function echo &#34;Local variable: $local_var (not accessible)&#34; Working with File system in Bash# Creating a new directory mkdir DIRNAME Creating a new file Use text editor to create a new text file Using the touch command Naming for files and Directory# Use Alphabetic letters Numbers Dot, underscore, hyphen Avoid starting names with hyphens Options usually start with hyphens Avoid using spaces in file names Avoid special letters, symbols ,etc. Copying, moving or deleting# # copying cp [Source] [Destination] # move mv [Source] [Destination] # Delete rm FILENAME rm -r [Directory] Scanning files# cat - concatenate, i.e. show file contents more - show file contents one page at a time less - better version of more with additional options head - show first few lines of file tail - show last few lines of a file wc - show word, line and character count sort - sorts file contents uniq - removes duplicates sort and uniq can be combined to extract unique values or do grouping cut - picks out columns from tabular data grep - search file contents (next module) sed and awk are more advanced The Linux filesystem# Everything is a file, if not a file it is a process There is basically no difference between a file and a directory Types of files# Most files are just regular files There are the following exceptions: Directories Special files Links Domain sockets Provide inter process networking protected by file system access control Named pipes File System# Hierarchical - tree structure Consistent Simple - Flexible file operations Directories are a special type of file that are lists of other programs Ordered tree-like structure on the hard disk Two types of paths - full/absolute paths and relative paths Absolute path - complete path to a certain file or directory All absolute file names start with a slash because the slash indicates the root directory Slash also used for separating the directories on the path Relative path- starts from the working directory Need . and .. to indicate the working directory and the parent directory Your shell uses your current directory as the point of reference Basic Linux Directories# File Permissions# Users can belong to several groups A file can only belong to one user and one group at a time The root user has extra permissions Only the root user can change the ownership of a file Users and Groups# User info in /etc/passwd Password info in /etc/shadow Group info in /etc/group /etc/passwd and /etc/group divide data fields using “.” Programs# Programs can be run by a user, when the system starts, or by another process Before starting the program, the kernel checks: Is the file accessible to the user or group of the process that wants to run it? Does the file containing the program permit execution by that user or group (or anybody)? In most cases, a program inherits the privileges of the user/process who started it Permissions# Files owned by users and groups Files have permissions for user, group and other (world) Read, Write and Execute (R,W,X) User who owns a file is always allowed to change its permissions File Permissions# Two ways to set permissions using the chmod command: Symbolic mode: Absolute mode: Use octal (base 8 values) R (read) = 4 W (write) = 2 X (execute) = 1 (none) = 0 Inherited permissions# Two critical points Permissions of a directory affect whether someone can see its contents or add or remove files in it Permissions on a file determine what a user can do to the data in the file Ex: If you don’t have write permission for a directory, the you can’t delete a file in the directory If you have write access to the file you can update the data in the file ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:4373/notes/semester-3/is-310/weekly-notes/week-11-working-with-the-linux-filesystem/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-11-working-with-the-linux-filesystem/">
   <meta property="og:site_name" content="UAH Notes">
   <meta property="og:title" content="UAH Notes">
   <meta property="og:description" content="Bash Functions and Files# Functions in Bash# Similar to shell script Stores command for execution later in memory Function executed in same shell as it was called in Functions must be defined before they can be referenced Typically placed at beginning of script function_name(){ statements } # Simple bash function #!/bin/bash # Function to print a message say_hello(){ echo &#34;Hello, world!&#34; } # Calling the function say_hello # Example with an argument #!/bin/bash # Defined function greet_user(){ echo &#34;Hello, $1! Welcome to the world of bash scripting!&#34; } # Call the function with an argument greet_user &#34;Jane&#34; Variables in Functions# Variables defined within functions are global Values are known throughout the entire shell program Keyword ’local’ inside a function definition makes the referenced variable local to that function Global and Local Variable examples# global_var=&#34;Global&#34; show_variable(){ local local_var=&#34;Local&#34; echo &#34;Inside the function&#34; echo &#34;Global variable: $global_var&#34; echo &#34;Local variable: $local_var&#34; } show_variables echo &#34;Outside the function:&#34; echo &#34;Global variable: $global_var&#34; # The local variable is not acessible outside the function echo &#34;Local variable: $local_var (not accessible)&#34; Working with File system in Bash# Creating a new directory mkdir DIRNAME Creating a new file Use text editor to create a new text file Using the touch command Naming for files and Directory# Use Alphabetic letters Numbers Dot, underscore, hyphen Avoid starting names with hyphens Options usually start with hyphens Avoid using spaces in file names Avoid special letters, symbols ,etc. Copying, moving or deleting# # copying cp [Source] [Destination] # move mv [Source] [Destination] # Delete rm FILENAME rm -r [Directory] Scanning files# cat - concatenate, i.e. show file contents more - show file contents one page at a time less - better version of more with additional options head - show first few lines of file tail - show last few lines of a file wc - show word, line and character count sort - sorts file contents uniq - removes duplicates sort and uniq can be combined to extract unique values or do grouping cut - picks out columns from tabular data grep - search file contents (next module) sed and awk are more advanced The Linux filesystem# Everything is a file, if not a file it is a process There is basically no difference between a file and a directory Types of files# Most files are just regular files There are the following exceptions: Directories Special files Links Domain sockets Provide inter process networking protected by file system access control Named pipes File System# Hierarchical - tree structure Consistent Simple - Flexible file operations Directories are a special type of file that are lists of other programs Ordered tree-like structure on the hard disk Two types of paths - full/absolute paths and relative paths Absolute path - complete path to a certain file or directory All absolute file names start with a slash because the slash indicates the root directory Slash also used for separating the directories on the path Relative path- starts from the working directory Need . and .. to indicate the working directory and the parent directory Your shell uses your current directory as the point of reference Basic Linux Directories# File Permissions# Users can belong to several groups A file can only belong to one user and one group at a time The root user has extra permissions Only the root user can change the ownership of a file Users and Groups# User info in /etc/passwd Password info in /etc/shadow Group info in /etc/group /etc/passwd and /etc/group divide data fields using “.” Programs# Programs can be run by a user, when the system starts, or by another process Before starting the program, the kernel checks: Is the file accessible to the user or group of the process that wants to run it? Does the file containing the program permit execution by that user or group (or anybody)? In most cases, a program inherits the privileges of the user/process who started it Permissions# Files owned by users and groups Files have permissions for user, group and other (world) Read, Write and Execute (R,W,X) User who owns a file is always allowed to change its permissions File Permissions# Two ways to set permissions using the chmod command: Symbolic mode: Absolute mode: Use octal (base 8 values) R (read) = 4 W (write) = 2 X (execute) = 1 (none) = 0 Inherited permissions# Two critical points Permissions of a directory affect whether someone can see its contents or add or remove files in it Permissions on a file determine what a user can do to the data in the file Ex: If you don’t have write permission for a directory, the you can’t delete a file in the directory If you have write access to the file you can update the data in the file">
@@ -29,12 +29,12 @@ https://github.com/alex-shpak/hugo-book
 <title>Week 11 Working With the Linux Filesystem | UAH Notes</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="http://localhost:4373/notes/semester-3/is-310/weekly-notes/week-11-working-with-the-linux-filesystem/">
+<link rel="canonical" href="http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-11-working-with-the-linux-filesystem/">
 <link rel="stylesheet" href="/book.min.6970156cec683193d93c9c4edaf0d56574e4361df2e0c1be4f697ae81c3ba55f.css" integrity="sha256-aXAVbOxoMZPZPJxO2vDVZXTkNh3y4MG&#43;T2l66Bw7pV8=" crossorigin="anonymous">
 
 
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.e8d9fa0fd7cf9dc8f4662016825a833e1de596d566c23a4f0ca6a95005fc3985.js" integrity="sha256-6Nn6D9fPncj0ZiAWglqDPh3lltVmwjpPDKapUAX8OYU=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.843809bb30fda9b0ead872e4103e9dda011b44407903789ba70e911a1bfccbe2.js" integrity="sha256-hDgJuzD9qbDq2HLkED6d2gEbREB5A3ibpw6RGhv8y&#43;I=" crossorigin="anonymous"></script>
 
 
 
@@ -1142,6 +1142,47 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4f01e08c37b7ae0c5dffcd1dcfcd565c" class="toggle"  />
+    <label for="section-4f01e08c37b7ae0c5dffcd1dcfcd565c" class="flex">
+      <a role="button" class="">
+        Chapter Notes</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-010c7b49a7728d68c4da9fa211e0f3a4" class="toggle"  />
+    <label for="section-010c7b49a7728d68c4da9fa211e0f3a4" class="flex">
+      <a href="/notes/semester-4/mgt-301/chapter-notes/chapter-1/" class="">
+        Chapter 1</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
     
   </ul>
 
