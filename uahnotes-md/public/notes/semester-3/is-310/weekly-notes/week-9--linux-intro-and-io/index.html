@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4373&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -11,7 +11,7 @@ https://github.com/alex-shpak/hugo-book
 <meta name="description" content="Bash fundamentals# Bash is a shell- prints the prompt and interprets Bash is the root of scripting Shell scripts are common on Unix and Linux systems Shells scripts evolved from a workflow Sequence of commands placed in a file Command line options enable different options to be passed to commands Introduce variables, if tests, loops enables more complex programming flow Can also be an intermediary between other languages Bash Terminal and Commands# Using the shell# ~ is a shorthand for home directory in this case Example commands# [username@scc1 ~]$ command --option argument Command- does one thing Options- change the way command does the thing Argument-provides input/output that the command interacts with Can use man or info to get info History command to see shell history Variables# USER=test echo $test export $test Too see environment variables use the printenv command Input Output in Bash# I/O is important to interact with users, data processing, automation and scripting tasks, interaction with other programs, error handling Bash input-received data from user Bash output-refers to info or data that the program generates or writes File Descriptors# Standard input - stdin Interactively read input from user from another command using standard input Standard output - stdout Allows you to display output using standard output Standard error- stderr Handles error messages File Redirection# Basic I/O manipulation echo &#34;This is example code&#34; &gt; story cat story cat &lt; story Pipelines# Redirect output of command into standard input ls -l | more Bash Conditionals# Allow scripts to make decisions Execute different commands based on conditions Control flow Types of conditional statements# if if else elif (else if) If statement# if [ condition ]; then commands fiIf-else statement# if [ condition ]; then commands else commands2 fielif statement# if [ condition1 ]; then commands1 elif [ condition2 ]; then commands2 else commands3 fiComparison operators# • -eq (equal) • -ne (not equal) • -lt (less than) • -le (less than or equal) • -gt (greater than) • -ge (greater than or equal) • = (equal) • != (not equal) • -z (empty string) • -n (non-empty string) num=10 if [ $num -gt 5 ]; then echo &#34;The number is greater than 5&#34; fi Logical operators# &amp;&amp; (AND) || (OR) ! (NOT) File Test operators# • -f (is a file) • -d (is a directory) • -e (exists) • -r (is readable) • -w (is writable) • -x (is executable) # Example of checking a file if [ -f &#34;file.txt&#34; ]; then echo &#34;The file exists&#34; else echo &#34;The file does not exist&#34; fi ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:4373/notes/semester-3/is-310/weekly-notes/week-9--linux-intro-and-io/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-9--linux-intro-and-io/">
   <meta property="og:site_name" content="UAH Notes">
   <meta property="og:title" content="UAH Notes">
   <meta property="og:description" content="Bash fundamentals# Bash is a shell- prints the prompt and interprets Bash is the root of scripting Shell scripts are common on Unix and Linux systems Shells scripts evolved from a workflow Sequence of commands placed in a file Command line options enable different options to be passed to commands Introduce variables, if tests, loops enables more complex programming flow Can also be an intermediary between other languages Bash Terminal and Commands# Using the shell# ~ is a shorthand for home directory in this case Example commands# [username@scc1 ~]$ command --option argument Command- does one thing Options- change the way command does the thing Argument-provides input/output that the command interacts with Can use man or info to get info History command to see shell history Variables# USER=test echo $test export $test Too see environment variables use the printenv command Input Output in Bash# I/O is important to interact with users, data processing, automation and scripting tasks, interaction with other programs, error handling Bash input-received data from user Bash output-refers to info or data that the program generates or writes File Descriptors# Standard input - stdin Interactively read input from user from another command using standard input Standard output - stdout Allows you to display output using standard output Standard error- stderr Handles error messages File Redirection# Basic I/O manipulation echo &#34;This is example code&#34; &gt; story cat story cat &lt; story Pipelines# Redirect output of command into standard input ls -l | more Bash Conditionals# Allow scripts to make decisions Execute different commands based on conditions Control flow Types of conditional statements# if if else elif (else if) If statement# if [ condition ]; then commands fiIf-else statement# if [ condition ]; then commands else commands2 fielif statement# if [ condition1 ]; then commands1 elif [ condition2 ]; then commands2 else commands3 fiComparison operators# • -eq (equal) • -ne (not equal) • -lt (less than) • -le (less than or equal) • -gt (greater than) • -ge (greater than or equal) • = (equal) • != (not equal) • -z (empty string) • -n (non-empty string) num=10 if [ $num -gt 5 ]; then echo &#34;The number is greater than 5&#34; fi Logical operators# &amp;&amp; (AND) || (OR) ! (NOT) File Test operators# • -f (is a file) • -d (is a directory) • -e (exists) • -r (is readable) • -w (is writable) • -x (is executable) # Example of checking a file if [ -f &#34;file.txt&#34; ]; then echo &#34;The file exists&#34; else echo &#34;The file does not exist&#34; fi">
@@ -29,12 +29,12 @@ https://github.com/alex-shpak/hugo-book
 <title>Week 9 Linux Intro and Io | UAH Notes</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="http://localhost:4373/notes/semester-3/is-310/weekly-notes/week-9--linux-intro-and-io/">
+<link rel="canonical" href="http://localhost:1313/notes/semester-3/is-310/weekly-notes/week-9--linux-intro-and-io/">
 <link rel="stylesheet" href="/book.min.6970156cec683193d93c9c4edaf0d56574e4361df2e0c1be4f697ae81c3ba55f.css" integrity="sha256-aXAVbOxoMZPZPJxO2vDVZXTkNh3y4MG&#43;T2l66Bw7pV8=" crossorigin="anonymous">
 
 
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.e8d9fa0fd7cf9dc8f4662016825a833e1de596d566c23a4f0ca6a95005fc3985.js" integrity="sha256-6Nn6D9fPncj0ZiAWglqDPh3lltVmwjpPDKapUAX8OYU=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.843809bb30fda9b0ead872e4103e9dda011b44407903789ba70e911a1bfccbe2.js" integrity="sha256-hDgJuzD9qbDq2HLkED6d2gEbREB5A3ibpw6RGhv8y&#43;I=" crossorigin="anonymous"></script>
 
 
 
@@ -1142,6 +1142,47 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4f01e08c37b7ae0c5dffcd1dcfcd565c" class="toggle"  />
+    <label for="section-4f01e08c37b7ae0c5dffcd1dcfcd565c" class="flex">
+      <a role="button" class="">
+        Chapter Notes</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-010c7b49a7728d68c4da9fa211e0f3a4" class="toggle"  />
+    <label for="section-010c7b49a7728d68c4da9fa211e0f3a4" class="flex">
+      <a href="/notes/semester-4/mgt-301/chapter-notes/chapter-1/" class="">
+        Chapter 1</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
     
   </ul>
 
