@@ -164,5 +164,102 @@ weight: 1
 - Management skills are so critical to success of an organization, companies commonly focus on possible steps to improve managers
 - Because management skills are so critical to success of an organization, companies commonly focus on possible steps that can be take to improve managers skills
 
-## Management Skills
+### The Three management skills
 
+- **Technical Skills** -  Involve ability to apply specialized knowledge and expertise to work-related techniques and procedures
+- **Human skills** - Build cooperation within the team being led
+  - Working with attitudes and communication
+  - Individual and group interests
+- **Conceptual skills** - Involve the ability to see the organization as a whole. Manager with conceptual skills is able to understand how various functions of the organization complement one another
+- ![](https://plus.pearson.com/eps/pearson-reader/api/item/72b412ac-51fe-425d-aed2-ec96529f5260/1/file/certo-mmcas-15e_eText_v3/OPS/images/FG_01_006.png)
+
+### Three activities
+
+- **Task related activities** - Management efforts aimed at carrying out critical management- related duties in organizations
+
+- **People-related activities** - Management efforts aimed at managing people in organizations
+
+- **Change-related activities** - Management efforts aimed at modifying organizational components
+
+- **Management employability skills** - refer to a persons ability to gain and maintain a career as a manager
+
+  ![](https://plus.pearson.com/eps/pearson-reader/api/item/72b412ac-51fe-425d-aed2-ec96529f5260/1/file/certo-mmcas-15e_eText_v3/OPS/images/7291301010.png)
+
+## Management Careers
+
+- Career definition, career and life stages and performance, career performance, career promotion
+
+### A definition of Career
+
+- **Career** - A sequence of work-related positions occupied by a person over the course of a lifetime
+  - People accumulate experiences over time
+  - Management positions are stepping stones to other positions
+  - Must focus on developing the skills necessary to qualify for further management advances
+
+## Career Stages, Life Stages, and Performance
+
+​	![](https://plus.pearson.com/eps/pearson-reader/api/item/72b412ac-51fe-425d-aed2-ec96529f5260/1/file/certo-mmcas-15e_eText_v3/OPS/images/7291301011.png)
+
+- Increasing population of older people are being employed
+
+### Exploration Stage
+
+- Occurs at the beginning of the career
+- 15-25 years old
+- Often pursue part time employment
+- Typically hold lower level jobs
+
+### Establishment Stage
+
+- 25-45 years old to become more productive or higher performers within the company
+- Usually sought after higher paying jobs
+- Organizations viewpoint, better for managers to experience career growth
+- Attempting to eliminate career plateuing
+
+### Decline Stage
+
+- 65+ whose productivity is decreasing
+- Close to retirement, semi-retired, etc or fully retired
+- May become part time workers in businesses
+
+## Promoting your own career
+
+- Planning your career path
+
+  - Sequence of jobs that you will take
+  - Be proactive
+  - The plan does not limit your options
+
+- Consider strengths and liabilities
+
+- Set career goals and revise them
+
+- | **Dimension**  | **Professional Employee**                                    | **Manager**                                                 |
+  | -------------- | ------------------------------------------------------------ | ----------------------------------------------------------- |
+  | Responsibility | Assumes responsibility for individual career development     | Assumes responsibility for employee development             |
+  | Information    | Obtains career info through self-eval and data-collection    | Provides info by testing realities                          |
+  | Planning       | Develops an individual plan to reach objectives              | Help employee to assess plan                                |
+  | Follow-through | Invites management support through high-performance on the current job | Provides coaching and relevant information on opportunities |
+
+- *reactive* - Must take specific action to demonstrate abilities and accomplishments
+
+## Special Career Issues
+
+### Women Managers
+
+- Must meet same challenges in the workplace as men
+- Predict networks of relationships in business
+- Detailed rues and procedures
+- Predict networks of relationship will replace rigid organizational structures
+
+### Dual-Career couples
+
+- Retain the best performers
+- Flexibility on the part of the couple
+
+#### How the couples cope
+
+- Many cope with their career difficulties in one of the following ways
+- Develop commitment to both spouses careers
+- Must limit their social lives
+- Facilitate their mutual career advancement
