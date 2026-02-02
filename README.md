@@ -1,7 +1,3 @@
----
-title: README
----
-
 # UAH-Notes
 Notes from UAH classes
 
