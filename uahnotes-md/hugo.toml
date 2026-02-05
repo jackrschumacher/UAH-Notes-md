@@ -18,6 +18,7 @@ enableGitInfo = true
 [params]
   BookSection = 'notes'   
   BookTheme = 'auto'
+  BookFavicon = 'favicon-32x32.png'
   BookSearch = true
   # Optional: Define the date format used by the Hugo Book theme
   BookDateFormat = 'January 2, 2006' 
