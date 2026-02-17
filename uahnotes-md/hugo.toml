@@ -25,6 +25,9 @@ enableGitInfo = true
   BookLastChangeLink = 'https://github.com/jackrschumacher/UAH-Notes-md/commit/{{ .GitInfo.Hash }}'
 
 [markup]
+  [markup.tableOfContents]
+      startLevel = 1
+      endLevel = 6
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
