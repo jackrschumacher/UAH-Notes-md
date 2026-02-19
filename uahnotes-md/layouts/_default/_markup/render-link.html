@@ -1,0 +1,8 @@
+{{- $u := .Destination -}}
+
+{{- /* Check if the link is local (starts with ../assets/) and rewrite it */ -}}
+{{- if hasPrefix $u "../assets/" -}}
+  {{- $u = path.Join "/assets" (path.Base $u) -}}
+{{- end -}}
+
+<a href="{{ $u | safeURL }}" {{ with .Title }} title="{{ . }}" {{ end }}>{{ .Text | safeHTML }}</a>

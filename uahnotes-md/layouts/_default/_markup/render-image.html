@@ -1,0 +1,7 @@
+{{- $u := .Destination -}}
+{{- /* Check if the link starts with ../assets/ and rewrite it */ -}}
+{{- if hasPrefix $u "../assets/" -}}
+  {{- $u = path.Join "/assets" (path.Base $u) -}}
+{{- end -}}
+
+<img src="{{ $u | safeURL }}" alt="{{ .Text }}" {{ with .Title }} title="{{ . }}" {{ end }} />
