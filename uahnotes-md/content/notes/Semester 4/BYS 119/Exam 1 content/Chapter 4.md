@@ -1,0 +1,39 @@
+---
+title: Chapter 4
+---
+## The formation of Bonds with Carbon
+- Carbon has 6 electrons with 2 in first electron shell and 4 in second shell
+- 4 valence electrons in a shell that can hold up to 8 electrons
+- Carbon atom usually completes its valence shell by sharing 4 electrons with other atoms so that 8 electrons are present
+- Carbon atoms four covalent bonds
+- Arrangement of four hybrid orbitals causes bonds to angle towards corners of tetrahedron
+- ![image.png](../assets/image_1770445994575_0.png)
+- ![image.png](../assets/image_1770446004413_0.png)
+	-
+$$ \ce{O = C = O} $$		- Strucutral formula for CO2
+- ![image.png](../assets/image_1770446073347_0.png)
+- ![image.png](../assets/image_1770446079620_0.png)
+- ![image.png](../assets/image_1770446085033_0.png)
+- ![image.png](../assets/image_1770446113535_0.png)
+- ![image.png](../assets/image_1770446126516_0.png)
+- ## Chemical groups most important in processes of life
+- Male and female sex hormones are steriods
+- Differ only in chemical groups attached to the rings
+- ![image.png](../assets/image_1770446236626_0.png)
+- Chemical reactions are functional groups
+- Seven chemical groups:
+- Carboynl
+- Carboxyl
+- Amino
+- Sulfhydryl
+- Phosphate
+- Methyl
+- First 6 groups are chemically reactive
+- ![image.png](../assets/image_1770446381170_0.png)
+	-
+- ## ATP: Source of Energy for Cellular processes
+- Shows a simple example of an organic phosphate molecule
+- ATP is worth mentioning because function in the cell is important
+- ![image.png](../assets/image_1770446779109_0.png)
+- ![image.png](../assets/image_1770446822933_0.png)
+-

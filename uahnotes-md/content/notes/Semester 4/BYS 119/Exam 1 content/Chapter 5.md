@@ -1,0 +1,64 @@
+---
+title: Chapter 5
+---
+# Macromolecules as Polymers
+	- Each class of polymer is made up of a different type of monomer
+		- Chemical mechanisms by which cells make polymers (polymerization)
+	- Process facilitated by enzymes
+	- Condensation reaction → connects a monomer to another monomer or polymer
+	- Dehydration reaction → when a water molecule is lost
+	- ![image.png](../assets/image_1770486718746_0.png){:height 727, :width 419}
+	- Polymers are disassembled by hydrolsis
+		- Water breakage
+	- The bond between monomers is broken by the addition of a water molecule
+- ## Diversity of Polymers
+	- Cell has thousands of different macromolecules
+	- Basis for diversity in lifes polymers
+	- Arrangement is key
+- # Carbohydrates serve as fuel/building material
+	- Include sugars and polymers of sugars
+- ## Sugars
+	- **Monosaccharides** → have molecular formulas that are some multiple of the unit
+	- Molecule has a carbonyl group
+	- Monosaccharide is either aldose or ketose
+	- ![image.png](../assets/image_1770487021127_0.png)
+	- Sugars are diverse because of how their parts are arranged spatially around asymmetric carbons
+	- **Disaccharide** → consists of two monosaccharides joined by glycosidic linkage
+	- Maltose is a disaccharide formed by linking of two molecules of glucose
+	- ![image.png](../assets/image_1770487204712_0.png)
+- ## Polysaccarharides
+	- Macromolecules with monosaccarides
+- ### Storage polysaccharides
+	- Plants and animals store sugars for later use in the form of storage polysaccharides
+	- Plants store starch - a polymer of glucose monomers
+	- ![image.png](../assets/image_1770487279015_0.png)
+	- Animals store a polysaccharide called glycogen
+- ### Structural Polysaccharides
+	- Cellulose - key component of walls of plant cells
+	- Chitin-  carbohydrate used by anthropods
+- # Lipids
+- ## Fats
+	- Fats are not polymers - they are large molecules assembled from smaller molecules by dehydration reactions
+	- Fat consists of glycerol molecule joined to 3 fatty acids
+	- Glycerol is an alchol
+	- Fatty acid has a long carbon skeleton (16-18) carbon atoms
+- ## Phospholipids
+	- Cells could not exist without phospholipids
+	- Essential for cells because they are constituents of cell membranes
+	- ![image.png](../assets/image_1770487681100_0.png)
+	- ![image.png](../assets/image_1770487688880_0.png)
+- ## Steroids
+	- Carbon skeleton consisting of four fused rings
+	- Cholesterol - type of steroid that is a crucial molecule in animals
+	- ![image.png](../assets/image_1770487785317_0.png){:height 422, :width 596}
+- # Protein functions
+	- ![image.png](../assets/image_1770487820671_0.png)
+- # Nucleic acids
+	- DNA and RNA enable living organisms to reproduce their complex components from one generation to the next
+	- DNA provides directions
+		- Also directs RNA synthesis
+		- Controls protein synthesis
+		- Gene expression
+- # Genomics
+	- ![image.png](../assets/image_1770487928316_0.png)
+	-

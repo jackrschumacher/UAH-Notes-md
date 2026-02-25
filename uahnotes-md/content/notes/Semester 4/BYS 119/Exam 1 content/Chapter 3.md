@@ -1,0 +1,73 @@
+---
+title: Chapter 3
+---
+
+# Concept 3.1: Polar covalent bonds in water
+- Properties of water arise from actions of oppositely charged atoms of different water molecules
+- Positive hydrogen of one molecule attracted to negative oxygen of a nearby molecule
+
+-
+- # Concept 3.2
+- ## Cohesion of Water Molecules
+	- Water molecules stay close to each other as a result of hydrogen oxygen bonding
+	- Water is more structured than most other liquids
+	- water has high surface tension- cohesion
+	- Also contributes to the transport of water
+	- ![image.png](../assets/image_1770444101051_0.png){:height 489, :width 468}
+	- Air temperature is also moderated by water
+	- Effective as a heat bank
+	- Water has kinetic energy (energy of mtion)
+	- Thermal energy is associated with the movement of atoms
+	- Temperature represents the average kinetic energy of a body of matter reflects the total kinetic energy
+		- Depends on the matter volume
+	- Heat is thermal energy that transfers between objects
+- ### Waters high specific heat
+	- Stabilize temperature stems from high specific heat
+	- Defined as the amount of heat that must be absorbed or lost for 1 g of the substance for its temp to increase by 1C
+	- 1/cal per gram
+	- This high specific heat is due to hydrogen bonding - this is why ocean temps can be stabilized
+	- ![image.png](../assets/image_1770444480458_0.png)
+- ### Evaporative cooling
+	- Molecules stay close to each other
+	- Transformation to a liquid to a gas- vaporization
+	- At low temps, speediest molecules escape into the air
+	- To evaporate 1g at 25 → 580 cal of heat is needed
+	- Helps to moderate climate
+	- As liquid evaporates, the surface of the liquid that remains behind cools down- evaporative cooling
+		- Contributes to stability of temperature in lakes and ponds
+		- Animals without sweat glands use water to cool down
+		- Evaporation of sweat from human skin helps to cool down
+- ### Floating of Ice on Liquid water
+	- Ice floats on liquid water
+	- Water expands as it solidified
+	- Water freezes because more and more of its molecules are moving too slowly to break bonds
+	- Water also floats due to its lower density
+- ## Water, the solvent of life
+	- Glass contain a uniform mixture of sugar and water
+	- Concentration of dissolved sugar will be the same everywhere in the mixture
+	- Solution - combination of liquids
+	- Water is a very versatile solvent
+- ### Hydrophilic and Hydrophobic substances
+	- Hydrophilic - water loving
+	- Hydrophobic - water fearing
+- # Concept 3.3
+	- Hydrogen atoms in water can sometimes shift from one module to another
+		- Transferred as a hydrogen ion
+		- Molecule that lost a proton is now a hydroxide ion
+	- ![image.png](../assets/image_1770445216814_0.png)
+- ### Acids and Bases
+	- When acids dissolve in water the donate h+ to the solution
+	- #### Acidic solution
+	- Acid is a substance that increases hydrogen ion concentration
+	-
+$$ \ce{HCL \rarr H+ + Cl-} $$		- Results in an acidic solution
+	- #### Base
+		- Concentration indirectly by dissociating to form hydroxide ions
+		- ![image.png](../assets/image_1770445516669_0.png)
+	- ![image.png](../assets/image_1770445526635_0.png)
+- ### Buffers
+	- Internal ph is 7
+	- Slight change to ph can be harmful because the chemical processes of the cell are sensitive to concentration of hydrogen and hydroxide ions
+	- ![image.png](../assets/image_1770445633782_0.png)
+	- Acidification bad for sea organisims
+-
