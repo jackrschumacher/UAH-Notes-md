@@ -1,0 +1,83 @@
+---
+title:
+---
+
+
+
+## Elements and Compounds
+
+- Matter is made up of elements
+- Recognize 92 elements occurring in nature
+	- Gold
+	- Copper
+	- Carbon
+	- Oxygen
+- Compound is a substance consisting of two or more different elements combined in a fixed ratio
+
+- ### The elements of life
+  - 92 natural elements
+  - Elements that an organism needs to live a healthy life and reporduce
+  - Humans need 25 elements but plants need only 17
+  - Oxygen, Carbon, Hydrogen, and Nitrogen make up approx. 95% of living matter
+  - Some naturally occurring elements
+- ### Elements properties depend on the structure of atoms
+  - #### Subatomic particles
+  	- Atom is the smallest unit having the properties of an element
+  	- Neutron, proton, electrons
+  	- Neutron and proton are almost identical in mass
+  	- Atomic number tells us how many protons are in an items nucleus
+  	- ![image.png](../assets/image_1769136718159_0.png)
+  - #### Isotopes
+  	- Different atomic forms of the same element are isotypes
+  	- Can also be used as tools in medicine
+  	- Radioactive tracers can be used in medicine to track if certain diseases exist
+  - #### Radioactive items
+  	- Can measure the decay in fossils to date these relics of a past life
+  	- Parent isotope decays into its daughter isotype at a fixed rate
+  		- Known as the half life
+  - #### The energy level of electrons
+  	- **Energy** - The capacity to cause change
+  	- **Potential energy** - the energy that matter posses because of its location and structure
+  	- Electrons of an atom have potential energy due to the distance to the nucleus
+  	- ![image.png](../assets/image_1769137511443_0.png)
+  	- Electrons are found in different electron shells - each with a characteristic average distance and energy level
+  	- An electron can move from one shell to another
+  		- When an electron absorbs energy it moves to a shell farther out from the nucleus
+  - #### Electron Distribution and Chemical properties
+  	- Chemical behavior of an atom is determined by the distribution of electrons in the atoms electron shells
+  	- ![image.png](../assets/image_1769137697135_0.png)
+  - #### Electron orbitals
+  	- We can not truly know where the atom is located
+  	- Electron shell contains electrons at a particular energy level
+  	- Orbital is a component of an electron shell
+- ### The formation and function of molecules and iconic compounds
+  - Atoms with incomplete valence shells can interact with other atoms in order to complete the valence shell
+  - Valence and usually equals the number of electrons required to complete the outermost valence shell
+  - Attraction of a particular atom for the electrons of a covalent bond is called **electronegativity**
+  - **Non-polar covalent bond** A type of covalent bond in which electrons are shared equally between atoms of similar electronegativity
+  - **Polar covalent bond** - Bonds that vary in their polarity
+  - #### Ionic bonds
+  	- **Ions** - two resulting oppositely charged atoms
+  	- **Cation**- positively charged ion
+  	- **Anion** - negatively charged ion
+  	- Cations and anions attract each other, resulting in an **ionic bond**
+  	- Compounds formed by ionic bonds are called **ionic compounds or salts**
+  - #### Weak Chemical Interactions
+  	- Most of the strongest chemical bonds are covalent bonds
+  	- Large biological molecules are held by weak interactions
+  - #### Hydrogen Bonds
+  	- This noncovalent attraction between hydrogen and electronegative atoms
+  	- ![image.png](../assets/image_1769211980672_0.png){:height 486, :width 526}
+  - #### Van der Walls interactions
+  	- Electrons not always not always evenly distributed
+  	- Van der Walls interactions are individually weak and occur only when atoms and molecules are vey close
+  - #### Molecular shape and Function
+  	- Shapes determined by the positions of the atoms
+  	- Atom forms covalent bonds the orbitals in its valence shell undergo rearrangement
+- ### Chemical reactions and chemical bonds
+  - ![image.png](../assets/image_1769212589770_0.png){:height 207, :width 550}
+  - **Chemical reactions** - the making and breaking of chemical bonds
+  - Use an arrow to indicate the change
+  - **Reactants** - Starting materials
+  - **Products**- resulting materials
+  - **Chemical equilibrium** - Point at which the reactions offset one each other
