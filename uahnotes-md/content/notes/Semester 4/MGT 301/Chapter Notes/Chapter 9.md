@@ -1,0 +1,196 @@
+---
+title: Chapter 9
+---
+
+- # 9.1- Definitions of strategic planning
+	- **Strategic planning** is long range planning that focuses on the organization as a whole
+		- Managers consider the organization as a total unit and ask themselves what must be done in the long term in order to attain organizational goals
+		- 3-5 years in the future
+	- **Commitment principle** managers should commit funds for planning only if they can anticipate in the foreseeable future, a return on planning expenses as a result of long-range planning analysis
+	- **Strategy** defined as a broad and general plan developed to reach long term objectives
+	- Larger orgs tend to be more precise in developing org strategy than smaller orgs are, all orgs should have a strategy of some sort
+		- Must be consistent with org objectives
+	- ![image.png](../assets/image_1771996692235_0.png){:height 636, :width 575}
+- # 9.2- Strategic Management Process
+	- **Strategic management** process of ensuring that an organization possesses and benefits from the use of an appropriate organizational strategy
+	- Strategic management process:
+		- Environmental analysis
+		- Establishment of an organizational direction
+		- Strategy formulation
+		- Strategy implementation
+		- Strategic control
+	- ![image.png](../assets/image_1771996854219_0.png)
+- # 9.3- Environmental Analysis
+	- **Environmental analysis** the study of the organizational environment to pinpoint environmental factors that can influence organizational operations
+	- A manager must thoroughly understand how organizational enviroments are structured
+	- ![image.png](../assets/image_1771997693658_0.png){:height 689, :width 529}
+	- ## The General Enviroment
+		- **General environment:** Contains components having broad, long term implications for managing the organization
+	- ### The economic component
+		- Based on economics
+		- Science that focuses on understanding how people of a particular community or nation produce, distribute and use various goods and services
+		- Can significantly influence the environment in which a company operates and the ease or difficulty the organization experiences in attempting to reach objectives
+		- Sould reflect the economic issues in the organizations enviroment
+	- ### The Social component
+		- **Demographics:** statistical characteristics of a population
+			- Changes in numbers of people and income distributions among various population segments
+			-
+    	Demand for retirement housing would probably increase dramatically if both the number and the income of retirees in a particular market area doubled. Effective organizational strategy would include a mechanism for dealing with a probable increase in demand within the org environment
+    
+		- Managers need awareness of the demographics of the groups from which employees will be hired
+		- SWP - helps organizations identify the workforce they need to achieve strategic goals
+		- Recession caused many employers to use wait-and-see
+		- **Social values:** relative degrees of worth that a society places on the ways in which it exists and functions
+			- Changes alter the organizational enviroment
+			- Changes in how people live
+			- Change is inevitable
+	- ### The political component
+		- Part of the general environment related to governmental affairs
+		- Examples include the type of government in existence, gov attitude towards industries, lobbying, etc
+	- ### The legal component
+		- Part of the general environment that contains passed legislation
+		- Comprises the rules or laws that society members must follow
+		- Clean air act, Occupational Safety and Health Act, Affordable Care Act, Consumer Products Safety
+		- New laws passed, some old laws amended or eliminated
+	- ### The Technology Component
+		- Part of the general environment that includes new approaches to producing goods and services
+		- New procedures and equipment
+			- Increasing use of robots in the next decade should improve US industry efficiency
+	- ### The International Component
+		- Operating environment segment that is composed of all factors relating to the international implications of organizational operations
+		- Other countries laws, cultures, politics
+	- ## The Industry Enviroment
+		- **Five forces model** perhaps the best known tool for industry analysis
+			- Outlines the primary forces that determine competitiveness within an industry and illustrates how those forces are related
+		- **Threat of new entrants:** threat of new firms entering the market
+		- **Buyer power:** power that customers have over firms operating in an industry
+		- **Supplier power:** power that suppliers have over firms operating in industry
+		- **Threat of substitute products:** extent to which customers use products or services from another industry instead of focal industry
+		- **Intensity of Rivalry:** refers to the intensity of competition among the organizations in an industry
+		- ![image.png](../assets/image_1771999180099_0.png){:height 515, :width 570}
+		- **Internal environment:** Level of an organizations environment that exists inside the organization and normally has immediate and specific implications for managing the organization
+- # 9.4- Establishing Organizational Direction
+	- Second step of the strategic management process
+	- ## Determining organizational mission
+		- **Organizational mission:** the purpose for which- the reason why an-organization exists
+		- Reflects information such as what types of products or services it produces
+		- Broad statement of organizational direction
+	- ## Developing a mission statement
+		- **Mission statement:** written document developed by management, normally based on input by managers as well as nonmanagers, the describes and explains the mission of the organization
+	- ## Importance of an Organizational Mission
+		- Helps to increase the probability that the organization will be successful
+			- Helps management direct effort in common direction
+				- Makes explicit the major targets that the organization is reach and helps managers
+			- Serves as rational for allocating resources
+			- Mission statement helps management define broad but important work areas within and organization and therefore the critical jobs
+	- ## Relationship between mission and objectives
+		- Targets toward which the open management system is directed
+		- Sound organizational objectives reflect and flow naturally from the purpose of the organization, expressed in a mission statement
+- # 9.5- Strategy Formulation: Tools
+	- **Strategy formulation:** process of determining appropriate courses of action for achieving organizational goals and accomplishing org purpose
+	- Tools that managers can use:
+		- Critical question analysis
+		- SWOT analysis
+		- Business portfolio analysis
+	- Related but distinct
+	- Should use best for the job → or a combination of tools
+	- ## Critical Question Analysis
+		- **Critical question analysis:** synthesis of the ideas of several contemporary management writers suggests that formulating an appropriate organizational strategy
+		- **What are the purpose and objectives of the organization?**
+		- **Where is the organization presently going?**
+		- **In what kind of environment does the organization now exist?**
+		- **What can be done to better achieve organizational objectives in the future?**
+	- ## SWOT Analysis
+		- **SWOT Analysis:** a strategic development tool that matches internal organizational strengths and weaknesses with external opportunities and threats
+		- **Strengths, Weaknesses, Opportunities, Threats**
+	- ## Business Portfolio Analysis
+		- **Business portfolio analysis** an organizational strategy formulation technique that is based on the philosophy that organizations should develop strategy much as they handle investment portfolios
+	- ### The BCG Growth-Share Matrix
+		- **Boston Consulting Group** - leading manufacturing consulting firm, developed and popularized a portfolio analysis tool that helps managers develop organizational strategies based on market share of business and growth of markets in which businesses exist
+		- Identifying the strategic business units (SBU)
+		- Varies from organization to organization
+		- Should be a company division, a single product or a complete product line
+		- Might be the entire company in smaller organizations
+		- Usually have 4 characteristics
+			- Is a single business or collection of related business
+			- Has its own competitiors
+			- Manager who is accountable for its operation
+			- An area that can be independently planned for within the organization
+		- Once they have been identified, use the BCG matric to categorize each SBU in one of the matrix quadrants
+		- ![image.png](../assets/image_1772070534032_0.png){:height 419, :width 398}
+		- **Star:** Has a large share of a high-growth market and typically needs large amounts of cash to support rapid and significant growth
+			- Generate large amounts of cash for the organization and are usually segments in which management can make additional investments
+		- **Cash Cow:** Has a large share of a market that is growing only slightly
+			- SBU provide the organization with large amounts of cash, but the market is not growing significantly, cash is usually used to meet the financial demands of the organization
+		- **Question mark:** Has a small share of a high-growth market. Management questions if it should invest more cash in them to gain a larger share of the market or downsize or eliminate them. Management will choose the first option in order to change the organization into a star, or to downsize if there is not a way forward.
+		- **Dog:** Has a small share of a low-growth market. SBUs can barely support themselves, drain off resources generated by other SBUs.
+			-
+    	Ex: SBUs that produce typewriters or cash registers
+    
+	- ### The GE Multifactor portfolio Matrix
+		- Developed another popular portfolio analysis tool called the GE multifactor portfolio matrix
+		- Helps managers develop organizational strategy based on market attractiveness and business strengths
+		- Two dimensions is a composite of a variety of factors that each firm must determine for itself
+		- ![image.png](../assets/image_1772071107082_0.png)
+		- Graphic framework for analyzing relationships among the businesses of an organization
+		- Portfolio models should not be used in a mechanistic fashion
+	- ## Strategic formulation: Types
+		- ### Differentiation
+			- **Differentiation:** Focuses on making an organization more competitive by developing a product or products that customers perceive as being different from products offered by competitors
+			-
+    	Ex: Apple iPhone, Porsche Automobiles
+    
+		- ### Cost Leadership
+			- **Cost leadership:** A strategy that focuses on making an organization more competitive by producing products more cheaply than competitors can
+			-
+    	Ex: Obtaining lower prices on product parts and using technology to increase productivity
+    
+		- ### Focus
+			- A strategy that emphasizes making an organization more competitive by targeting a particular segment of customers
+			- Typically used by magazines and such → aimed at a target market
+	- ## Sample organizational strategies
+		- ### Growth
+			- **Growth:** strategy adopted by management to increase the amount of business that an SBU is currently generating
+			- Can pursue a growth strategy by purchasing an SBU from another organization
+		- ### Stability
+			- **Stability:** A strategy adopted by management to maintain or slightly improve the amount of business that an SBU is generating
+		- ### Retrenchment
+			- *Defend or fortify*
+			- **Retrenchment strategy:** management attempts to strengthen or protect the amount of business an SBU is currently generating
+		- ### Divestiture
+			- **Divestiture:** Strategy adopted to eliminate an SBU that is not generating a satisfactory amount of business and that has little hope of doing so in the near future
+- # 9.6- Strategy implementation
+	- **Strategy implementation:** fourth step of the strategic management process, involves putting formulated strategies into action
+	- **Interacting skill:** ability to manage people during implementation
+	- **Allocating skill:** ability to provide organizational resources necessary to implement a strategy
+	- **Monitoring skill:** ability to use information to determine whether a problem has arisen that is blocking strategy implementation
+	- **Organizing skill:** ability to create throughout the organization a network of people who can solve implementation problems as they occur
+- # 9.7- Strategic control
+	- **Strategic control:** last step of the strategic management process, consists of monitoring and evaluating the strategic management process as a whole to ensure that it is operating properly
+- # 9.8- Tactical planning
+	- **Tactical planning:** short-range planning that emphasizes the current operations of various parts of an organization
+		- *Short range:* a period of time extending about one year or less into the future
+	- ## Comparing and coordinating strategic and tactical planning
+		- Differences between strategic planning and tactical planning:
+			- Upper-level managers know more about the organization as a whole
+			- Lower-level managers handle more of the day-to-day
+			- Strategic planning emphasizes the future because tactical planning emphasizes analyzing the everyday function of the organization
+			- Strategic plans are primary based on a prediction of the future, and tactical plans are based primarily on known circumstances that exist within the organization
+			- Strategic planning focuses long term, tactical plans cover short term
+		- ![image.png](../assets/image_1772073356689_0.png){:height 404, :width 622}
+		- Tactical planning and strategic planning are related
+- # 9.9- Competitive dynamics
+	- **Competitive dynamics:** refers to the process by which firms undertake strategic and tactical actions and how competitors respond to those actions
+	- Strategic planning and competition involve the analysis of industries
+	- Research in competitive dynamics focuses on competitive dryads
+	- Three primary factors influence a firms action or reaction: awareness, motivation, capability
+	- **Competitor awareness:** refers to how mindful a company is of its competitors actions
+	- ![image.png](../assets/image_1772073722956_0.png)
+	- **Competitor motivation:** refers to the incentives that drive an organization to take action
+		-
+    Ex: Amazon motivated to respond to Barnes and Noble's price cuts with Kindle ebooks
+    
+	- **Competitor capability:** refers to a firms ability to undertake an action
+		- Refers to resources that a firm has to take action
+		-
+    Ex: Amazon kindle ecosystem
