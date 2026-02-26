@@ -1,0 +1,49 @@
+---
+title: Photosynthesis
+
+---
+
+- # Photosynthesis
+	- ![image.png](../assets/image_1772075177404_0.png)
+	- One of the most important biological processes on earth
+	- Allows light energy from the sun to be converted into chemical energy stored in organic molecules
+	- All life depends on this process, either directly or indirectly
+	- Sugars produced during photosynthesis- become the fuel for cellular respiration- powers all living organisims
+	- $6CO_2 + 6H_2O + \text{light energy} \rarr C_6H_{12}O_6 + 6O_2$
+- # Chloroplasts
+	- Photosynthesis occurs inside of an organelle called a chloroplast
+	- Typically found in mesophyll cells
+	- Carbon dioxide enters the leaf through small openings called stomata and diffuses into these cells, where photosynthesis occurs
+	- Thylakoids are arranged in stacks and are surrounded by fluid-filled region known as the stoma
+	- Contain chlorophyll and other pigments, along with protein complexes that capture light energy and begin converting it into chemical energy
+	- ![image.png](../assets/image_1772075598673_0.png)
+	- Separation between the thylakoid space and the stroma allows the chloroplast to build chemical gradients that are necessary for ATP production
+	- Physical arrangement of membranes is not random it is required to build carbohydrates
+	- ## Light absorption and pigments
+		- Light is a form of electromagnetic radiation
+		- Different wavelengths carry different amounts of energy
+			- Blue light has shorter wavelengths than high energy
+			- Red light has longer wavelengths and lower energy
+		- Primary pigment involved in photosynthesis is chlorophyll
+		- Chlorophyll absorbs mainly blue and red light and reflects green light
+		- Increase the efficiency of light capture specifically in shaded or low light enviroments
+		- When Chlorophyll absorbs a photon, one of its electrons becomes excited
+			- Carries energy and this energy is transferred through a series of reactions that ultimately allow the plant to convert light energy into chemical energy
+	- ## Photosynthesis and Earth's history
+		- Very significant in evolutionary history
+		- Did not produce oxygen and used molecules other than water as electron donors
+		- Early organisms were some of the first to harness solar energy
+		- Occurred when organisms occurred when certain organisms evolved the ability to use water as an electron donor
+		- Rise of oxygen dramatically changed earths enviroment
+		- With more energy available, organisms could become larger, more complex, and multicelluar
+			- Complex animals, plants and humans would not exist without this
+		- Chloroplasts are evidence of evolution in action
+		- Originated from an ancient endosymbiotic event in which a eukaryotic cell engulfed in a photosynthetic cyanobacterium
+		- Instead of being digested, the bacterium formed a permanent partnership with the host cell and eventually evolved into the chloroplast
+		- That's why chloroplasts have their own DNA and resemble bacteria in several ways
+	- ## Why photosynthesis still matters
+		- Photosynthesis continues to regulate atmospheric carbon dioxide and oxygen level today
+		- Forms the base of nearly all food webs and drives global carbon cycling
+		- Fossil fuels represent ancient photosynthetic products products stored over geological time
+		- ![image.png](../assets/image_1772077224089_0.png)
+
