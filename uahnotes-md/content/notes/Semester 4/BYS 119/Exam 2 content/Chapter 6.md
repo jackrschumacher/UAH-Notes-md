@@ -24,7 +24,7 @@ title: Chapter 6
   	- **Kinetic energy-** Can be associated with the relative motion of objects
   		- Thermal energy is kinetic energy associated with the random movement of atoms or molecules
   	- **Potential energy-** energy that is not kinetic
-  	- **Chemical energy-**term used biologists to refer to the potential energy available for release in a chemical reaction
+  	- **Chemical energy-** term used biologists to refer to the potential energy available for release in a chemical reaction
   		- Catabolic pathways release energy by breaking down complex molecules
   		- Some bonds are broken and others are formed, releasing energy and resulting in lower-energy breakdown products
   		- Biochemical pathways, carried out in the context of cellular structures, enable cells to release chemical energy from food molecules and use the energy to power life processes
@@ -44,8 +44,7 @@ title: Chapter 6
   		- Predicted by thermodynamic law
   		- Cells create ordered structures from less organized starting materials
   		- Increase in order is balanced by and organisms taking in organized forms of matter and energy from the surroundings and replacing them with less ordered forms
-  			-
-    		Animals obtain starch, proteins, and other complex molecules from the food it eats. As catabolic pathways break these molecules down, the animal release carbon dioxide and water
+  		  - Animals obtain starch, proteins, and other complex molecules from the food it eats. As catabolic pathways break these molecules down, the animal release carbon dioxide and water
 
 - ## 6.2- The free energy change of a reaction
   - ### Free energy change
@@ -74,10 +73,9 @@ title: Chapter 6
   	- ![image.png](../assets/image_1772252665925_0.png)
   	- #### Cellular Respiration example
   		- ![image.png](../assets/image_1772252712212_0.png)
-  		-
-    	For each mole (180 g) of glucose broken down by respiration under what are called "standard conditions" (1 M of each reactant and product, 250C, pH 7), 686 kcal (2,870 kJ) of energy is made available for work. Because energy must be conserved, the chemical products of respiration store 686 kcal less free energy per mole than the reactants. The products are, in a sense, the spent exhaust of a process that tapped the free energy stored in the bonds of the sugar molecules.
+  		  - For each mole (180 g) of glucose broken down by respiration under what are called "standard conditions" (1 M of each reactant and product, 250C, pH 7), 686 kcal (2,870 kJ) of energy is made available for work. Because energy must be conserved, the chemical products of respiration store 686 kcal less free energy per mole than the reactants. The products are, in a sense, the spent exhaust of a process that tapped the free energy stored in the bonds of the sugar molecules.
     
-  	- **Endergonic reaction-** one that absorbs free energy from its surroundings
+    - **Endergonic reaction-** one that absorbs free energy from its surroundings
   		- Reactions are non spontaneous, and the magnitude of Δ G is the quality of energy required to drive the reaction
   		- If a chemical process is exergonic (downhill), releasing energy in one direction, then the reverse process must be endergonic using energy
   - ### Equilibrium and Metabolism
@@ -88,6 +86,7 @@ title: Chapter 6
   	- Materials flow in and out, keeping metabolic pathways from ever reaching equilibrium
   	- Some actions are constantly pulled in one direction- that is they are kept out of equilibirum
   	- ![image.png](../assets/image_1772253368969_0.png)
+
 - ## 6.3- Structure and Hydrolysis of ATP
   - **ATP-** Adenosine triphosphate contains ribose, the nitrogenous base adenine and a chain of three phosphate groups
   - ![image.png](../assets/image_1772255870286_0.png)
@@ -95,8 +94,7 @@ title: Chapter 6
   - When the terminal phosphate bond is broken by addition of a water molecule of inorganic phosphate $HOPO_3^{2-}$
   - Reaction is exergonic and releases 7.3kcal of energy per mole of ATP
   	- ![image.png](../assets/image_1772256086010_0.png)
-    -
-    This is the free-energy change measured under standard conditions. In the cell, conditions do not conform to standard conditions, primarily because reactant and product concentrations differ from 1 M. For example, when ATP hydrolysis occurs under typical cellular conditions, the actual AG is about — 13 kcal/mol, 78% greater than the energy released by ATP hydrolysis under standard conditions.
+      - This is the free-energy change measured under standard conditions. In the cell, conditions do not conform to standard conditions, primarily because reactant and product concentrations differ from 1 M. For example, when ATP hydrolysis occurs under typical cellular conditions, the actual AG is about — 13 kcal/mol, 78% greater than the energy released by ATP hydrolysis under standard conditions.
     
   - Phosphate bonds of ATP are sometimes referred to as high-energy phosphate bonds
   - ATP is useful to the cell because the energy it releases on losing a phosphate group is somewhat greater than the energy most other molecules could deliver
@@ -104,10 +102,9 @@ title: Chapter 6
   	- When in a test tube, the release of free energy merely heats the surrounding water
   	- Can be useful in organisms sometimes
   	- Shivering is an ATP reaction to warm the body
-  	-
-    For example, with the help of specific enzymes, the cell is able to use the high free energy of ATP to drive chemical reactions that, by themselves, are endergonic. If the AG of an endergonic reaction is less than the amount of energy released by ATP hydrolysis, then the two reactions can be coupled so that, overall, the coupled reactions are exergonic. This usually involves phosphorylation, the transfer of a phosphate group from ATP to some other molecule, such as the reactant. The recipient molecule with the phosphate group covalently bonded to it is then called a phosphorylated intermediate. The key to coupling exergonic and endergonic reactions is the formation of this phosphorylated intermediate, which is more reactive (less stable, with more free energy) than the original unphosphorylated molecule 
+  	- For example, with the help of specific enzymes, the cell is able to use the high free energy of ATP to drive chemical reactions that, by themselves, are endergonic. If the AG of an endergonic reaction is less than the amount of energy released by ATP hydrolysis, then the two reactions can be coupled so that, overall, the coupled reactions are exergonic. This usually involves phosphorylation, the transfer of a phosphate group from ATP to some other molecule, such as the reactant. The recipient molecule with the phosphate group covalently bonded to it is then called a phosphorylated intermediate. The key to coupling exergonic and endergonic reactions is the formation of this phosphorylated intermediate, which is more reactive (less stable, with more free energy) than the original unphosphorylated molecule 
     
-  	- ![image.png](../assets/image_1772256408177_0.png)
+    - ![image.png](../assets/image_1772256408177_0.png)
   	- ATP hydrolysis leads to a change in the proteins shape and often its ability to bind another molecule
   	- Motor proteins "walking" along cytoskeletal elements
   	- ATP is then hydrolyzed, releasing ADP and Pi. Another ATP molecule can bind itself
@@ -123,3 +120,117 @@ title: Chapter 6
   	- Both directions of a reversible process cannot be downhill, regeneration is necessarily endergonic
   	- Catabolic (exergonic) pathways, especially cellular respiration provide energy for the endergonic process of making ATP
   	- ATP cycle is a key in bioenergetics
+
+- ## 6.4- Enzymes speed up metabolic reaction
+  - Laws of thermodynamics tell us what will and will not happen under given conditions but say nothing about the rate of these processes
+  - Spontaneous chemical reaction occurs without any requirement for outside energy, but it may occur so slowly that it is imperceptible
+
+  - For example, even though the hydrolysis of sucrose (table sugar) to glucose and fructose is exergonic, occurring spontaneously with a release of free energy (AG = —7 kcal/mol) , a solution of sucrose dissolved in sterile water will sit for years at room temperature with no appreciable hydrolysis. However, if we add a small amount of the enzyme sucrase to the solution, then all the sucrose may be hydrolyzed within seconds, as shown here:
+
+  - ![image.png](../assets/image_1772336322147_0.png)
+  - **Enzyme-** a macromolecule that acts as a catalyst
+  - **Catalyst-** a chemical agent that speeds up a reaction without being consumed by the reaction
+  - Without regulation by enzymes, chemical traffic through the pathways of metabolism would become terribly congested because many chemical reactions would take such a long time
+  - ### The activation energy barrier
+  	- Involves both bond breaking and bond forming
+  	
+    - For example, the hydrolysis of sucrose involves breaking the bond between glucose and fructose and one of the bonds of a water molecule and then forming two new bonds, as shown previously.
+    
+  	- Changing one molecule into another generally involves contorting the starting molecule into a highly unstable state before the reaction can proceed
+  	- Initial investment of energy for starting a reaction- energy required to contort reactant molecules so the bonds can break- known as the *free energy of activation*/**activation energy**
+  	- Energy barrier- uphill/downhill analogy
+  	- Activation energy is often supplied by heat in the form of thermal energy that the reactant molecules absorb from the surroundings
+  	- **Transition state-** reactants are in an unstable condition
+  	- $AB+CD \rarr AC+B$
+  	- ![image.png](../assets/image_1772337324849_0.png){:height 509, :width 476}
+  	- The activation of the reactants is represented by the uphill portion of the graph, in which the free-energy content of the reactant molecules is increasing. At the summit, when energy equivalent to EA has been absorbed, the reactants are in the transition state: They are activated, and their bonds can be broken. As the atoms then settle into their new, more stable bonding arrangements, energy is released to the surroundings. This corresponds to the downhill pan of the curve, which shows the loss of free energy by the molecules. The overall decrease in free energy means that EA is repaid with dividends, as the formation of new bonds releases more energy than was invested in the breaking of old bonds.
+    
+    - Reaction in the figure is exergonic and occurs spontaneously (Δ G < 0)
+  	- Activation energy provides a barrier that determines the rate of the reaction
+  	- Sometimes $E_A$ is modest enough that even at room temperature there is sufficient thermal enegy for may of the reactant molecules to reach the transition state in short time
+  	- In most cases, $E_A$ is so high and the transition state is reached so rarely that the reaction will hardly proceed at all, the reaction will only accelerate if heat energy is added
+  - ### How enzymes speed up reactions
+  	- Proteins, DNA and other complex molecules are rich in free energy and have the potential to decompose spontaneously- laws of thermodynamics favor their breakdown
+  	- Barriers for selected reactions must occasionally be surmounted for cells to carry out the processes needed for life
+  	- High temperature denatures proteins and kills cells
+  	- Heat would speed up all reactions, not just those that are needed
+  	- **Catalysis-** process by which by which a catalyst selectively speeds up a reaction without itself being consumed
+  	- Enzymes catalyzes a reaction by lower the $E_A$ barrier, enabling the reactant molecules to absorb enough energy to reach the transition state even at moderate temeperatures
+  	- An enzyme cannot change the Δ G for a reaction, cannot make an endergonic reaction exergonic
+  	- Enzymes can only hasten reactions that would eventually occur anyway, enables the cell to have a dynamic metabolism, routing chemical smoothly through metabolic pathways
+  	- Enzymes are very specific for the reactions they catalyze, determine which chemical processes will be going on in the cell at any given time
+  	- ![image.png](../assets/image_1772343799751_0.png)
+  - ### Substrate Specificity of Enzymes
+  	- **Substrate-** reactant an enzyme on is referred to as enzyme's substrate
+  	- The enzyme binds to its substrate (or substrates, when there are two or more reactants), forming an **enzyme-substrate complex**
+  	- Enzyme + Substrate= Enzyme-substrate complex = Enzyme + Products
+  	- Most enzyme names end in -ase
+  	- ![image.png](../assets/image_1772344179063_0.png)
+  	- Reaction catalyzed by each enzyme is very specific; an enzyme can recognize its specific substrate even among closely related compounds
+  	- Recall that most enzymes are proteins, and that proteins are macromolecules with unique 3-D configurations
+  	- **Active site-** a restricted region of the enzyme molecule actually binds to the substrate
+  	- The active site is formed by only a few of the enzyme amino acids, the rest of the protein molecule providing a framework that determines the shape of the active site
+  	- ![image.png](../assets/image_1772344358624_0.png)
+  	- Enzyme is not a stiff structure locked in a given shape
+  	- Recent work has shown that enzymes- seem to dance between different shapes
+  	- The active site is not a rigid receptacle for the substrate
+  	- Shape change makes the active site fit even more snugly around the substrate
+  - ### Catalysis in the Enzymes active site
+  	- Substrate held in the active site by so weak interactions
+  	- R groups of a few of the amino acids that make up the active site catalyze the conversion of substrate to product
+  	- Enzyme is then free to take another substrate molecule into its active site
+  	- Entire cycle happens so fast that a single enzyme molecule typically acts on about 1,000 substrate molecules per second
+  	- Very small amounts of enzyme can have a huge metabolic impact by functioning over and over again in catalytic cycles
+  	- ![image.png](../assets/image_1772344706320_0.png)
+  	- Enzymes use mechanisms that lower activation:
+  		- Involving two or more reactants, active site provides a template on which the substrates can come together in the proper orientation for a reaction to occur
+  		- Active site of an enzyme clutches the bound substrates, the enzymes may stretch the substrate molecules toward their transition state form, stressing and bending bonds to be broken during the reaction.
+  			- $E_A$ is proportional to the difficulty of breaking of the bonds, distorting the substrate helps it approach the transition state
+  			- Reduces the amount of free energy that must be absorbed to achieve that state
+  		- The active site may provide  a microenvironment that is more conducive to a reaction than the solution itself would be without the enzyme.
+  			- Ex: Active site has amino acids with acidic R groups, may provide a pocket of low pH in a neutral cell
+  			- An amino acid may facilitate H+ transfer to the substrate as a key step in catalyzing the reaction
+  		- Amino acids in the active site may directly participate in the chemical reaction
+  			- Sometimes this process involves covalent bonding between substrate and the side chain of an amino acid of the enzyme
+  	- The rate at which a particular amount of enzyme converts substrate to product is partly a function of the initial concentration of the substrate
+  	- The concentration of substrate will be high enough that all enzyme molecules will have enough that all enzyme molecules will have their active sites engaged
+  		- **Enzyme is said to be saturated**
+  		- The only was to increase the rate of product formulation is to add more enzyme molecules
+  		- Cells increase the rate of reaction by producing more enzyme molecules
+
+- ## 6.5- Regulation of enzyme activity helps control metabolism
+  - ### Allosteric Regulation of Enzymes
+  	- Molecules that naturally regulate enzyme activity in a cell behave something like reversible noncompetitive inhibitors
+  	- **Allosteric regulation-** term used to describe any case in which a proteins function at one site is affected by the binding of a regulatory molecule to a separate site
+  	
+  - #### Allosteric activation and Inhibition
+  	- Most enzymes known to be allosterically regulated are constructed from two or more subunits, each composed of a polypeptide chain with its own active site
+  	- The simplest kind of allosteric regulation, activating or inhibiting regulatory molecule binds to a *regulatory* site
+  	- Binding of an *activator* to a regulatory site stabilizes the shape the shape that has functional active sites
+  	- Interaction of subunits, a single activator inhibitor molecule that binds to one regulatory site will affect active units of all subunits
+  	- ![image.png](../assets/image_1772347152956_0.png)
+  	- ![b5a2dd9998cf097a93df018081f0e807.png](../assets/b5a2dd9998cf097a93df018081f0e807_1772347295527_0.png)
+  	- Fluctuating concentrations of regulators can cause a sophisticated pattern of response of cellular enzymes
+  	- Products of ATP hydrolysis play a complex role in balancing the flow of traffic between anabolic and catabolic pathways by effects on key enzymes
+  	- ATP binds to many catabolic enzymes allosterically, lowering affinity for substrate-limiting activity
+  	- ADP functions as an activator of the same enzymes
+  	- If ATP production lags behind use, catabolism slows down as ATP molecules accumulate and bind to the same enzymes
+  	- ATP, ADP and other related molecules also affect key enzymes in anabolic pathways
+  	- Substrate molecule binding to one active site in multisubunit enzyme triggers a shape change in all of the subunits
+  		- **Cooperativity-** amplifies the response of enzymes to substrate molecules more readily
+  	- Hemoglobin is an example of an enzyme that uses subunit binding- more binds increases $O^2$ affinity
+  	
+  - ### Feedback Inhibition
+  	- Looked at the allosteric inhibition of an enzyme in an ATP-generating pathway by ATP itself
+  	- Cells use this five-step pathway to synthesize the amino acid isoleucine from threonine, another amino acid
+  	  - As it accumulates, slows down its own synthesis by allosterically inhibiting the enzyme for the first step of the pathway
+  	  - Feedback inhibition prevents the cell from making more isoleucine than is necessary
+  	- ![ab6b72cbd0526308b09916f1d7750f27.png](../assets/ab6b72cbd0526308b09916f1d7750f27_1772348725314_0.png)
+
+  - ### Localization of Enzymes Within a cell
+    - Cell is compartmentalized, cellular structures help bring
+    - Arrangement facilities the sequence of reactions
+    	- Product from the first enzyme becoming the substrate for an adjacent enzyme in the complex, and so on until the end product is released
+    - Enzymes and enzyme complexes have fixed locations in the cell and act as structural components
+    	- Others are in solution within particular membrane-enclosed eukaryotic cells, enzymes for the second and third stages
+    - ![9ef4b57dfc121871eac53b1d9e289c48.png](../assets/9ef4b57dfc121871eac53b1d9e289c48_1772349197389_0.png)
