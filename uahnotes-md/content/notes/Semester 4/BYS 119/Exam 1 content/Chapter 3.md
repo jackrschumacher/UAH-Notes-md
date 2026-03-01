@@ -6,7 +6,6 @@ title: Chapter 3
 - Properties of water arise from actions of oppositely charged atoms of different water molecules
 - Positive hydrogen of one molecule attracted to negative oxygen of a nearby molecule
 
--
 - # Concept 3.2
 - ## Cohesion of Water Molecules
 	- Water molecules stay close to each other as a result of hydrogen oxygen bonding
@@ -16,7 +15,7 @@ title: Chapter 3
 	- ![image.png](../assets/image_1770444101051_0.png){:height 489, :width 468}
 	- Air temperature is also moderated by water
 	- Effective as a heat bank
-	- Water has kinetic energy (energy of mtion)
+	- Water has kinetic energy (energy of motion)
 	- Thermal energy is associated with the movement of atoms
 	- Temperature represents the average kinetic energy of a body of matter reflects the total kinetic energy
 		- Depends on the matter volume
@@ -60,7 +59,7 @@ title: Chapter 3
 	- #### Acidic solution
 	- Acid is a substance that increases hydrogen ion concentration
 	-
-$$ \ce{HCL \rarr H+ + Cl-} $$		- Results in an acidic solution
+	$$ \ce{HCL \rarr H+ + Cl-} $$		- Results in an acidic solution
 	- #### Base
 		- Concentration indirectly by dissociating to form hydroxide ions
 		- ![image.png](../assets/image_1770445516669_0.png)
@@ -70,4 +69,4 @@ $$ \ce{HCL \rarr H+ + Cl-} $$		- Results in an acidic solution
 	- Slight change to ph can be harmful because the chemical processes of the cell are sensitive to concentration of hydrogen and hydroxide ions
 	- ![image.png](../assets/image_1770445633782_0.png)
 	- Acidification bad for sea organisims
--
+	-
