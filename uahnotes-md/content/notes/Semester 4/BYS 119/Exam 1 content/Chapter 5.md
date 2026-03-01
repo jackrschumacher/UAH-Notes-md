@@ -2,15 +2,16 @@
 title: Chapter 5
 ---
 # Macromolecules as Polymers
-	- Each class of polymer is made up of a different type of monomer
-		- Chemical mechanisms by which cells make polymers (polymerization)
-	- Process facilitated by enzymes
-	- Condensation reaction → connects a monomer to another monomer or polymer
-	- Dehydration reaction → when a water molecule is lost
-	- ![image.png](../assets/image_1770486718746_0.png){:height 727, :width 419}
-	- Polymers are disassembled by hydrolsis
-		- Water breakage
-	- The bond between monomers is broken by the addition of a water molecule
+- Each class of polymer is made up of a different type of monomer
+	- Chemical mechanisms by which cells make polymers (polymerization)
+- Process facilitated by enzymes
+- Condensation reaction → connects a monomer to another monomer or polymer
+- Dehydration reaction → when a water molecule is lost
+- ![image.png](../assets/image_1770486718746_0.png){:height 727, :width 419}
+- Polymers are disassembled by hydrolsis
+	- Water breakage
+- The bond between monomers is broken by the addition of a water molecule
+
 - ## Diversity of Polymers
 	- Cell has thousands of different macromolecules
 	- Basis for diversity in lifes polymers
