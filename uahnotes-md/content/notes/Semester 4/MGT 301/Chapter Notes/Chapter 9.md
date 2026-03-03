@@ -1,5 +1,6 @@
 ---
 title: Chapter 9
+weight: 1
 ---
 
 - # 9.1- Definitions of strategic planning
