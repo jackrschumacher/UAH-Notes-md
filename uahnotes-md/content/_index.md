@@ -7,6 +7,10 @@ weight: 1
 
 # Home
 
+> [!WARNING]
+>
+> This site is a plain markdown backup of [Logseq](https://logseq.com) notes, published [here](https://uahnotes.jackrschumacher.com/#/page/courses). Since Logseq uses a custom markdown formatting structure, some formatting may be broken.
+
 ## Courses
 
 {{< button href="/notes/semester-4/bys-119/" >}}BYS 119{{< /button >}}
