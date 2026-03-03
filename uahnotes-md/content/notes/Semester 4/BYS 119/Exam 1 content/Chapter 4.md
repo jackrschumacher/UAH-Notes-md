@@ -18,7 +18,7 @@ title: Chapter 4
 
 - O = C =O
 
-  - Strucutral formula for CO2
+  - Structural formula for CO2
 
 - ![image.png](../assets/image_1770446073347_0.png)
 
@@ -32,7 +32,7 @@ title: Chapter 4
 
 - ## Chemical groups most important in processes of life
 
-- Male and female sex hormones are steriods
+- Male and female sex hormones are steroids
 
 - Differ only in chemical groups attached to the rings
 

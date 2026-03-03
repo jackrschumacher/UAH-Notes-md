@@ -1,5 +1,6 @@
 ---
 title: Chapter 8
+weight: 1
 ---
 
 
@@ -19,8 +20,7 @@ title: Chapter 8
 		- Might involve determining how products will be arranged on the shelves of a supermarket
 	- **Nonprogrammed decision:** a one-shot decision that is usually less structured than programmed decisions
 		- Ex: deciding to expand operations
-	- ![image.png](../assets/image_1771635507680_0.png)
-		- Should be throughout of as being at opposite ends of the decision programming continuum
+	- ![image.png](../assets/image_1771635507680_0.png)Should be throughout of as being at opposite ends of the decision programming continuum
 		- Some decisions can also be neither, but rather fall somewhere in between
 	- ![image.png](../assets/image_1771635573912_0.png){:height 211, :width 586}
 - ## Responsibility for Making organization decisions
