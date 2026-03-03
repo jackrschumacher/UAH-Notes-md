@@ -27,15 +27,11 @@ weight: 10
 		- Allocate resources and directives for subtasks
 		- Evaluate the results of implemented organizing strategy
 	- ![7291310003.png](../assets/7291310003_1772505918064_0.png)
-		-
-  	The management of a restaurant can serve as an illustration of how the organizing process works. The first step that the restaurant manager would take to initiate the organizing process would be to reflect on the restaurant's plans and objectives. Because planning involves determining how the restaurant will attain its objectives, and organizing involves determining how the restaurant's resources will be used to activate plans, the restaurant manager must start to organize by understanding planning.
+	- Example: The management of a restaurant can serve as an illustration of how the organizing process works. The first step that the restaurant manager would take to initiate the organizing process would be to reflect on the restaurant's plans and objectives. Because planning involves determining how the restaurant will attain its objectives, and organizing involves determining how the restaurant's resources will be used to activate plans, the restaurant manager must start to organize by understanding planning.
+  - Ex: The second and third steps of the organizing process focus on tasks to be performed within the management system. The manager must designate major tasks or jobs to be done within the restaurant. Two such tasks are serving customers and cooking food. Then the tasks must be divided into subtasks. For example, the manager might decide that serving customers includes the subtasks of taking orders and clearing tables. The fourth organizing step is determining who will take orders and who will clear the tables, and the details of the relationship between these individuals. The size of tables and how they are to be set are other factors to consider at this point. In the fifth step, evaluating the results of the implemented organizing strategy, the manager gathers feedback on how well the strategy is working. This feedback should furnish information that can be used to improve the existing organization. For example, the manager may find that a particular type of table is not large enough and that larger ones must be purchased if the restaurant is to attain its goals.
   
-  	​	  
-  
-  The second and third steps of the organizing process focus on tasks to be performed within the management system. The manager must designate major tasks or jobs to be done within the restaurant. Two such tasks are serving customers and cooking food. Then the tasks must be divided into subtasks. For example, the manager might decide that serving customers includes the subtasks of taking orders and clearing tables. The fourth organizing step is determining who will take orders and who will clear the tables, and the details of the relationship between these individuals. The size of tables and how they are to be set are other factors to consider at this point. In the fifth step, evaluating the results of the implemented organizing strategy, the manager gathers feedback on how well the strategy is working. This feedback should furnish information that can be used to improve the existing organization. For example, the manager may find that a particular type of table is not large enough and that larger ones must be purchased if the restaurant is to attain its goals.
-  
-	- ## Classical organizing Theroy
-		- Comprises the cumulative insights of early management writers on how organizational resources can best be used to enhance goal attainment
+  - ## Classical organizing Theroy
+  	- Comprises the cumulative insights of early management writers on how organizational resources can best be used to enhance goal attainment
 
 - # 10.2- Weber's Bureaucratic Models
   - Max Weber had impact on classic organizational theroy
