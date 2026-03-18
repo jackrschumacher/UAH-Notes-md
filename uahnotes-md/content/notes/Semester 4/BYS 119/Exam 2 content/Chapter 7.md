@@ -1,0 +1,51 @@
+---
+title: Chapter 7
+---
+
+- # 7.1- Microscopes
+	- ## Microscopy
+		- Invented in 1590
+		- Refined in 1600s
+		- Many microscopes- most commonly used are light microscopes
+			- Visible light is passed through the specimen and then through glass lenses
+		- **Magnification-** is the ratio of an objects image size to its real size
+			- Light microscopes can increase magnification by approximately 1000x
+		- **Resolution-** A measure of the clarity of the image; minimum distance two points can be separated and still be distinguished as separate points
+		- **Contrast-** The difference in brightness between the light and dark areas of an image
+		- ![88a9eed225467e7de61a6111b7dfa205.png](../assets/88a9eed225467e7de61a6111b7dfa205_1773806126865_0.png){:height 843, :width 416}
+		- ![862b8c53c8adeae2f990b9d6ebb21359.png](../assets/862b8c53c8adeae2f990b9d6ebb21359_1773806240551_0.png){:height 1480, :width 423}
+		- **Organelles-** membrane-enclosed structures within eukaryotic cells
+		- **Electron microscope-** focuses a beam of electrons through the specimen of the light (or electrons)
+		- **Scanning electron microscope-** especially useful for detailed study for the topography of a specimen
+		- **Transmission electron microscope-** used to study the internal structure of cells
+		- Increasing ability to see cells in microscope by using florescent markers
+		- Increasing magnification community
+		- Cyro-electron microscopy allows specimens to be preserved at extremely low temperatures
+		- **Cytology-** the study of cell structure
+	- ## Cell Fractionation
+		- **Cell fractionation-** Takes cells apart and separates major organelles and other subcellular structures from one another
+			- Centrifuge spins test tubes holding disrupted cells
+- # 7.2- Internal membranes
+	- ## Prokaryotic and Eukaryotic cells
+		- All cells share basic features
+			- Bounded by a selective barrier - *Plasma membrane*
+			- **Cytosol-** semifluid, jellylike substance
+			- **Chromosomes-** carry genes in the form of DNA
+		- **Eukaryotic cell-** most of the DNA is in an organelle called the nucleus, bounded by a double membrane
+		- **Prokaryotic cell-** DNA is concentrated in a non-membrane enclosed area
+			- Concentrated in the nucleoid
+		- ![beb017182f41fcc19b0793c476733680.png](../assets/beb017182f41fcc19b0793c476733680_1773808783218_0.png)
+		- **Cytoplasm-** refers only to region between the nucleus and the plasma membrane
+		- Eukaryotic cells are generally much larger than prokaryotic cells
+			- Cellular metabolism sets limits on cell size
+		- **Plasma membrane-** functions as a selective barrier that allows passage of enough oxygen, nutrients and wastes to service the whole cell
+		- Smaller cell has a greater ratio of surface area to volume
+		- ![14cad3217996feef13a3ba769efd12b3.png](../assets/14cad3217996feef13a3ba769efd12b3_1773809576039_0.png)
+	- ### The Eukaryotic cell
+		- Plasma membrane at its outer surface, eukaryotic cell has extensive internal membranes that divide the cell into compartments
+		- Double layer of phospholipids and other lipids
+		- ![image.png](../assets/image_1773809901695_0.png)
+		- ![image.png](../assets/image_1773810006082_0.png)
+- # 7.3- Genetic instructions
+	- ## The nucleus
+		
