@@ -3,28 +3,28 @@ title: Chapter 7
 ---
 
 - # 7.1- Microscopes
-	- ## Microscopy
-		- Invented in 1590
-		- Refined in 1600s
-		- Many microscopes- most commonly used are light microscopes
-			- Visible light is passed through the specimen and then through glass lenses
-		- **Magnification-** is the ratio of an objects image size to its real size
-			- Light microscopes can increase magnification by approximately 1000x
-		- **Resolution-** A measure of the clarity of the image; minimum distance two points can be separated and still be distinguished as separate points
-		- **Contrast-** The difference in brightness between the light and dark areas of an image
-		- ![88a9eed225467e7de61a6111b7dfa205.png](../assets/88a9eed225467e7de61a6111b7dfa205_1773806126865_0.png){:height 843, :width 416}
-		- ![862b8c53c8adeae2f990b9d6ebb21359.png](../assets/862b8c53c8adeae2f990b9d6ebb21359_1773806240551_0.png){:height 1480, :width 423}
-		- **Organelles-** membrane-enclosed structures within eukaryotic cells
-		- **Electron microscope-** focuses a beam of electrons through the specimen of the light (or electrons)
-		- **Scanning electron microscope-** especially useful for detailed study for the topography of a specimen
-		- **Transmission electron microscope-** used to study the internal structure of cells
-		- Increasing ability to see cells in microscope by using florescent markers
-		- Increasing magnification community
-		- Cyro-electron microscopy allows specimens to be preserved at extremely low temperatures
-		- **Cytology-** the study of cell structure
-	- ## Cell Fractionation
-		- **Cell fractionation-** Takes cells apart and separates major organelles and other subcellular structures from one another
-			- Centrifuge spins test tubes holding disrupted cells
+  - ## Microscopy
+  	- Invented in 1590
+  	- Refined in 1600s
+  	- Many microscopes- most commonly used are light microscopes
+  		- Visible light is passed through the specimen and then through glass lenses
+  	- **Magnification-** is the ratio of an objects image size to its real size
+  		- Light microscopes can increase magnification by approximately 1000x
+  	- **Resolution-** A measure of the clarity of the image; minimum distance two points can be separated and still be distinguished as separate points
+  	- **Contrast-** The difference in brightness between the light and dark areas of an image
+  	- ![88a9eed225467e7de61a6111b7dfa205.png](../assets/88a9eed225467e7de61a6111b7dfa205_1773806126865_0.png){:height 843, :width 416}
+  	- ![862b8c53c8adeae2f990b9d6ebb21359.png](../assets/862b8c53c8adeae2f990b9d6ebb21359_1773806240551_0.png){:height 1480, :width 423}
+  	- **Organelles-** membrane-enclosed structures within eukaryotic cells
+  	- **Electron microscope-** focuses a beam of electrons through the specimen of the light (or electrons)
+  	- **Scanning electron microscope-** especially useful for detailed study for the topography of a specimen
+  	- **Transmission electron microscope-** used to study the internal structure of cells
+  	- Increasing ability to see cells in microscope by using florescent markers
+  	- Increasing magnification community
+  	- Cyro-electron microscopy allows specimens to be preserved at extremely low temperatures
+  	- **Cytology-** the study of cell structure
+  - ## Cell Fractionation
+  	- **Cell fractionation-** Takes cells apart and separates major organelles and other subcellular structures from one another
+  		- Centrifuge spins test tubes holding disrupted cells
 - # 7.2- Internal membranes
 	- ## Prokaryotic and Eukaryotic cells
 		- All cells share basic features
@@ -48,4 +48,217 @@ title: Chapter 7
 		- ![image.png](../assets/image_1773810006082_0.png)
 - # 7.3- Genetic instructions
 	- ## The nucleus
-		
+		- **Nucleus-** contains most of the genes of the eukaryotic cell
+		- **Nuclear envelope-** encloses the nucleus- separates contents from the cytoplasm
+		- ![5b1d59a61ab5e17165874ebd911b5370 (2).jpg](../assets/5b1d59a61ab5e17165874ebd911b5370_(2)_1773847714137_0.jpg)
+		- Nuclear envelope is a double membrane
+		- Membranes are seperated by 20-40nm
+		- At the lip of each pore, the inner and outer membranes of the nuclear envelope are continous
+		- The nuclear side of the envelope is lined by the **nuclear lamina-** netlike array of protein filaments (called intermediate filaments)
+		- **Chromosomes-** DNA organization into distinct units
+			- Each chromosomes contains one long DNA molecule associated with many proteins
+			- Some proteins help coil the DNA molecule of each chromosome
+		- **Chromatin-** The complex of DNA and proteins making up chromosomes
+		- **Nucleolus-** Ribosomal RNA is synthesized from genes in DNA.
+		- Nucleus directs protein synthesis by synthesizing messenger RNA that carries information from the DNA
+	- ## Ribosomes
+		- **Ribosomes-** complexes made of ribosomal RNAs and proteins are the cellular components that carry out protein synthesis
+		- Cells with high rates of protein synthesis have particularly large numbers of ribosomes and prominent nuceoli
+		- ![65cf9da1f1256b5c44e75d6f23fac562.jpg](../assets/65cf9da1f1256b5c44e75d6f23fac562_1773856216990_0.jpg)
+		- Ribosomes build proteins in two cytoplasmic regions
+		- **Free ribosomes-** suspended in the cytosol
+		- **Bound ribosomes-** attach to the outside of the endoplasmic reticulum or nuclear envelope
+		- Both are structurally identical
+		- Ribosomes generally make proteins designed for insertion into membranes
+		- Cells that specialize in protein secretion-for instance, the cell of the pancreas that secrete digestive enzymes
+- # 7.4- The endomembrane
+	- **The endomembrane system-** includes the nuclear envelope, the endoplasmic reticulum, Golgi apparatus, lysosomes, vesicles and vacuoles and the plasma membrane
+		- Carries out a variety of tasks in the cell, synthesis of proteins, transport of proteins into membranes and organelles
+		- Membranes of the system are related either through direct physical continuity by the transfer of membrane segments as vesicles
+	- **Vesicles-** sacs made of membrane
+	- ## The Endoplasmic reticulum
+		- **Endoplasmic reticulum-** an extensive network of membranes that it accounts for more than half of the total membrane in many eukaryotic cells
+		- Consists of a network of membranous tubules and sacs called *cisterna*
+		- The space between the two membranes of the envelope is continuous with the lumen of the ER
+		- ![69498fa54bbdad18acf14fb8ddfeeb04.jpg](../assets/69498fa54bbdad18acf14fb8ddfeeb04_1773857385599_0.jpg)
+		- **Smooth ER-** outer surface lacks ribosomes
+		- **Rough ER-** studded with ribosomes on the outer surface of the membrane and thus appears rough on ER microscopes
+	- ### Functions of Smooth ER
+		- Synthesis of lipids, metabolism of carbohydrates, detox of drugs and poisons, calcium ions
+			- Lipids- oils, steroids and new membrane phospholipids
+			- Other enzymes of the Smooth ER help detoxify drugs and proteins
+		- **Glycoproteins-** proteins with carbohydrates covalently bonded to them
+		- **Transport vesicles-** Vesicles in transit from one part of the cell to another
+		- Rough ER is the membrane factory for the cell
+	- ### The Golgi Apparatus
+		- Shipping and receiving center
+		- Many transport vesicles travel to the **Golgi aparatus**
+		- ![bd716112dd6dad709fa00745090b061d.jpg](../assets/bd716112dd6dad709fa00745090b061d_1773857377177_0.jpg){:height 453, :width 718}
+		- Has a strict structure directionally
+		- cis face
+		- trans face
+		- Also manufactures macromolecules
+		- Refines her products in stages with different cisternae containing unique teams of enzymes
+			- They go from the cis to the trans face
+		- Molecular identification tags such as phosphate groups added to the Golgi products aid in sorting by acting like zip codes on mail
+	- ### Lysozomes
+		- **Lysosome-** a membranous sack of hydrolytic enzymes that many eukaryotic cells use to hydrolyze macromolecules
+		- Made by rough enzymes and lysosomal membrane are made by rough ER
+		- Carry out intracellular digestion
+		- **Phagocytosis-** Engulfing other smaller organisms or food particles
+		- Digestion products pass into cytosol and become nutrients for the cell
+		- ![9fbcd04ec12262c32c49da95c90cb139.jpg](../assets/9fbcd04ec12262c32c49da95c90cb139_1773885587087_0.jpg)
+		- Recycle the cells organic material- autophagy
+			- Damaged organelle becomes surrounded by a double membrane
+			- Cell continually renews itself
+		- Lysosomal storage diseases can occur in humans
+	- ## Vacuoles: Maintence compartments
+		- **Vacuoles-** Large vesicles derived from the endoplasmic reticulum and Golgi apparatus
+			- Selective
+		- **Food vacuoles-** A membranous sac formed by phagocytosis of microorganisms or particles to be used as food by the cell.
+		- **Contractile vacuoles-** A membranous sac that helps move excess water out of certain freshwater protists.
+		- Hold reserves of important organic compounds
+		- Mature plant cells contain a central vacuole
+		- **Central vacuole-** In a mature plant cell, a large membranous sac with diverse roles in growth, storage, and sequestration of toxic substances.
+			- Plays a major role in the growth of plant cells-enlarge as the vacuole absorbs water
+			- Occupies only a thin layer between central vacuole and the plasma membrane
+		- ![d86ccc4fa138853109191746e0b8160b.jpg](../assets/d86ccc4fa138853109191746e0b8160b_1773890236806_0.jpg)
+- # 7.5 - Mitochondria and Chloroplasts
+	- Convert energy to forms that cells can use for work
+	- **Mitochondria-** The compartment of the mitochondrion enclosed by the inner membrane and containing enzymes and substrates for the citric acid cycle, as well as ribosomes and DNA.
+	- Uses oxygen to drive the generation of ATP by extracting energy from sugars, fats and other fuels
+	- Chloroplasts found in plants and algae are the sites of photosynthesis
+	- ## Evolutionary origins
+		- **Endosymbiont theory-** The theory that mitochondria and plastids originated as prokaryotic cells engulfed by a host cell. The engulfed cell and its host cell then evolved into a single organism. See also endosymbiosis.
+		- ![8d6df680b4f87e09d7c669877986bc47.jpg](../assets/8d6df680b4f87e09d7c669877986bc47_1773890938208_0.jpg){:height 755, :width 534}
+		- Ancestors may have had more membranes
+		- DNA in these organelles programs the synthesis of some organelle proteins on ribosomes
+	- ## Chemical energy conversion
+		- Found in nearly all eukaryotic cells
+		- Cells that move or contract have proportionally more mitochondria per volume than less active cells
+		- Phospholipid bilayer with a unique collection of embedded proteins
+		- **Cristae-** An infolding of the inner membrane of a mitochondrion. The inner membrane houses electron transport chains and molecules of the enzyme catalyzing the synthesis of ATP (ATP synthase).
+		- Divides the mitochondrion into two internal compartments
+			- Intermembrane space
+			- **Mitochondrial matrix-** The compartment of the mitochondrion enclosed by the inner membrane and containing enzymes and substrates for the citric acid cycle, as well as ribosomes and DNA.
+				- Catalyze cellular respiration
+				- Structure → function
+		- ![c281e5dae9fbad6f43107255468a0bc4.jpg](../assets/c281e5dae9fbad6f43107255468a0bc4_1773891754259_0.jpg){:height 395, :width 644}
+		- Around 1-10 um
+	- ## Chloroplasts- Capture of light energy
+		- Contain chlorophyll
+		- Produce sugar
+		- 3-6 um in length
+		- ![82882c8058897931813af87de79ceb46.jpg](../assets/82882c8058897931813af87de79ceb46_1773891886623_0.jpg)
+		- (a) Many plants have lens-shaped chloroplasts, as shown here in a diagram and a TEM_ A chloroplast has three compartments: the intermembrane space, the stroma, and the thylakoid space. Free ribosomes are present in the stroma, as are copies of chloroplast DNA molecules. (b) This light micrograph, at a much lower magnification than the TEM, shows a whole cell of the green alga Spirogyra crassa, which is named for the spiral arrangement of each cell's chloroplasts.
+		- Partitioned from the cytosol by an envelope consisting of 2 membranes
+		- **Thylakoids-** A flattened, membranous sac inside a chloroplast. Thylakoids often exist in stacks called grana that are interconnected; their membranes contain molecular “machinery” used to convert light energy to chemical energy.
+			- Stacked
+		- **Granum-** A stack of membrane-bounded thylakoids in the chloroplast. Grana function in the light reactions of photosynthesis.
+		- **Stroma-** The dense fluid within the chloroplast surrounding the thylakoid membrane and containing ribosomes and DNA; involved in the synthesis of organic molecules from carbon dioxide and water.
+		- Divide the chloroplast space into three departments
+		- Diagrams do not accurately depict dynamic nature in the cell- they are mobile in the cell
+		- **Plastids-** One of a family of closely related organelles that includes chloroplasts, chromoplasts, and amyloplasts. Plastids are found in cells of photosynthetic eukaryotes.
+			- Chromoplasts- pigments
+	- ## Peroxisomes
+		- **Peroxisome-** An organelle containing enzymes that transfer hydrogen atoms from various substrates to oxygen (O2), producing and then degrading hydrogen peroxide (H2O2).
+		- ![c7c9fac4b7b5c2647f13346db203f3c0.jpg](../assets/c7c9fac4b7b5c2647f13346db203f3c0_1773892558204_0.jpg){:height 401, :width 593}
+		- Glyoxysomes- found in fat-storing tissues of plant seeds
+		- Grow larger by incorporating proteins made in cytosol and ER
+- # 7.6- The cytoskeleton
+	- **cytoskeleton-** A network of microtubules, microfilaments, and intermediate filaments that extend throughout the cytoplasm and serve a variety of mechanical, transport, and signaling functions.
+	- ![ed079e7a02b85eef20a9930276098c73.jpg](../assets/ed079e7a02b85eef20a9930276098c73_1773893055831_0.jpg){:height 517, :width 605}
+	- ## Role of the cytoskeleton
+		- Give mechanical support to the cell and maintain its shape
+		- Important for animal cells which lack walls
+		- Motility- includes changes in cell location and movements of cell parts
+		- **motor proteins-** A protein that interacts with cytoskeletal elements and other cell components, producing movement of the whole cell or parts of the cell.
+		- Work together with the plasma membrane molecules to allow cells to move along fibers outside the cell
+			- Used to "walk to their destination"
+		- ![a815b99cea3a561b0a61d4e4839a06ac.jpg](../assets/a815b99cea3a561b0a61d4e4839a06ac_1773893361433_0.jpg){:height 802, :width 620}
+	- ## Components of the cytoskeleton
+		- Microtubules are thickest
+		- Microfilaments are thinnest
+		- Intermediate filaments are fibers with diameters in a middle range
+		- ![a0138c0d5daf8b639c8e651b3650e4ca.jpg](../assets/a0138c0d5daf8b639c8e651b3650e4ca_1773893521146_0.jpg)
+	- ### Microtubes
+		- All eukaryotic cells
+		- **microtubules-** A hollow rod composed of tubulin proteins that makes up part of the cytoskeleton in all eukaryotic cells and is found in cilia and flagella.
+		- Dimer- molecule made up of 2 components
+			- A/B tublin
+			- Grow in length by adding tubulin dimers
+			- One end can accumulate more than the other
+		- Serve as tracks for organelles with motor proteins
+	- ### Centrosomes and Centrioles
+		- **centrosome-** A structure present in the cytoplasm of animal cells that functions as a microtubule-organizing center and is important during cell division. A centrosome has two centrioles.
+		- **centrioles-** A structure in the centrosome of an animal cell composed of a cylinder of microtubule triplets arranged in a “9 + 0” pattern. A centrosome has a pair of centrioles.
+		- Many eukaryotic cells not in animals lack
+		- ![3de76945a5b45ef4130cdf9f954ba799.jpg](../assets/3de76945a5b45ef4130cdf9f954ba799_1773894486044_0.jpg)
+	- ### Cilia and Flagella
+		- **flagella-** A long cellular appendage specialized for locomotion. Like motile cilia, eukaryotic flagella have a core with nine outer doublet microtubules and two inner single microtubules (the “9 + 2” arrangement) ensheathed in an extension of the plasma membrane. Prokaryotic flagella have a different structure.
+			- Contain microtubules
+			- Extend from cells that are attached tightly together in a sheet that is part a tissue layer
+			- Found in the reproductive tract
+		- Usually occur in large numbers on the cell surface
+		- ![c8a0cdce04e6cea3d49c90e57ee49a0d.jpg](../assets/c8a0cdce04e6cea3d49c90e57ee49a0d_1773894987985_0.jpg)
+		- **cilium-** A short appendage containing microtubules in eukaryotic cells. A motile cilium is specialized for locomotion or moving fluid past the cell; it is formed from a core of nine outer doublet microtubules and two inner single microtubules (the “ 9+2” arrangement) ensheathed in an extension of the plasma membrane. A primary cilium is usually nonmotile and plays a sensory and signaling role; it lacks the two inner microtubules (the “ 9+0” arrangement).
+		- ![fbe11e3046928f3c2ced72f5925c0f3e.jpg](../assets/fbe11e3046928f3c2ced72f5925c0f3e_1773895080363_0.jpg)
+		- **dyneins-** In cilia and flagella, a large motor protein extending from one microtubule doublet to the adjacent doublet. ATP hydrolysis drives changes in dynein shape that lead to bending of cilia and flagella.
+		- Two feet walk around microtubule
+		- Walking movement is coordinated so that it happens one side of the circle at a time
+	- ### Microfilaments
+		- **Microfilaments-** A cable composed of actin proteins in the cytoplasm of almost every eukaryotic cell, making up part of the cytoskeleton and acting alone or with myosin to cause cell contraction; also called an actin filament.
+			- Built by actin fillament
+		- **actin-** A globular protein that links into chains, two of which twist helically about each other, forming microfilaments (actin filaments) in muscle and other kinds of cells.
+		- Microfilaments appear to be present in all eukaryotic cells
+		- **cortex-** (1) The outer region of cytoplasm in a eukaryotic cell, lying just under the plasma membrane, that has a more gel-like consistency than the inner regions due to the presence of multiple microfilaments. (2) In plants, ground tissue that is between the vascular tissue and dermal tissue in a root or eudicot stem.
+		- ![734abdbd9d419b9c61e4d714fe0b2895.jpg](../assets/734abdbd9d419b9c61e4d714fe0b2895_1773898576998_0.jpg)
+		- Well known for their role in cell motility
+		- **myosin-** A type of motor protein that associates into filaments that interact with actin filaments to cause cell contraction.
+			- Contraction is described in detail
+		- **pseudopodia-** A cellular extension of amoeboid cells used in moving and feeding.
+		- **cytoplasmic streaming-** A circular flow of cytoplasm, involving interactions of myosin and actin filaments, that speeds the distribution of materials within cells.
+		- ![ecb0b92e4b60d6eee0555df20fc09453.jpg](../assets/ecb0b92e4b60d6eee0555df20fc09453_1773899020669_0.jpg)
+	- ### Intermediate filaments
+		- **Intermediate filaments-** A component of the cytoskeleton that includes filaments intermediate in size between microtubules and microfilaments.
+		- Microtubules and microfilaments are found in all eukaryotic cells
+		- Specialized for bearing tension
+		- More permanent fixtures of cells
+		- Often persist even after the cells die
+- # 7.7-Extracelluar components
+	- ## Cell walls of plants
+		- **cell wall-** A protective layer external to the plasma membrane in the cells of plants, prokaryotes, fungi, and some protists. Polysaccharides such as cellulose (in plants and some protists), chitin (in fungi), and peptidoglycan (in bacteria) are important structural components of cell walls.
+		- Protects the plant cell, maintains it shape, prevents excessive uptake of water
+			- Hold the plant up against the force of gravity
+	- ![b7da950ab7403443371b5b0d796f1c8e.jpg](../assets/b7da950ab7403443371b5b0d796f1c8e_1773899654808_0.jpg)
+		- Much thicker than the plasma membrane, 0.1-many micrometers
+		- **primary cell wall-** In plants, a relatively thin and flexible layer that surrounds the plasma membrane of a young cell.
+		- **middle lamella-** In plants, a thin layer of adhesive extracellular material, primarily pectins, found between the primary walls of adjacent young cells.
+		- **secondary cell wall-** In plant cells, a strong and durable matrix that is often deposited in several laminated layers around the plasma membrane and provides protection and support.
+	- ## ECM of Animal cells
+		- **extracellular matrix-** The meshwork surrounding animal cells, consisting of glycoproteins, polysaccharides, and proteoglycans synthesized and secreted by cells. (ECM)
+			- Main ingredients are glycoproteins and other carbohydrate-containing molecules secreted by cells
+		- **collagen-** A glycoprotein in the extracellular matrix of animal cells that forms strong fibers, found extensively in connective tissue and bone; the most abundant protein in the animal kingdom.
+			- 40% of the protein of the total protein in the human body
+			- Fibers embedded in network made up of proteoglycans
+		- **proteoglycans-** A large molecule consisting of a small core protein with many carbohydrate chains attached, found in the extracellular matrix of animal cells. A proteoglycan may consist of up to 95% carbohydrate.
+			- Large complexes can form
+		- **fibronectin-** An extracellular glycoprotein secreted by animal cells that helps them attach to the extracellular matrix.
+		- **integrins-** In animal cells, a transmembrane receptor protein with two subunits that interconnects the extracellular matrix and the cytoskeleton.
+		- ![5f61e62aa5a1b8c9b2eaf8bc4caaca2e.jpg](../assets/5f61e62aa5a1b8c9b2eaf8bc4caaca2e_1773900686710_0.jpg)
+		- Information about the ECM might reach nucleus by a combination of mechanical and chemical signaling pathways
+			- Fibronectin, integrins and microfilaments
+			- Cytoskeleton changes may in turn trigger signaling pathways inside of the cells
+	- ## Cell junction
+	- ### Plasmodesmata in Plant Cells
+		- **plasmodesmata-** An open channel through the cell wall that connects the cytoplasm of adjacent plant cells, allowing water, small solutes, and some larger molecules to pass between the cells.
+		- Plasma membranes of adjacent cells line the channel of each plasmodesma and are continous
+		- Unify the plant
+		- Allow solutes to pass between parts of the cell
+		- ![7b4ca3541a7e5f94083015927dafd54e.jpg](../assets/7b4ca3541a7e5f94083015927dafd54e_1773901968886_0.jpg)
+	- ### Tight Junctions, Desmosomes, Gap Junctions
+		- **desmosomes-** A type of intercellular junction in animal cells that functions as a rivet, fastening cells together.
+		- Gap junction poles are not lined with membranes
+		- ![b2a21e9f8b9812a1c59d12376aafc654.jpg](../assets/b2a21e9f8b9812a1c59d12376aafc654_1773902247314_0.jpg)
+		-
+		-
