@@ -1,5 +1,6 @@
 ---
 title: Chapter 8
+weight: 1
 ---
 
 - # Cellular membrane

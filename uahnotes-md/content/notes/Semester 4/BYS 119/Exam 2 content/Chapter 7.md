@@ -1,5 +1,6 @@
 ---
 title: Chapter 7
+weight: 1
 ---
 
 - # 7.1- Microscopes

@@ -1,0 +1,82 @@
+---
+title: Chapter 10
+weight: 
+---
+
+- # Cell Respiration
+	- ![960f7eeff8570d4c495abda1b457df28.jpg](../assets/960f7eeff8570d4c495abda1b457df28_1774120724158_0.jpg){:height 658, :width 601}'
+- ## Catabolic pathways
+	- Outside source of energy is the sun, sun energy stored in organic molecules of food
+	- **fermentation-** A catabolic process that makes a limited amount of ATP from glucose (or other organic molecules) without an electron transport chain and that produces a characteristic end product, such as ethyl alcohol or lactic acid.
+	- **aerobic respiration-** A catabolic pathway for organic molecules, using oxygen (O2) as the final electron acceptor in an electron transport chain and ultimately producing ATP. This is the most efficient catabolic pathway and is carried out in most eukaryotic cells and many prokaryotic organisms.
+	- **cellular respiration-** The catabolic pathways of aerobic and anaerobic respiration, which break down organic molecules and use an electron transport chain for the production of ATP.
+		- Synonym for aerobic respiration because of relationship to organismal resp
+	- Organic compounds + oxygen rar Carbon dioxide + Water + Energy
+	- ![image.png](../assets/image_1774126888920_0.png){:height 69, :width 498}
+	- This breakdown of glucose is exergonic, having a free-energy change of —686 kcal (—2,870 kJ) per mole of glucose decomposed (AG = —686 kcal/mol). Recall that a negative AG(AG < O) indicates that the products of the chemical process store less energy than the reactants and that the reaction can happen spontaneously—in other words, without an input of energy .
+	- Catabolic pathways do not directly move flagella, pump solutes across membranes, polymerize monomers, perform other cellular work
+- ## Redox Reactions
+	- Transfer of electrons during chemical reactions
+	- Relocation of electrons releases energy stored in organic molecules
+- ### The Principle of Redox
+	- **redox reactions-** A chemical reaction involving the complete or partial transfer of one or more electrons from one reactant to another; short for reduction-oxidation reaction.
+	- **oxidation-** The complete or partial loss of electrons from a substance involved in a redox reaction.
+	- **reduction-** The complete or partial addition of electrons to a substance involved in a redox reaction.
+	- ![image.png](../assets/image_1774127347740_0.png)
+	- **reducing agent-** The electron donor in a redox reaction.
+	- **oxidizing agent-** The electron acceptor in a redox reaction.
+	- Some reactions change the degree of electron sharing in covalent bonds
+	- ![0571b62b9a7ae244168882376529345a.jpg](../assets/0571b62b9a7ae244168882376529345a_1774129558281_0.jpg)
+	- O2 is one of the most powerful oxidizing agents
+	- Energy must be added to pull an electron away from an atom, just as energy is required to push a ball uphill
+- ### Oxidation of Organic Fuel molecules during cellular respiration
+	- ![0ca17ebeac16cbc06bd1751d46799029.jpg](../assets/0ca17ebeac16cbc06bd1751d46799029_1774130028701_0.jpg)
+		- Glucose is oxidized and O2 is reduced
+	- Hydrogen is transferred from glucose to the O atoms in O2
+	- Energy state of the electron changes as hydrogen is transferred to oxygen
+	- Oxidation of glucose transfers electrons to a lower energy state
+	- Main energy foods (carbs and fats) are reservoirs of electrons
+	- Activation energy is the only barrier
+- ### Stepwise Energy harvest
+	- Cellular respiration does not oxidize glucose/other fuels in one step
+	- Each step catalyzed by an enzyme
+	- Electrons are stripped from the glucose at key steps
+	- Typically- each electron travels with a proton-and to a hydrogen atom
+	- Hydrogen atoms not transferred directly to O2, but are instead passed to an electron carrier
+	- **NADH-** The reduced form of nicotinamide adenine dinucleotide that temporarily stores electrons during cellular respiration. NADH acts as an electron donor to the electron transport chain.
+	- Enzymes called dehydrogenases remove a pair of hydron atoms (2 electrons and 2 protons) from the substrate
+		- Delivers the 2 electrons along with 1 proton to its coenzyme
+	- ![d35b093a39b430bbd73113d038f57748.jpg](../assets/d35b093a39b430bbd73113d038f57748_1774131926452_0.jpg)
+	- ![0396bf1ff7f63105a4d56e9ef8d794c6.jpg](../assets/0396bf1ff7f63105a4d56e9ef8d794c6_1774131928537_0.jpg)
+	- Electrons lose very little of their potential energy where they are transferred from glucose to NAD+
+		- Stored energy that can be tapped to make ATP when electrons complete fall down energy gradient
+	- ![e65c8b59c0c0a9ad7a269e5bf6574b78.jpg](../assets/e65c8b59c0c0a9ad7a269e5bf6574b78_1774132537666_0.jpg)
+	- Electron transfer from NADH to oxygen is an exergonic reaction with a free-energy change of —53 kcal/mol (—222 kJ/mol). Instead of this energy being released and wasted in a single explosive step, electrons cascade down the chain from one carrie molecule to the next in a series of redox reactions, losing a small amount of energy with each step until they finally reach oxygen, the terminal electron acceptor, which has a very great affinity for electrons.
+		- Each downhill carrier has a greater affinity for electrons and is capable of accepting electrons from oxidizing
+	- Glucose → NADH → Electron Transport Chain → Oxygen
+- ## Stages of Cellular Respiration
+	- ![4dae8c4b3c3a72d9174853426fd98b39.jpg](../assets/4dae8c4b3c3a72d9174853426fd98b39_1774132803940_0.jpg)
+	- Stage 2 and 3 are referred to as cellular respiration
+	- **Glycolysis-** A series of reactions that ultimately splits glucose into pyruvate. Glycolysis occurs in almost all living cells, serving as the starting point for fermentation or cellular respiration.
+		- Occurs in cytosol
+	- **citric acid cycle-** A chemical cycle involving eight steps that completes the metabolic breakdown of glucose molecules begun in glycolysis by oxidizing acetyl CoA (derived from pyruvate) to carbon dioxide; occurs within the mitochondrion in eukaryotic cells and in the cytosol of prokaryotes; together with pyruvate oxidation, the second major stage in cellular respiration.
+	- ![27b24a2702de6632ffeb7e4fdea1975a.jpg](../assets/27b24a2702de6632ffeb7e4fdea1975a_1774132986557_0.jpg)
+	- During glycolysis, each glucose molecule is broken down into üvo molecules of pyruvate. In eukaryotic cells, as shown here, the pyruvate enters the mitochondrion. There it is oxidized to acetyl CoA, which will be further oxidized to C02 in the citric acid cycle. The electron carriers NADH and FADH2 transfer electrons derived from glucose to electron transport chains. During oxidative phosphorylation, electron transport chains convert the chemical energy to a form used for ATP synthesis in the process called chemiosmosis. (During earlier steps of cellular respiration, a few molecules of ATP are synthesized in a process called substrate-level phosphorylation.)
+	- Energy released at each step of the chain is stored so the mitochondrion can use to make ATP to ADP- Known as Oxidative phosophorylation
+	- **oxidative phosphorylation-** The production of ATP using energy derived from the redox reactions of an electron transport chain; the third major stage of cellular respiration.
+	- Inner membrane of the the mitochondrion is the site of electron transport and chemosis → both make up oxidative phosphorylation
+		- Oxidative phosphorylation accounts for 90% of the ATP
+	- **substrate-level phosphorylation-** The enzyme-catalyzed formation of ATP by direct transfer of a phosphate group to ADP from an intermediate substrate in catabolism.
+		- Occurs when enzyme transfers a phosphate group from substrate molecule to ADP
+- # 10.2- Glycolysis harvests chemical energy by oxidizing glucose
+	- Glycolysis means "sugar splitting"
+	- 6 carbon sugar is split into 2 3 carbon sugars
+	- Glycolysis can be divided into two phases- energy investment phase and energy payoff phase
+		- Investment: Cell spends ATP
+		- Payoff: ATP is produced by substrate-level phosphorylation and NAD+ is reduced to NADH
+	- ![3c3ca33f33c1f66de3fb6a1cb3ceeb4a.jpg](../assets/3c3ca33f33c1f66de3fb6a1cb3ceeb4a_1774133923936_0.jpg)
+	- ![8cecbe7747b960a4bbd7c5cb953026c6.jpg](../assets/8cecbe7747b960a4bbd7c5cb953026c6_1774133931395_0.jpg)
+	- All of the carbon present in glucose is accounted for in two molecules of pyruvale → No carbon is released as CO2 during glycolysis
+		- Occurs whether or not O2 is present
+		- If O2 is present chemical energy stored in pyruvate and NADH can be extracted by pyruvate oxidization, citric acid cycle and oxidative phosphorylation
+	
