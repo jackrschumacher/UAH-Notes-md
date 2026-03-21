@@ -1,5 +1,6 @@
 ---
 title: Chapter 6
+weight: 1
 ---
 
 
