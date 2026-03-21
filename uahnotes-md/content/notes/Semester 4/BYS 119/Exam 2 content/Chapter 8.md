@@ -1,0 +1,161 @@
+---
+title: Chapter 8
+---
+
+- # Cellular membrane
+
+  - ![997ccaba0befcfa296231da0bbf54608.jpg](../assets/997ccaba0befcfa296231da0bbf54608_1774069145374_0.jpg) ![c321ea02ed9a7a4f1b4800676b1ae664.jpg](../assets/c321ea02ed9a7a4f1b4800676b1ae664_1774069145374_1.jpg) ![92951d16b290c0dd27a936663579854c.jpg](../assets/92951d16b290c0dd27a936663579854c_1774069145374_2.jpg)
+
+- # 8.1- Cellular Membrane
+  - **amphipathic-** Having both a hydrophilic region and a hydrophobic region.
+  - Can exist as a stable boundary between two aqueous compartments
+  	- Hydrophobic and hydrophilic
+  - ![f657bba0c5c6a4bc11c489501359446e.jpg](../assets/f657bba0c5c6a4bc11c489501359446e_1774069766556_0.jpg)
+  - Proteins can reside in phospholipid bilayer with their hydrophilic regions protruding
+  - Optimizes contact of hydrophilic regions of a protein with water in the cytosol and extracelluar fluid
+  - **fluid mosaic model-** The currently accepted model of cell membrane structure, which envisions the membrane as a mosaic of protein molecules drifting laterally in a fluid bilayer of phospholipids.
+  - The proteins are not randomly distributed in the membrane, however. Groups of proteins are often associated in long-lasting, specialized patches, where they carry out common functions. Researchers have found specific lipids in these patches as well and have proposed naming them lipid rafts; however, the debate continues about whether such structures exist in living cells or are an artifact of biochemical techniques. In some regions, the membrane may be much more tightly packed with proteins than shown in . Like all models, the fluid mosaic model is continually being refined as new research reveals more about membrane structure.
+- ## The Fluidity of Membranes
+  - **hydrophobic interactions-** A type of weak chemical interaction caused when molecules that do not mix with water coalesce to exclude water.
+  - Phospholipids switch positions about $$10^7$$ times per second, phospholipid can travel about 2um
+  - Many membrane proteins seem to be held immobile by attachment to cytoskeleton
+  - Proteins mix together
+  - ![d896615ca6e55a0285f22cb831daae69.jpg](../assets/d896615ca6e55a0285f22cb831daae69_1774070697878_0.jpg)
+  - Remains fluid as temperature decreases until phospholipids settle into closely packed arrangement and the membrane solidifies
+  - ![43130df9be306ed72c474befb37480c1.jpg](../assets/43130df9be306ed72c474befb37480c1_1774070861327_0.jpg){:height 581, :width 545}
+  - Relatively high temps0 cholesterol makes the membrane less fluid by restraining phospholipid movement
+  - Hinders close packing of phospholipids
+  - Membranes are not very fluid- cannot function if too fluid or not fluid enough
+- ## Evolution of Differences in Membrane
+  - **Evolution-** Variations in the cell membrane lipid compositions of many species appear to evolutionary adaptions that maintain appropriate membrane fluidity under specific enviroment
+  - Some bacteria and archaea thrive at temperatures greater than 90-194
+  - Ability to change the lipid composition of cell membranes in response to changing temperatures vary
+  - Bacteria and archaea also exhibit different proportions of unsaturated phospholipids
+  - Natural selection favors organisms whose mix of membranes whose mix of membrane lipids ensures appropriate level of membrane fluidity
+- ## Membrane proteins and their functions
+  - Mosaic aspect of the fluid mosaic model
+  - 50 kinds of proteins have been found in the plasma membrane of red blood cells
+  - **Integral proteins-** A transmembrane protein with hydrophobic regions that extend into and often completely span the hydrophobic interior of the membrane and with hydrophilic regions in contact with the aqueous solution on one or both sides of the membrane (or lining the channel in the case of a channel protein).
+  - **transmembrane proteins-** A type of integral protein that spans the entire membrane.
+  - Some proteins have hydrophilic channels that allow the passage through the membrane of hydrophilic substances
+  - **Peripheral proteins-** A protein loosely bound to the surface of a membrane or to part of an integral protein and not embedded in the lipid bilayer.
+  - ![a93bff4b4d5b2d92881d1ad58c32dcd7.jpg](../assets/a93bff4b4d5b2d92881d1ad58c32dcd7_1774072301667_0.jpg)
+  - Bacteriorhodopsin (a bacterial transport protein) has a distinct orientation in the membrane, with its N-terminus outside the cell and its C-terminus inside. This ribbon model highlights the secondary structure of the hydrophobic parts, including seven transmembrane a helices, which lie mostly within the hydrophobic interior of the membrane. The nonhelical hydrophilic segments are in contact with the aqueous solutions on the extracellular and cytoplasmic sides of the membrane.
+  - Cytoplasmic side of the plasma membrane, some proteins are held in place by attachment to the cytoskeleton
+  - Membrane proteins may be attached to fibers of the extracellular matrix
+  - ![6d6179610ca3957edf7785d67a345d4f.jpg](../assets/6d6179610ca3957edf7785d67a345d4f_1774072518353_0.jpg)
+  - Proteins on a cells surface are important in the medical field
+  	- A protein called CD4 on the surface of immune cells helps HIV and AIDS infect cells
+  - ![b5815001d43a3aab4cda49892c5790c6.jpg](../assets/b5815001d43a3aab4cda49892c5790c6_1774072664607_0.jpg)
+- ## Membrane carbohydrates in cell-cell recognition
+  - Cells ability to distinguish one type of neighboring cell from another
+  - Usually carbohydrates are usually short, branched chains of fewer than 15 sugar units
+  - **glycolipids-** A lipid with one or more covalently attached carbohydrates.
+  - **glycoproteins-** A protein with one or more covalently attached carbohydrates.
+  - The carbohydrates on the extracellular side of the plasma membrane vary from species to species
+  	- Types of human blood can be distinguished
+- ## Synthesis and Sidedness of Membranes
+  - Have distinct inside and outside faces
+  - Two lipid layers may differ in lipid composition, each protein has directional orientation in the membrane
+  - ![9e3d34e668c75bd44b9945016ad7bfd3.jpg](../assets/9e3d34e668c75bd44b9945016ad7bfd3_1774073575008_0.jpg){:height 460, :width 594}
+- # 8.2- Membrane structure in selective permeability
+  - **selective permeability-** A property of biological membranes that allows them to regulate the passage of substances across them.
+  - Movement of items across the plasma membrane
+  - Substances do not cross the membrane indiscriminatley
+  - Cell is able to take up some small molecules and ions and exclude others
+- ## Permeability of Lipid bilayer
+  - Nonpolar molecules dissolve in the lipid bilayer of the membrane and cross it easily, without the aid of membrane proteins
+  - Hydrophobic interior of the membrane impedes direct passage through the membrane of ions and polar molecules
+  - Polar molecules pass slowly
+  - Gatekeeper system responsible for cells selective permeability
+- ## Transport proteins
+  - Specific ions and variety of polar molecules can't move through cell membranes on their own
+  - **transport proteins-** A transmembrane protein that helps a certain substance or class of closely related substances to cross the membrane.
+  - Transport of water through the membrane in certain cells is greatly facilitated by channel proteins known as aquaporins
+  - Glucose transporter is slective
+  - The selective permeability of a membrane depends on both the discriminating barrier of lipid bilayer
+- # 8.3- Passive transport is diffusion of substance
+  - Have a type of energy called thermal energy due to constant motion
+  - **diffusion-** The random thermal motion of particles of liquids, gases, or solids. In the presence of a concentration or electrochemical gradient, diffusion results in the net movement of a substance from a region where it is more concentrated to a region where it is less concentrated.
+  - ![41bf52c56262cd86e392966f64b9d209.jpg](../assets/41bf52c56262cd86e392966f64b9d209_1774075710446_0.jpg){:height 864, :width 529}
+  - **concentration gradient-** A region along which the density of a chemical substance increases or decreases.
+  - Traffic across cell membrane occurs by diffusion
+  - **passive transport-** The diffusion of a substance across a biological membrane with no expenditure of energy.
+  	- Represents potential energy
+- ## Effects of Osmosis
+  - Solution with a higher solute concentration has a lower free water concentration
+  - **osmosis-** The diffusion of free water across a selectively permeable membrane.
+  - ![2e17a2138dd41aba244d622ec9b974a7.jpg](../assets/2e17a2138dd41aba244d622ec9b974a7_1774076510170_0.jpg)
+- ### Water balance without cell walls
+  - **tonicity-** The ability of a solution surrounding a cell to cause that cell to gain or lose water.
+  - Depends in part on its concentration of solutes that cannot cross the membranes
+  - **isotonic-** Referring to a solution that, when surrounding a cell, causes no net movement of water into or out of the cell.
+  - ![d6cb07e8103f0ed52a9c03aa5e7fb745.jpg](../assets/d6cb07e8103f0ed52a9c03aa5e7fb745_1774076676376_0.jpg)
+  - **hypertonic-** Referring to a solution that, when surrounding a cell, will cause the cell to lose water.
+  	- Will lose water, shrivel, die
+  	- That's why salinity increase can be bad
+  - **hypotonic-** Referring to a solution that, when surrounding a cell, will cause the cell to take up water.
+  - A cell without rigid cell walls cant tolerate excessive uptake or excessive loss of water
+  - **osmoregulation-** Regulation of solute concentrations and water balance by a cell or organism.
+- ### Water Balance of Cells with Cell Walls
+  - Cells of Plants , prokaryotes, fungi and protists surrounded by cell walls
+  - **turgid-** Swollen or distended, as in plant cells. (A walled cell becomes turgid if it has a lower water potential than its surroundings, resulting in entry of water.)
+  	- The ideal state for these type of cells
+  - If isotonic the cells become flaccid and then the plant wilts
+  - **flaccid-** Lacking turgor (stiffness or firmness), as in a plant cell in surroundings where there is a tendency for water to leave the cell. (A walled cell becomes flaccid if it has a higher water potential than its surroundings, resulting in the loss of water.)
+  - Cell wall is of no advantage if the cell is immersed in a hypertonic enviroment
+  - **plasmolysis-** A phenomenon in walled cells in which the cytoplasm shrivels and the plasma membrane pulls away from the cell wall; occurs when the cell loses water to a hypertonic environment.
+- ### Facilitated Diffusion
+  - Many polar molecules and ions blocked by the lipid bilayer of the membrane diffuse passively with the help of transport proteins around the membrane
+  - **facilitated diffusion-** The passage of molecules or ions down their electrochemical gradient across a biological membrane with the assistance of specific transmembrane transport proteins, requiring no energy expenditure.
+  - Two types of transport proteins are channel proteins and carrier proteins
+  - Hydrophilic passageways provided by these proteins can allow water molecules or small ions to diffuse vey quickly from one side of the membrane to the other side of the membrane
+  - ![67c0ebbfb0e02575cb1c34ecf7e64733.jpg](../assets/67c0ebbfb0e02575cb1c34ecf7e64733_1774078099686_0.jpg)
+  - **ion channels-** A transmembrane protein channel that allows a specific ion to diffuse across the membrane down its concentration or electrochemical gradient.
+  - **gated channels-** A transmembrane protein channel that opens or closes in response to a particular stimulus.
+  - Different channels have different stimulus
+  - Seem to undergo a subtle change in shape that translocate the solute binding site across the membrane
+- # 8.4- Active transport uses energy to move solutes
+  - Passive transport because the solute is moving downs its concentration gradient
+- ## The need for energy in Active Transport
+  - **active transport-** The movement of a substance across a cell membrane against its concentration or electrochemical gradient, mediated by specific transport proteins and requiring an expenditure of energy.
+  - Active transport enables a cell to maintain internal concentration of small solutes that differ from concentrations in the enviroment
+  - ATP hydrolysis supplies energy for most active transport
+  - **sodium-potassium pump-** A transport protein in the plasma membrane of animal cells that actively transports sodium out of the cell and potassium into the cell.
+  	- Exchanges Na+ for K+
+  - ![b60df012fa6d6af360b0a3c7dddc9f07.jpg](../assets/b60df012fa6d6af360b0a3c7dddc9f07_1774078753832_0.jpg)
+  - This transport system pumps ions against steep concentration gradients. The pump oscillates between two shapes in a cycle that moves Na+ out of the cell (steps 1 3) and K* into the cell (steps 4 — 6). The üvo shapes have different binding affinities for Na+ and _ ATP hydrolysis powers the shape change by transferring a phosphate group to the transport protein (phosphorylating the protein).
+  - ![ba0cce7920a14c7623bdc87003ac36cc.jpg](../assets/ba0cce7920a14c7623bdc87003ac36cc_1774078850195_0.jpg)
+- ## How Ion pumps maintain membrane potential
+  - All cells have voltage is electrical potential energy
+  - The cytoplasmic side of the membrane is negative in charge relative to the extracellular side because of an unequal distribution of anions and cations on the two sides
+  - **membrane potential-** The difference in electrical charge (voltage) across a cell’s plasma membrane due to the differential distribution of ions. Membrane potential affects the activity of excitable cells and the transmembrane movement of all charged substances.
+  	- Acts like a battery, an energy source that affects the traffic of all charged substances across the membrane
+  - **electrochemical gradient-** The diffusion gradient of an ion, which is affected by both the concentration difference of an ion across a membrane (a chemical force) and the ion’s tendency to move relative to the membrane potential (an electrical force).
+  - **electrogenic pump-** An active transport protein that generates voltage across a membrane while pumping ions.
+  - **proton pump-** An active transport protein in a cell membrane that uses ATP to transport hydrogen ions out of a cell against their concentration gradient, generating a membrane potential in the process.
+- ## Contransport
+  - Solute that exists in different concentrations across a membrane can do work as it moves across the membrane by diffusion in concentration gradient
+  - **cotransport-** The coupling of the “downhill” diffusion of one substance to the “uphill” transport of another against its own concentration gradient.
+  - For instance, a plant cell uses the gradient of H + generated by its ATP-powered proton pumps to drive the active transport of amino acids, sugars, and several other nutrients into the cell. In the example shown in figure 8.19, a cotransporter couples the retum of H + to the transport of sucrose into the cell. This protein can translocate sucrose into the cell against its concentration gradient, but only if the sucrose molecule travels in the company of an H + . The H + uses the transpon protein as an avenue to diffuse down its own electrochemical gradient, which is maintained by the proton pump. Plants use H + /sucrose cotransport to load sucrose produced by photosynthesis into cells in the veins of leaves. The vascular tissue of the plant can then distribute the sugar to roots and other nonphotosynthetic organs that do not make their own sugars.
+  - ![df626ff432113919888dcb0058f323d5 (1).jpg](../assets/df626ff432113919888dcb0058f323d5_(1)_1774080739866_0.jpg){:height 458, :width 634}
+  - A carrier protein, such as this /sucrase cotransporter in a plant cell (top), is able to use the diffusion of down its electrochemical gradient into the cell to drive the uptake of sucrose. (The cell wall is not shown.) Although not technically part of the cotransport process, an ATP-driven proton pump is shown here (bottom), which concentrates outside the cell. The resulting H+ gradient represents potential energy that can be used for active transport—of sucrose, in this case  Thus, ATP hydrolysis indirectly provides the energy necessary for cotransport.
+  - A similar cotransporter in animals transports glucose into intestinal cells together with Na+ , which is moving down its concentration gradient into the cell. The glucose and Na+ then exit the cell into the blood on the opposite side, the glucose by facilitated diffusion and the Na+ by active transport.
+- # Concept 8.5- Bulk transport across the plasma membrane
+- ## Exocytosis
+  - Cell secrets molecules by fusion of vesicles via exocytosis
+  - **fusion-** In evolutionary biology, a process in which gene flow between two species that can form hybrid offspring weakens barriers to reproduction between the species. This process causes their gene pools to become increasingly alike and can cause the two species to fuse into a single species.
+  - **exocytosis-** The cellular secretion of biological molecules by the fusion of vesicles containing them with the plasma membrane.
+  - When the vesicle membrane and plasma membrane come into contact, specific proteins in both membranes rearrange the lipid molecules
+  - ![cc79abc9be1819063d73df248e6d215c.jpg](../assets/cc79abc9be1819063d73df248e6d215c_1774081420807_0.jpg)
+  - Meny secretory cells use exocytosis to export products
+  - Nerve cells use exocytosis to release neurotransmitters
+- ## Endocytosis
+  - **endocytosis-** Cellular uptake of biological molecules and particulate matter via formation of vesicles from the plasma membran
+  - The reverse of exocytosis
+  - Plasma membrane deepens to form a pocket, vesicle contains material that had been outside the cell
+  - ![043ceb5a9b13212db014227be492e3a6.jpg](../assets/043ceb5a9b13212db014227be492e3a6_1774081990869_0.jpg)
+  - Human cells use receptor-mediated endocytosis and the synthesis of steriods
+  - Cholesterol travels in the blood in particles call LDL (Low density lipids)
+  - Cholesterol accumulates in the blood increasing risk of heart attacks or strokes
+  - Endocytosis and exocytosis also provide mechanisms for rejuvenating or remodeling plasma membrane
