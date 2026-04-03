@@ -1,6 +1,6 @@
 ---
 title: Photosynthesis
-
+weight: 2
 ---
 
 - # Photosynthesis

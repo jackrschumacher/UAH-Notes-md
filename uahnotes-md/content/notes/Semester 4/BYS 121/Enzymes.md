@@ -1,10 +1,11 @@
 ---
 title: Enzymes
+weight: 1
 ---
 #### Biological Catalysts
-  
+
 All living organisms continuously perform numerous biochemical reactions to sustain their presence. Most of these reactions require an input of energy to start, which is called the activation energy. Catalysts are chemicals that lower the activation energy. Even though catalysts facilitate a chemical reaction, they are not consumed by it. This means a catalyst can facilitate a specific chemical reaction over and over in succession, increasing the rate of that reaction.  
-  
+
 Enzymes are biological catalysts that increase the speed and efficiency of biochemical reactions. Most enzymes are proteins but certain ribonucleic acid molecules also have catalytic properties. Each type of enzyme can only bind to one or a few specific substrates, therefore, there is a vast diversity of enzymes, all with distinct functions. The specific reaction of an enzyme depends on its active sites, which has shapes that closely matches the shape of its substrates. Upon substrate binding, the enzyme changes shape slightly in a way that allows the chemical reaction to happen more readily, thus reducing the activation energy of the reaction. Once the reaction takes place, the enzyme releases the products and returns to its original shape, which allows it to repeat the process again.  
 - #### Catabolytic versus Anabolic Enzymes
   

@@ -1,0 +1,34 @@
+---
+title: Identify Single Nucleotide Polymorphisms
+weight: 3
+---
+
+- **Detecting single nucleotide variations**
+  - ![Screen_Shot_2020-01-22_at_2.05.52_AM-thumbnail-1040x1040.png](../assets/Screen_Shot_2020-01-22_at_2.05.52_AM-thumbnail-1040x1040_1775250227782_0.png)
+  - Normal occurrence in human cells and can be associated with different phenotypes
+  - Often the result of the change of only a single nucleotide (Nucleotide polymorphisms)
+  - Occur almost once in every 1000 nucleotides and are completely random
+  - SNPs can occur both outside and within genes, if it appears within a gene, the gene has more than one allele
+  - Can serve as genetic markers for a particular phenotype
+  	- Most have no health or development
+- **Techniques**
+  - Cell lysis
+  - Centrifugation
+  - DNA gel electrophoresis
+  - DNA ligation
+  - DNA sequencing
+  - Light microscopy
+  - Nucleic acid purification
+  - PCR
+  - Quantify DNA concentration by spectrometry
+  - Restriction enzyme digest
+  - Tissue culture
+- **Verification techniques**
+  - DNA gel electrophoresis
+  - DNA ligation
+  - DNA sequencing
+  - Immunoprecipiation
+  - Light microscopy
+  - Nuclease digest
+  - Quantify DNA concentration by spectrometry
+  - Transformation
