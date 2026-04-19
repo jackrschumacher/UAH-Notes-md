@@ -1,6 +1,6 @@
 ---
 title: Chapter 15
-
+weight: 15
 ---
 
 - ## Leader vs Manager
@@ -80,5 +80,4 @@ title: Chapter 15
 - ![image.png](../assets/image_1776449911808_0.png)
 - ![image.png](../assets/image_1776449929083_0.png)
 -
-
 
