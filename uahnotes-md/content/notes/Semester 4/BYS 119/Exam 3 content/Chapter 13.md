@@ -1,0 +1,37 @@
+---
+title: Chapter 13
+
+---
+
+- ### Concept 13.1: Offspring acquire genes from parents by inheriting chromosomes
+	- **Gene:** a segment of data involved in producing a polypeptide chain
+	- **Locus:** Specific site of a particular gene on its chromosome
+	- **Asexual reproduction:** Reproduction without the fusion of gametes
+	- **Sexual reproduction:** Combines genes from two parents, leading to genetically diverse offspring
+- ### Concept 13.2: Fertilization and meiosis alternate in sexual life cells
+	- **Somatic cells:** Any biological cell forming the body of a multicellular organism other than a gamete, germ cell, gametocyte or undifferentiated stem cell
+	- **Diploid:** Cell or organism having two sets of chromosomes or twice the haploid number
+	- 46 chromosomes made up of two sets of 23 chromosomes
+	- 22 pairs of homologs that are autosomes
+	- **Homologs:** chromosomes of the same length and gene sequence that pair up during meiosis
+	- **Autosomes:** Any chromosome that is not a sex chromosome; appear in pairs in body cells but as a single chromosomes
+	- **Sex Chromosomes:** A chromosome that determines the sex of an individual
+	- **Haploid gametes:** A mature sexual reproductive cell having a single set of unpaired chromosomes
+	- **Meiosis:** mature haploid reproductive cells that unite during fertilization to form a zygote
+- ### Concept 13.3: Meiosis reduces the number of chromosome sets from diploid to haploid
+	- Two cell divisions of meiosis produce four haploid daughter cells
+	- Meiosis 1:
+		- ![f94815a6eee071708c1855ca9893d668.jpg](../assets/f94815a6eee071708c1855ca9893d668_1776533446326_0.jpg)
+	- Meiosis II: Separates the sister chromatids
+	- Sister chromatid cohesion and crossing over allow chiasmata to hold homologs together until anaphase I
+	- Cohesions are cleaved along the arms at Anaphase I, allow homologs to sperate,
+	- Cohesions are cleaved along the centromeres in anaphase II, releasing sister chromatids from each other
+- ### Concept 13.4: Genetic variation produced in sexual life cycles
+	- 3 events in sexual reproduction contribute to genetic variance:
+		- Independent assortment of chromosomes during meiosis I
+		- Crossing over during meiosis I
+		- Random fertilization of egg cells by sperm
+	- DNA of nonsister chromatids in a homologous pair is broken and rejoined
+	- Genetic variation is the raw material for evolution by natural selection
+	- Mutations are the original source of this variant, recombination of variant genes generates additional genetic diversity
+	-
