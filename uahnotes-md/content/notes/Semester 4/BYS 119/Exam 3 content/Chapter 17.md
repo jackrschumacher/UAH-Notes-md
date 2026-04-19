@@ -1,0 +1,68 @@
+---
+title: Chapter 17
+
+---
+
+- ### Concept 17.1: Genes specify proteins via transcription via transcription and translation
+	- Beadle and Tatum's studies of mutant strains of Neurospora led to one gene- one polypeptide hypothesis
+	- **Gene expression:** Process by which the information contained within a gene is used to produce a functional product, such as protein or functional RNA
+	- **Transcription:** the organic process whereby the DNA sequence in a gene is copied into mRNA; the process whereby a base sequence of messenger RNA is synthesized on a template of complementary DNA
+	- **Template Strand (DNA):** Specific strand of DNA double helix used by RNA polymerase as a blueprint to synthesize messenger RNA during transcription
+	- **Translation:** the process whereby genetic information coded in messenger RNA directs the formation of a specific protein at a ribosome in the cytoplasm
+	- **Messenger RNA:** the template for protein synthesis; the form of RNA that carries information from DNA in the nucleus to the ribosome sites of protein synthesis in the cell
+	- **codons:** Genetic information is encoded as a sequence of nonoverlapping nucleotide triplets-codons
+		- Either translated into an amino acid (61/64 codons) or serves as a stop signal (3 codons)
+	- **Reading frame:** Specific choice out of the possible ways to read a sequence of nucleotides in a nucleic acid
+- ### Concept 17.2: Transcription is the DNA-directed synthesis of RNA: A closer look
+	- RNA synthesis is catalyzed by RNA polymerase
+	- **RNA polymerase:** the enzyme that copies DNA into RNA
+	- Transcription follows the same base pairing rules as DNA replication- in RNA uracil substitutes for Thymine
+	- ![4366c75ced706389c91225908aacbf74.jpg](../assets/4366c75ced706389c91225908aacbf74_1776567397926_0.jpg)
+	- 3 stages:
+		- Initiation
+		- Elongation
+		- Termination
+	- **Promoter sequence:** A sequence of DNA to which proteins bind to initiate transcription of a single RNA transcript from DNA downstream
+		- **TATA box:** sequence of DNA found in the core promoter region of genes in archaea and eukaryotes
+	- **Transcription factors:** A protein that controls the rate of transcription of genetic information from DNA to mRNA
+	- **Transcription initiation complex:** large, multi-protein structure that assembles at the promoter region of DNA to begin transcription
+- ### Concept 17.3: Eukaryotic cells modify RNA after transcription
+	- Eukaryotic mRNAs undergo RNA processing - includes RNA splicing, addition of a modified 5' cap to 5' end, and a poly-A tail to the 3' end
+		- **RNA processing:** Chemical alteration following transcription to produce a mature RNA molecule
+		- **Poly-A:** triggers the binding of eukaryotic initiation factor 4 complex
+	- Most eukaryotic genes are split into segments: introns interspersed among the exons
+	- **introns:** Nucleotide sequence within a gene that is not expressed or operative in the final RNA product
+	- **exons:** Any part of a gene that will form a part of the mature RNA
+	- **RNA Splicing:** post-transcription process in eukaryotes that edits pre-mRNA by removing introns and joining coding regions to creature mature RNA
+	- **Spliceosomes:** found within the nucleus of eukaryotic cells, assembled from small nuclear RNAs
+		- Removes introns from transcribed pre-mRNA
+	- **Ribozymes:** molecules that have the ability to catalyze specific biochemical reactions (RNA splicing)
+	- ![bd0bb5731d4e02a642c44ee8bfa732ad.jpg](../assets/bd0bb5731d4e02a642c44ee8bfa732ad_1776567883408_0.jpg)
+- ### Concept 17.4: Translation is RNA-directed synthesis of a polypeptide
+	- Cell translates and mRNA message into protein using tRNA
+	- **Transfer RNAs:** small RNA molecule that acts as an essential adaptor in protein synthesis- bridging the gap between mRNA and amino acids
+	- **aminoacytl-tRNA synthetase:** essential enzymes that catalyze the binding of specific amino acids to corresponding tRNA molecules
+	- **Anticodon:** An adaptor molecule composed of RNA, typically 76 to 90 nucleotides in length
+	- **Ribosome:** an organelle in the cytoplasm of a living cell; they attach to mRNA and move down it one codon at a time and then stop until tRNA brings the required amino acid; when it reaches a stop codon it falls apart and releases the completed protein molecule for use by the cell; "the ribosome is the site of protein synthesis"
+	- **Ribosomal RNAs (rRNAs):** a type of non-coding RNA which is the primary component of ribosomes
+	- Ribosomes coordinate the three stages of translation
+	- Formation of peptide bonds between amino acids is catalyzed by rRNAs as tRNAs move through A and P sites through the E site
+	- ![a6599de46894ff150c1e422915557cac.jpg](../assets/a6599de46894ff150c1e422915557cac_1776568913152_0.jpg)
+	- After translation, proteins may be modified by cleavage or attachment of sugars, lipids, or other chemical groups
+	- Free ribosomes in the cytosol initiate synthesis of all proteins- proteins with a signal peptide are synthesized on the ER
+	- **Signal peptide:** a short peptide, present at the N-terminus of most newly synthesized proteins that are destined toward secretory pathway
+	- Gene can be transcribed by multiple RNA polymerases simultaneously
+	- **Polyribosome:** a group of ribosomes bound to a mRNA molecule like "beads" on a thread
+- ### Concept 17.5: Mutations of one or a few nucleotides that can affect protein structure and function
+	- **Mutations:** (biology) an organism that has characteristics resulting from chromosomal alteration
+	- **Point mutations:** a single nucleotide base is changed, inserted, or deleted from a DNA or RNA sequence of an organisms genome
+	- **Nucleotide-pair substitutions:** a type of point mutation where one nucleotide base pair in DNA is replaced by another
+	- **Missense:** a point mutation in which a single nucleotide change results in a codon that codes for a different amino acid
+	- **Nonsense mutations:** point mutation in a sequence of DNA that results in a nonsense codon/ premature stop codon
+	- **Frameshift mutations:** genetic mutation caused by indels- of a number of nucleotides in a DNA sequence that is not divisible by three
+	- Spontaneous mutations can occur during DNA replication, recombination or repair
+	- **Mutagens:** Physical or chemical agent that permanently changes genetic material, usually DNA
+	- **CRISPR-Cas9 system:** revolutionary, fast, precise, genome-editing technology
+		- Technical and ethical questions on how this should be used
+		
+

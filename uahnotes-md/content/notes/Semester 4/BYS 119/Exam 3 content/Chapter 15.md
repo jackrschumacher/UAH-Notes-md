@@ -1,0 +1,37 @@
+---
+title: Chapter 15
+---
+
+- ### Concept 15.1: Morgan and Mendelian inheritance
+	- **Chromosome theory of inheritance:** Genes are located on chromosomes and that the behavior of chromosomes accounts
+- ### Concept 15.2: Sex-linked genes exhibit unique patters of inheritance
+	- Sex is chromosomally based (mostly)
+	- Humans have X-Y chromosome system
+	- **Sex-linked genes:** Described sex specific patters of inheritance and expression when a gene is present on a sex chromosome rather than a non sex chromosome
+	- **Barr Body:** an inactive X chromosome that occurs during development
+- ### Concept 15.3: Sex-linked genes exhibit unique patters of inheritance
+	- ![6a6f2aaec6ce2fd8a25a580f75631691.jpg](../assets/6a6f2aaec6ce2fd8a25a580f75631691_1776547966764_0.jpg){:height 545, :width 628}
+	- F1 dihybrid testcross yields parental types with the same combination of traits as those in the P generation parents and recombinant types
+	- Unlinked genes exhibit a 50% frequency recombination in the gametes
+	- **Parental types:** offspring that posses the same phenotypic or genotypic combinations resulting from inherited chromosomes that did not undergo recombination during meiosis
+	- **Recombinant types:** offspring or DNA molecules possessing gene combinations distinct from either parent, resulting from crossing over or independent assortment during meiosis
+	- **Linked genes:** DNA sequences close together tend to be inherited during the meiosis phase of sexual reproduction
+	- **Crossing over:** Exchange of genetic material between paired homologous chromosomes during Prophase 1 of meiosis
+	- **Linkage map:** A diagram showing the relative locations of genes or genetic markers along a chromosome, based on the frequency between them
+- ### Concept 15.4: Alterations of Chromosome number or structure
+	- **Aneuploidy:** an abnormality involving a chromosome number that is not an exact multiple of the haploid number (one chromosome set is incomplete)
+	- **Nondisjunction:** meiosis in which there is a failure of paired homologous chromosomes to separate; results in an abnormal number of chromosomes in the daughter cells
+	- **Trisomy:** chrosomal abnormality in which there is one more than the normal number of chromosomes in a cell
+	- **Monosomy:** chromosomal abnormality consisting of the absence of one chromosome from the normal diploid number
+	- **Polyploidy:** the condition of being polyploid
+	- Can cause a variety of issues:
+		- Deletions
+		- Duplications
+		- Inversion
+		- Translocations
+	- Changes in the number of chromosomes per cell or in the structure of individual chromosomes can affect the phenotype and lead to disorders
+		- **Down Syndrome:** Caused by the Prescence of all or part of a third copy of chromosome 21
+- ### Concept 15.4: Some inheritance patters are exceptions to standard mendelian inheritance
+	- **Genomic imprinting:** Epigenetic phenomenon that causes genes to be expressed or not depending on whether they are inherited from the female or the male parent
+	- Inheritance of traits controlled by the genes present in mitochondria and plastids depends solely on the maternal parent because the zygotes cytoplasm containing these organelles comes from the egg
+	

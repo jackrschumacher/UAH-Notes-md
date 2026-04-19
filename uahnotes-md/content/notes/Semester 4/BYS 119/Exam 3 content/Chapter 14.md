@@ -1,0 +1,52 @@
+---
+title: Chapter 14
+
+---
+
+- ### Concept 14.1: Mendel used the scientific approach to identify laws of inheritance
+	- Gregor Mendel formulated a theory of inheritance based on experiments with garden peas, proposing the parents pass on to their offspring discrete genes that retain their identity through generations
+		- Includes two "laws"
+	- **Law of segregation:** states that genes have alternative forms
+	- **Alleles:** Either of a pair of alternative form of a gene that can occupy the same locus on a particular chromosome and that control the same character
+		- Diploid organisms the two alleles of a gene segregate during meiosis and gamete format; each sperm or egg carries only one allele of each pair
+		- Explains the 3:1 ratio of F2 phenotypes
+	- **Phenotypes:** What an organism looks like as a consequence of the interaction of its genotype and the environment
+	- **Monohybrids:** A hybrid produced by crossing parents that are homozygous except for a single gene locus that has two alleles (as in Mendel's experiments with garden peas)
+	- **Heterozygotes:** an organism having two different alleles of a particular gene and so giving rise to varying offspring
+	- Dominant allele masks the phenotypic effect of the recessive allele
+		- **Dominant allele:** An allele that produces the same phenotype whether its paired allele is identical or different
+		- **Recessive allele:** An allele that produces its characteristic phenotype only when its paired allele is identical
+	- **Homozygotes:** an organism having two identical alleles of a particular gene and so breeding true for the particular characteristic
+	- **True-breeding:** This refers to an organism that always passes down certain phenotypic traits to its offspring over many generations because it is homozygous for those specific genes.
+	- **Law of Independent assortment:** Each member of a pair of homologous chromosomes separates independently of the members of other pairs so the results are random
+	- **Dihybrids:** A hybrid produced by parents that differ only at two gene loci that have two alleles each
+- ### Concept 14.2: Probability laws govern
+	- **Multiplication rule:** A fundamental principle in probability used to determine the likelihood of two or more events occurring together by multiplying their individual probabilities.
+	- **Addition rule:** Probability of an event that can occur in two or more independent, mutually exclusive ways
+	- Can be used to solve complex genetics problems
+		- Dihybrid or other multicharacter cross is equivalent to two or more independent monohybrid crosses occurring simultaneously
+		- Calculating the chances of the various offspring genotypes from such crosses, each character is first considered separately and then individual probabilities are multiplied
+- ### Concept 14.3: Inheritance patterns are often more complex than predicted by mandelian genetics
+	- For a single gene:
+		- ![6b2f037f4492d0ade5e7f5adabcb4893.jpg](../assets/6b2f037f4492d0ade5e7f5adabcb4893_1776541931260_0.jpg)
+	- Two or more genes:
+		- ![935b56ebac235b3b6cd683c1eafb9a06.jpg](../assets/935b56ebac235b3b6cd683c1eafb9a06_1776541961353_0.jpg)
+		- Expression of a genotype can be affected by environmental influences, resulting in a range of phenotypes
+		- Multifactorial characters: Polygenetic characters that are also influenced by the environment
+		- Organisms overall phenotype reflects its overall genotype and unique environmental history
+- ### Concept 14.3: Many human traits follow Mendelian patters of inheritance
+	- Analysis of family pedigrees can be used to deduce the possible genotypes of individuals and make predictions about future offspring
+	- **Pedigrees:** Record ancestory
+	- Many genetic disorders are inherited as simple recessive traits
+	- **Carriers:** An individual possesses one altered copy of a gene (mutation) for an autosomal recessive disorder but typically displays no symptoms no symptoms
+	- Homozygotes have sickle-cell disease
+		- Have an advantage because one copy of the sickle-cell allele reduces both frequency and severity of malaria attacks
+	- ![9bf83ca2d87273b0e64f1e5dda29f2b8.jpg](../assets/9bf83ca2d87273b0e64f1e5dda29f2b8_1776542793548_0.jpg)
+	- Lethal dominant alleles are eliminated from the population if affected people die before reproducing
+	- Nonlethal strike later in life
+	- Many human diseases are multifactorial-  genetic and environmental components and do not follow simple Mendelian inheritance patterns
+	- Genetic counselors help couples determine the probability that their children will have genetic disorders
+	- **Amniocentesis:** Amniotic fluid diagnosis in utero to check for genetic issues
+	- **Chorionic villus sampling:** Another prenatal diagnosis method
+
+

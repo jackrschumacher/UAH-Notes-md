@@ -1,0 +1,41 @@
+---
+title: Chapter 12
+---
+
+- ### Concept 12.1: Cell division results in genetically identical cells
+	- Unicellular organisms reproduce by **cell division**; multicellular organisms depend on cell division for their development from a fertilized egg and for growth and repair
+	- **Genome:** the genetic material (DNA) of a cell
+	- **Chromosomes:** Partition DNA
+	- **Chromatin:** Complex of DNA and associated proteins
+	- **Gametes:** have one set of chromosomes
+	- **Somatic cells:** have two cells
+	- Cells replicate their genetic material before they divide material before they divide, each daughter cell receiving a copy fo the DNA
+		- Chromosomes are duplicated
+	- **Sister chromatids:** joined along their lengths by sister chromatin cohesion and held most tightly together at a constricted region at the centromeres
+	- **Centromeres:** specialized, constricted regions of DNA on Chromosomes responsible for accurate chromosome segregation during cell division
+- ### Concept 12.2: Mitotic phase alternates interphase in the cell cycle
+	- **Cell division:** part of the cell cycle, ordered sequence of events in the life of a cell
+	- **Interphase:** G1,S,G2 phases
+		- DNA being replicated during the synthesis (s) phase
+	- **Mitotic phase:** Mitosis and cytokinesis make up the
+	- ![0229faa0d01ee2d389c743cf0886fdb6.jpg](../assets/0229faa0d01ee2d389c743cf0886fdb6_1776530231857_0.jpg)
+	- **Mitotic spindle:** made up of microtubules, controls chromosome movement during mitosis
+	- **Centrosomes:** includes spindle microtubules and asters
+		- **Kinetochores:** A complex protein structures assembled on centromeric DNA, acting as the attachment site for spindle microtubules to pull sister chromatids apart during mitosis and meiosis
+	- **Metaphase plate:** an imaginary plane located in the equatorial center of a dividing cell (both in mitosis and meiosis) where chromosomes align during the metaphase stage
+	- Mitosis is usually followed by cytokinesis
+	- **Cleavage:** Rapid series of mitotic cell divisions immediately following fertilization
+	- **Cell plate:** A structure that forms in the middle of dividing plant cells during cytokinesis to separate the cytoplasm into two daughter cells
+	- Mitosis likely evolved from prokaryotic cell division
+		- Some cells exhibit methods of cell division that appear like their ancestors
+- ### Concept 12.3: The Eukaryotic cell cycle and regulation
+	- Signaling molecules present in the cytoplasm regulate progress the cell cycle
+	- **Cell cycle control system:** cyclic changes in regulatory proteins
+	- **Cyclins:** Regulatory proteins that control cell cycle progression by binging and activating cyclin dependent kinases
+	- Internal and external signals control cell cycle checkpoints via signal transduction pathways
+	- **Density-dependent inhibition:** Process where cells cease proliferation upon reaching high density or forming a confluent monolayer
+	- **Anchorage dependence:** requirement that most normal animal cells must attach to a solid substrate or extracellular matrix to survive, grow and divide
+	- Cancer cells elude normal cell cycle regulation and divide unchecked forming tumors
+		- Invade nearby tissue
+		- Can undergo metastasis, exporting cancer cells to other sites
+		-
