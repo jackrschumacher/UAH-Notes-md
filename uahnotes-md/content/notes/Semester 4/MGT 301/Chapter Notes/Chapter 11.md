@@ -1,6 +1,6 @@
 ---
 title: Chapter 11
-Weight: 10
+Weight: 11
 ---
 
 ### Responsibility and Job Descriptions

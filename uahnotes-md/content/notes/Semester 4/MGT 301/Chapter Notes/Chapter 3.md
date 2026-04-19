@@ -1,0 +1,128 @@
+---
+title: Chapter 3
+weight: 3
+---
+
+- **Logseq Notes Summary: Chapter 3 - Society, Ethics, and Sustainability**
+- **Title**: [[Modern Management 15e]] [[Chapter 3]] - Society, Ethics, and Sustainability
+- **Source**: certo_mm15_ppt_03.pdf
+- ### Fundamentals of Social Responsibility
+- **Social Responsibility**: The managerial obligation to take action that protects and improves both the welfare of society as a whole and the interests of the organization
+- **Areas of Social Responsibility**:
+	- Urban/Consumer Affairs
+	- Community Volunteerism
+	- Employment Practices
+	- Ecology Conservation (Going Green)
+- ### Arguments For Social Responsibility Activities
+- Businesses are a subset of society
+- Businesses have a responsibility to help maintain and improve the overall welfare of society
+- Performing social responsibility activities can earn greater organizational profits (relationship not yet proven by research)
+- ### Arguments Against Social Responsibility Activities
+- **Milton Friedman (Distinguished Economist)**:
+	- Businesses being socially responsible conflicts with profit interests of business owners
+	- Socially responsible public activities conflict with private organizational objectives
+	- Unethical to use owner profits for society’s interests
+- ### Conclusions About Being Socially Responsible
+- Businesses and managers should:
+	- Perform all legally required social responsibility activities
+	- Consider voluntarily performing social responsibility activities beyond those legally required
+	- Inform all relevant individuals of the extent to which the organization will be involved in social responsibility activities
+- ### Social Responsibility and Federal Legislation
+  **Table 3.1 Primary Functions of Several Federal Agencies That Enforce Social Responsibility Legislation**:  
+- Equal Employment Opportunity Commission: Investigates and conciliates employment discrimination complaints (race, sex, creed)
+- Office of Federal Contract Compliance Programs: Ensures equal employment opportunity for federal contractors
+- Environmental Protection Agency: Formulates and enforces environmental standards (water, air, noise pollution)
+- Consumer Product Safety Commission: Promotes clarity in product design, labeling, etc.
+- Occupational Safety and Health Administration: Regulates safety and health in nongovernment workplaces
+- National Highway Traffic Safety Administration: Reduces traffic accidents via regulation of manufacturers/products
+- Mining Enforcement and Safety Administration: Improves mine worker safety and enforces equipment standards
+- ### Voluntarily Performing Social Responsibility Activities
+- Adhering to legislative mandates is the minimum standard
+- Managers must decide how far above the minimum they are willing to go while maintaining organizational success
+- Clearly communicate involvement in social responsibility activities to all stakeholders
+- ### Social Responsiveness
+- The degree of effectiveness and efficiency an organization displays in pursuing its social responsibilities
+- Greater effectiveness and efficiency = more socially responsive organization
+- ### Determining If a Social Responsibility Exists
+- Management obligations based on:
+	- Business situation
+	- Impact on stakeholders
+- **Stakeholders**: Any individual or group directly or indirectly affected by the organization’s decisions
+  
+  **Table 3.2 Stakeholders of a Typical Modern Organization and Examples of Social Obligations**:  
+- Stockholders/owners: Increase the value of the organization
+- Suppliers: Deal fairly
+- Banks/lenders: Repay debts
+- Government agencies: Abide by laws
+- Employees/unions: Provide safe working environment and negotiate fairly
+- Consumers: Provide safe products
+- Competitors: Compete fairly and refrain from restraints of trade
+- Local communities/society: Avoid practices that harm the environment
+- ### Social Responsiveness and Decision Making
+- Effective and efficient socially responsive organizations avoid wasting resources
+- Managers should pursue only responsibilities the organization possesses and has a right to undertake
+- **Figure 3.1 Flowchart** guides social responsibility decision making to enhance organizational social responsiveness
+- ### Approaches to Meeting Social Responsibilities
+- Incorporate social goals into annual planning process
+- Seek comparative industry norms for social programs
+- Present reports to owners and stakeholders
+- Experiment with different approaches
+- Attempt to measure cost of social programs
+  
+  **Different Managerial Approaches**:  
+- **Requirement**: Firm only does what is required by law
+- **Recognition**: Firm has obligations to pursue both profit and social goals
+- **Believing**: Firm has both profit and social goals
+- ### Social Audit Challenge
+- Process of measuring social responsibility activities to assess organizational performance
+- **Social Audit Steps**:
+	- Monitoring
+	- Measuring
+	- Appraising
+- ### Philanthropy Challenge
+- Promote welfare of others through monetary donations to social causes
+- Aims to increase people’s well-being
+- Focuses on arts, education, world peace, disaster relief
+- Managers should donate to causes that benefit both the organization and society
+- ### The Sustainable Organization Challenge
+- Includes conserving natural resources, reducing waste, recycling, protecting threatened species
+- **Sustainability**: The degree to which a person or entity can meet its present needs without compromising the ability of others to meet their needs
+- ### Defining a Sustainable Organization
+- **Sustainable Organization**: An organization that can meet its present needs without compromising future generations’ ability to meet theirs
+- **The Triple Bottom-Line**: Management should make organizations sustainable in three areas—economy, environment, and society
+- ### Why Sustainability?
+  Three reasons managers should build sustainable organizations:  
+- Increased profits
+- Increased productivity
+- Increased innovation
+- ### Steps to Sustainability
+- Set sustainability goals
+- Hire organization members who can help the organization become more sustainable
+- Reward employees who contribute to sustainability goals
+- Track progress in reaching sustainability goals
+- ### Managers and Ethics
+- **Ethics**: The capacity to reflect on values in the corporate decision-making process, determine how these values and decisions affect stakeholder groups, and establish how managers can use these observations in day-to-day company management
+- Ethical managers strive for management practices that are fair and just
+- ### Benefits of Ethics in Management Practices
+  Ethical business practices can lead to:  
+- Increased productivity
+- Improved stakeholder relations
+- Minimizing government regulation
+- ### Code of Ethics
+- A formal statement that acts as a guide for how employees should act and make decisions
+- 90% of Fortune 500 firms have a code of ethics
+- Cannot cover all behavior; should be evaluated and refined periodically
+- ### Creating an Ethical Workplace
+- Create, distribute, and improve a Code of Ethics
+- Appoint a Chief Ethics Officer
+- Provide training (do not focus on teaching morals; give criteria for determining if an action is ethical)
+  
+  **Ethical Standards**:  
+- **Utilitarian**: Ethical behavior provides the most good or least harm for the greatest number of people
+- **Rights**: Ethical behavior promotes the respect and rights of others
+- **Virtue**: Behaviors are ethical if they reflect high moral values (honesty, fairness, compassion)
+- ### Following the Law: Sarbanes-Oxley Reform Standards
+- Result of unethical practices at Enron Corporation
+- Passed to prevent accounting deception in publicly owned companies
+- Holds managers accountable (can result in significant jail time)
+- Supports whistle-blowing (employee reporting of suspected misconduct or corruption)
