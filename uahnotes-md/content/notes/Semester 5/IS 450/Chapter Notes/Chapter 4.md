@@ -1,3 +1,6 @@
+---
+title: Chapter 4
+---
 ## Risk Management Foundations & Frameworks
 
 * Risk management identifies, assesses, and mitigates risks to information assets, addressing four core questions: identification, analysis, evaluation, and treatment.
