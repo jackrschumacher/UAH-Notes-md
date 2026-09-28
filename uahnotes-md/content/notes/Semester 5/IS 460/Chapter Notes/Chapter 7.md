@@ -170,7 +170,7 @@ title: Chapter 7
 - **VLAN tunneling (802.1Q tunneling):** used by a service provider to segregate customer traffic through the addition of a second VLAN 802.1Q tag entry to a tagged frame
   - Tagged customer traffic is sent through a 802.1Q trunk port and enters service providers edge switch through a tunnel port
   - Each customer gets a separate VLAN tunnel ID to separate them from other customers. VLAN 802.1Q tag entry differentiates one customers traffic from another. Each customer configures a link on edge device back to the service provider.
-    ![](../assets/d12a0a19c980ff9f505c26160c841e02.png)
+    ![[Pasted image 20260922200354.png]]
 
 
 
@@ -208,9 +208,9 @@ title: Chapter 7
   - **Access link** - access link connects a VLAN-unaware device to a VLAN-aware port
   - **Hybrid link**- hybrid link combines a trunk line and access link. A hybrid link connects both VLAN-aware and VLAN-unaware devices
 
-## VLAN design and configuration
+### VLAN design and configuration
 
-### VLAN deployment considerations
+#### VLAN deployment considerations
 
 - Offers advantages of performance improvement, simplified implementation, access control. 
 - Requires additional costs
@@ -220,7 +220,7 @@ title: Chapter 7
   - **Switch Spoofing:** VLAN hopping variation where an attacker imitates (spoofs) a trunking switch - then can access multiple VLANs
   - **Double-tagging:** VLAN hopping variation where attacker bypasses VLAN-protecting mechanisms by tagging a frame with outer VLAN and inner, target VLAN
 
-### VLAN security
+#### VLAN security
 
 - VLANs hinder unauthorized access and segmenting devices with sensitive data
 - Provide protocol separation- limit traffic to the relevant VLAN
@@ -241,7 +241,7 @@ title: Chapter 7
 | Supplement VLAN routing with an access control list (ACL) | Provides an additional layer of packet filtering, limiting unwanted traffic |
 | Assign the correct VLAN type to a port                    | Improves both performance and security                       |
 
-### VLAN switch configurations
+#### VLAN switch configurations
 
 5 step configurations:
 
@@ -255,7 +255,7 @@ title: Chapter 7
 - **Switched virtual interface (SVI)/ VLAN interface:** a layer 3 interface created on a switch to provide communications between each configured VLAN
   - Act like default gateways for VLANs while also L2 and L3 protocols
 
-### VLAN router configurations
+#### VLAN router configurations
 
 - **inter-VLAN routing:** varies depends on the device and routing method used
   - Router with multiple physical ports can use one port per VLAN
@@ -263,7 +263,7 @@ title: Chapter 7
   - L3 switch creates multiple SVIs with each SVI participating in inter-VLAN
 - Each routing method used for inter-VLAN routing is somewhat comparable- selection depends on the network device needed 
 
-### SVI
+#### SVI
 
 - SVI configurable on L2 and L3. SVIs configured on L2. SVI configured on L3 switches participate in inter-VLAN routing
 
