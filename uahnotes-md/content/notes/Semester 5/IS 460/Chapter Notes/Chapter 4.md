@@ -96,12 +96,6 @@ title: Chapter 4
 | Class B | 128.0.0.0 to 172.15.255.255 172.32.0.0 to 191.255.255.255   |
 | Class C | 192.0.0.0 to 192.167.255.255 192.169.0.0 to 223.255.255.255 |
 
-| Class   | Public IP ranges                                            |
-| ------- | ----------------------------------------------------------- |
-| Class A | 1.0.0.0 to 9.255.255.255 11.0.0.0 to 126.255.255.255        |
-| Class B | 128.0.0.0 to 172.15.255.255 172.32.0.0 to 191.255.255.255   |
-| Class C | 192.0.0.0 to 192.167.255.255 192.169.0.0 to 223.255.255.255 |
-
 ## 4.4 IPv6 format
 
 - **Internet protocol version 6:** unique 128-bit number assigned to a network interface controller
