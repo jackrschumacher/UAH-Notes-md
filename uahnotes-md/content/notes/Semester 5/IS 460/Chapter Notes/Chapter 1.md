@@ -1,5 +1,6 @@
 ---
 title: Chapter 1
+weight: 1
 ---
 ## Chapter 1.1
 - **Network:** Assortment of at least 2 connection points, nodes, capable of sharing resources through a link

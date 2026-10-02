@@ -1,5 +1,6 @@
 ---
 title: Chapter 7
+weight: 7
 ---
 ## 7.1 - Network Transmission
 

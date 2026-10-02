@@ -1,5 +1,6 @@
 ---
 title: Chapter 4
+weight: 3
 ---
 ## 4.1 Types of network addresses
 

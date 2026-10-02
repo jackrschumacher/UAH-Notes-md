@@ -1,5 +1,6 @@
 ---
 title: Chapter 6
+weight: 6
 ---
 ## 6.1 - Protocol Types
 ### IP, TCP, UDP, TCP/IP
