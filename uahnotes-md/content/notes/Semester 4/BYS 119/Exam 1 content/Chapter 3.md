@@ -12,7 +12,6 @@ title: Chapter 3
 	- Water is more structured than most other liquids
 	- water has high surface tension- cohesion
 	- Also contributes to the transport of water
-	- ![image.png](../assets/image_1770444101051_0.png){:height 489, :width 468}
 	- Air temperature is also moderated by water
 	- Effective as a heat bank
 	- Water has kinetic energy (energy of motion)
@@ -25,7 +24,6 @@ title: Chapter 3
 	- Defined as the amount of heat that must be absorbed or lost for 1 g of the substance for its temp to increase by 1C
 	- 1/cal per gram
 	- This high specific heat is due to hydrogen bonding - this is why ocean temps can be stabilized
-	- ![image.png](../assets/image_1770444480458_0.png)
 - ### Evaporative cooling
 	- Molecules stay close to each other
 	- Transformation to a liquid to a gas- vaporization
@@ -53,7 +51,6 @@ title: Chapter 3
 	- Hydrogen atoms in water can sometimes shift from one module to another
 		- Transferred as a hydrogen ion
 		- Molecule that lost a proton is now a hydroxide ion
-	- ![image.png](../assets/image_1770445216814_0.png)
 - ### Acids and Bases
 	- When acids dissolve in water the donate h+ to the solution
 	- #### Acidic solution

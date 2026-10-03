@@ -43,7 +43,6 @@ Weight: 11
 	- Must approve/disapprove the decision
 
 ## Dimensions of Responsible Management behavior
-- ![image.png](../assets/image_1772534057940_0.png)
 
 # Authority
 - Right to perform or command
@@ -70,7 +69,6 @@ Weight: 11
 		- Advise-assist those who possess line authority
 	- **Functional authority**
 		- Assigned to a segment that normally does not have authority
-	- ![image.png](../assets/image_1772534494298_0.png)
 - ### Roles of staff personnel
 	- Advisory or counseling role
 	- Service role
@@ -81,7 +79,6 @@ Weight: 11
 		- Does not give sound advice,etc
 	- **Staff personnel perspective**
 		- Line personnel does not make proper use of staff, resists new ideas, and refuses to give staff authority
-	- ![image.png](../assets/image_1772534805291_0.png)
 
 # Accountability
 - **Employees liability to perform**
@@ -118,7 +115,6 @@ Weight: 11
 		- Minimal number of job activities and minimal amount of authority delegated to subordinates
 	- **Decentralization**
 		- Maximum amount of authority delegated to subordinates
-	- ![image.png](../assets/image_1772535591043_0.png)
 - #### Organizational considderations
 	- Organization size
 	- Customer location

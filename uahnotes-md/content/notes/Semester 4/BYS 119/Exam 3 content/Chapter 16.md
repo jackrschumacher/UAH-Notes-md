@@ -14,7 +14,6 @@ title: Chapter 16
 		- Occurs in all organsims
 	- **Semiconservative replication:** Describes the mechanism of DNA replication in all known cells
 	- **Replication fork:** Each of the newly divided daughter cell receives its own copy of each DNA molecule
-	- ![55bb4e1ccd8b1e9d1a14781eaf0b201d.jpg](../assets/55bb4e1ccd8b1e9d1a14781eaf0b201d_1776564330471_0.jpg)
 	- **DNA polymerases:** A member of a family of enzymes that catalyze the synthesis of DNA molecules from nucleoside triphosphates
 	- **Mismatch repair:** A system for recognizing and repairing erroneous insertion, deletion, and mis-incorporation of bases that can arise during DNA replication and recombination
 	- **Nucleotide excision repair:** DNA repair mechanism. Removes DNA damage from UV

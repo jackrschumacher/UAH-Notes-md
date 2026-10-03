@@ -11,7 +11,6 @@
       - Poem seems to come from the northwest Midlands, may have been from Cheshire, where Richard II often kept his court
         - A bit further away from London
         - There
-        - ![The West Midlands](../assets/12_06_25_10-46-28_PM_1765082791526_0.png)
       -
       - What does it mean to write the poem for the king?
 - Four poems in the Cotton Nero ax. manuscript (three are religious)
@@ -22,7 +21,6 @@
 - Most of old English poetry was alternative
   - Some tie it into nationalism
   - Poem is about nationalism
-- ![An example of translation](../assets/image_1765082346248_0.png)
 - **Stresses in words and stresses of alliteration in the text**
 ## Historical Context
 ### The Hundred Years War (1337-1454)
@@ -148,7 +146,6 @@
 > in the wilds of the Wirral, whose wayward people
 > both God and good men have quite given up on."
 > (697-702)
-  - ![image.png](../assets/image_1765086004105_0.png)
 - The person who was beheaded head falls and where is falls water springs up
 - They have gone to this kind of dangerous wilderness
 > "Father, hear me, / and Lady Mary, our mother most mild, / let
@@ -224,7 +221,6 @@
       - Eversong would have been a service of religious songs
       - Told about this through a variety of liturgical books
 # Fitts 3&4
-- ![The hunt of the boar](../assets/Sir_Gawain_Fitts_3-4_Part_3_-_Google_Chrome_12_07_25_04-29-00_PM_1765146543550_0.png)
 > "the biggest of wild boars has bolted
 > from his cover" (1441)
 > "So the day was spent in pursuits of this
@@ -309,7 +305,6 @@
 > though they were, / or the gleam of its edges which
 > glimmered with gold, / but to save his skin when
 > presenting himself' (2037-40)
-  - ![image.png](../assets/image_1765147765065_0.png)
   - Time for Gawain to prepare to leave
   - Takes the belt in order to save his skin
 > "In that wilderness lives a wildman, the worst in the
@@ -330,7 +325,6 @@
 > "it skewed to one side, just skimming the skin / and
 > finely snicking the fat of the flesh / so that bright
 > red blood shot from the body to earth" (2311-14).
-  - ![image.png](../assets/image_1765148307036_0.png)
   - A camoflauge man
   - Pulls out an axe
       - The blade has been sharpened by this giant of a man

@@ -21,7 +21,6 @@ title: Chapter 2
   - Identify areas of improvement
   - Document current position relative to goal
   - Make a plan for how to achieve the goal
-    ![](../assets/2225b00b551a1704b75ec1f5ea914ac9.png)
 
 #### Creating a strategic plan
 
@@ -37,7 +36,6 @@ title: Chapter 2
   - Breaks applicable strategic goals into series of incremental objectives
 - Operational planning is used by managers and employees to organize ongoing, day-to-day performance of tasks
   - Includes identified coordination activities across department boundaries, communications requirements, weekly meetings, progress reports,etc
-    ![](../assets/d576022bc917c9d12158386b898e3551.png)
 
 #### Planning and CSO
 
@@ -105,7 +103,6 @@ ISO 27014:2020 standard specifies the following high-level action-oriented cyber
 4. Ensure conformance with internal and external requirements
 5. Foster a security-positive culture
 6. Ensure security performance meets current and future requirements
-   ![](../assets/813ed2535dd52649bbcf6aeb4004899e.png)
 
 ## GRC Squared
 
@@ -131,7 +128,6 @@ ISO 27014:2020 standard specifies the following high-level action-oriented cyber
   - Creates strategic cyber plan with vision for future of cybersecurity
   - Understand fundamental business activities performed and suggests appropriate cyber 
   - Develops action plans, schedules, budgets, status reports and other top management communications intended to improve status of cyber
-    ![](../assets/539f9935d3a49f54e36b03846ad5bc1f.png)
     Recommendations:
 - Use experienced and skilled facilitators
 - Obtain executive sponsorship to provide commitment and support
@@ -148,7 +144,6 @@ ISO 27014:2020 standard specifies the following high-level action-oriented cyber
     - Phases: investigation, analysis, design, implementation, and maintenance of the system
 - Once implemented, should be supported via continuous improvement (CIP) 
 - Several SDLC methodologies can guide cybersecurity program development and implementation
-  ![](../assets/178e8f974e98fa9ee823eaddebfa0b60.png)
 
 ### Investigation in SDLC
 

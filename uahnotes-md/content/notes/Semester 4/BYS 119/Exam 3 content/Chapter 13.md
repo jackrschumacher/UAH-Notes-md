@@ -21,7 +21,6 @@ title: Chapter 13
 - ### Concept 13.3: Meiosis reduces the number of chromosome sets from diploid to haploid
 	- Two cell divisions of meiosis produce four haploid daughter cells
 	- Meiosis 1:
-		- ![f94815a6eee071708c1855ca9893d668.jpg](../assets/f94815a6eee071708c1855ca9893d668_1776533446326_0.jpg)
 	- Meiosis II: Separates the sister chromatids
 	- Sister chromatid cohesion and crossing over allow chiasmata to hold homologs together until anaphase I
 	- Cohesions are cleaved along the arms at Anaphase I, allow homologs to sperate,

@@ -144,7 +144,6 @@
   - Transparent
   - Granular control
 ## Process of Threat Hunting
-- ![image.png](../assets/image_1763424583118_0.png)
 ### Threat Hunting Steps
   - Trigger
       - Collect information about the environment and hypothesis
@@ -165,6 +164,4 @@
       - [MITRE ATT&CK framework](https://attack.mitre.org)
         - Globally accessible knowledge base of adversary tactics and techniques based on real world operations
         - ![MITRE Enterprise framework (2024)](../assets/attack_matrix_poster_2024_april-1_1763429016114_0.png)
-  - ![image.png](../assets/image_1763424735993_0.png)
-  - ![image.png](../assets/image_1763424746832_0.png)
   -

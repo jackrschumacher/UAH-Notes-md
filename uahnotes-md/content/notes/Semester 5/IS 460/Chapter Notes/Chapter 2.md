@@ -26,8 +26,6 @@ weight: 2
 - **Decapsulation:** process of removing a header or trailer so data is receivable
 
 ## Chapter 2.2 - OSI Model Layers
-![](../assets/68d70ba42b0396d0a71c5acfca9e64ad.png)
-![](../assets/702017161b8b2a6f848f1c0f6ed7aaf6.png)
 ### Layers 5,6,7
 - Top down approach because encapsulation and decapsulation
 - **Layer 7** - OSI model application layer- network protocol interacts with a network aware application
@@ -83,22 +81,18 @@ weight: 2
 	- Associate a payload with a specific process or service
 - TCP header is a 10-field,20-byte header containing connection and payload delivery details for a segment
 	- Used to establish a three-way handshake for payload delivery
-- ![](../assets/906d2ef1821118d677635138d4e55a4b.png)
 - UDP Header, 4-field, 8-byte header containing connection and payload delivery details for a datagram
 	- Used for best-effort payload delivery (non-guaranteed)
-- ![](../assets/b77bddfaba84ac1f84869cb975896589.png)
 ### Internet Layer - Layer 3
 - DoD model layer where hop-to-hop data delivery from source to destination occurs
 - **IP header** is a header containing connection and payload data delivery details for a packet
 	- IPv4
 		- 14 field,d 20 to 60 byte header container connection and payload delivery details for the packet
 		- 32-bit address 
-		- ![](../assets/616411af82689fa707baf211dce9963e.png)
 	- IPv6
 		- 8-field, 40 byte header that contains connection and payload delivery details for an IPv6 packet
 		- Unique 128-bit number assigned to a network interface controller
 		- Can not be transmitted over IPv4 network without additional encapsulation
-		- ![](../assets/72bfc4eed791dbb77a8a0877dd62c21f.png)
 - ### Network access layer
 	- OSI models layers 1 and 2
 	- **Network access layer** - DoD model layer where data transfer between two devices on the same network occurs
@@ -107,10 +101,8 @@ weight: 2
 	- **Ethernet frame** is a 6 field, 64 byte header
 	- **Media access control (MAC) address** a unique 48-bit identifier burned into a network interface controller
 	- **Network Interface controller (NIC)** or **Network interface card (NIC)** is hardware connecting a networked device to bounded media
-	- ![](../assets/5b5937303bf4dd3a718beaa0f98c5f98.png)
 ## 2.4 - Networking Devices
 
-![](../assets/7a94aae4a8f58a03c9aa28122b02fd42.png)
 ### Layer 1 devices
 - **Networking Device:** used to establish network connectivity
 - **Networked device:** connected to the network
@@ -172,11 +164,9 @@ weight: 2
 	- Client accesses a network resource from a server, but does not share network resources with other clients
 	- A server shares a network resource with a client
 	- Peer shares and accesses a network resource
-- ![](../assets/55ff65c2794394fc48d43b1a3ff6eb2d.png)
 ### Smart devices
 - Allow user interaction
 - Smart devices perform fewer functions than a traditional client device
-- ![](../assets/fb13b1a769a2146a3b1138b3c6a3bfeb.png)
 ### IoT, IIoT and ICS
 - **Internet of Things (IOT)** networking of traditionally run non-computing physical objects and technologies in a consumer setting
 	- Smart Fridge, thermostat,etc

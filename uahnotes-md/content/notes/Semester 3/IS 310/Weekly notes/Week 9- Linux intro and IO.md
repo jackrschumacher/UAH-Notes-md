@@ -10,7 +10,6 @@
 - Can also be an intermediary between other languages
 # Bash Terminal and Commands
 ## Using the shell
-- ![image_1761346948850_0.png](../assets/image_1761346948850_0_1762457936237_0.png)
 - ~ is a shorthand for home directory in this case
 ### Example commands
 - ```bash
@@ -21,7 +20,6 @@
 - Argument-provides input/output that the command interacts with
 - Can use man or info to get info
 - History command to see shell history
-- ![image_1761347500811_0.png](../assets/image_1761347500811_0_1762457960459_0.png)
 ### Variables
 - ```bash
     USER=test
@@ -33,7 +31,6 @@
 - I/O is important to interact with users, data processing, automation and scripting tasks, interaction with other programs, error handling
 - Bash input-received data from user
 - Bash output-refers to info or data that the program generates or writes
-- ![image_1761349308902_0.png](../assets/image_1761349308902_0_1762457976102_0.png)
 ## File Descriptors
 - Standard input - stdin
   - Interactively read input from user from another command using standard input
@@ -42,7 +39,6 @@
 - Standard error- stderr
   - Handles error messages
 ## File Redirection
-- ![image_1761349419418_0.png](../assets/image_1761349419418_0_1762458063075_0.png)
 - Basic I/O manipulation
 - ```bash
     echo "This is example code" > story

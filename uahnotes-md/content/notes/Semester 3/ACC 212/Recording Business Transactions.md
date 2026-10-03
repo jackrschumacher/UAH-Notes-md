@@ -2,11 +2,8 @@
 - $Assets= Liabilities+Equity$
 - Each part of the accounting equation has accounts
 ## Assets
-- ![image.png](../assets/image_1762488415502_0.png)
 ## Liabilities
-- ![image.png](../assets/image_1762488561643_0.png)
 ## Equity
-- ![image.png](../assets/image_1762488587304_0.png)
 ## Chart of Accounts
 - Used to organize company accounts
   - Ledger is a record holding all accounts of a business and changes in those accounts
@@ -17,7 +14,6 @@
 - $Assets = Liabilities + Common Stock - Dividends + Revenues - Expenses$
 ## The Normal balance of an account
 - ![](https://images.squarespace-cdn.com/content/v1/59078005a5790ae9a242edf2/73df2326-c55d-455a-a707-1026144a039f/Normal-Account-Balance-1.jpg)
-- ![image.png](../assets/image_1762488957846_0.png)
 # Journalizing and Posting Transactions
 - **Step 1:** Identify the accounts and the account types (asset, liability, or equity)
 - **Step 2:** Decide whether each account increases or decreases, then apply rules of debit/credit
@@ -85,7 +81,6 @@
     ||Cash (35,000-1,050)||33,950|
     ||Merchandise Inventory (35,000 x 0.03)||1050|
     ||Paid within discount period|||
-- ![image.png](../assets/image_1762491494969_0.png)
 - |Date|Accounts and Explanation|Debit|Credit|
     |--|--|--|--|
     |Jun 24|Accounts payable|35,000||
@@ -100,7 +95,6 @@
     |Jun 4|Accounts payable|7,000||
     ||Merchandise Inventory (20 tablets x $350 per tablet)||7,000|
     ||Returned inventory to seller (vendor)|||
-- ![image.png](../assets/image_1762491822270_0.png)
 ### Transportation Costs
 - Purchase agreements specify shipping terms to determine while title of the goods transfers to purchaser and who pays the freight
   - **FOB shipping point** means the buyer takes ownership to the goods after the goods leave the sellers place of business
@@ -140,24 +134,17 @@
 - Knowing net cost of inventory allows business to determine the cost of the merchandise purchased
 - Net cost of inventory is calculated as:
   - Net Cost of Inventory Purchased = Purchase cost of inventory - Purchase returns and allowances - Purchase discounts + Freight in
-  - ![image.png](../assets/image_1762493385686_0.png)
 ### How Sales of Merchandise Inventory Recorded in a perpetual inventory system
 - The amount a business earns from selling merchandise inventory is called from Sales Revenue
 - Two entries are required to record sale transaction
   - The first entry records sales revenue and cash or accounts receiveable
   - The second entry records Cost of Goods Sold and Merchandise Inventory
 #### Sales on Account
-- ![image.png](../assets/image_1762494151110_0.png)
 #### Sales Discounts
 - Many sellers offer customers a discount for early payment
 - Sales discount are a reduction in the amount of revenue earned on sales for early payment
 - Gross method
-  - ![image.png](../assets/image_1762494532600_0.png)
   - Record all sales at the full amount (gross) and record any discounts taken at the time of payment
-  - ![image.png](../assets/image_1762494455970_0.png)
-  - ![image.png](../assets/image_1762494471006_0.png)
-  - ![image.png](../assets/image_1762494486083_0.png)
-  - ![image.png](../assets/image_1762494507406_0.png)
 - Net Method
   - Record all sales at net amount at the time of the sale and record adjustment at the time of payment for discounts not taken
 ### Adjusting and Closing entries for a merchandiser
@@ -166,7 +153,6 @@
 - Businesses take a physical count of inventory at least once a year
 - Merchandise Inventory is adjusted based on the physical count
 #### Adjusting Merchandise Inventory based on a Physical count
-- ![image.png](../assets/image_1762494958742_0.png)
 -
 #### Closing the Accounts of a Merchandiser
 - **Step 1:** Make the revenue accounts equal zero via the Income Summary account
@@ -174,15 +160,12 @@
 - **Step 3:** Make the Income Summary account equal zero via the Retained Earnings account
   - This closing entry transfers net income (or net loss) to Retained Earnings
 - **Step 4:** Make the Dividends account equal zero via the Retained Earnings account
-- ![image.png](../assets/image_1762495214166_0.png)
-- ![image.png](../assets/image_1762495236352_0.png)
 #### Merchandisers Financial Statements
 - Formats for income statements
   - **Single-step income statement** groups all revenues together, lists and deducts all expenses together without calculating any subtotals
   - **Multi-step income statement** contains subtotals to highlight significant relationships
       - In addition to net income reports profit and operating income
 ##### Single-Step Income Statement
-- ![image.png](../assets/image_1762495482636_0.png)
 ##### Multi-Step Income Statement
 - Operating expenses are reported in two categories
   - Selling expenses are related to marketing and selling the companies goods and services
@@ -191,7 +174,6 @@
 - Other income and expenses reports revenues or expenses that are outside normal, day-to-day operations of the business
   - Ex: Sale of plant assets to an interest expense
 - Income tax expense- reports the federal and state income taxes that are incurred by the corporation
-- ![image.png](../assets/image_1762495973359_0.png)
 #### Statement of Retained Earnings and the Balance Sheet
 - The statements of retained earnings for merchandisers and service businesses are similar
 - The balance sheet for a merchandiser is a very similar except for two new asset accounts

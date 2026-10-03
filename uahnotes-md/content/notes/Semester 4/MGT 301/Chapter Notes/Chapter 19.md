@@ -13,9 +13,7 @@ weight: 19
   
   - ## The controlling subsystem
     - Help managers enhance the success of the overall management system
-    - ![7291319002.png](../assets/7291319002_1775368995278_0.png)
   - ## The Controlling process
-    - ![7291319003.jpg](../assets/7291319003_1775369035397_0.jpg)
   - ### Measuring performance
     - Must measure current organizational performance
     - Must establish measure to gauge performance
@@ -84,7 +82,6 @@ weight: 19
     - Operational control
     - Management control
     - Strategic planning
-    - ![7291319006.png](../assets/7291319006_1775539252124_0.png)
   - ### Operational control, management control, strategic planning decisions
     - Relate to ensuring that specific organizational tasks are carried out effectively and efficently
     - Shift from operational decisions to management and control decisions
@@ -102,7 +99,6 @@ weight: 19
     - Processing of determining whether the acquisition of information is justified
   - ### Identifying and evaluating data
     - Major step in evaluating organizational information to ascertain value of that information by pinpointing the data to be analyzed to determine expected value or return
-    - ![7291319007.jpg](../assets/7291319007_1775540542318_0.jpg)
   - ### Evaluating the cost of data
     - Expected value of organizational information is compared with the expected cost of obtaining information
     - If it does exceed the expected value the information should be gathered
@@ -124,4 +120,3 @@ weight: 19
     - Example: Insights can be gleaned by understanding that management makes decision of the area of plant and equipment
     - Pinpointing and collecting data that will yield organizational information
   - ### Different managers need different kinds of info
-    - ![7291319009.jpg](../assets/7291319009_1775543674325_0.jpg)

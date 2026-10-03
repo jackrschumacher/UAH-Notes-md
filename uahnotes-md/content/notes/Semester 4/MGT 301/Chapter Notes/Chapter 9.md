@@ -11,7 +11,6 @@ weight: 9
 	- **Strategy** defined as a broad and general plan developed to reach long term objectives
 	- Larger orgs tend to be more precise in developing org strategy than smaller orgs are, all orgs should have a strategy of some sort
 		- Must be consistent with org objectives
-	- ![image.png](../assets/image_1771996692235_0.png){:height 636, :width 575}
 - # 9.2- Strategic Management Process
 	- **Strategic management** process of ensuring that an organization possesses and benefits from the use of an appropriate organizational strategy
 	- Strategic management process:
@@ -20,11 +19,9 @@ weight: 9
 		- Strategy formulation
 		- Strategy implementation
 		- Strategic control
-	- ![image.png](../assets/image_1771996854219_0.png)
 - # 9.3- Environmental Analysis
 	- **Environmental analysis** the study of the organizational environment to pinpoint environmental factors that can influence organizational operations
 	- A manager must thoroughly understand how organizational enviroments are structured
-	- ![image.png](../assets/image_1771997693658_0.png){:height 689, :width 529}
 	- ## The General Enviroment
 		- **General environment:** Contains components having broad, long term implications for managing the organization
 	- ### The economic component
@@ -68,7 +65,6 @@ weight: 9
 		- **Supplier power:** power that suppliers have over firms operating in industry
 		- **Threat of substitute products:** extent to which customers use products or services from another industry instead of focal industry
 		- **Intensity of Rivalry:** refers to the intensity of competition among the organizations in an industry
-		- ![image.png](../assets/image_1771999180099_0.png){:height 515, :width 570}
 		- **Internal environment:** Level of an organizations environment that exists inside the organization and normally has immediate and specific implications for managing the organization
 - # 9.4- Establishing Organizational Direction
 	- Second step of the strategic management process
@@ -118,7 +114,6 @@ weight: 9
 	  	- Manager who is accountable for its operation
 	  	- An area that can be independently planned for within the organization
 	  - Once they have been identified, use the BCG matric to categorize each SBU in one of the matrix quadrants
-	  - ![image.png](../assets/image_1772070534032_0.png){:height 419, :width 398}
 	  - **Star:** Has a large share of a high-growth market and typically needs large amounts of cash to support rapid and significant growth
 	  	- Generate large amounts of cash for the organization and are usually segments in which management can make additional investments
 	  - **Cash Cow:** Has a large share of a market that is growing only slightly
@@ -131,7 +126,6 @@ weight: 9
 	  - Developed another popular portfolio analysis tool called the GE multifactor portfolio matrix
 	  - Helps managers develop organizational strategy based on market attractiveness and business strengths
 	  - Two dimensions is a composite of a variety of factors that each firm must determine for itself
-	  - ![image.png](../assets/image_1772071107082_0.png)
 	  - Graphic framework for analyzing relationships among the businesses of an organization
 	  - Portfolio models should not be used in a mechanistic fashion
 	- ## Strategic formulation: Types
@@ -175,7 +169,6 @@ weight: 9
 			- Strategic planning emphasizes the future because tactical planning emphasizes analyzing the everyday function of the organization
 			- Strategic plans are primary based on a prediction of the future, and tactical plans are based primarily on known circumstances that exist within the organization
 			- Strategic planning focuses long term, tactical plans cover short term
-		- ![image.png](../assets/image_1772073356689_0.png){:height 404, :width 622}
 		- Tactical planning and strategic planning are related
 - # 9.9- Competitive dynamics
 	- **Competitive dynamics:** refers to the process by which firms undertake strategic and tactical actions and how competitors respond to those actions
@@ -183,7 +176,6 @@ weight: 9
 	- Research in competitive dynamics focuses on competitive dryads
 	- Three primary factors influence a firms action or reaction: awareness, motivation, capability
 	- **Competitor awareness:** refers to how mindful a company is of its competitors actions
-	- ![image.png](../assets/image_1772073722956_0.png)
 	- **Competitor motivation:** refers to the incentives that drive an organization to take action
 		- Ex: Amazon motivated to respond to Barnes and Noble's price cuts with Kindle ebooks
     

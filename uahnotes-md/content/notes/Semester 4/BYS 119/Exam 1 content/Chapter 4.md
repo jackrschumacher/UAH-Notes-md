@@ -12,23 +12,16 @@ title: Chapter 4
 
 - Arrangement of four hybrid orbitals causes bonds to angle towards corners of tetrahedron
 
-- ![image.png](../assets/image_1770445994575_0.png)
 
-- ![image.png](../assets/image_1770446004413_0.png)
 
 - O = C =O
 
   - Structural formula for CO2
 
-- ![image.png](../assets/image_1770446073347_0.png)
 
-- ![image.png](../assets/image_1770446079620_0.png)
 
-- ![image.png](../assets/image_1770446085033_0.png)
 
-- ![image.png](../assets/image_1770446113535_0.png)
 
-- ![image.png](../assets/image_1770446126516_0.png)
 
 - ## Chemical groups most important in processes of life
 
@@ -36,7 +29,6 @@ title: Chapter 4
 
 - Differ only in chemical groups attached to the rings
 
-- ![image.png](../assets/image_1770446236626_0.png)
 
 - Chemical reactions are functional groups
 
@@ -56,7 +48,6 @@ title: Chapter 4
 
 - First 6 groups are chemically reactive
 
-- ![image.png](../assets/image_1770446381170_0.png)
   
 
 - ## ATP: Source of Energy for Cellular processes
@@ -65,7 +56,5 @@ title: Chapter 4
 
 - ATP is worth mentioning because function in the cell is important
 
-- ![image.png](../assets/image_1770446779109_0.png)
 
-- ![image.png](../assets/image_1770446822933_0.png)
   

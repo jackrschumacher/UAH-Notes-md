@@ -9,12 +9,9 @@ weight: 5
 
 - Globalization is the trend towards international management
 
-- ![image.png](../assets/image_1769749643445_0.png){:height 436, :width 548}
-- ![image.png](../assets/image_1769749720395_0.png){:height 199, :width 581}
 - **Domestic organizations** operate within a single country
 - **International organizations** based primary within a single country but have continuing international transactions
 - **Multinational corporation** a company that has significant operations in more than 1 country
-- ![image.png](../assets/image_1769749920827_0.png){:height 526, :width 544}
 - **Expatriate** - lives or works in a country where they do not have citizenship
 - **Host country national** - An organization member who is a citizen of the country in which the facility of a foreign-based org is located
 - **Third country national** - An organization member who is a citizen of one country and works in another country for an org headquartered in another country

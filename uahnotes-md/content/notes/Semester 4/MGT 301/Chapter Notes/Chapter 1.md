@@ -38,7 +38,6 @@ weight: 1
 
 ### The Gender gap
 
-![A three-dimensional bar graph depicts the broad salary gap between men and women.](https://plus.pearson.com/eps/pearson-reader/api/item/72b412ac-51fe-425d-aed2-ec96529f5260/1/file/certo-mmcas-15e_eText_v3/OPS/images/FG_01_001.png)
 
 - Men are more often executives than women
 - Women are also typically payed less than men
@@ -104,7 +103,6 @@ weight: 1
 
 ## Management Process and Organizational Resources
 
-![Relationship among the four functions of management used to attain organizational goals](https://plus.pearson.com/eps/pearson-reader/api/item/72b412ac-51fe-425d-aed2-ec96529f5260/1/file/certo-mmcas-15e_eText_v3/OPS/images/FG_01_003.png)
 
 - Managers must understand the four management functions are practiced
 - Bias for action, autonomy, entrepreneurship, productivity through people, hands on, etc
@@ -114,7 +112,6 @@ weight: 1
   3. Raw materials
   4. Capital
 
-![Transformation of organizational resources into finished products throughout the production process](https://plus.pearson.com/eps/pearson-reader/api/item/72b412ac-51fe-425d-aed2-ec96529f5260/1/file/certo-mmcas-15e_eText_v3/OPS/images/FG_01_004.png)
 
 - HR are people who work in an organization
 - Monetary resources - amounts of money managers use to purchase goods and services for an organization
@@ -140,7 +137,6 @@ weight: 1
 
   - A manager can be effective without being efficient and vice versa
 
-  ![](https://plus.pearson.com/eps/pearson-reader/api/item/72b412ac-51fe-425d-aed2-ec96529f5260/1/file/certo-mmcas-15e_eText_v3/OPS/images/FG_01_005.png)
 
 ## The universality of management
 
@@ -171,7 +167,6 @@ weight: 1
   - Working with attitudes and communication
   - Individual and group interests
 - **Conceptual skills** - Involve the ability to see the organization as a whole. Manager with conceptual skills is able to understand how various functions of the organization complement one another
-- ![](https://plus.pearson.com/eps/pearson-reader/api/item/72b412ac-51fe-425d-aed2-ec96529f5260/1/file/certo-mmcas-15e_eText_v3/OPS/images/FG_01_006.png)
 
 ### Three activities
 
@@ -183,7 +178,6 @@ weight: 1
 
 - **Management employability skills** - refer to a persons ability to gain and maintain a career as a manager
 
-  ![](https://plus.pearson.com/eps/pearson-reader/api/item/72b412ac-51fe-425d-aed2-ec96529f5260/1/file/certo-mmcas-15e_eText_v3/OPS/images/7291301010.png)
 
 ## Management Careers
 
@@ -198,7 +192,6 @@ weight: 1
 
 ## Career Stages, Life Stages, and Performance
 
-​	![](https://plus.pearson.com/eps/pearson-reader/api/item/72b412ac-51fe-425d-aed2-ec96529f5260/1/file/certo-mmcas-15e_eText_v3/OPS/images/7291301011.png)
 
 - Increasing population of older people are being employed
 

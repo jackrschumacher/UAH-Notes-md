@@ -34,12 +34,10 @@
         - *Annales Cambriae* covers the years between 533 to 970 CE
           - Also the battle of Carmlann/Camblan in 539 CE between Arthur and Medraut (Mordred)
 ### Arthurs Stone in Camelford
-      - ![Arthur's Stone In Camelford](../assets/image_1764458485670_0.png)
 > LATINI IACIT FILIUS MA....RI
       - Roman son of unknown
       - May have been the site of the Battle of Ricer Camblan
 ### Medieval Wales
-      - ![Map of Medieval Wales](../assets/image_1764458561190_0.png)
       - 4 Kingdoms
         - Smaller areas inside the Kingdoms
 ## The Mabinogion
@@ -441,7 +439,6 @@
         - It is through the deceit of the woman that he did what he did
         - Not easy to escape fate \rarr Grow was a killed by a spear that pierced to the throne
         - The stone exists in real life in England
-          - ![The stone in England](../assets/image_1764815013783_0.png)
 ## Central themes in the text
 ### Repetition (action, speech, marriages-gone-wrong)
       - The bags that we see in Act I or Act II

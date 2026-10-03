@@ -17,7 +17,6 @@ title: Chapter 17
 	- RNA synthesis is catalyzed by RNA polymerase
 	- **RNA polymerase:** the enzyme that copies DNA into RNA
 	- Transcription follows the same base pairing rules as DNA replication- in RNA uracil substitutes for Thymine
-	- ![4366c75ced706389c91225908aacbf74.jpg](../assets/4366c75ced706389c91225908aacbf74_1776567397926_0.jpg)
 	- 3 stages:
 		- Initiation
 		- Elongation
@@ -37,7 +36,6 @@ title: Chapter 17
 	- **Spliceosomes:** found within the nucleus of eukaryotic cells, assembled from small nuclear RNAs
 		- Removes introns from transcribed pre-mRNA
 	- **Ribozymes:** molecules that have the ability to catalyze specific biochemical reactions (RNA splicing)
-	- ![bd0bb5731d4e02a642c44ee8bfa732ad.jpg](../assets/bd0bb5731d4e02a642c44ee8bfa732ad_1776567883408_0.jpg)
 - ### Concept 17.4: Translation is RNA-directed synthesis of a polypeptide
 	- Cell translates and mRNA message into protein using tRNA
 	- **Transfer RNAs:** small RNA molecule that acts as an essential adaptor in protein synthesis- bridging the gap between mRNA and amino acids
@@ -47,7 +45,6 @@ title: Chapter 17
 	- **Ribosomal RNAs (rRNAs):** a type of non-coding RNA which is the primary component of ribosomes
 	- Ribosomes coordinate the three stages of translation
 	- Formation of peptide bonds between amino acids is catalyzed by rRNAs as tRNAs move through A and P sites through the E site
-	- ![a6599de46894ff150c1e422915557cac.jpg](../assets/a6599de46894ff150c1e422915557cac_1776568913152_0.jpg)
 	- After translation, proteins may be modified by cleavage or attachment of sugars, lipids, or other chemical groups
 	- Free ribosomes in the cytosol initiate synthesis of all proteins- proteins with a signal peptide are synthesized on the ER
 	- **Signal peptide:** a short peptide, present at the N-terminus of most newly synthesized proteins that are destined toward secretory pathway

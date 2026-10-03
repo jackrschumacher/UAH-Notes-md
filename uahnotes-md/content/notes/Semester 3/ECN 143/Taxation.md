@@ -6,8 +6,6 @@
         - Payments from the governments to certain groups, such as elderly or the unemployed
 ## Tax structure
         - ![](https://www.economicsonline.co.uk/content/images/2023/10/Proportional-tax-5.webp)
-        - ![image.png](../assets/image_1763173998088_0.png)
-        - ![image.png](../assets/image_1763174031519_0.png)
         - **Progressive tax system**
           - Increasing tax rates with taxable base incomes \rarr rich pay higher taxes
         - **Average tax rate**
@@ -18,7 +16,6 @@
             - Higher than average tax rate because of the progressive tax system
             - ![image.png](../assets/image_1763173051196_0.png)
             - ![image.png](../assets/image_1763173149385_0.png)
-            - ![Income percentage vs Share of federal taxes](../assets/image_1763173176949_0.png)
         - **Proportional tax system**
           - System in which everyone pays the exact same proportion of their income in taxes
           - Ex: Marginal and average tax are the same for everyone

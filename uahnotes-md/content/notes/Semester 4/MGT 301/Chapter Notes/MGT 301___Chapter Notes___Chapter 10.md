@@ -11,7 +11,6 @@ weight: 10
 	- Refers to the organizational process
 - **Organizing skill-** the ability to create throughout the organization a network of people who can help solve implementation problems as they occur
 - Primary focus of organizing is determining what individual employees will do in a organization and how their individual efforts should best be combined to advance the attainment of organizational objectives
-- ![7291310002.png](../assets/7291310003_1772505918064_0.png)
 - ## The importance of organizing
 	- Creates and maintains relationships among all organizational resources by indicating which resources to be used for specified activities
 	- Management theorists consider the organizing function so important that they advocate the creation of an organizing department
@@ -26,7 +25,6 @@ weight: 10
 		- Divide major tasks into subtasks
 		- Allocate resources and directives for subtasks
 		- Evaluate the results of implemented organizing strategy
-	- ![7291310003.png](../assets/7291310003_1772505918064_0.png)
 	- Example: The management of a restaurant can serve as an illustration of how the organizing process works. The first step that the restaurant manager would take to initiate the organizing process would be to reflect on the restaurant's plans and objectives. Because planning involves determining how the restaurant will attain its objectives, and organizing involves determining how the restaurant's resources will be used to activate plans, the restaurant manager must start to organize by understanding planning.
   - Ex: The second and third steps of the organizing process focus on tasks to be performed within the management system. The manager must designate major tasks or jobs to be done within the restaurant. Two such tasks are serving customers and cooking food. Then the tasks must be divided into subtasks. For example, the manager might decide that serving customers includes the subtasks of taking orders and clearing tables. The fourth organizing step is determining who will take orders and who will clear the tables, and the details of the relationship between these individuals. The size of tables and how they are to be set are other factors to consider at this point. In the fifth step, evaluating the results of the implemented organizing strategy, the manager gathers feedback on how well the strategy is working. This feedback should furnish information that can be used to improve the existing organization. For example, the manager may find that a particular type of table is not large enough and that larger ones must be purchased if the restaurant is to attain its goals.
   
@@ -92,7 +90,6 @@ weight: 10
   	- **Complexity of functions-** degree to which activities are difficult and involved
   	- **Coordination-** amount of time managers must spend synchronizing activates of their subordinates with the activates of other workers
   	- **Planning-** amount of time managers must spend developing management system objectives and plans and integrating them with the activities of their subordinates
-  	- ![image.png](../assets/image_1772511900547_0.png)
   - ### Gracicunas and Span of Management
   	- Developed a formula for determining the number of possible relationships between a manager and subordinates when the number of subordinates is known
   	-
@@ -103,7 +100,6 @@ weight: 10
   	- Directly influences the height of an organizational chart
   	- The greater the height of the chart, lesser span of management
   	- Organizational charts with little height are usually referred to as flat, other are referred to as tall
-  	- ![7291310007.png](../assets/7291310007_1772512327443_0.png)
   	- Chart should be built from top to bottom to ensure that appropriate spans of management are achieved at all levels
   	- Spans of management achieve objectives such as speeding up organizational decision making and building more flexible organization
   		- Using a flatter organizational structure than in the past
@@ -112,28 +108,22 @@ weight: 10
   	- **Department-** a unique group of resources established by management to perform some organizational task
   	- **Departmentalizing-** the process of establishing departments within the management system
 - # 10.5- Types of Departmentalization
-  - ![image.png](../assets/image_1772512966698_0.png)
-  - ![image.png](../assets/image_1772512978028_0.png)
   - ## Departments based on function
   	- Type of work functions can be used to differentiate departments
   	- Typically divided into the major categories of marketing, production and finance
-  	- ![7291310008.png](../assets/7291310008_1772513079019_0.png)
   	- Brings with it both advantages and disadvantages
   - ### Departments based on products and service
   	- When an organization is based primarily on product or service departmentalizes resources according to product or services being offered
-  	- ![7291310009.png](../assets/7291310009_1772513375552_0.png)
   	- Focus org effort on products or services
   	- Could result in the duplication of efforts
   - ### Departments based on geography
   	- Departmentalized according to the places where the work is being done or the geographic markets on which the management system is focusing
   	- Can range to short
   	- Distance between places can make managing difficult
-  	- ![7291310010.png](../assets/7291310010_1772513636668_0.png)
   	- Focus on each of the geographic region
   	- Lack of focus on products or services
   - ### Departments based on customer
   	- Based on primarily on the customer establishes departments in response to the organizations major customers
-  	- ![7291310011.png](../assets/7291310011_1772513991315_0.png)
   	- Increasing focus on customer
   	- Customer departmentalization has both advantages and disadvantages
   - ## Departments by matrix
@@ -145,7 +135,6 @@ weight: 10
   		- Get coaching on interpersonal skills
   	- Most popular examples of post bureaucratic organizational forms is a matrix structure.
   		- Borrows workers from various parts of the organization to complete a project
-  	- ![7291310012.png](../assets/7291310012_1772514405787_0.png)
   	- Allows the organization to focus on various project simultaneously
   	- Can be confusing, might not be able to cope with multiple bosses
   - ### Forces influencing formal strucutre
@@ -155,6 +144,5 @@ weight: 10
   	- Tasks include degree of technology involved in performing the task and the tasks complexity
   - ### Fayols advice on using formal strucutre
   	- Strict adherence to chain of command not always adviseable
-  	- ![7291310013.png](../assets/7291310013_1772514745728_0.png)
   	- Bridge can be used for communication
   		- Must be vigilant about informing all other appropriate individuals within the organization of any information transmitted

@@ -11,7 +11,6 @@ title: Chapter 1
 	- Confidentiality, integrity, availability
 - CIA triad has expanded to include privacy, authenticity, possession and utility
 - Systems use access control processes like identification, authentication, authorization and accountability (IAAA)
-- ![](../assets/07a09e6e741e5e86f2d5ec9a45763955.png)
 - **Confidentiality** means limiting access to information only to those who need it and preventing access by those who do not
 - **Integrity** describes how data is whole, complete, and uncorrupted
 	- Integrity of information is threatened when it is exposed to corruption, damage, destruction or other disruption of its authentic state
@@ -84,7 +83,6 @@ title: Chapter 1
 	- Autocratic - decision making is theirs
 	- Democratic - seek input from others
 	- Laissez-faire - sit back
-- ![](../assets/3ef990a3d9779869f25dd74cb4102020.png)
 - **Planning** is the process of creating designs or schemes for future efforts or performance
 - **Organizing** is the management function dedicated to the structuring of resources to support the accomplishment of objectives 
 - **Leading** encourages the implementation of the planning and organizing functions, and includes supervising employee behavior, performance, attendance, and attitude

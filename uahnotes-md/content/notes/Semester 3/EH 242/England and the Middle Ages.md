@@ -17,8 +17,6 @@
       - Harold moves to meet them
       - Watches the invasion force about the English channel
   - William invades on the night of September 27-28
-      - ![William's invasion](../assets/image_1764299498782_0.png)
-      - ![image.png](../assets/image_1764299780910_0.png)
       -
   - After defeating Tostig and Hardrada's forces at Stamford Bridge, Harold turns his force south to meet William's
   - **The Battle of Hasting takes place on October 14th, 1066. Harold was ultimately defeated by William and his Normans**
@@ -64,7 +62,6 @@
         - The Little Ice Age
         - The Famine of 1315-1322
         - Likely made the population more susceptible to the disease
-        - ![Climate over time](../assets/image_1764306297094_0.png)
 ### English Society in the Fourteenth Century
       - **3 estates:** Clergy, Nobles (Lords, Vassals, Knights (gentles))
         - **Clergy**

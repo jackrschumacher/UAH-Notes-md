@@ -65,14 +65,11 @@ title: Module 4
 	- Al Mohads (1147-ealy 13th century)
 	- Mali (early-13th century)
 - ![image.png](../assets/image_1762231992828_0.png)
-- ![image.png](../assets/image_1762232273526_0.png)
-- ![Sundiata_Webcast_1_-_Vivaldi_11_03_25_10-58-07 PM.png](../assets/Sundiata_Webcast_1_-_Vivaldi_11_03_25_10-58-07_PM_1762232290305_0.png)
 #### Medieval West Africa- Mali Empire
 - This is the context for the story
 - Rise of the Sossos (Kaniaga) and Sousaomo Kante Sosso (sorcerer king in the story)
 - Revolt against Sossos including Mali- **Plot of story**
 - Battle of Krinia (1235)- Sundiata defeats the Sossos and unifies Mali Kings
-- ![Sundiata_Webcast_1_-_Vivaldi_11_03_25_11-07-08 PM.png](../assets/Sundiata_Webcast_1_-_Vivaldi_11_03_25_11-07-08_PM_1762232831794_0.png)
 - First sub-saharan people to accept Islam
 - Traders begin to have prayers in thier towns
 - Set up in the Sharia system
@@ -83,7 +80,6 @@ title: Module 4
 	- Mosque sees visitors almost constantly
 	- Temple creates a large library of texts-many of which survive to today
 	- Also accumulated navigational maps from explorers.
-- ![Sundiata_Webcast_1_-_Vivaldi_11_03_25_11-14-46 PM.png](../assets/Sundiata_Webcast_1_-_Vivaldi_11_03_25_11-14-46_PM_1762233289946_0.png)
 	- The Mali empire was one of the largest in the world at the time
 - King was Maza Abu Boukahri
 - Studied at St Corie univesity

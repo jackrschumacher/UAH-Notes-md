@@ -1,6 +1,5 @@
 ### Example behavioral finance graph
 > "I can calculate the motions of the heavenly bodies, but not the madness of men."
-- ![image.png](../assets/image_1763070658184_0.png)
 # Cognitive errors & emotional biases
 ## Cognitive errors
 ### Belief Perseverance (Core)

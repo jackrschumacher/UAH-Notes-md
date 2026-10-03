@@ -20,7 +20,6 @@
       - Faster inventory turnover
       - Reduced risk
       - Less advertising
-- ![The rapid growth of Inditex](https://resized-images.flatworldknowledge.com/information_systems_9_1-36477/1600/information_systems_9_1-36477-fig097.png)
 ## Gap: An Icon in Crisis
 - Most fashion retailers place orders for a seasonal collection months before in stores
 - **Inventory = Death**

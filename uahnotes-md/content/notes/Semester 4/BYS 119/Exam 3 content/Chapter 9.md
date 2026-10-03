@@ -4,19 +4,16 @@ title: Chapter 9
 
 
 
-- ![681ee782cd659e7d30de6c6fab4f4f06.jpg](../assets/681ee782cd659e7d30de6c6fab4f4f06_1776292867138_0.jpg)
 
 - # 9.1- External Signals and conversion to response
   - ## Evolution of cell signaling
   	- 1970s research found that cells might be able to communicate with each other
   	- Cell signaling is critical among prokaryotes
-  	- ![0115c08621cc1d3e56ba7bec5fe1aefb.jpg](../assets/0115c08621cc1d3e56ba7bec5fe1aefb_1776312343523_0.jpg)
   	- Quorum sensing allows bacterial populations to coordinate the behavior of all cells in population activities that require a certain amount of cells
   	- Biofilm- aggregation of cells attached to a surface by molecules secreted by the cells, but after the cells have reached a certain density
   	- Can also cause toxins to be excreted
   	- Can also be seen in yeast cells, as cells communicate and reproduce
   		- Yeast cells only breed with the same species of yeast cell
-  	- ![f1d487a243cc5c8beb4d7110a7205922.jpg](../assets/f1d487a243cc5c8beb4d7110a7205922_1776312655143_0.jpg)
   	- Three major steps: Signal reception, Signal transduction and cellular response
   		- Known as a *signal transduction pathway*
   		- This process is almost the same as in mammals
@@ -24,12 +21,10 @@ title: Chapter 9
   	- Cells in a multicellular organism communicate by way of a signaling molecule targeted for cells that may or may not be adjacent
   	- Animal and plant cells have cell junctions that directly connect the cytoplasm's of adjacent cells
   	- Important in embryonic development, immune response, and maintaining adult stem cell populations
-  	- ![a5cbb3c909fa77d9ac4b5f111b4c9ae7.jpg](../assets/a5cbb3c909fa77d9ac4b5f111b4c9ae7_1776312970680_0.jpg)
   	- In some cases, signaling molecules are secreted by the signaling cell
   		- Some travel only short distances - local regulators influence cells that are nearby
   		- Type of local signaling in animals in *paracrine signaling*
   		- *growth factors-* compounds that stimulate nearby target cells to grow and divide
-  	- ![07001b03d756293fff94482409d3004f.jpg](../assets/07001b03d756293fff94482409d3004f_1776313117618_0.jpg){:height 297, :width 671}
   	- *synaptic signaling-* electrical signal triggers neurotransmitters (synapses)
   	- **Hormones-** used for long distance signalling
   		- Also known as endocrine signalling
@@ -38,13 +33,11 @@ title: Chapter 9
   - ## Three stages of Celling signaling
   	- Epinephrine - mobilize fuel reserves
   		- Mobilizes glucose reserves
-  	- ![92e57ee1bb0f5852dde21404ed6ec564.jpg](../assets/92e57ee1bb0f5852dde21404ed6ec564_1776314295511_0.jpg)
 
 - ## Signal reception
   - Signals emitted by cells are only heard by the corresponding cells
   - Signaling molecule is complementary in shape to a specific site on the receptor
   - **Ligand-** term for a molecule that specifically bonds to another, larger molecule
-  - ![445624e2e4a62311d0900baf5c1d557a.jpg](../assets/445624e2e4a62311d0900baf5c1d557a_1776315533920_0.jpg)
   - Cell surface receptors represent 30% of all human proteins
   - Cell surface receptors tend to be flexible and inherently unstable
   - Molecular biological techniques, researchers have developed a protein called Herceptin that binds to HER2
@@ -53,7 +46,6 @@ title: Chapter 9
   	- Signaling molecule passes through the cells plasma membrane
   	- Aldosterone is a representative example of how steroid hormones work
   	- Hormone secreted by cells of the adreno glands and enters cells all over the body
-  	- ![188458fa183eeaa7a63904167d0668d9.png](../assets/188458fa183eeaa7a63904167d0668d9_1776316871506_0.png)
   	- Cells DNA function is being transcribed and processed into mRNA, leaves the nucleus and is translated into a specific protein by ribosomes in the cytoplasm
   	- Transcription factor- aldosterone receptors function in the same way- many are already in the nucleus
   - ## 9.3- Signal transduction: Cascades of molecular interactions transmit signals from receipts to relay
@@ -67,7 +59,6 @@ title: Chapter 9
   	- Concept of activating a protein by adding one or more phosphate groups to it
   	- **protein kinase-** An enzyme that transfers phosphate groups from ATP to a protein, thus phosphorylating the protein.
   	- **phosphorylation cascade-** A series of chemical reactions during cell signaling mediated by enzymes (kinases), in which each kinase in turn phosphorylates and activates another, ultimately leading to phosphorylation of many proteins.
-  	- ![0f9a2f7081e25c9b9829dfeae27f8877.png](../assets/0f9a2f7081e25c9b9829dfeae27f8877_1776319066530_0.png)
   	- Significant percentage of human genes is likely code for protein kinases
   		- Single cell may have hundreds of different kinds
   		- Among these are the proteins that regulate cell division
@@ -83,13 +74,9 @@ title: Chapter 9
   		- Can catalyze the synthesis of many molecules of cAMP
   		- Normal cell concentration of cAMP can be boosted 20 fold in a matter of seconds
   		- Broadcasts the signal to the cytoplasm
-  	- ![eafa827e4167ba6317eaed6ba58ce274.png](../assets/eafa827e4167ba6317eaed6ba58ce274_1776320110596_0.png){:height 124, :width 671}
-  	- ![555fad791ee4e9f5fcc7fab24e917979.png](../assets/555fad791ee4e9f5fcc7fab24e917979_1776320275038_0.png)
   	- Ca2+ is used as a messenger
   		- Ion can function as a second messenger because its concentration in the cytosol is normally much lower than its concentration outside the cell
-  	- ![1d47fb27c796cfd0076d754739675523.png](../assets/1d47fb27c796cfd0076d754739675523_1776320967410_0.png)
   	- **inositol trisphosphate-** A second messenger that functions as an intermediate between certain signaling molecules and a subsequent second messenger, Ca2+, by causing a rise in cytoplasmic Ca2+ concentration.
   	- **Diacylglycerol (DAG)-** A second messenger produced by the cleavage of the phospholipid PIP2 in the plasma membrane.
-  	- ![a13607ef0e85e23b1e2b4e8f4168a16c.jpg](../assets/a13607ef0e85e23b1e2b4e8f4168a16c_1776321312551_0.jpg)
   	-
   	-

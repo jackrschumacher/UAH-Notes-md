@@ -9,7 +9,6 @@
 - Public release of ChatGPT controversial and created a debate on the consequences of AI
 - OpenAI investment increases dramatically after the release of ChatGPT (Microsoft)
 # 18.3 So How Does This Stuff Really Work? A Manager’s Guide to Understanding GenAI
-- ![image_1762072119972_0.png](../assets/image_1762072119972_0_1762457848696_0.png)
 - **Corpus** data used to train a model
 - **Supervised learning** - supervised training by providing specific result examples
 - **Self-Supervised learning** - data is not explicitly labeled and results are not preditermined

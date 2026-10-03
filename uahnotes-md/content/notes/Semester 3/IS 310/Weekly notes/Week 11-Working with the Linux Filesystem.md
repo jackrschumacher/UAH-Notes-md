@@ -109,20 +109,15 @@
 - Simple - Flexible file operations
 - Directories are a special type of file that are lists of other programs
 - Ordered tree-like structure on the hard disk
-  - ![image.png](../assets/image_1762739990846_0.png)
-  - ![image.png](../assets/image_1762740013329_0.png)
 - Two types of paths - full/absolute paths and relative paths
   - Absolute path - complete path to a certain file or directory
       - All absolute file names start with a slash because the slash indicates the root directory
       - Slash also used for separating the directories on the path
   - Relative path- starts from the working directory
       - Need . and .. to indicate the working directory and the parent directory
-      - ![image.png](../assets/image_1762741256179_0.png)
       -
 - Your shell uses your current directory as the point of reference
 ### Basic Linux Directories
-- ![image.png](../assets/image_1762741288673_0.png)
-- ![image.png](../assets/image_1762741307726_0.png)
 ## File Permissions
 - Users can belong to several groups
 - A file can only belong to one user and one group at a time
@@ -139,7 +134,6 @@
   - Is the file accessible to the user or group of the process that wants to run it?
   - Does the file containing the program permit execution by that user or group (or anybody)?
   - In most cases, a program inherits the privileges of the user/process who started it
-- ![image.png](../assets/image_1762741891487_0.png)
 ## Permissions
 - Files owned by users and groups
 - Files have permissions for user, group and other (world)
@@ -148,15 +142,12 @@
 ### File Permissions
 - Two ways to set permissions using the chmod command:
   - Symbolic mode:
-      - ![image.png](../assets/image_1762742161665_0.png)
   - Absolute mode:
       - Use octal (base 8 values)
       - R (read) = 4
       - W (write) = 2
       - X (execute) = 1
       - - (none) = 0
-      - ![image.png](../assets/image_1762742264108_0.png)
-      - ![image.png](../assets/image_1762742298481_0.png)
 #### Inherited permissions
 - Two critical points
   - Permissions of a directory affect whether someone can see its contents or add or remove files in it

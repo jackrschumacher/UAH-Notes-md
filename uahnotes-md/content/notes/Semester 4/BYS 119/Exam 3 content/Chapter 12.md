@@ -18,7 +18,6 @@ title: Chapter 12
 	- **Interphase:** G1,S,G2 phases
 		- DNA being replicated during the synthesis (s) phase
 	- **Mitotic phase:** Mitosis and cytokinesis make up the
-	- ![0229faa0d01ee2d389c743cf0886fdb6.jpg](../assets/0229faa0d01ee2d389c743cf0886fdb6_1776530231857_0.jpg)
 	- **Mitotic spindle:** made up of microtubules, controls chromosome movement during mitosis
 	- **Centrosomes:** includes spindle microtubules and asters
 		- **Kinetochores:** A complex protein structures assembled on centromeric DNA, acting as the attachment site for spindle microtubules to pull sister chromatids apart during mitosis and meiosis

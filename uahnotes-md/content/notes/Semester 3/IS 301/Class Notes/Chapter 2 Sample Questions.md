@@ -47,7 +47,6 @@
   The actual manufacturing overhead is $31,000 and there are 2,000 actual machine hours.
   How much manufacturing overhead would White Company allocate?
 ```
-- ![image.png](../assets/image_1763535007323_0.png)
 ```
   Cost of Goods Sold is considered what type of account?
 ```

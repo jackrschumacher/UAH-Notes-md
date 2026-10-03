@@ -28,9 +28,7 @@ title: Chapter 14
 		- Calculating the chances of the various offspring genotypes from such crosses, each character is first considered separately and then individual probabilities are multiplied
 - ### Concept 14.3: Inheritance patterns are often more complex than predicted by mandelian genetics
 	- For a single gene:
-		- ![6b2f037f4492d0ade5e7f5adabcb4893.jpg](../assets/6b2f037f4492d0ade5e7f5adabcb4893_1776541931260_0.jpg)
 	- Two or more genes:
-		- ![935b56ebac235b3b6cd683c1eafb9a06.jpg](../assets/935b56ebac235b3b6cd683c1eafb9a06_1776541961353_0.jpg)
 		- Expression of a genotype can be affected by environmental influences, resulting in a range of phenotypes
 		- Multifactorial characters: Polygenetic characters that are also influenced by the environment
 		- Organisms overall phenotype reflects its overall genotype and unique environmental history
@@ -41,7 +39,6 @@ title: Chapter 14
 	- **Carriers:** An individual possesses one altered copy of a gene (mutation) for an autosomal recessive disorder but typically displays no symptoms no symptoms
 	- Homozygotes have sickle-cell disease
 		- Have an advantage because one copy of the sickle-cell allele reduces both frequency and severity of malaria attacks
-	- ![9bf83ca2d87273b0e64f1e5dda29f2b8.jpg](../assets/9bf83ca2d87273b0e64f1e5dda29f2b8_1776542793548_0.jpg)
 	- Lethal dominant alleles are eliminated from the population if affected people die before reproducing
 	- Nonlethal strike later in life
 	- Many human diseases are multifactorial-  genetic and environmental components and do not follow simple Mendelian inheritance patterns

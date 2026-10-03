@@ -10,7 +10,6 @@ title: Chapter 15
 	- **Sex-linked genes:** Described sex specific patters of inheritance and expression when a gene is present on a sex chromosome rather than a non sex chromosome
 	- **Barr Body:** an inactive X chromosome that occurs during development
 - ### Concept 15.3: Sex-linked genes exhibit unique patters of inheritance
-	- ![6a6f2aaec6ce2fd8a25a580f75631691.jpg](../assets/6a6f2aaec6ce2fd8a25a580f75631691_1776547966764_0.jpg){:height 545, :width 628}
 	- F1 dihybrid testcross yields parental types with the same combination of traits as those in the P generation parents and recombinant types
 	- Unlinked genes exhibit a 50% frequency recombination in the gametes
 	- **Parental types:** offspring that posses the same phenotypic or genotypic combinations resulting from inherited chromosomes that did not undergo recombination during meiosis

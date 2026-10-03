@@ -26,7 +26,6 @@ title:
   	- Neutron, proton, electrons
   	- Neutron and proton are almost identical in mass
   	- Atomic number tells us how many protons are in an items nucleus
-  	- ![image.png](../assets/image_1769136718159_0.png)
   - #### Isotopes
   	- Different atomic forms of the same element are isotypes
   	- Can also be used as tools in medicine
@@ -39,13 +38,11 @@ title:
   	- **Energy** - The capacity to cause change
   	- **Potential energy** - the energy that matter posses because of its location and structure
   	- Electrons of an atom have potential energy due to the distance to the nucleus
-  	- ![image.png](../assets/image_1769137511443_0.png)
   	- Electrons are found in different electron shells - each with a characteristic average distance and energy level
   	- An electron can move from one shell to another
   		- When an electron absorbs energy it moves to a shell farther out from the nucleus
   - #### Electron Distribution and Chemical properties
   	- Chemical behavior of an atom is determined by the distribution of electrons in the atoms electron shells
-  	- ![image.png](../assets/image_1769137697135_0.png)
   - #### Electron orbitals
   	- We can not truly know where the atom is located
   	- Electron shell contains electrons at a particular energy level
@@ -67,7 +64,6 @@ title:
   	- Large biological molecules are held by weak interactions
   - #### Hydrogen Bonds
   	- This noncovalent attraction between hydrogen and electronegative atoms
-  	- ![image.png](../assets/image_1769211980672_0.png){:height 486, :width 526}
   - #### Van der Walls interactions
   	- Electrons not always not always evenly distributed
   	- Van der Walls interactions are individually weak and occur only when atoms and molecules are vey close
@@ -75,7 +71,6 @@ title:
   	- Shapes determined by the positions of the atoms
   	- Atom forms covalent bonds the orbitals in its valence shell undergo rearrangement
 - ### Chemical reactions and chemical bonds
-  - ![image.png](../assets/image_1769212589770_0.png){:height 207, :width 550}
   - **Chemical reactions** - the making and breaking of chemical bonds
   - Use an arrow to indicate the change
   - **Reactants** - Starting materials

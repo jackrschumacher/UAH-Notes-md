@@ -11,14 +11,12 @@
       - Arose from military and education institutions work as far back as the 1960s
         - Took off in the 1990s when graphical browsing was invented
         - Architecture was then transitioned to private firms rather than government grants
-  - ![Example network diagram showing the connection between local networks (intranet) and the larger internet](https://resized-images.flatworldknowledge.com/gallaugher_7-32630/1000/gallaugher_7-32630-fig127.png)
 ## The URL: “What Are You Looking For?”
   - **URL (uniform resource locator)** - Used interchangeably with "Web Address", URLs are used to identify resources on the Internet along with the application protocol needed to retrieve it
       - Basically used to tell your browser what you are looking for
 ```
       The URL displayed really says, “Use the Web’s secure SSL protocol (https://) to find a host server named ‘www’ in the ‘nytimes.com’ network, look in the ‘tech’ directory, and access the ‘index.html’ file.”
 ```
-  - ![A breakdown of a URL](https://resized-images.flatworldknowledge.com/information_systems_9_1-36477/1000/information_systems_9_1-36477-fig109.png)
   - **Hypertext transfer protocol** - Application transfer protocol that allows web browsers and Web servers to communicate with each other
       - Most sites now use https instead of http
         - Shift occurred aggressively several years ago
@@ -93,7 +91,6 @@
           - The resolver will remember where it found the nameserver for a while, to ensure quicker delivery to others
             - Cache is refreshed occasionally to make sure the data remains accurate
           - This system also ensures that the DNS system is fault-tolerant
-          - ![An example of how DNS works](https://resized-images.flatworldknowledge.com/gallaugher_7-32630/1600/gallaugher_7-32630-fig139.png)
       -
 # Getting Where You’re Going
 ## TCP/IP: The Internet’s Secret Sauce
@@ -111,7 +108,6 @@
         - Routers do not have a perfect set of information on all points of the internet, but talk to each other and know the general idea of where to send the packets
         - This makes it fault tolerant
   - Once packets are received by the local machine, TCP checks the validity of the packets and that all packets that have been requested have been received correctly
-  - ![TCP/IP example](https://resized-images.flatworldknowledge.com/gallaugher_7-32630/1000/gallaugher_7-32630-fig136.png)
   - **VOIP (Voice over Internet)** - Removes some of the need to have 2 separate networks - one for phone service and one for regular network
 ## What Connects the Routers and Computers?
   - Local connections are most commonly done with traditional ethernet cables (copper)
@@ -155,7 +151,6 @@
       - Need more bandwith
         - T-Mobile arguing for the FCC to set aside more bandwidth for smaller carriers
         - Increasing amount of content on our phones
-      - ![Bandwidth required for different types of content](../assets/image_1763332557014_0.png)
 ### 5G: A Faster Wireless Network, but Not All 5G Is the Same
       - Speed is related to the wireless spectrum that the firm has licensed
       - T-Mobile has a large and high speed 5G network due to its usage of the C band, much of which was acquired when it purchased Sprint
@@ -192,7 +187,6 @@
   - Starlink satellites are not in a fixed position, but rather pass signals to each each other using lasers
       - Starlink satellites are about the size of a couch, unlike GEO satellites that are the size of school busses
       - Starlink currently has approximately 9,000 satellites in orbit
-  - ![image.png](../assets/image_1763413217627_0.png)
   - There is a lot of room between the satellites in orbit
   - SpaceX taps into the US Governments Space Debris Collision Detection System
   - Starlink satellites have enough propulsion to move itself out of orbit when it has exceed it useful life
