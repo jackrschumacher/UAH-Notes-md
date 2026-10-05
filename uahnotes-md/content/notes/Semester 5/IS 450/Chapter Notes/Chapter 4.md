@@ -1,5 +1,6 @@
 ---
 title: Chapter 4
+weight: 4
 ---
 ## Risk Management Foundations & Frameworks
 

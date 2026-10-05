@@ -1,5 +1,6 @@
 ---
 title: Chapter 3
+weight: 3
 ---
 ## Risk Management Foundations & Frameworks
 

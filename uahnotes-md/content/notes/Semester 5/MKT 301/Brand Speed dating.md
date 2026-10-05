@@ -1,5 +1,6 @@
 ---
 title: Brand Speed Dating
+weight: 2
 ---
 Info:
 	- Convenience of info

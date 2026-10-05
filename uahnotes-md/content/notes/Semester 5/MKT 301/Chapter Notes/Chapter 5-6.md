@@ -1,5 +1,6 @@
 ---
-title: Chapter 5 and 6
+title: Chapter 5&6
+weight: 5
 ---
 ### Chapter 5: Consumer Markets and Buyer Behavior
 

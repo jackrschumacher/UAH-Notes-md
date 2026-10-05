@@ -1,5 +1,6 @@
 ---
 title: Chapter 3
+weight: 3
 ---
 
 ### Chapter 3: Analyzing the Marketing Environment

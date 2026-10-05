@@ -1,5 +1,6 @@
 ---
 title: Chapter 4
+weight: 4
 ---
 
 ### Chapter 4: Managing Marketing Information to Gain Customer Insights

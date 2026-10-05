@@ -1,5 +1,6 @@
 ---
 title: Chapter 1&2
+weight: 1
 ---
 ### Chapter 1: The Core of Marketing
 

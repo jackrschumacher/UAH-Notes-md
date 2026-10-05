@@ -1,5 +1,6 @@
 ---
 title: Chapter 1
+weight: 1
 ---
 
 - Focus of cybersecurity is protecting **information assets** - resources that have value to the organization

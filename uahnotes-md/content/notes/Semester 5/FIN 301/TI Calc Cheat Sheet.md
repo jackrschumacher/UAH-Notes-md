@@ -1,5 +1,6 @@
 ---
 title: TI Calculator Cheat Sheet
+weight: 1
 ---
 ## 2. Effective Interest Rate (EAR)
 **Definition:** The actual annual interest rate earned/paid, accounting for compounding.
