@@ -1,5 +1,5 @@
 ---
-title: Chapter 2
+title: Module 2
 weight: 2
 ---
 ## AWS pricing model

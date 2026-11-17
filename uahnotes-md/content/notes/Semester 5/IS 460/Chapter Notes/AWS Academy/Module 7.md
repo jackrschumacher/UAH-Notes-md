@@ -1,5 +1,5 @@
 ---
-title: Chapter 7
+title: Module 7
 ---
 ## AWS EBS
 

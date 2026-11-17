@@ -1,5 +1,5 @@
 ---
-title: Chapter 6
+title: Module 6
 ---
 ## Compute Services overview
 

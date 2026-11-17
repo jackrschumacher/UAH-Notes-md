@@ -1,5 +1,5 @@
 ---
-title: Chapter 1
+title: Module 1
 weight: 1
 ---
 ## Introduction to cloud computing

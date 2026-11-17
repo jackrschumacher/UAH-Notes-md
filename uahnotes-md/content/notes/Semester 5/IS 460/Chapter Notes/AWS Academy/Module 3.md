@@ -1,5 +1,5 @@
 ---
-title: Chapter 3
+title: Module 3
 ---
 ## AWS Global Infrastructure
 

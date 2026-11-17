@@ -1,5 +1,5 @@
 ---
-title: Chapter 4
+title: Module 4
 ---
 ## Introduction
 

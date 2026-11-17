@@ -1,5 +1,5 @@
 ---
-title: Chapter 5
+title: Module 5
 ---
 ## Networking Basics
 
